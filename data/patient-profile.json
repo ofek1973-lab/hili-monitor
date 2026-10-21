@@ -1,0 +1,183 @@
+{
+  "_meta": {
+    "last_updated": "2026-10-21",
+    "version": "1.0",
+    "note": "This file is the research anchor. Update current_status freely. Never delete history."
+  },
+
+  "identity": {
+    "name": "הילי הודיה שמואל",
+    "name_en": "Hili Hodaya Shmuel",
+    "date_of_birth": "2022-05-06",
+    "sex": "Female",
+    "id_number": "[PRIVATE — NOT FOR PUBLICATION]",
+    "primary_institution": "Sheba Medical Center / Edmond and Lily Safra Children's Hospital, Israel",
+    "referring_physician_oncology": "Dr. Dalia (Pediatric Hemato-Oncology, Safra Children's Hospital, Sheba)"
+  },
+
+  "current_status": {
+    "as_of": "2026-10-21",
+    "status": "Hospital-at-home (אשפוז בית) under Sheba Medical Center supervision",
+    "radiation_status": "Completed (22/30 fractions documented as of 26.07.2026; 30/30 expected to be complete)",
+    "active_shunt": true,
+    "shunt_infection_status": "Staphylococcus epidermidis identified 23.07.2026; ongoing Vancomycin as of 26.07.2026 — verify current status with physician",
+    "performance_status": "Alert, verbal, ambulatory at last documented evaluation (26.07.2026)",
+    "note": "UPDATE THIS SECTION when new information is available. This section supersedes older current-status entries but does NOT replace history."
+  },
+
+  "diagnosis": {
+    "primary": "Diffuse Midline Glioma (DMG)",
+    "who_grade": 4,
+    "molecular_classification": "H3 K27-altered",
+    "molecular_subtype": "H3K27M",
+    "molecular_subgroup_methylation": "Diffuse Midline Glioma, H3 K27-altered, EGFR-altered subtype",
+    "cns_who_classification": "CNS WHO Grade 4",
+    "date_of_diagnosis_approximate": "2026-06-08",
+    "biopsy_site": "Right thalamus (stereotactic needle biopsy)"
+  },
+
+  "pathology": {
+    "report_date": "2026-06-15",
+    "histology": "Diffuse glioma",
+    "cellularity": "Mild-to-moderately increased",
+    "cytologic_atypia": true,
+    "mitoses": "No definite mitoses identified in initial report",
+    "ihc": {
+      "GFAP": "Positive",
+      "Olig2": "Positive",
+      "H3K27M": "Positive",
+      "H3K27me3": "Lost in tumor cells",
+      "ATRX": "Retained",
+      "p53": "Positive in most tumor cells",
+      "Ki67": "Approximately 6–8%",
+      "IDH1": "Negative",
+      "BRAF": "Negative",
+      "G34R": "Negative",
+      "G34V": "Negative"
+    },
+    "mmr_proteins": {
+      "MSH2": "Preserved",
+      "MSH6": "Preserved",
+      "MLH1": "Preserved",
+      "PMS2": "Preserved",
+      "status": "MMR-proficient (non-hypermutated)"
+    }
+  },
+
+  "molecular_profile": {
+    "H3K27M": true,
+    "H3K27me3_loss": true,
+    "EGFR_status": "EGFR-altered — EGFR exon 20 insertion (documented by Oncomine panel, 07.07.2026)",
+    "EGFR_exact_variant": "EXACT VARIANT NOT CONFIRMED — Obtain original Oncomine/molecular report for precise nucleotide/protein designation",
+    "TP53_mutations": "Three TP53/p53 mutations documented in clinical summary (07.07.2026) — exact variants not confirmed; obtain original molecular report",
+    "IDH": "Wildtype (IDH1 negative by IHC)",
+    "BRAF": "Wildtype",
+    "MMR": "Proficient",
+    "ATRX": "Retained",
+    "methylation_profile": "Consistent with DMG H3 K27-altered EGFR-altered subtype (referenced 19.07.2026)",
+    "testing_platform": "Oncomine (EGFR identified); methylation array (subgroup classification)"
+  },
+
+  "imaging": {
+    "initial_mri": {
+      "date": "2026-06-07",
+      "findings": "Extensive infiltrative expansile disease predominantly in right thalamus and left midbrain/periaqueductal region; additional signals in right basal ganglia, pons/tegmentum, dentate/deep cerebellar regions",
+      "right_thalamic_lesion_size_mm": "31 x 49 (axial plane)",
+      "aqueduct": "Significantly narrowed",
+      "hydrocephalus": "Developing supratentorial ventricular enlargement / impending hydrocephalus",
+      "leptomeningeal": "No pathological enhancement",
+      "spine": "No dissemination"
+    },
+    "mri_15072026": {
+      "date": "2026-07-15",
+      "findings": "Known infiltrative lesion involving pons, midbrain, bilateral thalami (more right), right basal ganglia. Pons/midbrain component slightly increased vs June 7. Thalamic/basal ganglia component without significant change. Ventricles reduced vs initial. Bilateral subdural collections: left ~11mm, right ~7mm. Diffusion restriction/SWI heterogeneity in occipital horns (residual blood vs infectious not excluded). No leptomeningeal or spinal dissemination.",
+      "comparison": "Pons/midbrain slightly worse; thalamic/BG stable; hydrocephalus improved; subdural collections new/worsened"
+    },
+    "latest_imaging": {
+      "date": "2026-07-17 (CT)",
+      "findings": "Stable ventricles, improvement in subdural collections, no hemorrhage",
+      "note": "Update this field when new MRI becomes available"
+    }
+  },
+
+  "treatment_history": {
+    "radiation": {
+      "type": "Photon radiotherapy",
+      "total_dose_gy": 54,
+      "fractions": 30,
+      "dose_per_fraction_gy": 1.8,
+      "start_date": "2026-06-24",
+      "fractions_completed_as_of_26072026": 22,
+      "expected_completion": "Approximately late July 2026",
+      "status": "Expected complete — verify with physician"
+    },
+    "neurosurgical": [
+      {
+        "date": "2026-06-08",
+        "procedure": "Right thalamic stereotactic needle biopsy"
+      },
+      {
+        "date": "2026-06-19",
+        "procedure": "Endoscopic third ventriculostomy (floor fenestration), septostomy, left VP shunt insertion (CERTAS programmable valve, initial setting 5)"
+      },
+      {
+        "date": "2026-06-22",
+        "procedure": "Central venous port insertion via right jugular approach"
+      }
+    ],
+    "shunt_history": [
+      {"date": "2026-06-19", "event": "VP shunt inserted, setting 5"},
+      {"date": "2026-07-09", "event": "Setting changed to 6 due to hygroma/over-drainage"},
+      {"date": "2026-07-11", "event": "Setting returned to 5 after CSF leak from wound"}
+    ]
+  },
+
+  "active_medications_last_documented": {
+    "as_of": "2026-07-26",
+    "note": "ALWAYS verify current medications with treating physician. These are historical, not current prescriptions.",
+    "list": [
+      {"drug": "Dexamethasone (Dexacort)", "note": "Tapering — 'tapering with aim to discontinue' per 26.07.2026 summary"},
+      {"drug": "Levetiracetam (Keppra)", "note": "Anti-seizure"},
+      {"drug": "Lacosamide (Vimpat)", "note": "Anti-seizure; increased to 12 mg/kg/day on 23.07.2026"},
+      {"drug": "Risperidone (Risperdal)", "note": "Behavioral/anxiety episodes"},
+      {"drug": "Vancomycin", "note": "Ongoing as of 26.07.2026 for Staphylococcus epidermidis shunt infection; Meropenem stopped 26.07.2026"}
+    ]
+  },
+
+  "complications": {
+    "hydrocephalus": "Managed with VP shunt and ETV",
+    "subdural_collections": "Bilateral, left>right, documented 15.07.2026; improved on CT 17.07.2026",
+    "shunt_infection": {
+      "organism": "Staphylococcus epidermidis",
+      "identified_date": "2026-07-23",
+      "csf_23072026": {"WBC": 179, "protein": 126.4, "glucose": 75, "gram_stain": "Gram-positive cocci in clusters"},
+      "csf_26072026": {"WBC": "4.39 (lab units)", "CRP": 4.19, "Cr": 0.31},
+      "treatment": "Vancomycin (ongoing as of 26.07.2026)",
+      "status": "Active infection management — verify current status"
+    },
+    "seizure_like_events": "Tens of anxiety/panic-like episodes per day; EEG during events described as normal but epileptic activity not completely excluded; anti-seizure treatment ongoing",
+    "tachycardia": "Episodes documented up to 180-200 bpm; cardiac workup: sinus tachycardia, normal echo, normal Holter"
+  },
+
+  "treatment_discussions_documented": {
+    "note": "These topics were DISCUSSED with the family per 07.07.2026 clinical record. They are NOT established recommendations or proven therapies for this patient.",
+    "topics": ["ONC201 (dordaviprone)", "CAR-T therapy", "Peptide vaccine", "TCR approaches", "EGFR inhibitors", "Amivantamab"],
+    "egfr_note": "Record specifically describes uncertainty/limited expected impact of existing EGFR-directed approaches in DMG context"
+  },
+
+  "research_anchors": {
+    "primary_molecular_targets": [
+      "H3K27M / H3K27-altered",
+      "EGFR exon 20 insertion",
+      "TP53 mutations (x3)",
+      "EGFR-altered DMG subgroup"
+    ],
+    "tumor_location": ["Right thalamus", "Left midbrain/periaqueductal", "Bilateral thalami", "Pons/brainstem", "Right basal ganglia"],
+    "disease_stage_for_trials": "Newly diagnosed (radiation ongoing/recently completed)",
+    "prior_radiation": true,
+    "age_at_diagnosis_years": 4,
+    "current_age_years": 4,
+    "shunt_present": true,
+    "active_csf_infection": "YES as of late July 2026 — verify current status before any trial enrollment"
+  }
+}

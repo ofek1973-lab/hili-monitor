@@ -1,0 +1,125 @@
+{
+  "_meta": {
+    "description": "Dynamic watchlist of trials, drugs, investigators, institutions to actively monitor",
+    "last_updated": "2026-10-21"
+  },
+  "clinical_trials": [],
+  "drugs_and_therapies": [
+    {
+      "id": "ONC201",
+      "name": "ONC201 / Dordaviprone",
+      "aliases": ["TIC10", "imipridone"],
+      "class": "DRD2/DRD3 antagonist / mitochondrial ClpP activator",
+      "company": "Chimerix",
+      "relevance": "H3K27M-specific activity; discussed with family 07.07.2026; multiple DMG trials",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    },
+    {
+      "id": "GD2-CAR-T",
+      "name": "GD2-directed CAR-T cell therapy",
+      "aliases": ["GD2 CAR T", "anti-GD2 CAR"],
+      "class": "Adoptive cell therapy",
+      "company": "Multiple (Stanford, CHOP, others)",
+      "relevance": "GD2 is expressed on DMG/H3K27M; major active research area",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    },
+    {
+      "id": "H3K27M-vaccine",
+      "name": "H3K27M peptide vaccine",
+      "aliases": ["H3K27M neoantigen vaccine", "H3.3K27M vaccine"],
+      "class": "Peptide vaccine / immunotherapy",
+      "company": "Multiple academic centers",
+      "relevance": "H3K27M neoantigen highly expressed in this tumor",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    },
+    {
+      "id": "AMIVANTAMAB",
+      "name": "Amivantamab",
+      "aliases": ["JNJ-61186372", "Rybrevant"],
+      "class": "EGFR/MET bispecific antibody",
+      "company": "Janssen (J&J)",
+      "relevance": "EGFR exon 20 insertion activity in lung; discussed with family; brain penetration limited",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    },
+    {
+      "id": "PANOBINOSTAT",
+      "name": "Panobinostat",
+      "aliases": ["LBH589", "Farydak"],
+      "class": "Pan-HDAC inhibitor",
+      "company": "Multiple",
+      "relevance": "H3K27M loss of H3K27me3 creates epigenetic rationale; multiple DMG trials",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    },
+    {
+      "id": "ONC206",
+      "name": "ONC206",
+      "aliases": [],
+      "class": "Second-generation imipridone",
+      "company": "Chimerix / Oncobiologics",
+      "relevance": "Next-generation ONC201-related compound, potentially more potent",
+      "last_checked": "2026-10-21",
+      "latest_development": "TBD from baseline research",
+      "source_urls": []
+    }
+  ],
+  "investigators_and_labs": [
+    {
+      "name": "Dr. Michelle Monje",
+      "institution": "Stanford University",
+      "country": "USA",
+      "focus": "DMG biology, CAR-T, tumor microenvironment",
+      "why_watch": "Leading DMG researcher; GD2 CAR-T program"
+    },
+    {
+      "name": "Dr. Javad Nazarian",
+      "institution": "Children's National Medical Center / DKFZ",
+      "country": "USA/Germany",
+      "focus": "DMG molecular biology, H3K27M biology",
+      "why_watch": "DIPG/DMG molecular profiling leader"
+    },
+    {
+      "name": "Dr. Nada Jabado",
+      "institution": "McGill University / Montreal Children's Hospital",
+      "country": "Canada",
+      "focus": "Histone mutations in pediatric glioma",
+      "why_watch": "Discovered H3K27M significance in pediatric glioma"
+    },
+    {
+      "name": "Dr. Carl Koschmann",
+      "institution": "University of Michigan",
+      "country": "USA",
+      "focus": "DIPG/DMG molecular subtypes, clinical trials",
+      "why_watch": "Leading clinical researcher in DMG molecular subtypes"
+    },
+    {
+      "name": "Sheba Medical Center Neuro-Oncology",
+      "institution": "Sheba Medical Center, Tel Hashomer",
+      "country": "Israel",
+      "focus": "Patient's treating institution",
+      "why_watch": "Primary treating institution; key to trial access"
+    }
+  ],
+  "institutions_to_monitor": [
+    "Stanford Pediatric Brain Tumor Program",
+    "Dana-Farber/Boston Children's DIPG program",
+    "Children's National Medical Center DMG program",
+    "St. Jude Children's Research Hospital",
+    "MSK Pediatric Brain Tumor Service",
+    "CHOP (Children's Hospital of Philadelphia)",
+    "Hopp Children's Cancer Center / DKFZ Heidelberg",
+    "Princess Máxima Center Netherlands",
+    "Gustave Roussy Pediatric Oncology",
+    "Great Ormond Street Hospital",
+    "Sheba Medical Center Safra Children's Hospital"
+  ]
+}

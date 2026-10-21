@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>הילי הודיה — מעקב טיפולי עולמי</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg2: #181c27;
+    --bg3: #1e2335;
+    --border: #2a2f45;
+    --text: #e8eaf0;
+    --text2: #9aa0b8;
+    --text3: #6b7290;
+    --red: #ff4757;
+    --red-bg: rgba(255,71,87,0.12);
+    --orange: #ffa502;
+    --orange-bg: rgba(255,165,2,0.12);
+    --watch: #3742fa;
+    --watch-bg: rgba(55,66,250,0.12);
+    --green: #2ed573;
+    --green-bg: rgba(46,213,115,0.10);
+    --accent: #5e72eb;
+    --accent2: #8395f5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', 'Arial Hebrew', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a1f35 0%, #0f1117 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.01em;
+  }
+
+  .header-title span {
+    color: var(--accent2);
+  }
+
+  .header-meta {
+    font-size: 0.8rem;
+    color: var(--text3);
+    text-align: left;
+    direction: ltr;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .status-ok { background: var(--green-bg); color: var(--green); border: 1px solid rgba(46,213,115,0.3); }
+  .status-alert { background: var(--red-bg); color: var(--red); border: 1px solid rgba(255,71,87,0.3); }
+  .status-warn { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(255,165,2,0.3); }
+
+  /* Main */
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .stat-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+    color: var(--text3);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .stat-red .stat-num { color: var(--red); }
+  .stat-orange .stat-num { color: var(--orange); }
+  .stat-blue .stat-num { color: var(--accent2); }
+  .stat-green .stat-num { color: var(--green); }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
+    overflow-x: auto;
+  }
+
+  .tab {
+    padding: 8px 18px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid transparent;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text2);
+    background: transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+    position: relative;
+    bottom: -1px;
+  }
+
+  .tab:hover { background: var(--bg3); color: var(--text); }
+
+  .tab.active {
+    background: var(--bg2);
+    color: var(--text);
+    border-color: var(--border);
+    border-bottom-color: var(--bg2);
+    font-weight: 600;
+  }
+
+  .tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+
+  .tab-count-red { background: var(--red); color: white; }
+  .tab-count-orange { background: var(--orange); color: black; }
+  .tab-count-blue { background: var(--accent); color: white; }
+
+  /* Cards */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+
+  .card:hover { border-color: var(--accent); }
+
+  .card-red { border-right: 4px solid var(--red); }
+  .card-orange { border-right: 4px solid var(--orange); }
+  .card-watch { border-right: 4px solid var(--watch); }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .card-title-en {
+    font-size: 0.8rem;
+    color: var(--text3);
+    font-weight: 400;
+    margin-top: 2px;
+    direction: ltr;
+    display: block;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  .badge-red { background: var(--red-bg); color: var(--red); border: 1px solid rgba(255,71,87,0.4); }
+  .badge-orange { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(255,165,2,0.4); }
+  .badge-watch { background: var(--watch-bg); color: #7b8cf8; border: 1px solid rgba(55,66,250,0.4); }
+  .badge-level { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
+  .badge-score { background: rgba(94,114,235,0.15); color: var(--accent2); border: 1px solid rgba(94,114,235,0.3); }
+  .badge-recruiting { background: var(--green-bg); color: var(--green); border: 1px solid rgba(46,213,115,0.3); }
+  .badge-not-recruiting { background: rgba(150,150,150,0.1); color: var(--text3); border: 1px solid var(--border); }
+  .badge-watch-status { background: rgba(255,165,2,0.1); color: var(--orange); border: 1px solid rgba(255,165,2,0.3); }
+
+  .card-body { font-size: 0.88rem; }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+
+  .card-section-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text3);
+    margin-bottom: 4px;
+  }
+
+  .card-section-content {
+    color: var(--text2);
+  }
+
+  .bullets {
+    list-style: none;
+    padding: 0;
+  }
+
+  .bullets li {
+    padding: 2px 0 2px 12px;
+    position: relative;
+    color: var(--text2);
+  }
+
+  .bullets li::before {
+    content: '•';
+    position: absolute;
+    right: auto;
+    left: 0;
+    color: var(--accent2);
+  }
+
+  html[dir="rtl"] .bullets li {
+    padding: 2px 12px 2px 0;
+  }
+
+  html[dir="rtl"] .bullets li::before {
+    right: 0;
+    left: auto;
+  }
+
+  .action-box {
+    background: rgba(94,114,235,0.08);
+    border: 1px solid rgba(94,114,235,0.25);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+  }
+
+  .action-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent2);
+    margin-bottom: 4px;
+  }
+
+  .action-text {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .limitation-box {
+    background: rgba(255,71,87,0.05);
+    border: 1px solid rgba(255,71,87,0.15);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 8px;
+    font-size: 0.83rem;
+    color: var(--text2);
+  }
+
+  .limitation-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--red);
+    margin-bottom: 2px;
+  }
+
+  .card-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  .meta-item {}
+  .meta-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text3);
+    font-weight: 700;
+  }
+  .meta-value {
+    font-size: 0.8rem;
+    color: var(--text2);
+    direction: ltr;
+  }
+
+  .source-link {
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 0.78rem;
+    direction: ltr;
+  }
+
+  .source-link:hover { text-decoration: underline; }
+
+  details.tech-details {
+    margin-top: 12px;
+  }
+
+  details.tech-details summary {
+    cursor: pointer;
+    font-size: 0.78rem;
+    color: var(--text3);
+    user-select: none;
+    padding: 4px 0;
+  }
+
+  details.tech-details summary:hover { color: var(--text2); }
+
+  .tech-content {
+    margin-top: 8px;
+    padding: 12px;
+    background: var(--bg3);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: var(--text2);
+    direction: ltr;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text3);
+  }
+
+  .empty-state-icon { font-size: 3rem; margin-bottom: 16px; }
+  .empty-state-title { font-size: 1.1rem; font-weight: 600; color: var(--text2); margin-bottom: 8px; }
+
+  /* Profile panel */
+  .profile-panel {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .profile-panel.visible { display: block; }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .profile-item {}
+  .profile-label {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text3);
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .profile-value {
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+  .profile-value-en {
+    font-size: 0.8rem;
+    color: var(--text2);
+    direction: ltr;
+    display: block;
+  }
+
+  .toggle-profile-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text3);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+  }
+
+  .toggle-profile-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  /* Scan indicator */
+  .scan-info {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: var(--text3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-left: 6px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Disclaimer */
+  .disclaimer {
+    background: rgba(255,165,2,0.06);
+    border: 1px solid rgba(255,165,2,0.2);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 0.78rem;
+    color: var(--text3);
+    line-height: 1.5;
+  }
+
+  /* Filter */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filter-label {
+    font-size: 0.78rem;
+    color: var(--text3);
+  }
+
+  .filter-btn {
+    padding: 4px 12px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text3);
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--bg3);
+    color: var(--text);
+    border-color: var(--accent);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .header-inner { flex-direction: column; align-items: flex-start; }
+    .header-meta { text-align: right; direction: rtl; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .card-meta-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .section-header {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text3);
+    font-weight: 700;
+    margin: 24px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .no-change-banner {
+    background: var(--green-bg);
+    border: 1px solid rgba(46,213,115,0.3);
+    border-radius: 10px;
+    padding: 20px 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .no-change-banner .icon { font-size: 2rem; margin-bottom: 8px; }
+  .no-change-banner .text { color: var(--green); font-size: 1rem; font-weight: 600; }
+  .no-change-banner .sub { color: var(--text3); font-size: 0.82rem; margin-top: 4px; }
+
+  .hide-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text3);
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .hide-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+  .unhide-btn {
+    background: transparent;
+    border: 1px solid rgba(46,213,115,0.3);
+    color: var(--green);
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .unhide-btn:hover { background: var(--green-bg); }
+
+  .card.reviewed-card { opacity: 0.75; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div>
+      <div class="header-title"><span>הילי הודיה</span> — מעקב טיפולי עולמי</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div id="overall-status-badge" class="status-badge status-warn">⚠ נדרשת סקירה</div>
+      <button class="toggle-profile-btn" onclick="toggleProfile()">פרופיל מטופלת</button>
+      <div class="header-meta" id="scan-date-header">סריקה אחרונה: 21.10.2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- Patient profile panel (hidden by default) -->
+  <div class="profile-panel" id="profile-panel">
+    <div class="section-header" style="margin-top:0">פרופיל מטופלת — לשימוש פנימי בלבד</div>
+    <div class="profile-grid" id="profile-grid">
+      <div class="profile-item">
+        <div class="profile-label">שם</div>
+        <div class="profile-value">הילי הודיה שמואל</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">תאריך לידה</div>
+        <div class="profile-value">06.05.2022 (גיל 4)</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">אבחנה</div>
+        <div class="profile-value">Diffuse Midline Glioma</div>
+        <span class="profile-value-en">H3 K27-altered, EGFR-altered subtype · WHO Grade 4</span>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">מאפיינים מולקולריים</div>
+        <div class="profile-value">H3K27M · EGFR exon 20 insertion · TP53 ×3</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">מיקום גידול</div>
+        <div class="profile-value">תלמוס ימין (ראשי), גזע מוח, מיד-בריין דו-צדדי</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">הקרנה</div>
+        <div class="profile-value">54 Gy / 30 פרקציות (הושלמה)</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">Shunt</div>
+        <div class="profile-value">VP Shunt CERTAS (הוכנס 19.06.2026)</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">סטטוס נוכחי</div>
+        <div class="profile-value">אשפוז בית תחת שיבא — עדכן לפי מצב נוכחי</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">זיהום שant</div>
+        <div class="profile-value" style="color:var(--orange)">S. epidermidis — Vancomycin עד 26.07.2026 לפחות</div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">מוסד מטפל</div>
+        <div class="profile-value">ביה"ח שיבא — מח' המטו-אונקולוגיה ילדים</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scan info -->
+  <div class="scan-info">
+    <span><span class="pulse"></span> סריקת בסיס הושלמה: <strong>21 אוקטובר 2026</strong> | סריקה הבאה: 22.10.2026</span>
+    <span id="source-count" style="direction:ltr">מקורות שנבדקו: טוען...</span>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    ⚕️ <strong>הערה חשובה:</strong> מערכת זו מבצעת סינון מחקרי בלבד. אין לה ולא ניתן לה להחליף רופא מטפל. כל פריט "לפעולה" מיועד לדיון עם הצוות הרפואי של הילי בשיבא בלבד. אין לנקוט פעולה רפואית על סמך תוצאות המערכת ללא אישור רופא.
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-card stat-red">
+      <div class="stat-num" id="stat-red">0</div>
+      <div class="stat-label">🔴 דחוף / לסקירה מיידית</div>
+    </div>
+    <div class="stat-card stat-orange">
+      <div class="stat-num" id="stat-orange">0</div>
+      <div class="stat-label">🟠 חשוב / לסקירה בקרוב</div>
+    </div>
+    <div class="stat-card stat-blue">
+      <div class="stat-num" id="stat-watch">0</div>
+      <div class="stat-label">🔵 במעקב</div>
+    </div>
+    <div class="stat-card stat-green">
+      <div class="stat-num" id="stat-trials">0</div>
+      <div class="stat-label">ניסויים קליניים נבדקו</div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('new')" id="tab-new">
+      🆕 חדש
+      <span class="tab-count tab-count-red" id="tab-new-count" style="display:none">0</span>
+    </div>
+    <div class="tab" onclick="showTab('critical')" id="tab-critical">
+      🔴 דחוף / גבוה
+      <span class="tab-count tab-count-red" id="tab-critical-count" style="display:none">0</span>
+    </div>
+    <div class="tab" onclick="showTab('watch')" id="tab-watch">
+      🔵 במעקב
+      <span class="tab-count tab-count-blue" id="tab-watch-count" style="display:none">0</span>
+    </div>
+    <div class="tab" onclick="showTab('trials')" id="tab-trials">
+      🧪 ניסויים קליניים
+    </div>
+    <div class="tab" onclick="showTab('reviewed')" id="tab-reviewed">
+      ✓ נסקר
+    </div>
+  </div>
+
+  <!-- Tab Contents -->
+  <div id="content-new" class="tab-content active"></div>
+  <div id="content-critical" class="tab-content"></div>
+  <div id="content-watch" class="tab-content"></div>
+  <div id="content-trials" class="tab-content"></div>
+  <div id="content-reviewed" class="tab-content"></div>
+
+</div>
+
+<script>
+// ─── Dismiss / hide logic ────────────────────────────────────────────────────
+const DISMISSED_KEY = 'hili_dismissed_ids';
+let _allDevs = [];
+let _allTrials = [];
+
+function getDismissed() {
+  try { return JSON.parse(localStorage.getItem(DISMISSED_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveDismissed(ids) {
+  try { localStorage.setItem(DISMISSED_KEY, JSON.stringify(ids)); } catch(e) {}
+}
+
+function dismissItem(id, isTrialId) {
+  const ids = getDismissed();
+  if (!ids.includes(id)) ids.push(id);
+  saveDismissed(ids);
+  const prefix = isTrialId ? 'trial-' : 'item-';
+  const el = document.getElementById(prefix + id);
+  if (el) el.style.transition = 'opacity 0.3s'; el && (el.style.opacity = '0');
+  setTimeout(() => { if (el) el.style.display = 'none'; renderReviewedTab(); }, 300);
+}
+
+function undismissItem(id) {
+  saveDismissed(getDismissed().filter(x => x !== id));
+  location.reload();
+}
+
+function renderReviewedTab() {
+  const dismissed = getDismissed();
+  const dismissedDevs = _allDevs.filter(d => dismissed.includes(d.id));
+  const dismissedTrials = _allTrials.filter(t => dismissed.includes(t.nct_id));
+  const el = document.getElementById('content-reviewed');
+  if (!el) return;
+  if (dismissedDevs.length === 0 && dismissedTrials.length === 0) {
+    el.innerHTML = `<div class="empty-state"><div class="empty-state-icon">✓</div><div class="empty-state-title">אין פריטים שהוסתרו עדיין — לחץ "הסתר" על כרטיס להעביר אותו לכאן</div></div>`;
+    return;
+  }
+  let html = '';
+  if (dismissedDevs.length) {
+    html += `<div class="section-header">פיתוחים שהוסתרו (${dismissedDevs.length})</div>`;
+    html += dismissedDevs.map(d => buildCard(d, true)).join('');
+  }
+  if (dismissedTrials.length) {
+    html += `<div class="section-header">ניסויים שהוסתרו (${dismissedTrials.length})</div>`;
+    html += dismissedTrials.map(t => buildTrialCard(t, true)).join('');
+  }
+  el.innerHTML = html;
+}
+
+// ─── Data loading ───────────────────────────────────────────────────────────
+async function loadJSON(path) {
+  try {
+    const r = await fetch(path + '?t=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch(e) {
+    console.warn('Could not load', path, e);
+    return null;
+  }
+}
+
+// ─── Tab switching ────────────────────────────────────────────────────────
+function showTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.getElementById('content-' + tab).classList.add('active');
+}
+
+function toggleProfile() {
+  const p = document.getElementById('profile-panel');
+  p.classList.toggle('visible');
+}
+
+// ─── Priority badge ────────────────────────────────────────────────────────
+function priorityBadge(priority) {
+  if (!priority) return '';
+  const p = priority.toUpperCase();
+  if (p === 'RED' || p === 'CRITICAL') return '<span class="badge badge-red">🔴 דחוף</span>';
+  if (p === 'ORANGE' || p === 'HIGH') return '<span class="badge badge-orange">🟠 חשוב</span>';
+  if (p === 'WATCH') return '<span class="badge badge-watch">🔵 מעקב</span>';
+  return '';
+}
+
+function evidenceBadge(level) {
+  if (!level) return '';
+  return `<span class="badge badge-level">רמת עדות: ${level}</span>`;
+}
+
+function scoreBadge(score) {
+  if (score == null) return '';
+  let label = score >= 90 ? '🔴 ≥90' : score >= 75 ? '🟠 ≥75' : score >= 55 ? '🔵 ≥55' : `${score}`;
+  return `<span class="badge badge-score">התאמה: ${label}/100</span>`;
+}
+
+function accessBadge(access) {
+  if (!access) return '';
+  const a = access.toLowerCase();
+  if (a.includes('recruit')) return '<span class="badge badge-recruiting">מגייס</span>';
+  if (a.includes('expanded') || a.includes('compassion')) return '<span class="badge badge-watch-status">גישה מורחבת</span>';
+  return `<span class="badge badge-not-recruiting">${access}</span>`;
+}
+
+// ─── Card builder ─────────────────────────────────────────────────────────
+function buildCard(item, isReviewed) {
+  const priority = (item.priority || '').toUpperCase();
+  const cardClass = (priority === 'RED' || priority === 'CRITICAL' ? 'card-red'
+                  : priority === 'ORANGE' || priority === 'HIGH' ? 'card-orange'
+                  : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
+
+  const bullets = (item.why_matters_bullets || [])
+    .map(b => `<li>${b}</li>`).join('');
+
+  const limitationHtml = item.key_limitation
+    ? `<div class="limitation-box"><div class="limitation-label">מגבלה עיקרית</div>${item.key_limitation}</div>`
+    : '';
+
+  const actionHtml = item.action
+    ? `<div class="action-box"><div class="action-label">מה לעשות עכשיו?</div><div class="action-text">${item.action}</div></div>`
+    : '';
+
+  const sourceHtml = item.source_url
+    ? `<a class="source-link" href="${item.source_url}" target="_blank" rel="noopener">🔗 מקור ראשי</a>`
+    : (item.source_url_secondary ? `<a class="source-link" href="${item.source_url_secondary}" target="_blank" rel="noopener">🔗 מקור</a>` : '');
+
+  const techHtml = item.technical_details
+    ? `<details class="tech-details"><summary>+ פרטים טכניים / ניתוח זכאות</summary><div class="tech-content">${item.technical_details}</div></details>`
+    : '';
+
+  const hideBtn = isReviewed
+    ? `<button class="unhide-btn" onclick="undismissItem('${(item.id||'').replace(/'/g,"\\'")}')">↩ בטל הסתרה</button>`
+    : `<button class="hide-btn" onclick="dismissItem('${(item.id||'').replace(/'/g,"\\'")}', false)">הסתר</button>`;
+
+  return `
+  <div class="card ${cardClass}" id="item-${item.id || ''}">
+    <div class="card-header">
+      <div>
+        <div class="card-title">${item.title_he || item.title}</div>
+        ${item.title_en ? `<span class="card-title-en">${item.title_en}</span>` : ''}
+      </div>
+      <div class="badges" style="align-items:center">
+        ${priorityBadge(item.priority)}
+        ${evidenceBadge(item.evidence_level)}
+        ${scoreBadge(item.match_score)}
+        ${accessBadge(item.access)}
+        ${hideBtn}
+      </div>
+    </div>
+    <div class="card-body">
+      ${item.what_changed ? `<div class="card-section"><div class="card-section-title">מה השתנה / מה חדש</div><div class="card-section-content">${item.what_changed}</div></div>` : ''}
+      ${bullets ? `<div class="card-section"><div class="card-section-title">מדוע חשוב להילי</div><ul class="bullets">${bullets}</ul></div>` : ''}
+      ${limitationHtml}
+      ${actionHtml}
+      <div class="card-meta-grid">
+        ${item.location ? `<div class="meta-item"><div class="meta-label">מיקום</div><div class="meta-value">${item.location}</div></div>` : ''}
+        ${item.age_eligibility ? `<div class="meta-item"><div class="meta-label">גיל זכאות</div><div class="meta-value">${item.age_eligibility}</div></div>` : ''}
+        ${item.nct_id ? `<div class="meta-item"><div class="meta-label">NCT</div><div class="meta-value"><a class="source-link" href="https://clinicaltrials.gov/study/${item.nct_id}" target="_blank">${item.nct_id}</a></div></div>` : ''}
+        ${item.date_published ? `<div class="meta-item"><div class="meta-label">תאריך</div><div class="meta-value">${item.date_published}</div></div>` : ''}
+        ${item.date_detected ? `<div class="meta-item"><div class="meta-label">נגלה</div><div class="meta-value">${item.date_detected}</div></div>` : ''}
+        ${sourceHtml ? `<div class="meta-item"><div class="meta-label">מקור</div><div class="meta-value">${sourceHtml}</div></div>` : ''}
+      </div>
+      ${techHtml}
+    </div>
+  </div>`;
+}
+
+// ─── Render tab ────────────────────────────────────────────────────────────
+function renderItems(items, containerId, emptyMessage) {
+  const el = document.getElementById(containerId);
+  if (!items || items.length === 0) {
+    el.innerHTML = `<div class="empty-state">
+      <div class="empty-state-icon">✓</div>
+      <div class="empty-state-title">${emptyMessage}</div>
+    </div>`;
+    return;
+  }
+  el.innerHTML = items.map(item => buildCard(item)).join('');
+}
+
+// ─── Trial card builder ────────────────────────────────────────────────────
+function buildTrialCard(trial, isReviewed) {
+  const verdict = trial.eligibility_status || trial.eligibility_verdict || '';
+  const cat = trial.match_category || '';
+  const isLikely = cat === 'reasonable' || verdict.includes('LIKELY');
+  const isPossible = cat === 'possible' || verdict.includes('POSSIBLE');
+  const matchClass = (isLikely ? 'card-orange' : isPossible ? 'card-orange' : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
+
+  const title = trial.title_short_he || trial.title_he || trial.title || '';
+  const titleEn = trial.title_short_en || trial.title_en || '';
+  const actionText = trial.action_he || trial.action || '';
+  const ageMin = trial.age_min || trial.age_min_years || '';
+  const location = trial.location_he || trial.location_country || '';
+  const statusText = trial.status || trial.recruiting_status || '';
+  const matchScore = trial.match_score;
+
+  const timingAlert = trial.enrollment_timing_alert
+    ? `<div class="limitation-box"><div class="limitation-label">⏰ חלון זמן</div><div class="limitation-text">${trial.enrollment_timing_alert}</div></div>`
+    : '';
+
+  const inclusionHtml = (trial.key_inclusion || []).length
+    ? `<div class="card-section"><div class="card-section-title">קריטריוני הכללה מרכזיים</div>
+       <ul style="margin:4px 0 0 0;padding-right:16px;font-size:0.82rem;color:var(--text-secondary)">
+       ${(trial.key_inclusion || []).map(k => `<li>${k}</li>`).join('')}
+       </ul></div>` : '';
+
+  const exclusionCritical = trial.key_exclusion_critical
+    ? `<div class="limitation-box"><div class="limitation-label">חסימה קריטית</div><div class="limitation-text">${trial.key_exclusion_critical}</div></div>`
+    : '';
+
+  const gapsHtml = (trial.eligibility_gaps || []).length
+    ? `<div class="card-section"><div class="card-section-title">🔍 מידע חסר לקביעת זכאות</div>
+       <ul style="margin:4px 0 0 0;padding-right:16px;font-size:0.82rem;color:#f59e0b">
+       ${(trial.eligibility_gaps || []).map(g => `<li>${g}</li>`).join('')}
+       </ul></div>` : '';
+
+  const trialHideBtn = isReviewed
+    ? `<button class="unhide-btn" onclick="undismissItem('${(trial.nct_id||'').replace(/'/g,"\\'")}')">↩ בטל הסתרה</button>`
+    : `<button class="hide-btn" onclick="dismissItem('${(trial.nct_id||'').replace(/'/g,"\\'")}', true)">הסתר</button>`;
+
+  return `
+  <div class="card ${matchClass}" id="trial-${trial.nct_id}">
+    <div class="card-header">
+      <div>
+        <div class="card-title">${title}</div>
+        ${titleEn ? `<span class="card-title-en" style="font-size:0.78rem;color:var(--text-secondary)">${titleEn}</span>` : ''}
+      </div>
+      <div class="badges" style="align-items:center">
+        ${matchScore != null ? `<span class="badge badge-score" style="background:#1a2a1a;color:#4ade80">${matchScore}/100</span>` : ''}
+        ${accessBadge(statusText)}
+        ${trial.nct_id ? `<span class="badge badge-level">${trial.nct_id}</span>` : ''}
+        ${trialHideBtn}
+      </div>
+    </div>
+    <div class="card-body">
+      ${timingAlert}
+      ${exclusionCritical}
+      ${inclusionHtml}
+      ${gapsHtml}
+      ${actionText ? `<div class="action-box"><div class="action-label">מה לעשות עכשיו?</div><div class="action-text">${actionText}</div></div>` : ''}
+      <div class="card-meta-grid">
+        ${ageMin ? `<div class="meta-item"><div class="meta-label">גיל מינימלי</div><div class="meta-value">${ageMin}</div></div>` : ''}
+        ${location ? `<div class="meta-item"><div class="meta-label">מיקום</div><div class="meta-value">${location}</div></div>` : ''}
+        ${trial.phase ? `<div class="meta-item"><div class="meta-label">שלב</div><div class="meta-value">${trial.phase}</div></div>` : ''}
+        ${trial.nct_id ? `<div class="meta-item"><div class="meta-label">ClinicalTrials.gov</div><div class="meta-value"><a class="source-link" href="${trial.source_url || 'https://clinicaltrials.gov/study/'+trial.nct_id}" target="_blank">${trial.nct_id}</a></div></div>` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+
+// ─── Main init ─────────────────────────────────────────────────────────────
+async function init() {
+  const [devData, trialsData, stateData] = await Promise.all([
+    loadJSON('../data/developments.json'),
+    loadJSON('../data/trials.json'),
+    loadJSON('../data/research-state.json')
+  ]);
+
+  const devs = devData?.developments || [];
+  const trials = trialsData?.trials || [];
+  const state = stateData || {};
+
+  // Store globally for reviewed tab rendering
+  _allDevs = devs;
+  _allTrials = trials;
+
+  // Filter dismissed items from main tabs
+  const dismissed = getDismissed();
+
+  // Stats
+  const red = devs.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()) && !dismissed.includes(d.id));
+  const orange = devs.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()) && !dismissed.includes(d.id));
+  const watch = devs.filter(d => (d.priority||'').toUpperCase() === 'WATCH' && !dismissed.includes(d.id));
+  const newItems = devs.filter(d => d.is_new === true && !dismissed.includes(d.id));
+
+  document.getElementById('stat-red').textContent = red.length;
+  document.getElementById('stat-orange').textContent = orange.length;
+  document.getElementById('stat-watch').textContent = watch.length + trials.length;
+  document.getElementById('stat-trials').textContent = trials.length;
+
+  // Overall status badge
+  const badge = document.getElementById('overall-status-badge');
+  if (red.length > 0) {
+    badge.className = 'status-badge status-alert';
+    badge.textContent = `⚠ ${red.length} פריטים דורשים סקירה מיידית`;
+  } else if (orange.length > 0) {
+    badge.className = 'status-badge status-warn';
+    badge.textContent = `⚠ ${orange.length} פריטים לסקירה`;
+  } else if (devs.length === 0) {
+    badge.className = 'status-badge status-ok';
+    badge.textContent = '✓ ממתין לנתוני מחקר';
+  } else {
+    badge.className = 'status-badge status-ok';
+    badge.textContent = '✓ אין פיתוחים חדשים דחופים';
+  }
+
+  // Tab counts
+  const updateTabCount = (id, count) => {
+    const el = document.getElementById(id);
+    if (el && count > 0) { el.textContent = count; el.style.display = 'inline-flex'; }
+  };
+  updateTabCount('tab-new-count', newItems.length);
+  updateTabCount('tab-critical-count', red.length + orange.length);
+  updateTabCount('tab-watch-count', watch.length);
+
+  // Source count
+  const src = state.last_run_summary?.sources_checked || 0;
+  document.getElementById('source-count').textContent = src > 0 ? `מקורות שנבדקו: ${src}` : '';
+
+  // NEW tab
+  if (newItems.length > 0) {
+    renderItems(newItems, 'content-new', 'אין פיתוחים חדשים');
+  } else if (devs.length === 0) {
+    document.getElementById('content-new').innerHTML = `
+      <div class="no-change-banner">
+        <div class="icon">🔬</div>
+        <div class="text">סריקת בסיס בביצוע</div>
+        <div class="sub">נתוני המחקר יופיעו בקרוב</div>
+      </div>`;
+  } else {
+    document.getElementById('content-new').innerHTML = `
+      <div class="no-change-banner">
+        <div class="icon">✓</div>
+        <div class="text">אין פיתוחים חדשים מאז הסריקה הקודמת</div>
+        <div class="sub">המערכת תתריע כאשר יתגלה משהו חשוב</div>
+      </div>`;
+  }
+
+  // CRITICAL tab
+  const critItems = [...red, ...orange].sort((a, b) => (b.match_score || 0) - (a.match_score || 0));
+  renderItems(critItems, 'content-critical',
+    red.length === 0 && orange.length === 0 ? 'אין פיתוחים דחופים כרגע' : '');
+
+  // WATCH tab
+  renderItems(watch, 'content-watch', 'אין פריטים במעקב כרגע');
+
+  // TRIALS tab
+  const trialsEl = document.getElementById('content-trials');
+  if (trials.length === 0) {
+    trialsEl.innerHTML = `<div class="empty-state">
+      <div class="empty-state-icon">🧪</div>
+      <div class="empty-state-title">ניסויים קליניים יוצגו לאחר השלמת הסריקה</div>
+    </div>`;
+  } else {
+    const visTrials = trials.filter(t => !dismissed.includes(t.nct_id));
+    const cat = t => t.match_category || '';
+    const status = t => (t.eligibility_status || t.eligibility_verdict || '');
+    const likely = visTrials.filter(t => cat(t) === 'reasonable' || status(t).includes('LIKELY'));
+    const possible = visTrials.filter(t => !likely.includes(t) && (cat(t) === 'possible' || status(t).includes('POSSIBLE')));
+    const watch_t = visTrials.filter(t => !likely.includes(t) && !possible.includes(t) && (cat(t) === 'follow' || status(t).includes('WATCH')));
+    const not = visTrials.filter(t => !likely.includes(t) && !possible.includes(t) && !watch_t.includes(t) && (cat(t) === 'not_eligible' || status(t).includes('NOT')));
+
+    let html = '';
+    if (likely.length) {
+      html += `<div class="section-header">✅ התאמה סבירה (${likely.length})</div>`;
+      html += likely.map(t => buildTrialCard(t)).join('');
+    }
+    if (possible.length) {
+      html += `<div class="section-header">🔍 התאמה אפשרית — חסר מידע (${possible.length})</div>`;
+      html += possible.map(t => buildTrialCard(t)).join('');
+    }
+    if (watch_t.length) {
+      html += `<div class="section-header">👁 מעקב לעתיד (${watch_t.length})</div>`;
+      html += watch_t.map(t => buildTrialCard(t)).join('');
+    }
+    if (not.length) {
+      html += `<div class="section-header">✗ אינו מתאים כרגע (${not.length})</div>`;
+      html += not.map(t => buildTrialCard(t)).join('');
+    }
+    trialsEl.innerHTML = html;
+  }
+
+  // REVIEWED tab — shows dismissed/hidden items
+  renderReviewedTab();
+}
+
+init();
+</script>
+</body>
+</html>

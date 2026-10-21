@@ -1,0 +1,22 @@
+# Secrets and environment variables
+.env
+.env.*
+*.env
+
+# Medical source documents — must NOT be committed
+*.pdf
+*.doc
+*.docx
+reports/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Node modules (if scripts folder ever gets npm)
+node_modules/
+
+# Claude launch config (local dev only)
+.claude/
