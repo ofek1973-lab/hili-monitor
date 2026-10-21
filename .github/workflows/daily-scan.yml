@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic requests
+        run: pip install anthropic requests httpx
 
       - name: Run daily scan
         run: python scripts/daily_scan.py

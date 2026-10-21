@@ -6,8 +6,10 @@ Runs via GitHub Actions every day at 07:00 Israel time.
 import json
 import os
 import sys
+import time
 from datetime import date
 import anthropic
+import httpx
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRIALS_PATH = os.path.join(REPO_ROOT, "data", "trials.json")
@@ -146,13 +148,25 @@ def run_scan():
     )
 
     print(f"Starting daily scan for {today}...")
-    client = anthropic.Anthropic(api_key=api_key)
-
-    message = client.messages.create(
-        model="claude-opus-4-5",
-        max_tokens=4096,
-        messages=[{"role": "user", "content": prompt}],
+    client = anthropic.Anthropic(
+        api_key=api_key,
+        max_retries=3,
+        timeout=httpx.Timeout(120.0, connect=30.0),
     )
+
+    for attempt in range(3):
+        try:
+            message = client.messages.create(
+                model="claude-sonnet-4-5",
+                max_tokens=4096,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            break
+        except (anthropic.APIConnectionError, anthropic.APITimeoutError) as e:
+            if attempt == 2:
+                raise
+            print(f"Connection attempt {attempt + 1} failed: {e}. Retrying in 15s...")
+            time.sleep(15)
 
     raw = message.content[0].text.strip()
 
