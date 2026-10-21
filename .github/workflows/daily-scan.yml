@@ -1,0 +1,43 @@
+name: Hili — Daily Clinical Trial Scan
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 07:00 Israel time (UTC+3 summer / UTC+2 winter ~05:00)
+  workflow_dispatch:      # Manual trigger from GitHub website or phone
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Run daily scan
+        run: python scripts/daily_scan.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push if changes found
+        run: |
+          git config user.email "ofek1973@gmail.com"
+          git config user.name "ofek1973-lab"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes found — dashboard is up to date."
+          else
+            SUMMARY=$(python -c "import json,sys; d=json.load(open('data/research-state.json')); findings=d.get('last_run_summary',{}).get('key_findings',[]); print(findings[0][:60] if findings else 'no new findings')" 2>/dev/null || echo "daily update")
+            git commit -m "Daily scan $(date +%Y-%m-%d): $SUMMARY"
+            git push
+            echo "Dashboard updated and deployed."
+          fi
