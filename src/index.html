@@ -6,23 +6,23 @@
 <title>הילי הודיה — מעקב טיפולי עולמי</title>
 <style>
   :root {
-    --bg: #0f1117;
-    --bg2: #181c27;
-    --bg3: #1e2335;
-    --border: #2a2f45;
-    --text: #e8eaf0;
-    --text2: #9aa0b8;
-    --text3: #6b7290;
-    --red: #ff4757;
-    --red-bg: rgba(255,71,87,0.12);
-    --orange: #ffa502;
-    --orange-bg: rgba(255,165,2,0.12);
-    --watch: #3742fa;
-    --watch-bg: rgba(55,66,250,0.12);
-    --green: #2ed573;
-    --green-bg: rgba(46,213,115,0.10);
-    --accent: #5e72eb;
-    --accent2: #8395f5;
+    --bg: #f4f6fb;
+    --bg2: #ffffff;
+    --bg3: #edf0f7;
+    --border: #d8dde8;
+    --text: #1a1d2e;
+    --text2: #4a5272;
+    --text3: #8890aa;
+    --red: #d63031;
+    --red-bg: rgba(214,48,49,0.08);
+    --orange: #e67e22;
+    --orange-bg: rgba(230,126,34,0.10);
+    --watch: #2d3fd4;
+    --watch-bg: rgba(45,63,212,0.08);
+    --green: #27ae60;
+    --green-bg: rgba(39,174,96,0.10);
+    --accent: #4158d0;
+    --accent2: #3d52c4;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,7 +37,7 @@
 
   /* Header */
   .header {
-    background: linear-gradient(135deg, #1a1f35 0%, #0f1117 100%);
+    background: linear-gradient(135deg, #e8ecf8 0%, #f4f6fb 100%);
     border-bottom: 1px solid var(--border);
     padding: 20px 24px;
     position: sticky;
@@ -84,9 +84,9 @@
     font-weight: 600;
   }
 
-  .status-ok { background: var(--green-bg); color: var(--green); border: 1px solid rgba(46,213,115,0.3); }
-  .status-alert { background: var(--red-bg); color: var(--red); border: 1px solid rgba(255,71,87,0.3); }
-  .status-warn { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(255,165,2,0.3); }
+  .status-ok { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .status-alert { background: var(--red-bg); color: var(--red); border: 1px solid rgba(214,48,49,0.3); }
+  .status-warn { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
 
   /* Main */
   .main {
@@ -240,14 +240,14 @@
     white-space: nowrap;
   }
 
-  .badge-red { background: var(--red-bg); color: var(--red); border: 1px solid rgba(255,71,87,0.4); }
-  .badge-orange { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(255,165,2,0.4); }
-  .badge-watch { background: var(--watch-bg); color: #7b8cf8; border: 1px solid rgba(55,66,250,0.4); }
+  .badge-red { background: var(--red-bg); color: var(--red); border: 1px solid rgba(214,48,49,0.3); }
+  .badge-orange { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+  .badge-watch { background: var(--watch-bg); color: var(--watch); border: 1px solid rgba(45,63,212,0.3); }
   .badge-level { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
-  .badge-score { background: rgba(94,114,235,0.15); color: var(--accent2); border: 1px solid rgba(94,114,235,0.3); }
-  .badge-recruiting { background: var(--green-bg); color: var(--green); border: 1px solid rgba(46,213,115,0.3); }
-  .badge-not-recruiting { background: rgba(150,150,150,0.1); color: var(--text3); border: 1px solid var(--border); }
-  .badge-watch-status { background: rgba(255,165,2,0.1); color: var(--orange); border: 1px solid rgba(255,165,2,0.3); }
+  .badge-score { background: rgba(65,88,208,0.10); color: var(--accent); border: 1px solid rgba(65,88,208,0.25); }
+  .badge-recruiting { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .badge-not-recruiting { background: rgba(150,150,150,0.08); color: var(--text3); border: 1px solid var(--border); }
+  .badge-watch-status { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
 
   .card-body { font-size: 0.88rem; }
 
@@ -297,8 +297,8 @@
   }
 
   .action-box {
-    background: rgba(94,114,235,0.08);
-    border: 1px solid rgba(94,114,235,0.25);
+    background: rgba(65,88,208,0.06);
+    border: 1px solid rgba(65,88,208,0.20);
     border-radius: 8px;
     padding: 10px 14px;
     margin-top: 12px;
@@ -320,8 +320,8 @@
   }
 
   .limitation-box {
-    background: rgba(255,71,87,0.05);
-    border: 1px solid rgba(255,71,87,0.15);
+    background: rgba(214,48,49,0.05);
+    border: 1px solid rgba(214,48,49,0.15);
     border-radius: 8px;
     padding: 8px 12px;
     margin-top: 8px;
@@ -388,6 +388,7 @@
     margin-top: 8px;
     padding: 12px;
     background: var(--bg3);
+    border: 1px solid var(--border);
     border-radius: 8px;
     font-size: 0.8rem;
     color: var(--text2);
@@ -492,8 +493,8 @@
 
   /* Disclaimer */
   .disclaimer {
-    background: rgba(255,165,2,0.06);
-    border: 1px solid rgba(255,165,2,0.2);
+    background: rgba(230,126,34,0.06);
+    border: 1px solid rgba(230,126,34,0.2);
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -599,7 +600,7 @@
 
   .no-change-banner {
     background: var(--green-bg);
-    border: 1px solid rgba(46,213,115,0.3);
+    border: 1px solid rgba(39,174,96,0.3);
     border-radius: 10px;
     padding: 20px 24px;
     text-align: center;
