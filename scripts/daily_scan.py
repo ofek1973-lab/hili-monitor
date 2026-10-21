@@ -124,10 +124,11 @@ def save_json(path, data):
 
 
 def run_scan():
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not api_key:
         print("ERROR: ANTHROPIC_API_KEY not set")
         sys.exit(1)
+    print(f"Key length: {len(api_key)}, prefix: {api_key[:12]}")
 
     trials = load_json(TRIALS_PATH)
     developments = load_json(DEVELOPMENTS_PATH)
@@ -161,10 +162,12 @@ def run_scan():
                 messages=[{"role": "user", "content": prompt}],
             )
             break
-        except (anthropic.APIConnectionError, anthropic.APITimeoutError) as e:
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed: {type(e).__name__}: {e}")
+            import traceback; traceback.print_exc()
             if attempt == 2:
                 raise
-            print(f"Connection attempt {attempt + 1} failed: {e}. Retrying in 15s...")
+            print(f"Retrying in 15s...")
             time.sleep(15)
 
     raw = message.content[0].text.strip()
