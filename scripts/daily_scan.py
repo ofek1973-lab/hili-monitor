@@ -9,7 +9,6 @@ import sys
 import time
 from datetime import date
 import anthropic
-import httpx
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRIALS_PATH = os.path.join(REPO_ROOT, "data", "trials.json")
@@ -151,7 +150,7 @@ def run_scan():
     client = anthropic.Anthropic(
         api_key=api_key,
         max_retries=3,
-        timeout=httpx.Timeout(120.0, connect=30.0),
+        timeout=120.0,
     )
 
     for attempt in range(3):
