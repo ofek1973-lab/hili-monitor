@@ -533,12 +533,54 @@
     border-color: var(--accent);
   }
 
-  /* Responsive */
-  @media (max-width: 600px) {
-    .header-inner { flex-direction: column; align-items: flex-start; }
-    .header-meta { text-align: right; direction: rtl; }
+  /* Responsive — mobile */
+  @media (max-width: 768px) {
+    .main { padding: 16px 12px; }
+
+    .header { padding: 14px 14px; }
+    .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .header-title { font-size: 1.1rem; }
+    .header-meta { text-align: right; direction: rtl; font-size: 0.75rem; }
+
+    .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 20px; }
+    .stat-card { padding: 10px 12px; }
+    .stat-num { font-size: 1.7rem; }
+
+    .tabs { gap: 2px; -webkit-overflow-scrolling: touch; padding-bottom: 0; }
+    .tab { padding: 8px 12px; font-size: 0.82rem; }
+
+    .card { padding: 14px 14px; }
+    .card-title { font-size: 0.97rem; min-width: 0; }
+    .card-title-en { font-size: 0.75rem; }
+    .card-header { gap: 8px; margin-bottom: 10px; }
+    .card-body { font-size: 0.84rem; }
+    .card-meta-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+
+    .badges { gap: 4px; }
+    .badge { padding: 3px 8px; font-size: 0.68rem; }
+
+    .hide-btn, .unhide-btn { padding: 6px 12px; font-size: 0.78rem; min-height: 34px; }
+
+    .filter-bar { gap: 6px; }
+    .filter-btn { padding: 6px 12px; font-size: 0.78rem; min-height: 34px; }
+
+    .profile-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .scan-info { flex-direction: column; align-items: flex-start; font-size: 0.78rem; }
+
+    .action-box { padding: 10px 12px; font-size: 0.82rem; }
+
+    .tech-content { font-size: 0.76rem; }
+    .no-change-banner { padding: 16px; }
+  }
+
+  @media (max-width: 420px) {
+    .header-title { font-size: 1rem; }
     .stats-bar { grid-template-columns: repeat(2, 1fr); }
-    .card-meta-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-num { font-size: 1.5rem; }
+    .profile-grid { grid-template-columns: 1fr; }
+    .tab { padding: 7px 10px; font-size: 0.78rem; }
+    .card { padding: 12px; }
   }
 
   .tab-content { display: none; }
