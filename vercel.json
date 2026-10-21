@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": false,
   "rewrites": [
     { "source": "/", "destination": "/src/index.html" },
     { "source": "/data/:path*", "destination": "/data/:path*" }
