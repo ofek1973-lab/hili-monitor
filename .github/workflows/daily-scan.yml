@@ -23,6 +23,21 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic requests httpx
 
+      - name: Test connectivity
+        run: |
+          echo "Testing network..."
+          curl -s -o /dev/null -w "api.anthropic.com HTTP status: %{http_code}\n" https://api.anthropic.com || echo "curl failed"
+          python -c "import anthropic; print('anthropic version:', anthropic.__version__)"
+          python -c "
+          import os, anthropic
+          key = os.environ.get('ANTHROPIC_API_KEY','')
+          print('Key present:', bool(key))
+          print('Key length:', len(key))
+          print('Key prefix:', key[:10] if key else 'EMPTY')
+          "
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Run daily scan
         run: python scripts/daily_scan.py
         env:
