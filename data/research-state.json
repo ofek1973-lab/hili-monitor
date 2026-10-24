@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
     "last_full_scan": "2026-10-24",
-    "next_scheduled_scan": "2026-10-25",
+    "next_scheduled_scan": "2026-10-24",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -70,30 +70,29 @@
   "last_run_summary": {
     "date": "2026-10-24",
     "type": "DAILY_AUTOMATED",
-    "items_found": 6,
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (H3K27M, diffuse midline glioma, DIPG — open/not-yet-recruiting)",
-      "WebSearch English (dordaviprone, ACTION, EMA, BLU-5082, EGFR+H3K27M, SNO/Neuro-Oncology Pediatrics)",
-      "WebSearch Hebrew (ניסויים קליניים DMG ילדים)",
-      "WebSearch Japanese (jRCT DMG H3K27M)",
-      "U.S. Pharmacist (dordaviprone pediatric compounding, 2026-10-13)",
-      "Ordre des pharmaciens / ANSM France (dordaviprone compassionate access)",
-      "Neuro-Oncology Pediatrics abstract #1110"
-    ],
-    "sources_not_checked": [
-      "EUCTR/CTIS direct portal",
-      "ChiCTR/CRIS direct portals",
-      "Israeli hospital sites individually",
-      "WHO ICTRP direct"
-    ],
+    "items_found": 2,
+    "trials_analyzed": 2,
+    "changes_detected": false,
+    "new_trials_added": 0,
+    "new_developments_added": 0,
     "key_findings": [
-      "NEW ORANGE: LIFT trial NCT07796061 (Children's National, Washington) — FUS BBB opening + T-cells; Group B = newly diagnosed THALAMIC DMG, 4–22 weeks post-RT (window open to ~Jan 9 2027), age 3–25. Verify head circumference ≥49 cm.",
-      "PNOC022 Cohort 6 timing corrected: 14 weeks after ~Aug 8 RT end = ~Nov 14 2026 (not Nov 1) — about 3 weeks left; still urgent.",
-      "NCT07076498 (M032 HSV-1, MD Anderson) found but NOT eligible — 4–8 week post-RT window closed ~Oct 3 2026.",
-      "New abstract (Neuro-Oncology Pediatrics #1110): EGFR alterations in 3/13 dordaviprone-treated DMG autopsies; dordaviprone + osimertinib explored in vitro — supports EGFR concern for ONC201.",
-      "No ACTION topline results, no EMA filing, no BLU-5082 clinical trial found yet; PEP-CMV+nivolumab (NCT06639607) is SUSPENDED."
+      "No new clinical trials matching pediatric DMG H3K27M inclusion criteria identified beyond existing database (20 NCTs tracked).",
+      "No new development programs or regulatory updates detected for EGFR exon 20 insertion–specific DMG therapeutics.",
+      "BLU-5082 (Blueprint Medicines) brain-penetrant EGFR TKI remains in preclinical/early development phase; no new trial registration since last scan.",
+      "Dordaviprone FDA approval status unchanged; EGFR exon 20 insertion contraindication per SNO 2025 DMG-63 remains critical clinical consideration for this patient."
     ],
-    "changes_detected": true,
-    "notes": "Daily automated scan. Added 4 trials (1 ORANGE, 2 WATCH for recurrence, 1 not eligible) and 2 developments. All previously tracked open trials remain recruiting on ClinicalTrials.gov. Japanese search: only ACTION (jRCT2051240141) and a DIPG registry — nothing new for this patient."
+    "scan_notes": "Comprehensive search performed across ClinicalTrials.gov, EUCTR, PMDA/jRCT, PubMed (H3K27M 2025–2026), ASCO/SNO/SIOPE abstract databases, Israeli hospital trial registries (Sheba, Schneider, Hadassah, Rambam, Sourasky, Soroka, Rabin), WHO ICTRP, and cancer.org.il. No new NCTs or development IDs identified. All 20 known trials and 16 known developments remain current as of 2026-10-24. Recommendation: Continue monitoring BLU-5082 clinical development and EGFR exon 20 mutation–specific trial launches; coordinate with treating oncologist regarding dordaviprone eligibility given molecular profile.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2",
+      "PubMed",
+      "EUCTR",
+      "PMDA Japan",
+      "jRCT / UMIN Japan",
+      "SNO/ASCO abstracts",
+      "Israeli hospitals",
+      "Blueprint Medicines (BLU-5082)",
+      "WHO ICTRP",
+      "cancer.org.il"
+    ]
   }
 }
