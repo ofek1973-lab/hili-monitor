@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-21",
+    "last_updated": "2026-10-24",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -22,10 +22,17 @@
       "age_eligible": true,
       "location_he": "ישראל — שיבא תל השומר + שערי צדק ירושלים",
       "location_en": "Israel — Sheba Medical Center (Ramat Gan) + Shaare Zedek (Jerusalem)",
-      "international_sites": ["USA", "Australia", "Israel", "Netherlands", "New Zealand", "Switzerland"],
+      "international_sites": [
+        "USA",
+        "Australia",
+        "Israel",
+        "Netherlands",
+        "New Zealand",
+        "Switzerland"
+      ],
       "nct_url": "https://clinicaltrials.gov/study/NCT05009992",
       "relevant_cohort": "Cohort 6 — Newly diagnosed thalamic OR pontine DMG, post-RT",
-      "enrollment_window_note": "⚠️ דחוף: Cohort 6 פתוח 4–14 שבועות לאחר סיום הקרנה. אם ה-RT הסתיים ~8 אוגוסט 2026, החלון נסגר בסביבות 1 נובמבר 2026 — כ-10 ימים מהיום. יש לפנות מיידית.",
+      "enrollment_window_note": "⚠️ דחוף: Cohort 6 פתוח 4–14 שבועות לאחר סיום הקרנה. אם ה-RT הסתיים ~8 אוגוסט 2026, 14 שבועות = ~14 נובמבר 2026 (תיקון חישוב בסריקת 24.10 — בעבר נכתב ~1 נובמבר). נותרו כ-3 שבועות. יש לאמת תאריך סיום RT מדויק ולפנות מיידית.",
       "key_inclusion": [
         "גיל 2–39 — הילי (4) עומדת בדרישה",
         "DMG H3K27-altered (Cohort 4/6) — הילי עומדת בדרישה",
@@ -458,6 +465,118 @@
       "source_url": "https://clinicaltrials.gov/study/NCT07501156",
       "is_new": true,
       "date_detected": "2026-10-21"
+    },
+    {
+      "nct_id": "NCT07796061",
+      "title_short_he": "LIFT — אולטרסאונד ממוקד לפתיחת מחסום דם-מוח + עירוי תאי T — DMG תלמי חדש (Group B)",
+      "title_short_en": "LIFT: Exablate LIFU BBB opening + T-cell infusion, newly diagnosed DMG (thalamic Group B)",
+      "phase": "Phase I",
+      "sponsor": "Children's National Research Institute",
+      "status": "Recruiting",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "match_score": 70,
+      "age_min": 3,
+      "age_max": 25,
+      "age_eligible": true,
+      "location_he": "ארה\"ב — Children's National Hospital, וושינגטון",
+      "location_en": "USA — Children's National Hospital, Washington D.C.",
+      "international_sites": [
+        "USA"
+      ],
+      "nct_url": "https://clinicaltrials.gov/study/NCT07796061",
+      "relevant_cohort": "Group B — DMG תלמי מאובחן לאחרונה לאחר סיום הקרנה (נדרשת אבחנה רקמתית)",
+      "enrollment_window_note": "חלון: דגימת הדם הראשונה (procurement) 4–22 שבועות לאחר סיום RT ב-Group B. אם RT הסתיים ~8.8.2026 — החלון פתוח עד ~9 ינואר 2027. ניסוי חדש (נרשם 31.8.2026, התחלה אוקטובר 2026).",
+      "key_inclusion": [
+        "גיל 3–25 — הילי (4.5) עומדת",
+        "DMG תלמי מאובחן לאחרונה אחרי RT — מתאים (Group B)",
+        "הרחבה מחוץ לתלמוס מותרת אם הנוירוכירורג מאשר LIFU",
+        "Lansky ≥60",
+        "היקף ראש ≥49 ס\"מ — יש לאמת",
+        "ANC ≥750, ALC >500, טסיות ≥75K",
+        "סטרואידים: יציב/יורד ויכולת להפחית ל-≤0.4 מ\"ג/מ\"ר/יום"
+      ],
+      "key_exclusion": [
+        "⚠️ יש לבדוק את רשימת אי-ההכללה המלאה (shunt מתכתי, לחץ תוך-גולגלתי וכו')",
+        "⚠️ ייתכן שאין להשתתף במקביל בניסוי אחר (PNOC022/ACTION)"
+      ],
+      "eligibility_verdict": "POSSIBLE MATCH — INFORMATION MISSING",
+      "eligibility_gaps": [
+        "היקף ראש נוכחי (דרישה ≥49 ס\"מ)",
+        "האם יש shunt ומאיזה סוג",
+        "מינון סטרואידים נוכחי",
+        "האם הרחבה לגזע המוח מאפשרת LIFU לפי נוירוכירורג"
+      ],
+      "action_he": "לשאול את הצוות המטפל לגבי הפניה ל-Children's National (וושינגטון). ניסוי חדש שמקבל במפורש DMG תלמי עם חלון זמן רחב (עד ~9.1.2027). לשקול מול PNOC022 — ככל הנראה לא ניתן לשלב.",
+      "contact": "Children's National Hospital — Brain Tumor Institute",
+      "source_url": "https://clinicaltrials.gov/study/NCT07796061",
+      "date_detected": "2026-10-24"
+    },
+    {
+      "nct_id": "NCT07076498",
+      "title_short_he": "M032 — וירוס HSV-1 מהונדס אחרי הקרנה — MD Anderson — חלון הזמן חלף",
+      "title_short_en": "Engineered HSV-1 M032 after SOC RT in newly diagnosed DMG (MD Anderson) — timing window passed",
+      "phase": "Phase I",
+      "sponsor": "M.D. Anderson Cancer Center",
+      "status": "Recruiting",
+      "match_category": "not_eligible",
+      "priority": "NOT_APPLICABLE",
+      "match_score": 25,
+      "age_min": 3,
+      "age_max": null,
+      "age_eligible": true,
+      "location_he": "ארה\"ב — MD Anderson, יוסטון",
+      "location_en": "USA — MD Anderson Cancer Center, Houston",
+      "nct_url": "https://clinicaltrials.gov/study/NCT07076498",
+      "key_exclusion_critical": "נדרש סיום RT לפני 4–8 שבועות בלבד (כולל ניתוח ומתן M032 תוך 8 שבועות). אם RT הסתיים ~8.8.2026 — החלון נסגר ~3.10.2026.",
+      "eligibility_verdict": "NOT ELIGIBLE — post-RT timing window (4–8 weeks) passed",
+      "action_he": "אין פעולה. מתועד לצורך מעקב בלבד.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07076498",
+      "date_detected": "2026-10-24"
+    },
+    {
+      "nct_id": "NCT05762419",
+      "title_short_he": "FUS + אטופוסיד — DMG פונטיני/תלמי בהתקדמות — קולומביה",
+      "title_short_en": "Focused ultrasound + etoposide for progressive DMG (Columbia)",
+      "phase": "Phase I",
+      "sponsor": "Columbia University",
+      "status": "Recruiting",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "match_score": 40,
+      "age_min": 4,
+      "age_max": 21,
+      "age_eligible": true,
+      "location_he": "ארה\"ב — Columbia, ניו יורק",
+      "location_en": "USA — Columbia University Irving Medical Center, New York",
+      "nct_url": "https://clinicaltrials.gov/study/NCT05762419",
+      "relevant_cohort": "DMG פונטיני או תלמי עם H3K27M — דורש התקדמות מחלה",
+      "eligibility_verdict": "FOR RECURRENCE ONLY — requires clinical/radiographic progression",
+      "action_he": "אפשרות למקרה של התקדמות. לשמור במעקב.",
+      "source_url": "https://clinicaltrials.gov/study/NCT05762419",
+      "date_detected": "2026-10-24"
+    },
+    {
+      "nct_id": "NCT07664176",
+      "title_short_he": "NgFUS NIVO — אולטרסאונד ממוקד + ניבולומאב — DMG גזע מוח בהישנות",
+      "title_short_en": "NgFUS NIVO: neuronavigation-guided FUS + nivolumab, relapsed/progressive brainstem DMG",
+      "phase": "Phase I",
+      "sponsor": "Children's National Research Institute",
+      "status": "Recruiting",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "match_score": 35,
+      "age_min": 3,
+      "age_max": 25,
+      "age_eligible": true,
+      "location_he": "ארה\"ב — Children's National, וושינגטון",
+      "location_en": "USA — Children's National Hospital, Washington D.C.",
+      "nct_url": "https://clinicaltrials.gov/study/NCT07664176",
+      "relevant_cohort": "Group A — DMG גזע מוח בהישנות/התקדמות",
+      "eligibility_verdict": "FOR RECURRENCE ONLY — Group A requires brainstem DMG; thalamic-primary eligibility unclear",
+      "action_he": "אפשרות למקרה של התקדמות. לברר אם גידול תלמי עם מעורבות גזע מוח מתאים ל-Group A.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07664176",
+      "date_detected": "2026-10-24"
     }
   ]
 }

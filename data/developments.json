@@ -1,9 +1,9 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-21",
+    "last_updated": "2026-10-24",
     "schema_version": "1.0",
-    "baseline_run": true
+    "baseline_run": false
   },
   "developments": [
     {
@@ -368,6 +368,62 @@
       "last_verified": "2026-10-21",
       "source_url": "https://academic.oup.com/neuro-oncology/article/27/Supplement_5/v364/8319123",
       "technical_details": "BLU5082 (Blueprint Medicines): EGFR TKI designed to penetrate BBB (brain-blood barrier). Preclinical data presented at SNO 2025 Annual Meeting. IC50 <0.2 µM against EGFR exon 20 insertion variants (including 767delins). Eradicated xenograft tumors at 50 mg/kg in mouse models of EGFR exon 20-mutant DMG. Different from BDTX-1535 (also Blueprint Medicines) which is adults-only and in clinical trial NCT06072586. Key question for this patient: identify the specific EGFR exon 20 insertion variant (p.V769_D770insAIV vs p.H773dup vs other) — different variants have different TKI sensitivities. Amivantamab (anti-EGFR/anti-MET bispecific, J&J Rybrevant) was used in one case report for bithalamic glioma after osimertinib failure (PMC11641422, 2024)."
+    },
+    {
+      "id": "LIFT-THALAMIC-NCT07796061",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "ניסוי חדש LIFT (Children's National) — מקבל DMG תלמי עד 22 שבועות אחרי הקרנה",
+      "title_en": "New LIFT trial (Children's National) accepts newly diagnosed thalamic DMG up to 22 weeks post-RT",
+      "nct_id": "NCT07796061",
+      "what_changed": "ניסוי פאזה 1 חדש (נרשם ב-31.8.2026, גיוס החל באוקטובר 2026): פתיחת מחסום דם-מוח באולטרסאונד ממוקד (Exablate LIFU) בשילוב עירוי תאי T. Group B מיועד ל-DMG תלמי חדש לאחר הקרנה, עם חלון של 4–22 שבועות מסיום ה-RT.",
+      "why_matters_bullets": [
+        "אחד הניסויים הבודדים שמקבלים במפורש DMG תלמי",
+        "החלון (עד ~9.1.2027) עדיין פתוח עבור הילי",
+        "גיל 3–25 — הילי עומדת",
+        "לא תלוי ב-ONC201 — רלוונטי בשל מוטציית EGFR exon 20"
+      ],
+      "key_limitation": "פאזה 1, אתר יחיד בארה\"ב (וושינגטון). דרישת היקף ראש ≥49 ס\"מ. כנראה לא ניתן לשלב עם PNOC022/ACTION.",
+      "action": "להעלות מול הצוות המטפל כחלופה/השלמה ל-PNOC022. לאמת היקף ראש, סוג shunt ומינון סטרואידים.",
+      "evidence_level": "D",
+      "match_score": 70,
+      "access": "Open clinical trial — Recruiting",
+      "location": "USA — Washington D.C.",
+      "age_eligibility": "3–25 — כשירה",
+      "date_published": "2026-08-31 (ClinicalTrials.gov first posted)",
+      "date_detected": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "source_url": "https://clinicaltrials.gov/study/NCT07796061",
+      "technical_details": "Exablate MR-guided low-intensity focused ultrasound with microbubbles for BBB disruption, combined with T-cell infusion. Group A: pontine DMG (4–14 wk post-RT); Group B: thalamic DMG, tissue diagnosis required (4–22 wk post-RT). Enrollment target 45.",
+      "eligibility_status": "POSSIBLE",
+      "eligibility_notes": "Head circumference ≥49 cm; Lansky ≥60; steroids weanable to ≤0.4 mg/m²/day."
+    },
+    {
+      "id": "EGFR-DORDAVIPRONE-AUTOPSY-OSIMERTINIB",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "מחקר אוטופסיות: מוטציות EGFR ב-23% מגידולי DMG שטופלו בדורדביפרון; נבחן שילוב עם אוסימרטיניב",
+      "title_en": "Autopsy study: EGFR alterations in 23% of dordaviprone-treated DMGs; dordaviprone + osimertinib combination explored",
+      "what_changed": "תקציר חדש ב-Neuro-Oncology Pediatrics (Subramaniam, Koschmann, Mueller, Nazarian, Waszak ואחרים; ID #1110): פרופיל גנומי של 25 נתיחות DMG. מוטציות/הגברות EGFR נמצאו ב-3/13 גידולים שטופלו בדורדביפרון ולא בקבוצת ההשוואה. נבחן בתרביות שילוב דורדביפרון + אוסימרטיניב (מעכב EGFR).",
+      "why_matters_bullets": [
+        "מחזק את הקשר בין EGFR לתגובה חלשה ל-ONC201 — רלוונטי ישירות להילי",
+        "מצביע על כיוון של שילוב ONC201 + מעכב EGFR",
+        "החוקרים מציינים שהעמידות כנראה לא-גנטית — עדיין מוקדם"
+      ],
+      "key_limitation": "נתונים פרה-קליניים/תצפיתיים, מספרים קטנים. התקציר לא מדווח אם השילוב שיפר הרג תאים. אוסימרטיניב בדרך כלל פחות פעיל מול EGFR exon 20 insertion.",
+      "action": "להעביר לוועדה מולקולרית/לאונקולוג כרקע לדיון על שילוב ONC201 עם מעכב EGFR חודר-מוח.",
+      "evidence_level": "E",
+      "match_score": 38,
+      "access": "Research only",
+      "location": "USA (multi-institutional)",
+      "age_eligibility": "לא רלוונטי",
+      "date_published": "2026 (Neuro-Oncology Pediatrics supplement, DOI 10.1093/neuped/wuag026.499)",
+      "date_detected": "2026-10-24",
+      "last_verified": "2026-10-24",
+      "source_url": "https://doi.org/10.1093/neuped/wuag026.499",
+      "technical_details": "Exome, lcWGS and mRNA-seq on multifocal autopsy samples (pons, thalamus) from 25 patients (13 dordaviprone-treated). Chromosomal instability associated with TP53 mutation, not dordaviprone. Reduced myeloid TME. In vitro: mitochondrial UPR activation with dordaviprone; rapid adaptive responses to osimertinib.",
+      "eligibility_status": "N/A",
+      "eligibility_notes": "Abstract discusses both EGFR alterations and TP53-associated instability."
     }
   ]
 }

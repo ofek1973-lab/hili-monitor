@@ -1,9 +1,9 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-21",
-    "next_scheduled_scan": "2026-10-22",
-    "scan_type": "BASELINE"
+    "last_full_scan": "2026-10-24",
+    "next_scheduled_scan": "2026-10-25",
+    "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
     "NCT05009992",
@@ -21,7 +21,11 @@
     "NCT04732065",
     "NCT04808245",
     "NCT06838676",
-    "NCT07501156"
+    "NCT07501156",
+    "NCT07796061",
+    "NCT07076498",
+    "NCT05762419",
+    "NCT07664176"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -37,7 +41,9 @@
     "RHENIUM-CED-NCT07061626",
     "ONC201-ISRAEL-ACCESS-PATHWAYS",
     "GD2-CART01-BAMBINO-GESU-ITALY",
-    "BLU5082-EGFR-PRECLINICAL"
+    "BLU5082-EGFR-PRECLINICAL",
+    "LIFT-THALAMIC-NCT07796061",
+    "EGFR-DORDAVIPRONE-AUTOPSY-OSIMERTINIB"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -51,61 +57,43 @@
     "NCT05544526": "Recruiting — NOT ELIGIBLE (thalamic exclusion confirmed)",
     "NCT05298995": "Recruiting — Arm C: thalamic DMG (for recurrence)",
     "NCT05843253": "Recruiting",
-    "NCT07584499": "Recruiting (est. 2026-05-30) — for recurrence only",
+    "NCT07584499": "Recruiting (verified 2026-10-24) — for recurrence only",
     "NCT04732065": "Recruiting",
-    "NCT04808245": "Active, not recruiting (adults only)",
+    "NCT04808245": "Active, not recruiting (adults only; verified 2026-10-24)",
     "NCT06838676": "Recruiting — SickKids Toronto (new 2026)",
-    "NCT07501156": "Not yet recruiting (estimated 2027, China)"
+    "NCT07501156": "Not yet recruiting (estimated 2027, China)",
+    "NCT07796061": "Recruiting — Group B thalamic DMG, window 4–22 wk post-RT (~until 2027-01-09)",
+    "NCT07076498": "Recruiting — NOT ELIGIBLE (4–8 wk post-RT window passed ~2026-10-03)",
+    "NCT05762419": "Recruiting — for progression only",
+    "NCT07664176": "Recruiting — for relapse/progression only"
   },
   "last_run_summary": {
-    "date": "2026-10-21",
-    "type": "MULTILINGUAL_EXTENDED",
-    "items_found": 14,
-    "items_red": 1,
-    "items_orange": 5,
-    "items_watch": 8,
-    "trials_analyzed": 14,
-    "trials_reasonable_match": 1,
-    "trials_possible_match": 5,
-    "trials_follow_watch": 7,
-    "trials_not_eligible": 1,
+    "date": "2026-10-24",
+    "type": "DAILY_AUTOMATED",
+    "items_found": 6,
     "sources_checked": [
-      "ClinicalTrials.gov API v2",
-      "PubMed (English + Japanese)",
-      "WebSearch (English, Hebrew, German, French, Japanese)",
-      "jRCT (Japan Registry of Clinical Trials) — SSL blocked, web search used",
-      "UMIN-CTR (Japan) — web search used",
-      "ANZCTR (Australia/New Zealand)",
-      "CRIS (Korea) — blocked, web search used",
-      "ChiCTR (China) — blocked, web search used",
-      "KEGG Drug (Japan drug approvals)",
-      "PMDA (Japan regulatory)",
-      "cancer.org.il (Israel Cancer Association — trial listings)",
-      "TGA.gov.au (Australia)",
-      "Neuro-Oncology Pediatrics SNO 2025 abstracts",
-      "Blueprint Medicines (BLU5082)",
-      "Bambino Gesù Ospedale Pediatrico Rome",
-      "AJMC.com",
-      "Jazz Pharmaceuticals press release",
-      "Neuro-Oncology journal",
-      "Nature",
-      "Gustave Roussy"
+      "ClinicalTrials.gov API v2 (H3K27M, diffuse midline glioma, DIPG — open/not-yet-recruiting)",
+      "WebSearch English (dordaviprone, ACTION, EMA, BLU-5082, EGFR+H3K27M, SNO/Neuro-Oncology Pediatrics)",
+      "WebSearch Hebrew (ניסויים קליניים DMG ילדים)",
+      "WebSearch Japanese (jRCT DMG H3K27M)",
+      "U.S. Pharmacist (dordaviprone pediatric compounding, 2026-10-13)",
+      "Ordre des pharmaciens / ANSM France (dordaviprone compassionate access)",
+      "Neuro-Oncology Pediatrics abstract #1110"
     ],
-    "sources_failed": ["jRCT portal (SSL)", "CRIS portal", "ChiCTR portal"],
-    "critical_timing_alert": "PNOC022 Cohort 6 window (4-14 weeks post-RT) closes approximately November 1, 2026 — approximately 10 days from this run. IMMEDIATE ACTION REQUIRED.",
-    "critical_molecular_alert": "EGFR exon 20 insertion confers ONC201 resistance in H3K27M DMG (SNO Pediatrics 2025, abstract DMG-63). Before enrolling in ACTION trial or accessing dordaviprone, consult investigators regarding whether EGFR status changes treatment stratification.",
+    "sources_not_checked": [
+      "EUCTR/CTIS direct portal",
+      "ChiCTR/CRIS direct portals",
+      "Israeli hospital sites individually",
+      "WHO ICTRP direct"
+    ],
     "key_findings": [
-      "Japan PMDA approved dordaviprone (Modeyso, Ohara Pharmaceutical) September 16, 2026 — first commercial approval outside USA",
-      "BIOMEDE 2.0 confirmed FRONTLINE ONLY — patient already completed RT, NOT eligible (priority downgraded)",
-      "ACTION trial: 7 Israeli sites confirmed (Sheba, Schneider, Sourasky, Rabin, Rambam, Soroka, Hadassah); no age minimum, ≥10kg only",
-      "ACTION trial timing window (2-6 wk post-RT) likely passed ~September 19, 2026 — must verify with Israeli PI for flexibility",
-      "EGFR exon 20 insertion confers ONC201 resistance — SNO 2025 pediatric abstract DMG-63 (CHOP/Dana-Farber/UCSF)",
-      "BLU5082 (Blueprint Medicines): brain-penetrant EGFR TKI eradicates EGFR-mutant H3K27M-DMG xenografts at 50 mg/kg (SNO 2025 EXTH-107)",
-      "Italy GD2 (NCT05298995 Bambino Gesù): Arm C explicitly for thalamic DMG — match upgraded to ORANGE",
-      "ACT001/CONNECT2110 (NCT06838676): SickKids Toronto, age ≥12 months, newly diagnosed cohort A; European sites recruiting",
-      "My Child's Cancer (054-4232352) and Rachasheilev (1-800-28-11-28) verified as Israeli support organizations",
-      "Japan: TTFields trial (jRCTs032200423) — minimum age 5 years, patient excluded; no other Japanese-only pediatric DMG trial found"
+      "NEW ORANGE: LIFT trial NCT07796061 (Children's National, Washington) — FUS BBB opening + T-cells; Group B = newly diagnosed THALAMIC DMG, 4–22 weeks post-RT (window open to ~Jan 9 2027), age 3–25. Verify head circumference ≥49 cm.",
+      "PNOC022 Cohort 6 timing corrected: 14 weeks after ~Aug 8 RT end = ~Nov 14 2026 (not Nov 1) — about 3 weeks left; still urgent.",
+      "NCT07076498 (M032 HSV-1, MD Anderson) found but NOT eligible — 4–8 week post-RT window closed ~Oct 3 2026.",
+      "New abstract (Neuro-Oncology Pediatrics #1110): EGFR alterations in 3/13 dordaviprone-treated DMG autopsies; dordaviprone + osimertinib explored in vitro — supports EGFR concern for ONC201.",
+      "No ACTION topline results, no EMA filing, no BLU-5082 clinical trial found yet; PEP-CMV+nivolumab (NCT06639607) is SUSPENDED."
     ],
-    "notes": "Extended multilingual research completed October 21, 2026 via parallel agents (English/Hebrew/EU agent + Japanese/Asian/WHO ICTRP agent). BIOMEDE 2.0 confirmed NOT eligible post-RT. Critical new finding: EGFR exon 20 insertion may reduce ONC201 efficacy — molecular tumor board consultation essential before ACTION/PNOC022 enrollment. BLU5082 is the most promising EGFR-specific option but preclinical only. ACT001 (Canada/Australia/Europe) is a new option not previously analyzed."
+    "changes_detected": true,
+    "notes": "Daily automated scan. Added 4 trials (1 ORANGE, 2 WATCH for recurrence, 1 not eligible) and 2 developments. All previously tracked open trials remain recruiting on ClinicalTrials.gov. Japanese search: only ACTION (jRCT2051240141) and a DIPG registry — nothing new for this patient."
   }
 }
