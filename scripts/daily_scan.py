@@ -157,7 +157,7 @@ def run_scan():
     for attempt in range(3):
         try:
             message = client.messages.create(
-                model="claude-sonnet-4-5",
+                model="claude-haiku-4-5",
                 max_tokens=4096,
                 messages=[{"role": "user", "content": prompt}],
             )
