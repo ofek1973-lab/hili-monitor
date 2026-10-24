@@ -652,7 +652,7 @@
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
       <div id="overall-status-badge" class="status-badge status-warn">⚠ נדרשת סקירה</div>
       <button class="toggle-profile-btn" onclick="toggleProfile()">פרופיל מטופלת</button>
-      <div class="header-meta" id="scan-date-header">סריקה אחרונה: 21.10.2026</div>
+      <div class="header-meta" id="scan-date-header">טוען...</div>
     </div>
   </div>
 </div>
@@ -709,8 +709,8 @@
 
   <!-- Scan info -->
   <div class="scan-info">
-    <span><span class="pulse"></span> סריקת בסיס הושלמה: <strong>21 אוקטובר 2026</strong> | סריקה הבאה: 22.10.2026</span>
-    <span id="source-count" style="direction:ltr">מקורות שנבדקו: טוען...</span>
+    <span id="scan-bar-main"><span class="pulse"></span> טוען נתוני סריקה...</span>
+    <span id="source-count" style="direction:ltr"></span>
   </div>
 
   <!-- Disclaimer -->
@@ -738,32 +738,32 @@
     </div>
   </div>
 
-  <!-- Tabs -->
+  <!-- Tabs — 3 only, no overlap -->
   <div class="tabs">
-    <div class="tab active" onclick="showTab('new')" id="tab-new">
-      🆕 חדש
-      <span class="tab-count tab-count-red" id="tab-new-count" style="display:none">0</span>
-    </div>
-    <div class="tab" onclick="showTab('critical')" id="tab-critical">
-      🔴 דחוף / גבוה
-      <span class="tab-count tab-count-red" id="tab-critical-count" style="display:none">0</span>
-    </div>
-    <div class="tab" onclick="showTab('watch')" id="tab-watch">
-      🔵 במעקב
-      <span class="tab-count tab-count-blue" id="tab-watch-count" style="display:none">0</span>
+    <div class="tab active" onclick="showTab('updates')" id="tab-updates">
+      📋 עדכונים ומחקר
+      <span class="tab-count tab-count-red" id="tab-updates-count" style="display:none">0</span>
     </div>
     <div class="tab" onclick="showTab('trials')" id="tab-trials">
       🧪 ניסויים קליניים
+      <span class="tab-count tab-count-blue" id="tab-trials-count" style="display:none">0</span>
     </div>
     <div class="tab" onclick="showTab('reviewed')" id="tab-reviewed">
-      ✓ נסקר
+      ✓ נסקר והוסתר
     </div>
   </div>
 
+  <!-- Filter chips — shown only inside Updates tab -->
+  <div id="filter-bar" class="filter-bar" style="display:none">
+    <span class="filter-label">סנן:</span>
+    <button class="filter-btn active" data-f="all"       onclick="applyFilter(this)">הכל</button>
+    <button class="filter-btn"        data-f="urgent"    onclick="applyFilter(this)">🔴 דחוף</button>
+    <button class="filter-btn"        data-f="important" onclick="applyFilter(this)">🟠 חשוב</button>
+    <button class="filter-btn"        data-f="watch"     onclick="applyFilter(this)">🔵 מעקב</button>
+  </div>
+
   <!-- Tab Contents -->
-  <div id="content-new" class="tab-content active"></div>
-  <div id="content-critical" class="tab-content"></div>
-  <div id="content-watch" class="tab-content"></div>
+  <div id="content-updates" class="tab-content active"></div>
   <div id="content-trials" class="tab-content"></div>
   <div id="content-reviewed" class="tab-content"></div>
 
@@ -832,11 +832,32 @@ async function loadJSON(path) {
 }
 
 // ─── Tab switching ────────────────────────────────────────────────────────
+let _currentFilter = 'all';
+
 function showTab(tab) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + tab).classList.add('active');
   document.getElementById('content-' + tab).classList.add('active');
+  document.getElementById('filter-bar').style.display = (tab === 'updates') ? 'flex' : 'none';
+}
+
+function applyFilter(btn) {
+  document.querySelectorAll('#filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  _currentFilter = btn.dataset.f;
+  renderUpdatesTab(_currentFilter);
+}
+
+function fmtDate(iso) {
+  if (!iso) return '—';
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('he-IL', { day:'numeric', month:'long', year:'numeric' });
+  } catch(e) { return iso; }
+}
+function nextDay(iso) {
+  try { const d = new Date(iso); d.setDate(d.getDate()+1); return fmtDate(d.toISOString().slice(0,10)); } catch(e) { return '—'; }
 }
 
 function toggleProfile() {
@@ -1019,6 +1040,35 @@ function buildTrialCard(trial, isReviewed) {
   </div>`;
 }
 
+// ─── Render: Updates tab (developments, filtered by priority) ──────────────
+function renderUpdatesTab(filter) {
+  const dismissed = getDismissed();
+  let items = _allDevs.filter(d => !dismissed.includes(d.id));
+
+  if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
+  else if (filter==='important') items = items.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
+  else if (filter==='watch')  items = items.filter(d => (d.priority||'').toUpperCase()==='WATCH');
+
+  // Sort: priority first, then match_score
+  const pOrder = {'RED':0,'CRITICAL':0,'ORANGE':1,'HIGH':1,'WATCH':2};
+  items.sort((a,b) => {
+    const pa = pOrder[(a.priority||'').toUpperCase()] ?? 3;
+    const pb = pOrder[(b.priority||'').toUpperCase()] ?? 3;
+    return pa !== pb ? pa - pb : (b.match_score||0) - (a.match_score||0);
+  });
+
+  const el = document.getElementById('content-updates');
+  if (items.length === 0) {
+    if (_allDevs.length === 0) {
+      el.innerHTML = `<div class="no-change-banner"><div class="icon">🔬</div><div class="text">הסריקה בביצוע</div><div class="sub">נתוני המחקר יופיעו לאחר הסריקה הראשונה</div></div>`;
+    } else {
+      el.innerHTML = `<div class="no-change-banner"><div class="icon">✓</div><div class="text">אין פריטים בקטגוריה זו</div><div class="sub">שנה פילטר לראות פריטים נוספים</div></div>`;
+    }
+    return;
+  }
+  el.innerHTML = items.map(item => buildCard(item, false)).join('');
+}
+
 // ─── Main init ─────────────────────────────────────────────────────────────
 async function init() {
   const [devData, trialsData, stateData] = await Promise.all([
@@ -1031,29 +1081,46 @@ async function init() {
   const trials = trialsData?.trials || [];
   const state = stateData || {};
 
-  // Store globally for reviewed tab rendering
   _allDevs = devs;
   _allTrials = trials;
 
-  // Filter dismissed items from main tabs
+  // ── Dynamic dates ────────────────────────────────────────────────────────
+  const lastScan = state?._meta?.last_full_scan || state?.last_run_summary?.date;
+  const nextScan = state?._meta?.next_scheduled_scan;
+  if (lastScan) {
+    const lf = fmtDate(lastScan);
+    document.getElementById('scan-date-header').textContent = 'סריקה אחרונה: ' + lf;
+    const nf = nextScan ? fmtDate(nextScan) : nextDay(lastScan);
+    document.getElementById('scan-bar-main').innerHTML =
+      `<span class="pulse"></span> סריקה אחרונה: <strong>${lf}</strong> | סריקה הבאה: ${nf}`;
+  }
+
+  // ── Source count ─────────────────────────────────────────────────────────
+  const sources = state?.last_run_summary?.sources_checked || [];
+  if (Array.isArray(sources) && sources.length) {
+    document.getElementById('source-count').textContent =
+      `${sources.length} מקורות: ${sources.slice(0,3).join(' · ')}${sources.length>3?' ועוד...':''}`;
+  } else if (typeof sources === 'number' && sources > 0) {
+    document.getElementById('source-count').textContent = `מקורות שנבדקו: ${sources}`;
+  }
+
+  // ── Stats ────────────────────────────────────────────────────────────────
   const dismissed = getDismissed();
+  const visDev = devs.filter(d => !dismissed.includes(d.id));
+  const red    = visDev.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
+  const orange = visDev.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
+  const watch  = visDev.filter(d => (d.priority||'').toUpperCase() === 'WATCH');
 
-  // Stats
-  const red = devs.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()) && !dismissed.includes(d.id));
-  const orange = devs.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()) && !dismissed.includes(d.id));
-  const watch = devs.filter(d => (d.priority||'').toUpperCase() === 'WATCH' && !dismissed.includes(d.id));
-  const newItems = devs.filter(d => d.is_new === true && !dismissed.includes(d.id));
-
-  document.getElementById('stat-red').textContent = red.length;
+  document.getElementById('stat-red').textContent    = red.length;
   document.getElementById('stat-orange').textContent = orange.length;
-  document.getElementById('stat-watch').textContent = watch.length + trials.length;
-  document.getElementById('stat-trials').textContent = trials.length;
+  document.getElementById('stat-watch').textContent  = watch.length;
+  document.getElementById('stat-trials').textContent = trials.filter(t=>!dismissed.includes(t.nct_id)).length;
 
-  // Overall status badge
+  // ── Overall status badge ─────────────────────────────────────────────────
   const badge = document.getElementById('overall-status-badge');
   if (red.length > 0) {
     badge.className = 'status-badge status-alert';
-    badge.textContent = `⚠ ${red.length} פריטים דורשים סקירה מיידית`;
+    badge.textContent = `🔴 ${red.length} פריטים דורשים סקירה מיידית`;
   } else if (orange.length > 0) {
     badge.className = 'status-badge status-warn';
     badge.textContent = `⚠ ${orange.length} פריטים לסקירה`;
@@ -1062,86 +1129,48 @@ async function init() {
     badge.textContent = '✓ ממתין לנתוני מחקר';
   } else {
     badge.className = 'status-badge status-ok';
-    badge.textContent = '✓ אין פיתוחים חדשים דחופים';
+    badge.textContent = '✓ אין פיתוחים דחופים כרגע';
   }
 
-  // Tab counts
-  const updateTabCount = (id, count) => {
-    const el = document.getElementById(id);
-    if (el && count > 0) { el.textContent = count; el.style.display = 'inline-flex'; }
-  };
-  updateTabCount('tab-new-count', newItems.length);
-  updateTabCount('tab-critical-count', red.length + orange.length);
-  updateTabCount('tab-watch-count', watch.length);
-
-  // Source count
-  const src = state.last_run_summary?.sources_checked || 0;
-  document.getElementById('source-count').textContent = src > 0 ? `מקורות שנבדקו: ${src}` : '';
-
-  // NEW tab
-  if (newItems.length > 0) {
-    renderItems(newItems, 'content-new', 'אין פיתוחים חדשים');
-  } else if (devs.length === 0) {
-    document.getElementById('content-new').innerHTML = `
-      <div class="no-change-banner">
-        <div class="icon">🔬</div>
-        <div class="text">סריקת בסיס בביצוע</div>
-        <div class="sub">נתוני המחקר יופיעו בקרוב</div>
-      </div>`;
-  } else {
-    document.getElementById('content-new').innerHTML = `
-      <div class="no-change-banner">
-        <div class="icon">✓</div>
-        <div class="text">אין פיתוחים חדשים מאז הסריקה הקודמת</div>
-        <div class="sub">המערכת תתריע כאשר יתגלה משהו חשוב</div>
-      </div>`;
+  // ── Tab badge counts ─────────────────────────────────────────────────────
+  const updCount = red.length + orange.length + watch.length;
+  if (updCount > 0) {
+    const el = document.getElementById('tab-updates-count');
+    el.textContent = updCount; el.style.display = 'inline-flex';
+  }
+  const triCount = trials.filter(t=>!dismissed.includes(t.nct_id)).length;
+  if (triCount > 0) {
+    const el = document.getElementById('tab-trials-count');
+    el.textContent = triCount; el.style.display = 'inline-flex';
   }
 
-  // CRITICAL tab
-  const critItems = [...red, ...orange].sort((a, b) => (b.match_score || 0) - (a.match_score || 0));
-  renderItems(critItems, 'content-critical',
-    red.length === 0 && orange.length === 0 ? 'אין פיתוחים דחופים כרגע' : '');
+  // Show filter bar for updates tab
+  document.getElementById('filter-bar').style.display = 'flex';
 
-  // WATCH tab
-  renderItems(watch, 'content-watch', 'אין פריטים במעקב כרגע');
+  // ── Render tabs ───────────────────────────────────────────────────────────
+  renderUpdatesTab('all');
 
-  // TRIALS tab
+  // Trials tab
   const trialsEl = document.getElementById('content-trials');
-  if (trials.length === 0) {
-    trialsEl.innerHTML = `<div class="empty-state">
-      <div class="empty-state-icon">🧪</div>
-      <div class="empty-state-title">ניסויים קליניים יוצגו לאחר השלמת הסריקה</div>
-    </div>`;
+  const visTri = trials.filter(t => !dismissed.includes(t.nct_id));
+  if (visTri.length === 0) {
+    trialsEl.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🧪</div><div class="empty-state-title">ניסויים קליניים יוצגו לאחר הסריקה</div></div>`;
   } else {
-    const visTrials = trials.filter(t => !dismissed.includes(t.nct_id));
-    const cat = t => t.match_category || '';
-    const status = t => (t.eligibility_status || t.eligibility_verdict || '');
-    const likely = visTrials.filter(t => cat(t) === 'reasonable' || status(t).includes('LIKELY'));
-    const possible = visTrials.filter(t => !likely.includes(t) && (cat(t) === 'possible' || status(t).includes('POSSIBLE')));
-    const watch_t = visTrials.filter(t => !likely.includes(t) && !possible.includes(t) && (cat(t) === 'follow' || status(t).includes('WATCH')));
-    const not = visTrials.filter(t => !likely.includes(t) && !possible.includes(t) && !watch_t.includes(t) && (cat(t) === 'not_eligible' || status(t).includes('NOT')));
-
+    const cat  = t => t.match_category || '';
+    const likely   = visTri.filter(t => cat(t)==='reasonable');
+    const possible = visTri.filter(t => cat(t)==='possible');
+    const follow   = visTri.filter(t => cat(t)==='follow');
+    const notElig  = visTri.filter(t => cat(t)==='not_eligible' || (!['reasonable','possible','follow'].includes(cat(t)) && cat(t)));
+    const rest     = visTri.filter(t => !cat(t));
     let html = '';
-    if (likely.length) {
-      html += `<div class="section-header">✅ התאמה סבירה (${likely.length})</div>`;
-      html += likely.map(t => buildTrialCard(t)).join('');
-    }
-    if (possible.length) {
-      html += `<div class="section-header">🔍 התאמה אפשרית — חסר מידע (${possible.length})</div>`;
-      html += possible.map(t => buildTrialCard(t)).join('');
-    }
-    if (watch_t.length) {
-      html += `<div class="section-header">👁 מעקב לעתיד (${watch_t.length})</div>`;
-      html += watch_t.map(t => buildTrialCard(t)).join('');
-    }
-    if (not.length) {
-      html += `<div class="section-header">✗ אינו מתאים כרגע (${not.length})</div>`;
-      html += not.map(t => buildTrialCard(t)).join('');
-    }
+    if (likely.length)   html += `<div class="section-header">✅ התאמה סבירה — כדאי לפנות (${likely.length})</div>` + likely.map(t=>buildTrialCard(t)).join('');
+    if (possible.length) html += `<div class="section-header">🔍 התאמה אפשרית — חסר מידע (${possible.length})</div>` + possible.map(t=>buildTrialCard(t)).join('');
+    if (follow.length)   html += `<div class="section-header">👁 מעקב לעתיד (${follow.length})</div>` + follow.map(t=>buildTrialCard(t)).join('');
+    if (rest.length)     html += `<div class="section-header">🧪 ניסויים נוספים (${rest.length})</div>` + rest.map(t=>buildTrialCard(t)).join('');
+    if (notElig.length)  html += `<div class="section-header">✗ לא מתאים כרגע (${notElig.length})</div>` + notElig.map(t=>buildTrialCard(t)).join('');
     trialsEl.innerHTML = html;
   }
 
-  // REVIEWED tab — shows dismissed/hidden items
   renderReviewedTab();
 }
 
