@@ -27,7 +27,10 @@
     "NCT05762419",
     "NCT07664176",
     "NCT04099797",
-    "NCT06221553"
+    "NCT06221553",
+    "NCT07331064",
+    "NCT07020052",
+    "NCT06093165"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -46,7 +49,12 @@
     "BLU5082-EGFR-PRECLINICAL",
     "LIFT-THALAMIC-NCT07796061",
     "EGFR-DORDAVIPRONE-AUTOPSY-OSIMERTINIB",
-    "EGFR-ICR-AFATINIB-NERATINIB-FGFR"
+    "EGFR-ICR-AFATINIB-NERATINIB-FGFR",
+    "H3K27M-LACTATE-EPIGENETIC-20261006",
+    "H3K27M-OPC-STEMNESS-INTRATHECAL-20261001",
+    "H3K27M-HDAC-INHIBITION-20261001",
+    "H3K27M-ANTIGENIC-LANDSCAPE-20260928",
+    "H3K27M-METTL3-m6A-20260928"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -74,28 +82,56 @@
   },
   "last_run_summary": {
     "date": "2026-10-25",
-    "type": "DAILY_AUTOMATED",
-    "items_found": 3,
-    "trials_analyzed": 22,
+    "type": "DAILY_REALTIME",
     "changes_detected": true,
-    "new_trials_added": 2,
-    "new_developments_added": 1,
+    "new_trials_added": 3,
+    "new_developments_added": 5,
+    "fetched": {
+      "clinical_trials": 25,
+      "pubmed_papers": 16,
+      "preprints": 0,
+      "rss_articles": 0
+    },
     "key_findings": [
-      "NEW (ORANGE): GAIL-B NCT04099797 (Baylor, Houston) — GD2 CAR-T, Cohort 1 accepts newly diagnosed H3K27-altered DMG ≥4 wk post-RT, age 1–25. Need to verify tumor size <5 cm and concurrent-therapy exclusion.",
-      "NEW (WATCH): NCT06221553 — B7-H3 CAR-T for DIPG post-RT (Thailand); thalamic-primary eligibility unclear.",
-      "NEW development: ICR London abstract (wuag026.284) — afatinib/neratinib most potent in EGFR exon 20–mutant DMG model; synergy with FGFR inhibitors (preclinical).",
-      "All 20 previously tracked trials: status unchanged on ClinicalTrials.gov (NCT04808245 still active-not-recruiting; rest recruiting/not-yet).",
-      "Checked and NOT eligible: TarGeT-SCR NCT05839379 (enrollment window closed 21 days post-RT). No news on BLU-5082; no Japanese/PMDA dordaviprone approval found."
+      "אין ניסיונות חדשים המתאימים בצורה מושלמת לחולה בן 29 חודשים עם H3K27M+EGFR exon 20 insertion. ניסיונות הקרוביים ביותר הם NCT07331064 (גליום, לא עדיין גיוס), NCT07020052 (שמש עם anplotinib, גיל cut-off בגיל 3), NCT06093165 (הקרנה חוזרת, עתידי).",
+      "מחקר אחרון מוקד על מטבוליזם (לקטט), stemness (OPC), epigenetic regulation (HDAC), ו-immunogenicity (antigen landscape). לא נתגלים אישורי רגולציה חדשים או breakthrough therapies בחודש האחרון.",
+      "EGFR exon 20 insertion מחויב להפחית את יעילות ONC201 (SNO 2025); מחקר זה לא מציע חלופה סידור על ONC201 עדיין.",
+      "Intrathecal delivery עשוי להיות נתיב קדימה אם סטגנציה קלינית מתחקה (DMG עם CSF-proximity).",
+      "צעדי-followup מומלצים: (1) בדוק compassionate access לעכבים HDAC selectiva או m6A (METTL3) inhibitors; (2) הצע intrathecal ניסיוני טיפול אם התקדמות מתחקה; (3) שקול CAR-T personalized אם immunotherapy טיפול נוכח; (4) דיווח צמוד למדדי rescue ו-re-irradiation ניסיוני אם הישנות בהתגנבות."
     ],
-    "scan_notes": "ClinicalTrials.gov API v2 queried for H3K27M / diffuse midline glioma / DIPG / H3 K27-altered / EGFR exon 20 glioma (recruiting + not-yet-recruiting): 72 studies, 54 untracked — reviewed; most are adult-only, observational, RT-technique, recurrence-only, or non-matching targets. Newly posted since last scan: NCT07869524 (IMPT vs IMRT for DIPG — RT already completed, not relevant). Web searches: PubMed/bioRxiv, Neuro-Oncology Pediatrics abstracts, Blueprint (BLU-5082), Jazz/dordaviprone, jRCT (jRCT2051240141 = ACTION Japan arm), Hebrew-language Israeli sources. Not directly crawled this run: EUCTR/CTIS, ChiCTR, CRIS, UMIN, individual Israeli hospital sites.",
+    "scan_notes": "Scanned live ClinicalTrials.gov (15 results), PubMed last 30 days (15 papers), medRxiv/bioRxiv last 14 days (0 new preprints). No news items found in RSS. Patient is 29 months old (DOB 2026-05-06), 3 months post-RT, with rare dual H3K27M + EGFR exon 20 insertion mutational profile. No new trials are optimally eligible (age cut-offs, EGFR specificity). New papers highlight lactate metabolism, OPC stemness, HDAC targeting, antigenic shifts, and m6A modifications in H3K27M gliomas—all potentially actionable but investigational. EGFR exon 20 insertion remains a therapeutic bottleneck for ONC201-based regimens (SNO 2025 data); no breakthrough alternative identified in last 30 days. intrathecal route emerging as biologically rational for brainstem/thalamic DMG. Recommend close liaison with PNOC/international DMG boards for emerging compassionate-use pathways.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2",
-      "PubMed / bioRxiv (web search)",
-      "Neuro-Oncology Pediatrics abstracts",
-      "Blueprint Medicines (BLU-5082)",
-      "Jazz Pharmaceuticals / dordaviprone",
-      "jRCT / PMDA Japan (web search)",
-      "Hebrew-language Israeli sources (web search)"
+      "ClinicalTrials.gov API v2 (live)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS"
     ]
-  }
+  },
+  "known_pmids": [
+    "42926464",
+    "42838830",
+    "42748922",
+    "42351295",
+    "42882837",
+    "42804733",
+    "42872145",
+    "42895284",
+    "42878416",
+    "42363591",
+    "42926607",
+    "42822433",
+    "42754728",
+    "42559602",
+    "42434963",
+    "42377093"
+  ],
+  "known_preprint_ids": [],
+  "known_rss_ids": []
 }

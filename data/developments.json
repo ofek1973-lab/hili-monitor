@@ -451,6 +451,91 @@
       "technical_details": "EGFR mutation 8.2% / amplification 2.7% across 1,487 PDHGG. Mutations enriched in DMG-EGFR (exons 7, 20) and pedHGG-RTK2A (exons 7, 15); amplification restricted to pedHGG-RTK2B. Orthotopic PDXs reproduce gliomatosis-like infiltration; EGFR A289V via in utero electroporation accelerates growth. Drug-on screens: EGFR + FGFR inhibitor synergy.",
       "eligibility_status": "N/A",
       "eligibility_notes": "Preclinical; informs targeted-therapy discussion for EGFR-altered DMG subtype."
+    },
+    {
+      "id": "H3K27M-LACTATE-EPIGENETIC-20261006",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "תפקיד לקטט במצבי תא הגידול בגידולים H3K27M",
+      "title_en": "Lactate Epigenetically Shapes Tumor Cell States in H3K27M DMG",
+      "category": "research",
+      "what_changed": "מחקר חדש (bioRxiv, 6 אוקטובר 2026) חושף קשר בין ייצור לקטט בגידול לבין מצבי ספיגה של תאים גידוליים בגידולים H3K27M. זה יכול להעיר על תהליכים של סיוע חיזוקי או הנחשלים של גידול.",
+      "why_matters_bullets": [
+        "H3K27M גידולים הם עשירים בלקטט; זה עשוי לתמוך בדינמיקה של תא גידול ועמידות",
+        "יכול להוביל לחסימות חדשות של מטבוליזם לקטט (π.χ., מעכבי MCT או חסימי נוגדי-לקטט)",
+        "עשוי להסביר חלקית את הרקורנס וההתנגדות ל-ONC201 (מנגנון מטבולי)"
+      ],
+      "action": "בדוק המשך קליני-שימושי של מעכבי ספיגת לקטט או מטבוליזם בטיפול DMG H3K27M; דיון עם קבוצת DMG על ירידה במטבוליזם כמטרה משנית.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42926464/",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "id": "H3K27M-OPC-STEMNESS-INTRATHECAL-20261001",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "H3K27M מניע OPC stemness וחדירות טיפולית intrathecal בגידולי גזע-מוח",
+      "title_en": "H3K27M Drives OPC Stemness and Intrathecal Therapeutic Vulnerability",
+      "category": "research",
+      "what_changed": "מחקר ב-Cell Stem Cell (1 אוקטובר 2026) מראה כי H3K27M מניע תאים נוקשים דומי-OPC בגזע-מוח DMG, עם חדירות משופרת לטיפול intrathecal. זה היה תגובה מחקרית קוהרנטית עבור טיפול מחוף-השדרה (CSF).",
+      "why_matters_bullets": [
+        "גדול זה הם brainstem+thalamus, עם קרוב ישיר ל-CSF",
+        "Intrathecal dosing של חומרים טיפוליים עשוי להיות בעל סדר גודל גדול יותר של חדירה",
+        "OPC-stemness עשוי להוביל לטיפולים מקדימים-ספציפיים (תא גזע, diferenciation)"
+      ],
+      "action": "שקול intrathecal ניסיוני טיפולים (π.χ., intrathecal topotecan, ONC206, או חומרים טיפוליים חדשים). דבר עם קבוצת neuro-onc על ריאיון עבור עוגני CSF-משולח.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42748922/",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "id": "H3K27M-HDAC-INHIBITION-20261001",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "עכבה selectiva של HDAC בגידולים H3K27M כאסטרטגיה טיפולית",
+      "title_en": "Selective HDAC Inhibition as Therapeutically Relevant Strategy in H3K27M",
+      "category": "research",
+      "what_changed": "Neuro-oncology (1 אוקטובר 2026) פרסם בדיקה של עכבת HDAC selectiva בגידולים H3K27M כמטרה פונקציונלית. H3K27M גובר את H3K27me3 פרופיל, וחסימה של HDAC יכולה להחזיר נוקשות-קומפטום.",
+      "why_matters_bullets": [
+        "H3K27M תלוי בדינמיקה נוקשה של histones; חסימה של HDAC עשוי להשפיע על מאזן",
+        "זה כבר בדיקה קלינית בהתאמות H3K27M בעולם (π.χ., HDAC inhibitors כמו valproate, panobinostat)",
+        "עשוי להיות משלים ל-ONC201 או לחומרי טיפוליים אחרים"
+      ],
+      "action": "בדוק זמינות של HDAC inhibitors selectiva (panobinostat, entinostat, givinostat) בגישת compassionate access או ניסיוני; דיון עם IRB וקבוצת neuro-onc על שילוב עם טיפול ביסודי.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42351295/",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "id": "H3K27M-ANTIGENIC-LANDSCAPE-20260928",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "H3K27M mutation משנה את הנוף האנטיגני בגידול",
+      "title_en": "H3K27M Mutation Modulates the Antigenic Landscape in DMG",
+      "category": "research",
+      "what_changed": "Cancers (28 ספטמבר 2026) זיהה שינויים בנוף antigen-presenting בגידולים H3K27M, עשוי להשפיע על immunotherapy כמו CAR-T או checkpointers.",
+      "why_matters_bullets": [
+        "H3K27M משנה HLA-peptide binding ותצוגה אנטיגנית",
+        "עשוי להשפיע על יעילות חסימות PD-1/PD-L1 או CAR-T",
+        "עשוי להנחות בחירה של neoantigens להיסו-וקסינציה"
+      ],
+      "action": "עקוב לטיפולים immunologic personalized המבוססים על antigenic profiling.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42882837/",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "id": "H3K27M-METTL3-m6A-20260928",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "H3K27me3 loss ו-METTL3 m6A משלבים להנעת SOX11/SMARCA4 בגידולים H3K27-altered",
+      "title_en": "H3K27me3 Loss and METTL3-m6A Converge to Upregulate SOX11/SMARCA4",
+      "category": "research",
+      "what_changed": "Neuro-oncology (28 ספטמבר 2026) מספר על שיתופי פעולה בין H3K27me3 loss ו-m6A modifications בהנעת תאים גזע בגידולים H3K27-altered.",
+      "why_matters_bullets": [
+        "גזע-תא נעור עשוי להזין עמידות בטיפול",
+        "METTL3 inhibitors עשויים להיות רלוונטיים",
+        "SOX11/SMARCA4 יכול להיות biomarker של נעור"
+      ],
+      "action": "שקול RNA m6A profiling בחולים זה; דיון עם מעבדה על METTL3 inhibitor כמו גישת compassionate access.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42804733/",
+      "date_detected": "2026-10-25"
     }
   ]
 }
