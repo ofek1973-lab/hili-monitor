@@ -275,26 +275,26 @@ def analyze_with_claude(client, trials_raw, papers_raw, preprints_raw, rss_raw,
     known_dev_ids = state.get("known_development_ids", [])
 
     trials_s = json.dumps([{
-        "nct": t["nct_id"], "title": t["title"][:110],
+        "nct": t["nct_id"], "title": t["title"][:90],
         "status": t["status"], "min_age": t["min_age"],
-        "interventions": t["interventions"][:3], "countries": t["countries"][:5],
+        "interventions": t["interventions"][:2], "countries": t["countries"][:3],
         "url": t["url"],
-    } for t in trials_raw], ensure_ascii=False)
+    } for t in trials_raw[:15]], ensure_ascii=False)
 
     papers_s = json.dumps([{
-        "pmid": p["pmid"], "title": p["title"][:110],
-        "journal": p["journal"], "date": p["pub_date"], "url": p["url"],
-    } for p in papers_raw], ensure_ascii=False)
+        "pmid": p["pmid"], "title": p["title"][:90],
+        "journal": p["journal"][:50], "date": p["pub_date"], "url": p["url"],
+    } for p in papers_raw[:15]], ensure_ascii=False)
 
     preprints_s = json.dumps([{
-        "id": p["id"], "title": p["title"][:110],
-        "abstract": p["abstract"][:200], "date": p["date"], "url": p["url"],
-    } for p in preprints_raw], ensure_ascii=False)
+        "id": p["id"], "title": p["title"][:90],
+        "abstract": p["abstract"][:150], "url": p["url"],
+    } for p in preprints_raw[:10]], ensure_ascii=False)
 
     rss_s = json.dumps([{
-        "id": r["id"], "title": r["title"][:110],
-        "desc": r["description"][:180], "source": r["source"], "url": r["url"],
-    } for r in rss_raw], ensure_ascii=False)
+        "id": r["id"], "title": r["title"][:90],
+        "source": r["source"], "url": r["url"],
+    } for r in rss_raw[:10]], ensure_ascii=False)
 
     prompt = f"""Pediatric neuro-oncology research analyst. Today: {TODAY}.
 
@@ -310,16 +310,16 @@ SKIP — already known trial IDs: {json.dumps(known_trial_ids[:35])}
 SKIP — already known dev IDs: {json.dumps(known_dev_ids[:35])}
 
 === LIVE TRIALS (ClinicalTrials.gov, recruiting today) ===
-{trials_s[:2500]}
+{trials_s}
 
 === PAPERS (PubMed, last 30 days) ===
-{papers_s[:1500]}
+{papers_s}
 
 === PREPRINTS (medRxiv/bioRxiv, last 14 days) ===
-{preprints_s[:800]}
+{preprints_s}
 
 === MEDICAL NEWS (RSS: journals, NCI, ASCO) ===
-{rss_s[:1200]}
+{rss_s}
 
 ANALYZE: What is relevant to this specific patient? Not in already-known lists.
 - Trials: age ≤ 29 months eligible? EGFR exon 20 issue?
@@ -372,7 +372,7 @@ Return ONLY valid JSON:
         try:
             message = client.messages.create(
                 model="claude-haiku-4-5",
-                max_tokens=4096,
+                max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}],
             )
             raw = message.content[0].text.strip()
