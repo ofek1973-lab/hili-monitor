@@ -536,6 +536,40 @@
       "action": "שקול RNA m6A profiling בחולים זה; דיון עם מעבדה על METTL3 inhibitor כמו גישת compassionate access.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42804733/",
       "date_detected": "2026-10-25"
+    },
+    {
+      "id": "THALAMIC-GLIOMA-PHENOTYPE-20261014",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "פנוטיפ MR חוקי לגליומות תלמוסיות בילדים",
+      "title_en": "Paediatric thalamic tumours: a predictive MR phenotype (PMID 42873296)",
+      "category": "research",
+      "what_changed": "פרסום חדש ב-Neuroradiology (2026-10-14) המתאר סימנים MR חזויים לגליומות תלמוס בילדים; כולל סרטן H3K27M DMG",
+      "why_matters_bullets": [
+        "סימנים רדיולוגיים רלוונטיים ישירות למטופלת: גליומה תלמוס ימנית",
+        "עשוי לשפר פרוגנוזה ועבי-אסטרטגיה במעקב לאחר קרינה",
+        "עשוי לחזות הגורמים הפתולוגיים המשפיעים על תגובה לתרפיה (H3K27M, EGFR ex20)"
+      ],
+      "action": "אחזור הקובץ המלא; שדר לרדיולוג אונקולוגיה לשיפור MRI follow-up protocols; שקול אם features תלמוסיים משחזים סיכון EGFR ex20-mediated resistance",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42873296/",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "id": "THALAMIC-DMG-LANDSCAPE-20261001",
+      "priority": "ORANGE",
+      "is_new": true,
+      "title_he": "הנוף הקליני ומולקולרי של גליומה תלמוסית",
+      "title_en": "The clinical and molecular landscape of thalamic glioma (PMID 42377275)",
+      "category": "research",
+      "what_changed": "סקירה מקיפה ב-Neuro-oncology (2026-10-01) על גליומות תלמוס: דמוגרפיה, פתולוגיה, מולקולריקה (H3K27M, EGFR), and outcomes",
+      "why_matters_bullets": [
+        "משתקף מטופלת בדיוק: DMG H3K27M בתלמוס",
+        "עשוי לתעד שכיחות של EGFR exon 20 בתלמוס-DMG וקורלציות טיפול",
+        "סקירה מופעת יכול להנחות בחירת מדבקי משנית"
+      ],
+      "action": "קרא ותחלץ נתונים EGFR ex20 ותלמוס-DMG outcomes; שדר למועצת טיפול לתיאום עם דיווח SNO 2025 (ONC201 reduced efficacy with EGFR ex20)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42377275/",
+      "date_detected": "2026-10-25"
     }
   ]
 }

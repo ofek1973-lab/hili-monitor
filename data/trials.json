@@ -681,6 +681,68 @@
       "egfr_note": "לא רלוונטי לשנות EGFR.",
       "action_he": "עקוב לקבלת מרשמים בקרוב לראיה אם הגידול מתקדם לאחר RT קיימת.",
       "source_url": "https://clinicaltrials.gov/study/NCT06093165"
+    },
+    {
+      "nct_id": "NCT07389278",
+      "title_he": "ADI-PEG 20 + TMZ + RT לגליומה גבוהת דרגה חדשה",
+      "title_en": "Combination ADI-PEG 20, TMZ, and RT for Newly Diagnosed High-grade Glioma",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 65,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING (expected soon)",
+      "location_he": "ארצות הברית",
+      "summary_he": "ניסוי מרובה מרכזים עם ADI-PEG 20 (עד כיבוש ARG) בשילוב TMZ וקרינה לגליומה גבוהת דרגה. מינימום גיל 3 שנים. רלוונטי: שילוב ימינוקטי + רדיותרפיה, אך דרוש מעקב על עתודת ARG בגליומת DMG H3K27M.",
+      "key_inclusion": [
+        "age ≥ 3 years",
+        "newly diagnosed high-grade glioma",
+        "eligible for concurrent RT+TMZ"
+      ],
+      "egfr_note": "לא מטפל ישירות ב-EGFR exon 20; עשוי להיות יעיל כטיפול שלישוני לאחר כישלון ONC201 בגלל המוטציה",
+      "action_he": "עקוב על פתיחת הגיוס (Q4 2026); בדוק אם קנדידטים לפאזה 1/2 עם DMG/thalamic; שקול רישום כשינפתח",
+      "source_url": "https://clinicaltrials.gov/study/NCT07389278"
+    },
+    {
+      "nct_id": "NCT07223034",
+      "title_he": "177Lu-PSMA-617 בגליומות",
+      "title_en": "A Study of 177Lu-PSMA-617 in People With Gliomas",
+      "phase": "Phase I/II",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "קרינה מטרוגנית (lutetium-177) למטרה PSMA בגליומות. מינימום גיל 18 שנים – לא עומד בגיל נוכחי (29 חודשים). רלוונטי עתידי: אם תגיע לגיל נוער עם מחלה פעילה או רצידיב.",
+      "key_inclusion": [
+        "age ≥ 18 years",
+        "glioma with PSMA expression"
+      ],
+      "egfr_note": null,
+      "action_he": "בשלב לא רלוונטי כיום; שמור עבור עתיד אם תגיע לגיל 18+ עם מחלה פעילה",
+      "source_url": "https://clinicaltrials.gov/study/NCT07223034"
+    },
+    {
+      "nct_id": "NCT07869524",
+      "title_he": "IMPT מול IMRT לדיפוז פנטיני גליומה",
+      "title_en": "IMPT Versus IMRT for Diffuse Intrinsic Pontine Glioma",
+      "phase": "Phase III",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 50,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "סין",
+      "summary_he": "השוואה בין קרינה מזומנת פרוטונים (IMPT) לקרינה אינטנסיבית מודרגת (IMRT) ב-DIPG. גיל न 3 שנים בהיתר. רלוונטי למטופלת: תלמוס/straddle lesion עשוי להשתפע מ-IMPT (ירידה בדוז מחוץ למטרה), אך מקומה בסין מגביל הנגשה.",
+      "key_inclusion": [
+        "age ≥ 3 years",
+        "DIPG diagnosis",
+        "planning IMPT vs IMRT"
+      ],
+      "egfr_note": null,
+      "action_he": "עקוב בגלל היתרון הפוטנציאלי של IMPT; לא זמין כרגע ביד; שקול הסתייעות בקנטרים בעלי IMPT אם מדינה מקומית רלוונטית",
+      "source_url": "https://clinicaltrials.gov/study/NCT07869524"
     }
   ]
 }

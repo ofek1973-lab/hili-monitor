@@ -30,7 +30,10 @@
     "NCT06221553",
     "NCT07331064",
     "NCT07020052",
-    "NCT06093165"
+    "NCT06093165",
+    "NCT07389278",
+    "NCT07223034",
+    "NCT07869524"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -54,7 +57,9 @@
     "H3K27M-OPC-STEMNESS-INTRATHECAL-20261001",
     "H3K27M-HDAC-INHIBITION-20261001",
     "H3K27M-ANTIGENIC-LANDSCAPE-20260928",
-    "H3K27M-METTL3-m6A-20260928"
+    "H3K27M-METTL3-m6A-20260928",
+    "THALAMIC-GLIOMA-PHENOTYPE-20261014",
+    "THALAMIC-DMG-LANDSCAPE-20261001"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -85,21 +90,21 @@
     "type": "DAILY_REALTIME",
     "changes_detected": true,
     "new_trials_added": 3,
-    "new_developments_added": 5,
+    "new_developments_added": 2,
     "fetched": {
-      "clinical_trials": 25,
-      "pubmed_papers": 16,
+      "clinical_trials": 22,
+      "pubmed_papers": 14,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "אין ניסיונות חדשים המתאימים בצורה מושלמת לחולה בן 29 חודשים עם H3K27M+EGFR exon 20 insertion. ניסיונות הקרוביים ביותר הם NCT07331064 (גליום, לא עדיין גיוס), NCT07020052 (שמש עם anplotinib, גיל cut-off בגיל 3), NCT06093165 (הקרנה חוזרת, עתידי).",
-      "מחקר אחרון מוקד על מטבוליזם (לקטט), stemness (OPC), epigenetic regulation (HDAC), ו-immunogenicity (antigen landscape). לא נתגלים אישורי רגולציה חדשים או breakthrough therapies בחודש האחרון.",
-      "EGFR exon 20 insertion מחויב להפחית את יעילות ONC201 (SNO 2025); מחקר זה לא מציע חלופה סידור על ONC201 עדיין.",
-      "Intrathecal delivery עשוי להיות נתיב קדימה אם סטגנציה קלינית מתחקה (DMG עם CSF-proximity).",
-      "צעדי-followup מומלצים: (1) בדוק compassionate access לעכבים HDAC selectiva או m6A (METTL3) inhibitors; (2) הצע intrathecal ניסיוני טיפול אם התקדמות מתחקה; (3) שקול CAR-T personalized אם immunotherapy טיפול נוכח; (4) דיווח צמוד למדדי rescue ו-re-irradiation ניסיוני אם הישנות בהתגנבות."
+      "אין ניסוי קליני חדש במוקד ישיר בגיל 29 חודשים + EGFR exon 20 insertion + DMG H3K27M",
+      "NCT07389278 (ADI-PEG 20 + TMZ + RT) עשוי לההתגבר עם פתיחת גיוס Q4 2026 – שים לב לגיל תיאומיות",
+      "Two thalamic glioma papers (Oct 2026) ממפים ישירות לאוכלוסיית המטופלת; דורשים קריאה להערכת EGFR ex20 + H3K27M interactions",
+      "ONC206 (NCT04541082) עדיין פתוח אך מינימום גיל 18; זכור שקודמו ONC201 מוגבל ע\"י EGFR ex20 (SNO 2025) – נדרשת בדיקת ONC206 נתונים",
+      "חיווי רדיו-אונקולוגי חדש חיובי לפרוטונים (IMPT) בלא זמין כרגע בתנאי הטיפול הנוכחי"
     ],
-    "scan_notes": "Scanned live ClinicalTrials.gov (15 results), PubMed last 30 days (15 papers), medRxiv/bioRxiv last 14 days (0 new preprints). No news items found in RSS. Patient is 29 months old (DOB 2026-05-06), 3 months post-RT, with rare dual H3K27M + EGFR exon 20 insertion mutational profile. No new trials are optimally eligible (age cut-offs, EGFR specificity). New papers highlight lactate metabolism, OPC stemness, HDAC targeting, antigenic shifts, and m6A modifications in H3K27M gliomas—all potentially actionable but investigational. EGFR exon 20 insertion remains a therapeutic bottleneck for ONC201-based regimens (SNO 2025 data); no breakthrough alternative identified in last 30 days. intrathecal route emerging as biologically rational for brainstem/thalamic DMG. Recommend close liaison with PNOC/international DMG boards for emerging compassionate-use pathways.",
+    "scan_notes": "Scanned 15 live recruiting trials (ClinicalTrials.gov, 2026-10-25): filtered by age ≤ 29 mo, DMG/midline glioma, EGFR-relevant. Scanned 14 PubMed papers (last 30 days): identified 2 thalamic glioma-specific publications. No preprints or news items identified. Key challenge: EGFR exon 20 insertion significantly reduces ONC201 efficacy (SNO 2025); only NCT07389278 offers alternative multi-target approach (ADI-PEG 20 + chemotherapy + RT) within pediatric age window, but not yet recruiting. Thalamic phenotype and molecular landscape papers provide critical context for prognosis and secondary resistance mechanisms.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "PubMed E-utilities (last 30 days)",
@@ -130,7 +135,21 @@
     "42754728",
     "42559602",
     "42434963",
-    "42377093"
+    "42377093",
+    "42874159",
+    "42863187",
+    "42849605",
+    "42849540",
+    "42801944",
+    "42894313",
+    "42788345",
+    "42790732",
+    "42927033",
+    "42927027",
+    "42873296",
+    "42377275",
+    "42878559",
+    "42809047"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []
