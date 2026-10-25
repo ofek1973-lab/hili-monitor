@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-10-25",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -577,6 +577,50 @@
       "action_he": "אפשרות למקרה של התקדמות. לברר אם גידול תלמי עם מעורבות גזע מוח מתאים ל-Group A.",
       "source_url": "https://clinicaltrials.gov/study/NCT07664176",
       "date_detected": "2026-10-24"
+    },
+    {
+      "nct_id": "NCT04099797",
+      "title_short_he": "GAIL-B — תאי CAR-T נגד GD2 (C7R) — DMG חדש לאחר הקרנה",
+      "title_short_en": "GAIL-B: C7R-GD2.CAR T cells for GD2-expressing brain tumors incl. newly diagnosed DMG",
+      "phase": "Phase I",
+      "sponsor": "Baylor College of Medicine",
+      "status": "Recruiting",
+      "match_category": "potential",
+      "priority": "ORANGE",
+      "match_score": 62,
+      "age_min": 1,
+      "age_max": 25,
+      "age_eligible": true,
+      "location_he": "ארה\"ב — Texas Children's / Baylor, יוסטון",
+      "location_en": "USA — Texas Children's Hospital / Baylor, Houston",
+      "nct_url": "https://clinicaltrials.gov/study/NCT04099797",
+      "relevant_cohort": "Cohort 1 — DMG/HGG חדש (לפני התקדמות), כולל H3K27-altered ללא צביעת GD2",
+      "eligibility_verdict": "POSSIBLY ELIGIBLE — Cohort 1 accepts newly diagnosed (pre-progression) H3K27-altered DMG ≥4 wk post-RT; requires tumor <5 cm max dimension, measurable disease, Ommaya/VP shunt (has shunt), no other immunotherapy ≤42 days and no concurrent anticancer therapy",
+      "action_he": "לברר עם הצוות בביילור: האם ממדי הגידול (תלמוס ~49 מ\"מ + מעורבות רב-מוקדית) עומדים בדרישת <5 ס\"מ, והאם טיפול נוכחי (למשל ONC201) מונע הכללה. דורש נסיעה ליוסטון.",
+      "source_url": "https://clinicaltrials.gov/study/NCT04099797",
+      "date_detected": "2026-10-25"
+    },
+    {
+      "nct_id": "NCT06221553",
+      "title_short_he": "CAR-T נגד B7-H3 עם IL-7Ra — DIPG לאחר הקרנה (תאילנד)",
+      "title_short_en": "Loco-regional B7H3 IL-7Ra CAR T cells in DIPG after standard therapy",
+      "phase": "Phase I",
+      "sponsor": "Thailand (single site)",
+      "status": "Recruiting",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "match_score": 30,
+      "age_min": 1,
+      "age_max": 18,
+      "age_eligible": true,
+      "location_he": "תאילנד",
+      "location_en": "Thailand",
+      "nct_url": "https://clinicaltrials.gov/study/NCT06221553",
+      "relevant_cohort": "DIPG בכל שלב לאחר סיום הקרנה",
+      "eligibility_verdict": "UNCLEAR — protocol specifies DIPG (pontine); thalamic-primary DMG with pontine involvement may not qualify. Requires Ommaya/Rickham reservoir.",
+      "action_he": "מעקב בלבד. לברר אם DMG תלמי עם מעורבות גזע מוח מתקבל.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06221553",
+      "date_detected": "2026-10-25"
     }
   ]
 }

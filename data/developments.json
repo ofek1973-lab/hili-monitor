@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-10-25",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -424,6 +424,33 @@
       "technical_details": "Exome, lcWGS and mRNA-seq on multifocal autopsy samples (pons, thalamus) from 25 patients (13 dordaviprone-treated). Chromosomal instability associated with TP53 mutation, not dordaviprone. Reduced myeloid TME. In vitro: mitochondrial UPR activation with dordaviprone; rapid adaptive responses to osimertinib.",
       "eligibility_status": "N/A",
       "eligibility_notes": "Abstract discusses both EGFR alterations and TP53-associated instability."
+    },
+    {
+      "id": "EGFR-ICR-AFATINIB-NERATINIB-FGFR",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "ICR לונדון: אפטיניב ונרטיניב הכי חזקים במודל DMG עם מוטציית EGFR exon 20; סינרגיה עם מעכבי FGFR",
+      "title_en": "ICR London: afatinib/neratinib most potent in EGFR exon 20–mutant DMG model; synergy with FGFR inhibitors",
+      "what_changed": "תקציר חדש ב-Neuro-Oncology Pediatrics (Pereira, Mackay, Carceller, Chris Jones ואחרים; ID #690): ניתוח 1,487 גידולי HGG בילדים — מוטציות EGFR ב-8.2%, מועשרות בתת-קבוצת DMG-EGFR (אקסונים 7 ו-20). במעבדה, אפטיניב ונרטיניב הראו את העוצמה הגבוהה ביותר, במיוחד במודל עם מוטציה באקסון 20, ונמצאה סינרגיה עם מעכבי FGFR.",
+      "why_matters_bullets": [
+        "הילי מסווגת בתת-קבוצת DMG H3K27-altered EGFR-altered — בדיוק האוכלוסייה שנחקרה",
+        "מצביע על מעכבי EGFR ספציפיים (אפטיניב/נרטיניב) ועל שילוב עם מעכב FGFR כאסטרטגיה לבדיקה",
+        "מספק בסיס מדעי לדיון בוועדה מולקולרית על טיפול מותאם"
+      ],
+      "key_limitation": "נתונים פרה-קליניים בלבד (תרביות ו-4 מודלי PDX). החוקרים מציינים שניסויים קליניים קודמים במעכבי EGFR לא הראו תועלת משמעותית. לא צוין אם המודל הוא exon 20 insertion דווקא.",
+      "action": "להעביר לאונקולוג/ועדה מולקולרית יחד עם פריט EGFR-EX20-MOLECULAR-ACTION — לשאול על חדירות מוח של אפטיניב/נרטיניב ועל אפשרות שילוב עם מעכב FGFR.",
+      "evidence_level": "E",
+      "match_score": 42,
+      "access": "Research only",
+      "location": "UK (Institute of Cancer Research, London) + international collaborators",
+      "age_eligibility": "לא רלוונטי",
+      "date_published": "2026 (Neuro-Oncology Pediatrics supplement, DOI 10.1093/neuped/wuag026.284)",
+      "date_detected": "2026-10-25",
+      "last_verified": "2026-10-25",
+      "source_url": "https://doi.org/10.1093/neuped/wuag026.284",
+      "technical_details": "EGFR mutation 8.2% / amplification 2.7% across 1,487 PDHGG. Mutations enriched in DMG-EGFR (exons 7, 20) and pedHGG-RTK2A (exons 7, 15); amplification restricted to pedHGG-RTK2B. Orthotopic PDXs reproduce gliomatosis-like infiltration; EGFR A289V via in utero electroporation accelerates growth. Drug-on screens: EGFR + FGFR inhibitor synergy.",
+      "eligibility_status": "N/A",
+      "eligibility_notes": "Preclinical; informs targeted-therapy discussion for EGFR-altered DMG subtype."
     }
   ]
 }
