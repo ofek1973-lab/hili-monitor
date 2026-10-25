@@ -1146,7 +1146,7 @@ async function init() {
 
   // ── Stats ────────────────────────────────────────────────────────────────
   const dismissed = getDismissed();
-  const visDev = devs.filter(d => !dismissed.includes(d.id));
+  const visDev = devs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
   const red    = visDev.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
   const orange = visDev.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
   const watch  = visDev.filter(d => (d.priority||'').toUpperCase() === 'WATCH');
