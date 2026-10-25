@@ -570,6 +570,24 @@
       "action": "קרא ותחלץ נתונים EGFR ex20 ותלמוס-DMG outcomes; שדר למועצת טיפול לתיאום עם דיווח SNO 2025 (ONC201 reduced efficacy with EGFR ex20)",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42377275/",
       "date_detected": "2026-10-25"
+    },
+    {
+      "id": "EGFR-EX20-ONC201-CONFLICT-20261025",
+      "priority": "RED",
+      "is_new": false,
+      "title_he": "EGFR exon 20 הוא מחסום עבור יעילות ONC201",
+      "title_en": "EGFR exon 20 insertion reduces ONC201 efficacy per SNO 2025",
+      "category": "research",
+      "what_changed": "מטופל זה נושא הן H3K27M והן EGFR ex20. ONC201 (המרקם הרשמי עבור DMG) אינו יעיל באוכלוסיה זו בהתאם לנתוני SNO 2025. זה פוריות קריטית המשפיע על פתרונות הטיפול.",
+      "why_matters_bullets": [
+        "ONC201 פחות יעיל עם EGFR ex20",
+        "נדרש פתרון חלופי עבור מטופל זה",
+        "שיקול מעכבי EGFR (afatinib, neratinib) עשוי להיות רלוונטי",
+        "תערובת H3K27M + EGFR ex20 נדירה; נדרשת גישה מותאמת אישית"
+      ],
+      "action": "התייעץ עם EGFR-מומחה הגלימה ו-DMG מיד. אם שוקלים ONC201, הצדק. בחן Afatinib/Neratinib/BLU5082 כי זיקוף הקריטי EGFR.",
+      "source_url": "SNO 2025 conference",
+      "date_detected": "2026-10-25"
     }
   ]
 }

@@ -743,6 +743,88 @@
       "egfr_note": null,
       "action_he": "עקוב בגלל היתרון הפוטנציאלי של IMPT; לא זמין כרגע ביד; שקול הסתייעות בקנטרים בעלי IMPT אם מדינה מקומית רלוונטית",
       "source_url": "https://clinicaltrials.gov/study/NCT07869524"
+    },
+    {
+      "nct_id": "NCT04870944",
+      "title_he": "CBL0137 לגידולים מוצקים וגידולי CNS",
+      "title_en": "CBL0137 for Relapsed or Refractory Solid Tumors, Including CNS Tumors",
+      "phase": "Phase I/II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 55,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארה״ב, אוסטרליה",
+      "summary_he": "CBL0137 (מעכב Curaxin) עבור גידולים מוצקים ו-CNS. זקוק להיות בעל פוטנציאל נגד H3K27M אך לא ספציפי. גיל ≥12 חודשים משקי.",
+      "key_inclusion": [
+        "גיל ≥12 חודשים",
+        "גידול CNS רקורנטי/רפרקטורי",
+        "ביצועי סטטוס טוב"
+      ],
+      "egfr_note": "אין הערה דירוג EGFR exon 20; CBL0137 אינו מעכב EGFR ישיר",
+      "action_he": "שקול קשר עם מרכז—CBL0137 עשוי להיות רלוונטי לפי מנגנון DMA דחיקה דיפרנציאלית שלא התייחס ל-H3K27M ספציפי. בדוק הוכחות בדם DMG קודמות.",
+      "source_url": "https://clinicaltrials.gov/study/NCT04870944"
+    },
+    {
+      "nct_id": "NCT07608003",
+      "title_he": "מחקר פרוספקטיבי על מודל AI לתת-סיווג גלימות אמצע ותחזוקה",
+      "title_en": "Multicenter Prospective Study on MRI AI Model for Midline Glioma Subtyping and Prognosis",
+      "phase": "Observational",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": null,
+      "recruiting_status": "Recruiting",
+      "location_he": "סין",
+      "summary_he": "מחקר תצפיתי בדבר סווגות בינה מלאכותית של גלימות אמצע. אולי לא עומד בקריטריונים טיפוליים אך עשוי להעניק נתונים פנוטיפיים רלוונטיים לתחזוקה.",
+      "key_inclusion": [
+        "אבחון DMG/DIPG",
+        "MRI זמין",
+        "אין הבחנה גיל"
+      ],
+      "egfr_note": null,
+      "action_he": "מעקב בלבד. קבלת תכונות MRI עשויה לסייע בסיווג סיכון אך אינה טיפול ישיר.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07608003"
+    },
+    {
+      "nct_id": "NCT06860594",
+      "title_he": "בדיקה של Triapine בנוסף לרדיותרפיה",
+      "title_en": "Testing the Addition of Triapine to Usual Radiation Therapy",
+      "phase": "Phase II",
+      "match_category": "not_eligible",
+      "priority": "WATCH",
+      "score": 20,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארה״ב",
+      "summary_he": "Triapine (מעכב RNR) + RTX. גיל ≥18 שנים בלבד—מחוץ לטווח הגיל של פציינט (29 חודשים).",
+      "key_inclusion": [
+        "גיל ≥18 שנים (לא משקי)"
+      ],
+      "egfr_note": null,
+      "action_he": "לא משקי בשל ביטול גיל",
+      "source_url": "https://clinicaltrials.gov/study/NCT06860594"
+    },
+    {
+      "nct_id": "NCT07206849",
+      "title_he": "תוב לטוב ב-HGG ו-DIPG",
+      "title_en": "Study of Tovorafenib in High-Grade Glioma and Diffuse Intrinsic Pontine Glioma (DIPG)",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 60,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "TBD",
+      "summary_he": "Tovorafenib (מעכב VEGFR2/FGFR) ו-HGG ו-DIPG. גיל ≥12 חודשים. עדיין לא מגויס אך צפוי להיות רלוונטי עבור גלימות אמצע. אין הערה EGFR.",
+      "key_inclusion": [
+        "גיל ≥12 חודשים",
+        "DIPG/HGG",
+        "עדיין לא מגויס"
+      ],
+      "egfr_note": "Tovorafenib אינו מעכב EGFR; כמה צלילות עשויות להיות רלוונטיות ל-FGFR שנוי בפיתוח DMG אך לא מטפל ב-EGFR ex20.",
+      "action_he": "הרשם למייל עדכונים. כשמתחילים מגויסות בדוק נתוני בטיחות/תגובה בהקשר למטופל זה.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07206849"
     }
   ]
 }

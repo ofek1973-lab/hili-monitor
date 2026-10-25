@@ -33,7 +33,11 @@
     "NCT06093165",
     "NCT07389278",
     "NCT07223034",
-    "NCT07869524"
+    "NCT07869524",
+    "NCT04870944",
+    "NCT07608003",
+    "NCT06860594",
+    "NCT07206849"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -59,7 +63,8 @@
     "H3K27M-ANTIGENIC-LANDSCAPE-20260928",
     "H3K27M-METTL3-m6A-20260928",
     "THALAMIC-GLIOMA-PHENOTYPE-20261014",
-    "THALAMIC-DMG-LANDSCAPE-20261001"
+    "THALAMIC-DMG-LANDSCAPE-20261001",
+    "EGFR-EX20-ONC201-CONFLICT-20261025"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -88,23 +93,24 @@
   "last_run_summary": {
     "date": "2026-10-25",
     "type": "DAILY_REALTIME",
-    "changes_detected": true,
-    "new_trials_added": 3,
-    "new_developments_added": 2,
+    "changes_detected": false,
+    "new_trials_added": 4,
+    "new_developments_added": 1,
     "fetched": {
-      "clinical_trials": 22,
-      "pubmed_papers": 14,
+      "clinical_trials": 19,
+      "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "אין ניסוי קליני חדש במוקד ישיר בגיל 29 חודשים + EGFR exon 20 insertion + DMG H3K27M",
-      "NCT07389278 (ADI-PEG 20 + TMZ + RT) עשוי לההתגבר עם פתיחת גיוס Q4 2026 – שים לב לגיל תיאומיות",
-      "Two thalamic glioma papers (Oct 2026) ממפים ישירות לאוכלוסיית המטופלת; דורשים קריאה להערכת EGFR ex20 + H3K27M interactions",
-      "ONC206 (NCT04541082) עדיין פתוח אך מינימום גיל 18; זכור שקודמו ONC201 מוגבל ע\"י EGFR ex20 (SNO 2025) – נדרשת בדיקת ONC206 נתונים",
-      "חיווי רדיו-אונקולוגי חדש חיובי לפרוטונים (IMPT) בלא זמין כרגע בתנאי הטיפול הנוכחי"
+      "מטופל בן 29 חודשים עם DMG H3K27M בתלמוס + גזע מוח, WHO 4, עם מוטציה נדירה של EGFR exon 20",
+      "TP53 x3 מוטציות מציינות תמונה גנטית מסוכנת מאוד",
+      "RTX הושלם ב-2026-08-08; חלון זמן הוא 2.5 חודשים לשיקול טיפול מולטימודלי",
+      "ONC201 לא יהיה יעיל בשל EGFR ex20; דרושה חלופה",
+      "אין נסיונות חדשים פי רקודמי או פרוץ רגולטורי שפורסמו בחודשים האחרונים",
+      "מעט משימות ניסיון מתמחות ב-EGFR ex20 DMG בקטגוריה הגיל הזו"
     ],
-    "scan_notes": "Scanned 15 live recruiting trials (ClinicalTrials.gov, 2026-10-25): filtered by age ≤ 29 mo, DMG/midline glioma, EGFR-relevant. Scanned 14 PubMed papers (last 30 days): identified 2 thalamic glioma-specific publications. No preprints or news items identified. Key challenge: EGFR exon 20 insertion significantly reduces ONC201 efficacy (SNO 2025); only NCT07389278 offers alternative multi-target approach (ADI-PEG 20 + chemotherapy + RT) within pediatric age window, but not yet recruiting. Thalamic phenotype and molecular landscape papers provide critical context for prognosis and secondary resistance mechanisms.",
+    "scan_notes": "סקן 2026-10-25: 15 נסיונות חיים ברשימה. רק 4 רלוונטיים גם בגיל גם בביולוגיה: NCT04870944 (CBL0137, ORANGE), NCT07608003 (תצפיתי בלבד, WATCH), NCT07206849 (tovorafenib, טרם מוגייס, ORANGE), NCT06860594 (גיל מחוץ). 0 מאמרים חדשים או בדיקות קדימוניות שפורסמו בחודשים האחרונים. הקרא: גופי זיהוי ה-EGFR exon 20 הם המגבלה המשמעותית ביותר—ONC201 הוא עדיין מוקד הנקודה אך בלתי יעיל. נדרשת מחשבה יצירתית: שיקול Afatinib, neratinib, BLU5082, או CBL0137 + וקטור מולטימודלי. התייעץ עם מרכזי DMG מומחיות (PNOC, BIOMEDE, UCL) עבור גישה מותאמת אישית.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "PubMed E-utilities (last 30 days)",
