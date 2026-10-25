@@ -757,6 +757,7 @@
   <div id="filter-bar" class="filter-bar" style="display:none">
     <span class="filter-label">סנן:</span>
     <button class="filter-btn active" data-f="all"       onclick="applyFilter(this)">הכל</button>
+    <button class="filter-btn"        data-f="today"     onclick="applyFilter(this)">🆕 יום אחרון</button>
     <button class="filter-btn"        data-f="urgent"    onclick="applyFilter(this)">🔴 דחוף</button>
     <button class="filter-btn"        data-f="important" onclick="applyFilter(this)">🟠 חשוב</button>
     <button class="filter-btn"        data-f="watch"     onclick="applyFilter(this)">🔵 מעקב</button>
@@ -1045,7 +1046,10 @@ function renderUpdatesTab(filter) {
   const dismissed = getDismissed();
   let items = _allDevs.filter(d => !dismissed.includes(d.id));
 
-  if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
+  if (filter === 'today') {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    items = items.filter(d => (d.date_detected || '').slice(0, 10) === todayStr);
+  } else if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
   else if (filter==='important') items = items.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
   else if (filter==='watch')  items = items.filter(d => (d.priority||'').toUpperCase()==='WATCH');
 

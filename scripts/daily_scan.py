@@ -52,6 +52,8 @@ KEYWORDS = [
     "ONC201", "dordaviprone", "BLU-5082", "ACT001",
     "pediatric glioma", "thalamic glioma", "EGFR glioma",
     "pediatric brain tumor", "pediatric brain cancer",
+    "glioma", "brain tumor", "brain cancer", "neuro-oncology", "neurooncology",
+    "pediatric oncology", "high grade glioma", "midline glioma",
 ]
 
 RSS_FEEDS = [
@@ -62,6 +64,9 @@ RSS_FEEDS = [
     ("Cancer Discovery",       "https://cancerdiscovery.aacrjournals.org/rss/current.xml"),
     ("NCI News",               "https://www.cancer.gov/news-events/press-releases/feed"),
     ("Pediatric Blood Cancer", "https://onlinelibrary.wiley.com/feed/10969810/most-recent"),
+    ("NEJM",                   "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss"),
+    ("FDA Drug Approvals",     "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drug-approvals-and-databases/rss.xml"),
+    ("SNO News",               "https://www.soc-neuro-onc.org/SNO/RSS/News_RSS.aspx"),
 ]
 
 
@@ -269,6 +274,43 @@ def fetch_rss_news(known_rss_ids):
     return results
 
 
+def fetch_who_ictrp(known_nct_ids):
+    """Fetch international trials from WHO ICTRP (covers EU, Israel, Asia, Australia)."""
+    results = []
+    seen = set(known_nct_ids)
+    queries = ["diffuse midline glioma", "H3K27M glioma", "DIPG pediatric", "ONC201"]
+    for q in queries:
+        resp = safe_get(
+            "https://trialsearch.who.int/Trial2.aspx",
+            params={"TrialID": "", "Title": q, "Condition": "", "Phase": "", "Country": "",
+                    "RecDate": "", "TrialSponsor": "", "GenderAge": "", "StudyDesign": "",
+                    "Status": "Recruiting", "Submit": "Search"},
+            timeout=20,
+        )
+        if not resp:
+            continue
+        try:
+            text = resp.text
+            import re
+            ids = re.findall(r'(EUCTR\d+-\d+-\d+|ISRCTN\d+|ACTRN\d+|ChiCTR\d+|NL\d+|DRKS\d+)', text)
+            titles = re.findall(r'class="[^"]*title[^"]*">([^<]{10,120})<', text)
+            urls = re.findall(r'href="(Trial2\.aspx\?TrialID=[^"]+)"', text)
+            for i, tid in enumerate(ids[:8]):
+                if tid in seen:
+                    continue
+                seen.add(tid)
+                title = titles[i] if i < len(titles) else q + " trial"
+                url = f"https://trialsearch.who.int/{urls[i]}" if i < len(urls) else "https://trialsearch.who.int"
+                results.append({"nct_id": tid, "title": title.strip(), "status": "Recruiting",
+                                 "min_age": "", "interventions": [], "countries": ["International"],
+                                 "url": url, "source": "WHO-ICTRP"})
+        except Exception as e:
+            print(f"  WHO ICTRP parse error: {e}")
+        time.sleep(0.5)
+    print(f"WHO ICTRP: {len(results)} new international trials")
+    return results
+
+
 def analyze_with_claude(client, trials_raw, papers_raw, preprints_raw, rss_raw,
                         known_trial_ids, state):
     """Send all fetched real-time data to Claude for intelligent analysis."""
@@ -424,8 +466,12 @@ def run_scan():
     print("\n--- Fetching RSS news feeds ---")
     rss_raw = fetch_rss_news(known_rss_ids)
 
+    print("\n--- Fetching WHO ICTRP (international trials) ---")
+    who_raw = fetch_who_ictrp(known_trial_ids)
+    trials_raw = trials_raw + who_raw
+
     total = len(trials_raw) + len(papers_raw) + len(preprints_raw) + len(rss_raw)
-    print(f"\nTotal fetched: {len(trials_raw)} trials | {len(papers_raw)} papers | "
+    print(f"\nTotal fetched: {len(trials_raw)} trials (incl. WHO) | {len(papers_raw)} papers | "
           f"{len(preprints_raw)} preprints | {len(rss_raw)} news — {total} items total")
 
     # === CLAUDE ANALYSIS ===
@@ -491,6 +537,7 @@ def run_scan():
         "scan_notes": result.get("scan_notes", ""),
         "sources_checked": [
             "ClinicalTrials.gov API v2 (live)",
+            "WHO ICTRP (international trials)",
             "PubMed E-utilities (last 30 days)",
             "medRxiv API (last 14 days)",
             "bioRxiv API (last 14 days)",
@@ -501,6 +548,9 @@ def run_scan():
             "Cancer Discovery RSS",
             "NCI News RSS",
             "Pediatric Blood Cancer Journal RSS",
+            "NEJM RSS",
+            "FDA Drug Approvals RSS",
+            "SNO News RSS",
         ],
     }
 
