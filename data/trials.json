@@ -621,6 +621,210 @@
       "action_he": "מעקב בלבד. לברר אם DMG תלמי עם מעורבות גזע מוח מתקבל.",
       "source_url": "https://clinicaltrials.gov/study/NCT06221553",
       "date_detected": "2026-10-25"
+    },
+    {
+      "nct_id": "NCT07331064",
+      "title_he": "גליום מלטולט לחולים ילדים עם סרטן הדם או גידולים מוצקים",
+      "title_en": "Gallium Maltolate for Pediatric Relapsed/Refractory Patients",
+      "phase": "Phase II",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": true,
+      "recruiting_status": "Not yet recruiting",
+      "location_he": "בארה״ב (מקום זמין עדיין)",
+      "summary_he": "גליום מלטולט הוא חומר ניסיוני בדיקה של יכולת לחדור בארכובית הדם. ניתן להשתמש בו לטיפול בגידולי CNS אך המידע על H3K27M אינו ברור עדיין.",
+      "key_inclusion": [
+        "גיל ≥0 חודשים (ממש בערך הנכון לה)",
+        "גידולים חוזרים או עמידים לטיפול"
+      ],
+      "egfr_note": "לא ידוע. גליום אינו מערב EGFR ישירות אך זקוק פיתוח קליני נוסף.",
+      "action_he": "עדכנו קבלת מרשמים כאשר משך הגיוס יתחיל; בדוק סיכום קליני עבור DMG בהתאמה.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07331064"
+    },
+    {
+      "nct_id": "NCT07020052",
+      "title_he": "טמוזולומיד/אנלוטינביב/במריטוזומב משולש רציפי לגידולים בדרגה גבוהה",
+      "title_en": "Phase II Sequential Triple Therapy (TMZ/Anlotinib/Bemarituzumab)",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 62,
+      "age_eligible": true,
+      "recruiting_status": "Not yet recruiting",
+      "location_he": "סין",
+      "summary_he": "שילוב של TMZ (תקן), אנלוטינביב (מעכב רב-קינסה), וביתוזומב (anti-FGFR). עשוי להיות רלוונטי לטיפול H3K27M DMG בעלי מוטציות נוספות. האנלוטינביב עשוי להוביל פוטנציאל לעבור על העכבה EGFR אך לא מטוב.",
+      "key_inclusion": [
+        "גיל ≥3 שנים (בחורה זו < 3 שנים: לא זכאית כולה)",
+        "גידולים בדרגה גבוהה חדשים או חוזרים"
+      ],
+      "egfr_note": "אנלוטינביב הוא מעכב קינסה ורחב-ספקטרום לא-EGFR-ספציפי. לא מומלץ לחולים עם EGFR exon 20 insertion בלבד.",
+      "action_he": "עקוב כאשר הגיוס יתחיל; בדוק נתונים קדום-קליניים על דינמיקת EGFR-exon20 ו-H3K27M.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07020052"
+    },
+    {
+      "nct_id": "NCT06093165",
+      "title_he": "הקרנה חוזרת של גידולים מרכזיים ממאירים",
+      "title_en": "RE-irradiation of Diffuse Midline Glioma Patients",
+      "phase": "Phase II/III",
+      "match_category": "possible",
+      "priority": "WATCH",
+      "score": 50,
+      "age_eligible": true,
+      "recruiting_status": "Not yet recruiting",
+      "location_he": "מקום לא ידוע עדיין",
+      "summary_he": "ניסיון לשקול הקרנה-חוזרת (re-RT) בחולים עם DMG בהתקדמות או הישנות. החולה זה כבר השלים RT בחודש אוגוסט 2026; re-RT עשוי להיות רלוונטי בהישנות קליינית בעתיד.",
+      "key_inclusion": [
+        "גיל ≥12 חודשים (קטנה זו זכאית)",
+        "גידול מרכזי ממאיר (DMG)"
+      ],
+      "egfr_note": "לא רלוונטי לשנות EGFR.",
+      "action_he": "עקוב לקבלת מרשמים בקרוב לראיה אם הגידול מתקדם לאחר RT קיימת.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06093165"
+    },
+    {
+      "nct_id": "NCT07389278",
+      "title_he": "ADI-PEG 20 + TMZ + RT לגליומה גבוהת דרגה חדשה",
+      "title_en": "Combination ADI-PEG 20, TMZ, and RT for Newly Diagnosed High-grade Glioma",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 65,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING (expected soon)",
+      "location_he": "ארצות הברית",
+      "summary_he": "ניסוי מרובה מרכזים עם ADI-PEG 20 (עד כיבוש ARG) בשילוב TMZ וקרינה לגליומה גבוהת דרגה. מינימום גיל 3 שנים. רלוונטי: שילוב ימינוקטי + רדיותרפיה, אך דרוש מעקב על עתודת ARG בגליומת DMG H3K27M.",
+      "key_inclusion": [
+        "age ≥ 3 years",
+        "newly diagnosed high-grade glioma",
+        "eligible for concurrent RT+TMZ"
+      ],
+      "egfr_note": "לא מטפל ישירות ב-EGFR exon 20; עשוי להיות יעיל כטיפול שלישוני לאחר כישלון ONC201 בגלל המוטציה",
+      "action_he": "עקוב על פתיחת הגיוס (Q4 2026); בדוק אם קנדידטים לפאזה 1/2 עם DMG/thalamic; שקול רישום כשינפתח",
+      "source_url": "https://clinicaltrials.gov/study/NCT07389278"
+    },
+    {
+      "nct_id": "NCT07223034",
+      "title_he": "177Lu-PSMA-617 בגליומות",
+      "title_en": "A Study of 177Lu-PSMA-617 in People With Gliomas",
+      "phase": "Phase I/II",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "קרינה מטרוגנית (lutetium-177) למטרה PSMA בגליומות. מינימום גיל 18 שנים – לא עומד בגיל נוכחי (29 חודשים). רלוונטי עתידי: אם תגיע לגיל נוער עם מחלה פעילה או רצידיב.",
+      "key_inclusion": [
+        "age ≥ 18 years",
+        "glioma with PSMA expression"
+      ],
+      "egfr_note": null,
+      "action_he": "בשלב לא רלוונטי כיום; שמור עבור עתיד אם תגיע לגיל 18+ עם מחלה פעילה",
+      "source_url": "https://clinicaltrials.gov/study/NCT07223034"
+    },
+    {
+      "nct_id": "NCT07869524",
+      "title_he": "IMPT מול IMRT לדיפוז פנטיני גליומה",
+      "title_en": "IMPT Versus IMRT for Diffuse Intrinsic Pontine Glioma",
+      "phase": "Phase III",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 50,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "סין",
+      "summary_he": "השוואה בין קרינה מזומנת פרוטונים (IMPT) לקרינה אינטנסיבית מודרגת (IMRT) ב-DIPG. גיל न 3 שנים בהיתר. רלוונטי למטופלת: תלמוס/straddle lesion עשוי להשתפע מ-IMPT (ירידה בדוז מחוץ למטרה), אך מקומה בסין מגביל הנגשה.",
+      "key_inclusion": [
+        "age ≥ 3 years",
+        "DIPG diagnosis",
+        "planning IMPT vs IMRT"
+      ],
+      "egfr_note": null,
+      "action_he": "עקוב בגלל היתרון הפוטנציאלי של IMPT; לא זמין כרגע ביד; שקול הסתייעות בקנטרים בעלי IMPT אם מדינה מקומית רלוונטית",
+      "source_url": "https://clinicaltrials.gov/study/NCT07869524"
+    },
+    {
+      "nct_id": "NCT04870944",
+      "title_he": "CBL0137 לגידולים מוצקים וגידולי CNS",
+      "title_en": "CBL0137 for Relapsed or Refractory Solid Tumors, Including CNS Tumors",
+      "phase": "Phase I/II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 55,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארה״ב, אוסטרליה",
+      "summary_he": "CBL0137 (מעכב Curaxin) עבור גידולים מוצקים ו-CNS. זקוק להיות בעל פוטנציאל נגד H3K27M אך לא ספציפי. גיל ≥12 חודשים משקי.",
+      "key_inclusion": [
+        "גיל ≥12 חודשים",
+        "גידול CNS רקורנטי/רפרקטורי",
+        "ביצועי סטטוס טוב"
+      ],
+      "egfr_note": "אין הערה דירוג EGFR exon 20; CBL0137 אינו מעכב EGFR ישיר",
+      "action_he": "שקול קשר עם מרכז—CBL0137 עשוי להיות רלוונטי לפי מנגנון DMA דחיקה דיפרנציאלית שלא התייחס ל-H3K27M ספציפי. בדוק הוכחות בדם DMG קודמות.",
+      "source_url": "https://clinicaltrials.gov/study/NCT04870944"
+    },
+    {
+      "nct_id": "NCT07608003",
+      "title_he": "מחקר פרוספקטיבי על מודל AI לתת-סיווג גלימות אמצע ותחזוקה",
+      "title_en": "Multicenter Prospective Study on MRI AI Model for Midline Glioma Subtyping and Prognosis",
+      "phase": "Observational",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": null,
+      "recruiting_status": "Recruiting",
+      "location_he": "סין",
+      "summary_he": "מחקר תצפיתי בדבר סווגות בינה מלאכותית של גלימות אמצע. אולי לא עומד בקריטריונים טיפוליים אך עשוי להעניק נתונים פנוטיפיים רלוונטיים לתחזוקה.",
+      "key_inclusion": [
+        "אבחון DMG/DIPG",
+        "MRI זמין",
+        "אין הבחנה גיל"
+      ],
+      "egfr_note": null,
+      "action_he": "מעקב בלבד. קבלת תכונות MRI עשויה לסייע בסיווג סיכון אך אינה טיפול ישיר.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07608003"
+    },
+    {
+      "nct_id": "NCT06860594",
+      "title_he": "בדיקה של Triapine בנוסף לרדיותרפיה",
+      "title_en": "Testing the Addition of Triapine to Usual Radiation Therapy",
+      "phase": "Phase II",
+      "match_category": "not_eligible",
+      "priority": "WATCH",
+      "score": 20,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארה״ב",
+      "summary_he": "Triapine (מעכב RNR) + RTX. גיל ≥18 שנים בלבד—מחוץ לטווח הגיל של פציינט (29 חודשים).",
+      "key_inclusion": [
+        "גיל ≥18 שנים (לא משקי)"
+      ],
+      "egfr_note": null,
+      "action_he": "לא משקי בשל ביטול גיל",
+      "source_url": "https://clinicaltrials.gov/study/NCT06860594"
+    },
+    {
+      "nct_id": "NCT07206849",
+      "title_he": "תוב לטוב ב-HGG ו-DIPG",
+      "title_en": "Study of Tovorafenib in High-Grade Glioma and Diffuse Intrinsic Pontine Glioma (DIPG)",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 60,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "TBD",
+      "summary_he": "Tovorafenib (מעכב VEGFR2/FGFR) ו-HGG ו-DIPG. גיל ≥12 חודשים. עדיין לא מגויס אך צפוי להיות רלוונטי עבור גלימות אמצע. אין הערה EGFR.",
+      "key_inclusion": [
+        "גיל ≥12 חודשים",
+        "DIPG/HGG",
+        "עדיין לא מגויס"
+      ],
+      "egfr_note": "Tovorafenib אינו מעכב EGFR; כמה צלילות עשויות להיות רלוונטיות ל-FGFR שנוי בפיתוח DMG אך לא מטפל ב-EGFR ex20.",
+      "action_he": "הרשם למייל עדכונים. כשמתחילים מגויסות בדוק נתוני בטיחות/תגובה בהקשר למטופל זה.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07206849"
     }
   ]
 }
