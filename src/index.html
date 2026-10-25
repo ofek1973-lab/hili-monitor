@@ -181,6 +181,7 @@
   .tab-count-red { background: var(--red); color: white; }
   .tab-count-orange { background: var(--orange); color: black; }
   .tab-count-blue { background: var(--accent); color: white; }
+  .tab-count-green { background: var(--green); color: white; }
 
   /* Cards */
   .card {
@@ -738,7 +739,7 @@
     </div>
   </div>
 
-  <!-- Tabs — 3 only, no overlap -->
+  <!-- Tabs — 4, no overlap -->
   <div class="tabs">
     <div class="tab active" onclick="showTab('updates')" id="tab-updates">
       📋 עדכונים ומחקר
@@ -747,6 +748,10 @@
     <div class="tab" onclick="showTab('trials')" id="tab-trials">
       🧪 ניסויים קליניים
       <span class="tab-count tab-count-blue" id="tab-trials-count" style="display:none">0</span>
+    </div>
+    <div class="tab" onclick="showTab('directions')" id="tab-directions">
+      💡 כיוונים לחקירה
+      <span class="tab-count tab-count-green" id="tab-directions-count" style="display:none">0</span>
     </div>
     <div class="tab" onclick="showTab('reviewed')" id="tab-reviewed">
       ✓ נסקר והוסתר
@@ -766,6 +771,7 @@
   <!-- Tab Contents -->
   <div id="content-updates" class="tab-content active"></div>
   <div id="content-trials" class="tab-content"></div>
+  <div id="content-directions" class="tab-content"></div>
   <div id="content-reviewed" class="tab-content"></div>
 
 </div>
@@ -1042,9 +1048,36 @@ function buildTrialCard(trial, isReviewed) {
 }
 
 // ─── Render: Updates tab (developments, filtered by priority) ──────────────
+function renderDirectionsTab() {
+  const el = document.getElementById('content-directions');
+  const hyps = (window._allHypotheses || []);
+  if (!hyps.length) {
+    el.innerHTML = `<div class="no-change-banner"><div class="icon">💡</div><div class="text">כיוונים לחקירה יופיעו לאחר הסריקה הבאה</div><div class="sub">Claude יציע שילובי תרופות ורעיונות לבחינה על בסיס המוטציות של הילי</div></div>`;
+    return;
+  }
+  const urgencyColor = {'HIGH':'var(--red)','MEDIUM':'var(--orange)','SPECULATIVE':'var(--watch)'};
+  el.innerHTML = hyps.map(h => `
+    <div class="card" style="border-right: 4px solid ${urgencyColor[h.urgency]||'var(--watch)'}">
+      <div class="card-header">
+        <div>
+          <div class="card-title">${h.title_he || h.title_en || ''}</div>
+          ${h.title_en ? `<div class="card-subtitle">${h.title_en}</div>` : ''}
+        </div>
+        <span class="priority-badge" style="background:${urgencyColor[h.urgency]||'var(--watch)'}20;color:${urgencyColor[h.urgency]||'var(--watch)'}">${h.urgency||'SPECULATIVE'}</span>
+      </div>
+      <div class="card-body">
+        <div style="margin-bottom:8px">${h.rationale_he || ''}</div>
+        ${h.supporting_evidence && h.supporting_evidence.length ? `<ul style="margin:6px 0 6px 0;padding-right:18px">${h.supporting_evidence.map(e=>`<li style="font-size:0.85rem;color:var(--text2)">${e}</li>`).join('')}</ul>` : ''}
+        ${h.next_step ? `<div style="margin-top:8px;padding:8px 12px;background:var(--bg3);border-radius:6px;font-size:0.85rem"><strong>צעד הבא:</strong> ${h.next_step}</div>` : ''}
+        ${h.relevant_trials && h.relevant_trials.length ? `<div style="margin-top:6px;font-size:0.82rem;color:var(--text3)">ניסויים רלוונטיים: ${h.relevant_trials.join(', ')}</div>` : ''}
+      </div>
+    </div>`).join('');
+}
+
 function renderUpdatesTab(filter) {
   const dismissed = getDismissed();
-  let items = _allDevs.filter(d => !dismissed.includes(d.id));
+  // Exclude developments that are trial-specific (nct_id set) — those show in the trials tab
+  let items = _allDevs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
 
   if (filter === 'today') {
     const todayStr = new Date().toISOString().slice(0, 10);
@@ -1075,18 +1108,21 @@ function renderUpdatesTab(filter) {
 
 // ─── Main init ─────────────────────────────────────────────────────────────
 async function init() {
-  const [devData, trialsData, stateData] = await Promise.all([
+  const [devData, trialsData, stateData, hypData] = await Promise.all([
     loadJSON('../data/developments.json'),
     loadJSON('../data/trials.json'),
-    loadJSON('../data/research-state.json')
+    loadJSON('../data/research-state.json'),
+    loadJSON('../data/hypotheses.json'),
   ]);
 
   const devs = devData?.developments || [];
   const trials = trialsData?.trials || [];
   const state = stateData || {};
+  const hyps = hypData?.hypotheses || [];
 
   _allDevs = devs;
   _allTrials = trials;
+  window._allHypotheses = hyps;
 
   // ── Dynamic dates ────────────────────────────────────────────────────────
   const lastScan = state?._meta?.last_full_scan || state?.last_run_summary?.date;
@@ -1147,12 +1183,17 @@ async function init() {
     const el = document.getElementById('tab-trials-count');
     el.textContent = triCount; el.style.display = 'inline-flex';
   }
+  if (hyps.length > 0) {
+    const el = document.getElementById('tab-directions-count');
+    el.textContent = hyps.length; el.style.display = 'inline-flex';
+  }
 
   // Show filter bar for updates tab
   document.getElementById('filter-bar').style.display = 'flex';
 
   // ── Render tabs ───────────────────────────────────────────────────────────
   renderUpdatesTab('all');
+  renderDirectionsTab();
 
   // Trials tab
   const trialsEl = document.getElementById('content-trials');

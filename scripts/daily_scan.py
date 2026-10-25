@@ -17,34 +17,58 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRIALS_PATH = os.path.join(REPO_ROOT, "data", "trials.json")
 DEVELOPMENTS_PATH = os.path.join(REPO_ROOT, "data", "developments.json")
 STATE_PATH = os.path.join(REPO_ROOT, "data", "research-state.json")
+HYPOTHESES_PATH = os.path.join(REPO_ROOT, "data", "hypotheses.json")
 
 TODAY = str(date.today())
 THIRTY_DAYS_AGO = str(date.today() - timedelta(days=30))
 
 PUBMED_QUERIES = [
-    "H3K27M diffuse midline glioma",
-    "diffuse midline glioma treatment",
-    "DIPG treatment 2025 2026",
-    "EGFR exon 20 glioma",
+    # Core DMG — pediatric and adult
+    "H3K27M diffuse midline glioma pediatric",
+    "H3K27M diffuse midline glioma adult",
+    "H3.3K27M glioma treatment",
+    "H3.1K27M glioma treatment",
+    "diffuse midline glioma treatment 2025 2026",
+    "diffuse intrinsic pontine glioma treatment",
+    "thalamic glioma pediatric treatment",
+    # Targeted therapy
+    "EGFR exon 20 insertion glioma",
     "ONC201 dordaviprone glioma",
-    "BLU-5082 brain tumor",
-    "pediatric high grade glioma immunotherapy",
-    "thalamic glioma pediatric",
-    "H3K27M mutation treatment",
+    "BLU-5082 glioma EGFR",
     "ACT001 glioma",
-    "diffuse intrinsic pontine glioma",
+    # Immunotherapy
+    "GD2 CAR-T glioma",
+    "H3K27M peptide vaccine glioma",
+    "pediatric high grade glioma immunotherapy",
+    "CAR-T brain tumor pediatric",
+    # Combination and BBB
+    "blood brain barrier drug delivery glioma",
+    "convection enhanced delivery glioma pediatric",
+    "combination therapy H3K27M glioma",
+    "ONC201 combination therapy glioma",
+    # Broader breakthroughs
+    "pediatric brain tumor breakthrough 2025 2026",
+    "glioma oncolytic virus treatment",
+    "pediatric high grade glioma overall survival",
 ]
 
 CT_SEARCHES = [
+    # Core DMG
     {"query.cond": "diffuse midline glioma"},
-    {"query.cond": "H3K27M glioma pediatric"},
-    {"query.cond": "DIPG pediatric"},
+    {"query.cond": "H3K27M glioma"},
+    {"query.cond": "diffuse midline glioma", "query.term": "pediatric"},
+    {"query.cond": "DIPG"},
+    {"query.cond": "thalamic glioma"},
+    # Specific drugs
     {"query.intr": "ONC201"},
     {"query.intr": "dordaviprone"},
     {"query.intr": "BLU-5082"},
     {"query.intr": "ACT001"},
-    {"query.term": "thalamic glioma pediatric"},
-    {"query.term": "EGFR glioma pediatric"},
+    {"query.intr": "GD2 CAR-T"},
+    # Broader pediatric brain tumor
+    {"query.cond": "pediatric high grade glioma"},
+    {"query.cond": "H3K27 altered glioma"},
+    {"query.term": "EGFR exon 20 glioma"},
 ]
 
 KEYWORDS = [
@@ -407,7 +431,20 @@ Return ONLY valid JSON:
   ],
   "key_findings": ["ממצא 1", "ממצא 2"],
   "changes_detected": true,
-  "scan_notes": "what was scanned and found"
+  "scan_notes": "what was scanned and found",
+  "research_hypotheses": [
+    {{
+      "id": "HYP-UNIQUE-ID",
+      "title_he": "כיוון מחקרי לבחינה בעברית",
+      "title_en": "Research direction in English",
+      "urgency": "HIGH|MEDIUM|SPECULATIVE",
+      "rationale_he": "הסבר בעברית — למה זה רלוונטי לפרופיל של הילי",
+      "supporting_evidence": ["ראיה 1", "ראיה 2"],
+      "next_step": "מה לעשות בפועל",
+      "relevant_trials": ["NCT..."],
+      "date_generated": "{TODAY}"
+    }}
+  ]
 }}"""
 
     for attempt in range(3):
@@ -559,6 +596,24 @@ def run_scan():
     trials_file["_meta"]["last_updated"] = TODAY
     developments_file["developments"] = developments_list
     developments_file["_meta"]["last_updated"] = TODAY
+
+    # Save hypotheses (merge new with existing, deduplicate by id)
+    new_hyps = result.get("research_hypotheses", [])
+    if new_hyps:
+        hyp_file = load_json(HYPOTHESES_PATH)
+        existing_hyps = hyp_file.get("hypotheses", [])
+        existing_ids = {h.get("id") for h in existing_hyps}
+        added = 0
+        for h in new_hyps:
+            if h.get("id") and h["id"] not in existing_ids:
+                h["date_generated"] = TODAY
+                existing_hyps.insert(0, h)
+                existing_ids.add(h["id"])
+                added += 1
+        hyp_file["hypotheses"] = existing_hyps[:50]
+        hyp_file["_meta"]["last_updated"] = TODAY
+        save_json(HYPOTHESES_PATH, hyp_file)
+        print(f"Hypotheses: {added} new directions saved")
 
     save_json(TRIALS_PATH, trials_file)
     save_json(DEVELOPMENTS_PATH, developments_file)
