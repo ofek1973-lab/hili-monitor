@@ -641,6 +641,54 @@
   .unhide-btn:hover { background: var(--green-bg); }
 
   .card.reviewed-card { opacity: 0.75; }
+
+  /* ── Relevance indicator ─────────────────────────────────────────────── */
+  .relevance-row {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 8px 12px; border-radius: 8px; margin: 8px 0; font-size: 0.83rem;
+  }
+  .relevance-confirmed  { background: rgba(39,174,96,0.08);  border: 1px solid rgba(39,174,96,0.25); }
+  .relevance-possible   { background: rgba(230,126,34,0.08); border: 1px solid rgba(230,126,34,0.25); }
+  .relevance-needs-info { background: rgba(45,63,212,0.06);  border: 1px solid rgba(45,63,212,0.20); }
+  .relevance-no-match   { background: var(--bg3); border: 1px solid var(--border); }
+  .relevance-dot { font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+  .relevance-label { font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .relevance-confirmed .relevance-label  { color: var(--green); }
+  .relevance-possible  .relevance-label  { color: var(--orange); }
+  .relevance-needs-info .relevance-label { color: var(--watch); }
+  .relevance-no-match  .relevance-label  { color: var(--text3); }
+  .relevance-explanation { color: var(--text2); font-size: 0.82rem; }
+
+  /* ── Expandable details ──────────────────────────────────────────────── */
+  details.card-expand { margin-top: 12px; }
+  details.card-expand > summary {
+    cursor: pointer; font-size: 0.78rem; color: var(--accent2);
+    user-select: none; padding: 4px 0; list-style: none;
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  details.card-expand > summary::-webkit-details-marker { display: none; }
+  details.card-expand > summary::before { content: '▶'; font-size: 0.55rem; transition: transform 0.2s; }
+  details.card-expand[open] > summary::before { transform: rotate(90deg); }
+  details.card-expand > summary:hover { color: var(--accent); }
+  .expand-content { margin-top: 10px; padding: 12px; background: var(--bg3); border-radius: 8px; border: 1px solid var(--border); font-size: 0.8rem; color: var(--text2); }
+  .expand-section { margin-bottom: 10px; }
+  .expand-section:last-child { margin-bottom: 0; }
+  .expand-label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 3px; }
+
+  /* ── Evidence & BBB badges ───────────────────────────────────────────── */
+  .badge-evidence  { background: rgba(45,63,212,0.08);  color: var(--watch); border: 1px solid rgba(45,63,212,0.20); }
+  .badge-bbb-yes   { background: rgba(39,174,96,0.10);  color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .badge-bbb-partial { background: rgba(230,126,34,0.10); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+  .badge-bbb-no    { background: rgba(214,48,49,0.08);  color: var(--red);   border: 1px solid rgba(214,48,49,0.3); }
+  .badge-bbb-unknown { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
+
+  /* ── Treatment status pill ───────────────────────────────────────────── */
+  .treatment-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 600;
+  }
+  .treatment-active { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .treatment-pending { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
 </style>
 </head>
 <body>
@@ -694,12 +742,22 @@
         <div class="profile-value">VP Shunt CERTAS (הוכנס 19.06.2026)</div>
       </div>
       <div class="profile-item">
-        <div class="profile-label">סטטוס נוכחי</div>
-        <div class="profile-value">אשפוז בית תחת שיבא — עדכן לפי מצב נוכחי</div>
+        <div class="profile-label">טיפול פעיל</div>
+        <div class="profile-value">
+          <span class="treatment-pill treatment-active">✅ Zegfrovy (Sunvozertinib)</span>
+          <div style="font-size:0.78rem;color:var(--text3);margin-top:3px">מעכב EGFR exon 20, דור 3 — נבחר בין השאר בשל חדירת BBB</div>
+        </div>
       </div>
       <div class="profile-item">
-        <div class="profile-label">זיהום שant</div>
-        <div class="profile-value" style="color:var(--orange)">S. epidermidis — Vancomycin עד 26.07.2026 לפחות</div>
+        <div class="profile-label">טיפול שאושר והוזמן</div>
+        <div class="profile-value">
+          <span class="treatment-pill treatment-pending">🔜 ONC201 (Dordaviprone)</span>
+          <div style="font-size:0.78rem;color:var(--text3);margin-top:3px">אושר FDA אוג׳ 2025 — בדרך לישראל, טרם הוחל</div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-label">שיקול מרכזי בבחירת טיפול</div>
+        <div class="profile-value" style="font-size:0.82rem">חדירת מחסום דם-מוח (BBB) — תנאי הכרחי. Zegfrovy נבחר על פני Amivantamab בשל עדיפות BBB</div>
       </div>
       <div class="profile-item">
         <div class="profile-label">מוסד מטפל</div>
@@ -723,19 +781,19 @@
   <div class="stats-bar" id="stats-bar">
     <div class="stat-card stat-red">
       <div class="stat-num" id="stat-red">0</div>
-      <div class="stat-label">🔴 דחוף / לסקירה מיידית</div>
+      <div class="stat-label">🔴 דורש התייחסות מיידית</div>
     </div>
     <div class="stat-card stat-orange">
       <div class="stat-num" id="stat-orange">0</div>
-      <div class="stat-label">🟠 חשוב / לסקירה בקרוב</div>
+      <div class="stat-label">🟠 חשוב לדיון עם הצוות</div>
     </div>
     <div class="stat-card stat-blue">
       <div class="stat-num" id="stat-watch">0</div>
-      <div class="stat-label">🔵 במעקב</div>
+      <div class="stat-label">🔵 במעקב מחקרי</div>
     </div>
     <div class="stat-card stat-green">
       <div class="stat-num" id="stat-trials">0</div>
-      <div class="stat-label">ניסויים קליניים נבדקו</div>
+      <div class="stat-label">ניסויים קליניים</div>
     </div>
   </div>
 
@@ -763,9 +821,9 @@
     <span class="filter-label">סנן:</span>
     <button class="filter-btn active" data-f="all"       onclick="applyFilter(this)">הכל</button>
     <button class="filter-btn"        data-f="today"     onclick="applyFilter(this)">🆕 יום אחרון</button>
-    <button class="filter-btn"        data-f="urgent"    onclick="applyFilter(this)">🔴 דחוף</button>
-    <button class="filter-btn"        data-f="important" onclick="applyFilter(this)">🟠 חשוב</button>
-    <button class="filter-btn"        data-f="watch"     onclick="applyFilter(this)">🔵 מעקב</button>
+    <button class="filter-btn"        data-f="urgent"    onclick="applyFilter(this)">🔴 דורש התייחסות</button>
+    <button class="filter-btn"        data-f="important" onclick="applyFilter(this)">🟠 לדיון עם הצוות</button>
+    <button class="filter-btn"        data-f="watch"     onclick="applyFilter(this)">🔵 במעקב מחקרי</button>
   </div>
 
   <!-- Tab Contents -->
@@ -876,9 +934,9 @@ function toggleProfile() {
 function priorityBadge(priority) {
   if (!priority) return '';
   const p = priority.toUpperCase();
-  if (p === 'RED' || p === 'CRITICAL') return '<span class="badge badge-red">🔴 דחוף</span>';
-  if (p === 'ORANGE' || p === 'HIGH') return '<span class="badge badge-orange">🟠 חשוב</span>';
-  if (p === 'WATCH') return '<span class="badge badge-watch">🔵 מעקב</span>';
+  if (['RED','CRITICAL','URGENT'].includes(p))  return '<span class="badge badge-red">🔴 דורש התייחסות מיידית</span>';
+  if (['ORANGE','HIGH','DISCUSS'].includes(p))  return '<span class="badge badge-orange">🟠 חשוב לדיון עם הצוות</span>';
+  if (['WATCH','MONITOR'].includes(p))          return '<span class="badge badge-watch">🔵 במעקב מחקרי</span>';
   return '';
 }
 
@@ -901,65 +959,116 @@ function accessBadge(access) {
   return `<span class="badge badge-not-recruiting">${access}</span>`;
 }
 
-// ─── Card builder ─────────────────────────────────────────────────────────
+// ─── Card builder (5-question framework) ──────────────────────────────────
 function buildCard(item, isReviewed) {
   const priority = (item.priority || '').toUpperCase();
-  const cardClass = (priority === 'RED' || priority === 'CRITICAL' ? 'card-red'
-                  : priority === 'ORANGE' || priority === 'HIGH' ? 'card-orange'
-                  : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
+  const cardClass = (['RED','CRITICAL','URGENT'].includes(priority) ? 'card-red'
+    : ['ORANGE','HIGH','DISCUSS'].includes(priority) ? 'card-orange'
+    : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
 
-  const bullets = (item.why_matters_bullets || [])
-    .map(b => `<li>${b}</li>`).join('');
+  // Q2: Relevance to Hili
+  let relevanceHtml = '';
+  if (item.relevance_to_hili) {
+    const lvl = item.relevance_to_hili.level || 'needs_more_info';
+    const exp = item.relevance_to_hili.explanation || '';
+    const R = {
+      confirmed:      { cls:'relevance-confirmed',  dot:'🟢', lbl:'רלוונטיות אישית מאומתת' },
+      possible:       { cls:'relevance-possible',   dot:'🟡', lbl:'רלוונטיות אפשרית' },
+      needs_more_info:{ cls:'relevance-needs-info', dot:'🔵', lbl:'נדרש מידע נוסף לאימות' },
+      no_match:       { cls:'relevance-no-match',   dot:'⚪', lbl:'לא נמצאה התאמה אישית' },
+    };
+    const r = R[lvl] || R.needs_more_info;
+    relevanceHtml = `<div class="relevance-row ${r.cls}">
+      <span class="relevance-dot">${r.dot}</span>
+      <div><div class="relevance-label">${r.lbl}</div>${exp?`<div class="relevance-explanation">${exp}</div>`:''}</div>
+    </div>`;
+  }
 
-  const limitationHtml = item.key_limitation
-    ? `<div class="limitation-box"><div class="limitation-label">מגבלה עיקרית</div>${item.key_limitation}</div>`
-    : '';
+  // Q1: what changed (old schema: why_matters_bullets too)
+  const bulletsHtml = (item.why_matters_bullets||[]).length
+    ? `<ul class="bullets" style="margin:6px 0">${item.why_matters_bullets.map(b=>`<li>${b}</li>`).join('')}</ul>` : '';
 
-  const actionHtml = item.action
-    ? `<div class="action-box"><div class="action-label">מה לעשות עכשיו?</div><div class="action-text">${item.action}</div></div>`
-    : '';
+  // Q5: Action — always visible
+  const actionText = item.action_he || item.action || '';
+  const actionHtml = actionText
+    ? `<div class="action-box"><div class="action-label">מה לעשות?</div><div class="action-text">${actionText}</div></div>` : '';
 
-  const sourceHtml = item.source_url
-    ? `<a class="source-link" href="${item.source_url}" target="_blank" rel="noopener">🔗 מקור ראשי</a>`
-    : (item.source_url_secondary ? `<a class="source-link" href="${item.source_url_secondary}" target="_blank" rel="noopener">🔗 מקור</a>` : '');
+  // ── Expandable details ──────────────────────────────────────────────────
+  let expandParts = [];
 
-  const techHtml = item.technical_details
-    ? `<details class="tech-details"><summary>+ פרטים טכניים / ניתוח זכאות</summary><div class="tech-content">${item.technical_details}</div></details>`
-    : '';
+  // Q3: Evidence quality
+  if (item.evidence_quality) {
+    const eq = item.evidence_quality;
+    const lvlMap = {
+      human_clinical:'מחקר קליני בבני אדם', human_case:'דיווחי מקרה (בני אדם)',
+      animal:'מחקר בבעלי חיים', preclinical:'קדם-קליני / מעבדה',
+      hypothesis:'השערה מנגנונית', preprint:'פרה-פרינט (טרם ביקורת עמיתים)',
+    };
+    expandParts.push(`<div class="expand-section">
+      <div class="expand-label">רמת הראיות</div>
+      <span class="badge badge-evidence">${lvlMap[eq.level]||eq.level||'לא ידוע'}</span>
+      ${eq.details?`<div style="margin-top:4px">${eq.details}</div>`:''}
+    </div>`);
+  }
+
+  // Q4: BBB assessment
+  if (item.bbb_assessment) {
+    const bbb = item.bbb_assessment;
+    const bM={yes:['bbb-yes','חודרת BBB ✓'],partial:['bbb-partial','חדירה חלקית ~'],no:['bbb-no','לא חודרת BBB ✗'],unknown:['bbb-unknown','חדירת BBB לא ידועה ?']};
+    const [bcls,blbl]= bM[bbb.evidence]||bM.unknown;
+    expandParts.push(`<div class="expand-section">
+      <div class="expand-label">מחסום דם-מוח (BBB)</div>
+      <span class="badge badge-${bcls}">${blbl}</span>
+      ${bbb.details?`<div style="margin-top:4px">${bbb.details}</div>`:''}
+    </div>`);
+  }
+
+  // Scientific explanation
+  const sciExp = item.expandable_details?.scientific_explanation || item.technical_details || '';
+  if (sciExp) expandParts.push(`<div class="expand-section"><div class="expand-label">הסבר מדעי</div><div>${sciExp}</div></div>`);
+
+  // Study limitations
+  const limText = item.expandable_details?.study_limitations || item.key_limitation || '';
+  if (limText) expandParts.push(`<div class="expand-section"><div class="expand-label">מגבלות המחקר</div><div>${limText}</div></div>`);
+
+  // Connection to current treatment
+  const connText = item.expandable_details?.connection_to_current_treatment || '';
+  if (connText) expandParts.push(`<div class="expand-section"><div class="expand-label">קשר לטיפול הנוכחי (Zegfrovy / ONC201)</div><div>${connText}</div></div>`);
+
+  // Source
+  const srcUrl = item.source_url || item.source_url_secondary || '';
+  if (srcUrl) expandParts.push(`<div class="expand-section"><a class="source-link" href="${srcUrl}" target="_blank" rel="noopener">🔗 מקור ראשי</a></div>`);
+
+  const expandHtml = expandParts.length
+    ? `<details class="card-expand"><summary>פרטים נוספים</summary><div class="expand-content">${expandParts.join('')}</div></details>` : '';
+
+  // Date footer
+  const dateFooter = (item.date_detected||item.date_published)
+    ? `<div style="font-size:0.72rem;color:var(--text3);margin-top:8px">נגלה: ${item.date_detected||item.date_published}</div>` : '';
 
   const hideBtn = isReviewed
-    ? `<button class="unhide-btn" onclick="undismissItem('${(item.id||'').replace(/'/g,"\\'")}')">↩ בטל הסתרה</button>`
+    ? `<button class="unhide-btn" onclick="undismissItem('${(item.id||'').replace(/'/g,"\\'")}')">↩ שחזר</button>`
     : `<button class="hide-btn" onclick="dismissItem('${(item.id||'').replace(/'/g,"\\'")}', false)">הסתר</button>`;
 
   return `
-  <div class="card ${cardClass}" id="item-${item.id || ''}">
+  <div class="card ${cardClass}" id="item-${item.id||''}">
     <div class="card-header">
-      <div>
-        <div class="card-title">${item.title_he || item.title}</div>
-        ${item.title_en ? `<span class="card-title-en">${item.title_en}</span>` : ''}
+      <div style="flex:1;min-width:0">
+        <div class="card-title">${item.title_he||item.title||''}</div>
+        ${item.title_en?`<span class="card-title-en">${item.title_en}</span>`:''}
       </div>
-      <div class="badges" style="align-items:center">
+      <div class="badges" style="align-items:flex-start;gap:5px">
         ${priorityBadge(item.priority)}
-        ${evidenceBadge(item.evidence_level)}
-        ${scoreBadge(item.match_score)}
-        ${accessBadge(item.access)}
         ${hideBtn}
       </div>
     </div>
     <div class="card-body">
-      ${item.what_changed ? `<div class="card-section"><div class="card-section-title">מה השתנה / מה חדש</div><div class="card-section-content">${item.what_changed}</div></div>` : ''}
-      ${bullets ? `<div class="card-section"><div class="card-section-title">מדוע חשוב להילי</div><ul class="bullets">${bullets}</ul></div>` : ''}
-      ${limitationHtml}
+      ${item.what_changed?`<div style="margin-bottom:8px;font-size:0.87rem;color:var(--text)">${item.what_changed}</div>`:''}
+      ${bulletsHtml}
+      ${relevanceHtml}
       ${actionHtml}
-      <div class="card-meta-grid">
-        ${item.location ? `<div class="meta-item"><div class="meta-label">מיקום</div><div class="meta-value">${item.location}</div></div>` : ''}
-        ${item.age_eligibility ? `<div class="meta-item"><div class="meta-label">גיל זכאות</div><div class="meta-value">${item.age_eligibility}</div></div>` : ''}
-        ${item.nct_id ? `<div class="meta-item"><div class="meta-label">NCT</div><div class="meta-value"><a class="source-link" href="https://clinicaltrials.gov/study/${item.nct_id}" target="_blank">${item.nct_id}</a></div></div>` : ''}
-        ${item.date_published ? `<div class="meta-item"><div class="meta-label">תאריך</div><div class="meta-value">${item.date_published}</div></div>` : ''}
-        ${item.date_detected ? `<div class="meta-item"><div class="meta-label">נגלה</div><div class="meta-value">${item.date_detected}</div></div>` : ''}
-        ${sourceHtml ? `<div class="meta-item"><div class="meta-label">מקור</div><div class="meta-value">${sourceHtml}</div></div>` : ''}
-      </div>
-      ${techHtml}
+      ${expandHtml}
+      ${dateFooter}
     </div>
   </div>`;
 }
@@ -1013,6 +1122,34 @@ function buildTrialCard(trial, isReviewed) {
        ${(trial.eligibility_gaps || []).map(g => `<li>${g}</li>`).join('')}
        </ul></div>` : '';
 
+  // BBB assessment for trial
+  function bbbTrialBadge(level) {
+    if (!level) return '';
+    const map = {yes:'badge-bbb-yes', partial:'badge-bbb-partial', no:'badge-bbb-no', unknown:'badge-bbb-unknown'};
+    const label = {yes:'✅ חודר BBB', partial:'⚠️ חדירה חלקית', no:'❌ לא חודר BBB', unknown:'❓ BBB — לא ידוע'};
+    return `<span class="badge ${map[level]||'badge-bbb-unknown'}">${label[level]||level}</span>`;
+  }
+
+  const bbbHtml = (trial.bbb_note || (trial.bbb_assessment && trial.bbb_assessment.evidence))
+    ? (() => {
+        const bbbLevel = trial.bbb_assessment && trial.bbb_assessment.evidence;
+        const bbbDetails = (trial.bbb_assessment && trial.bbb_assessment.details) || trial.bbb_note || '';
+        return `<div style="padding:8px 12px;background:rgba(45,63,212,0.04);border:1px solid rgba(45,63,212,0.15);border-radius:8px;margin:8px 0">
+          <div style="font-size:0.78rem;font-weight:600;color:var(--text3);margin-bottom:4px">מחסום דם-מוח (BBB)</div>
+          ${bbbLevel ? bbbTrialBadge(bbbLevel) : ''}
+          ${bbbDetails ? `<div style="font-size:0.81rem;color:var(--text2);margin-top:4px">${bbbDetails}</div>` : ''}
+        </div>`;
+      })()
+    : '';
+
+  const egfrNote = trial.egfr_note
+    ? `<div class="limitation-box"><div class="limitation-label">הערת EGFR / ONC201</div><div class="limitation-text">${trial.egfr_note}</div></div>`
+    : '';
+
+  const summaryHtml = trial.summary_he
+    ? `<div style="font-size:0.87rem;color:var(--text2);margin:8px 0;line-height:1.55">${trial.summary_he}</div>`
+    : '';
+
   const trialHideBtn = isReviewed
     ? `<button class="unhide-btn" onclick="undismissItem('${(trial.nct_id||'').replace(/'/g,"\\'")}')">↩ בטל הסתרה</button>`
     : `<button class="hide-btn" onclick="dismissItem('${(trial.nct_id||'').replace(/'/g,"\\'")}', true)">הסתר</button>`;
@@ -1032,8 +1169,11 @@ function buildTrialCard(trial, isReviewed) {
       </div>
     </div>
     <div class="card-body">
+      ${summaryHtml}
       ${timingAlert}
       ${exclusionCritical}
+      ${bbbHtml}
+      ${egfrNote}
       ${inclusionHtml}
       ${gapsHtml}
       ${actionText ? `<div class="action-box"><div class="action-label">מה לעשות עכשיו?</div><div class="action-text">${actionText}</div></div>` : ''}
@@ -1082,9 +1222,9 @@ function renderUpdatesTab(filter) {
   if (filter === 'today') {
     const todayStr = new Date().toISOString().slice(0, 10);
     items = items.filter(d => (d.date_detected || '').slice(0, 10) === todayStr);
-  } else if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
-  else if (filter==='important') items = items.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
-  else if (filter==='watch')  items = items.filter(d => (d.priority||'').toUpperCase()==='WATCH');
+  } else if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL','URGENT'].includes((d.priority||'').toUpperCase()));
+  else if (filter==='important') items = items.filter(d => ['ORANGE','HIGH','DISCUSS'].includes((d.priority||'').toUpperCase()));
+  else if (filter==='watch')  items = items.filter(d => ['WATCH','MONITOR'].includes((d.priority||'').toUpperCase()));
 
   // Sort: priority first, then match_score
   const pOrder = {'RED':0,'CRITICAL':0,'ORANGE':1,'HIGH':1,'WATCH':2};
@@ -1147,9 +1287,9 @@ async function init() {
   // ── Stats ────────────────────────────────────────────────────────────────
   const dismissed = getDismissed();
   const visDev = devs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
-  const red    = visDev.filter(d => ['RED','CRITICAL'].includes((d.priority||'').toUpperCase()));
-  const orange = visDev.filter(d => ['ORANGE','HIGH'].includes((d.priority||'').toUpperCase()));
-  const watch  = visDev.filter(d => (d.priority||'').toUpperCase() === 'WATCH');
+  const red    = visDev.filter(d => ['RED','CRITICAL','URGENT'].includes((d.priority||'').toUpperCase()));
+  const orange = visDev.filter(d => ['ORANGE','HIGH','DISCUSS'].includes((d.priority||'').toUpperCase()));
+  const watch  = visDev.filter(d => ['WATCH','MONITOR'].includes((d.priority||'').toUpperCase()));
 
   document.getElementById('stat-red').textContent    = red.length;
   document.getElementById('stat-orange').textContent = orange.length;

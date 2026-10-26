@@ -362,85 +362,121 @@ def analyze_with_claude(client, trials_raw, papers_raw, preprints_raw, rss_raw,
         "source": r["source"], "url": r["url"],
     } for r in rss_raw[:10]], ensure_ascii=False)
 
-    prompt = f"""Pediatric neuro-oncology research analyst. Today: {TODAY}.
+    prompt = f"""You are a pediatric neuro-oncology research analyst. Your role is a personal medical intelligence assistant — NOT to generate alerts, but to identify information that has genuine clinical relevance to this specific patient.
+Today: {TODAY}.
 
-PATIENT:
+═══ PATIENT PROFILE (verified) ═══
 - Age: ~29 months (DOB 2022-05-06), female
 - Diagnosis: Diffuse Midline Glioma H3K27-altered, Right thalamus + brainstem, WHO Grade 4
-- Mutations: H3K27M + EGFR exon 20 insertion + TP53 x3
+- Mutations: H3K27M + EGFR exon 20 insertion + TP53 ×3
 - RT completed: 2026-08-08
-- CRITICAL: EGFR exon 20 insertion REDUCES ONC201 efficacy (SNO 2025)
-- Display name for dashboard: הילי הודיה
+- ACTIVE TREATMENT: Zegfrovy (Sunvozertinib) — EGFR exon 20 inhibitor, gen-3, currently receiving
+- PENDING TREATMENT: ONC201 (Dordaviprone) — FDA-approved Aug 2025, ordered, en route to Israel, NOT YET STARTED
+- CRITICAL: EGFR exon 20 insertion REDUCES ONC201 efficacy (SNO 2025, ICR London data)
+- BBB CRITERION: Blood-brain barrier penetration is a PRIMARY selection criterion. Zegfrovy was chosen over Amivantamab partly for superior BBB penetration.
+- Display name: הילי הודיה
 
-SKIP — already known trial IDs: {json.dumps(known_trial_ids[:35])}
-SKIP — already known dev IDs: {json.dumps(known_dev_ids[:35])}
+═══ KEY EVALUATION CRITERIA ═══
+For every treatment finding, assess:
+1. BBB penetration evidence level: human PK data > animal CNS data > in-vitro > mechanistic hypothesis
+2. CNS activity evidence: intracranial response data > CNS disease-specific data > general activity
+3. Relevance to mutations: H3K27M | EGFR exon 20 insertion | TP53 | DMG thalamic
+4. Interaction with Zegfrovy (EGFR inhibitor) or ONC201 (DRD2/ClpP agonist)
+5. Evidence quality: human_clinical > human_case > animal > preclinical > hypothesis > preprint
+IMPORTANT: BBB penetration ≠ therapeutic CNS concentration ≠ clinical efficacy. Distinguish clearly.
 
-=== LIVE TRIALS (ClinicalTrials.gov, recruiting today) ===
+═══ ALREADY KNOWN (SKIP THESE) ═══
+Trial IDs to skip: {json.dumps(known_trial_ids[:35])}
+Dev IDs to skip: {json.dumps(known_dev_ids[:35])}
+
+═══ LIVE TRIALS (ClinicalTrials.gov) ═══
 {trials_s}
 
-=== PAPERS (PubMed, last 30 days) ===
+═══ PAPERS (PubMed, last 30 days) ═══
 {papers_s}
 
-=== PREPRINTS (medRxiv/bioRxiv, last 14 days) ===
+═══ PREPRINTS (medRxiv/bioRxiv, last 14 days) ═══
 {preprints_s}
 
-=== MEDICAL NEWS (RSS: journals, NCI, ASCO) ===
+═══ MEDICAL NEWS (RSS) ═══
 {rss_s}
 
-ANALYZE: What is relevant to this specific patient? Not in already-known lists.
-- Trials: age ≤ 29 months eligible? EGFR exon 20 issue?
-- Papers/news: breakthrough? approval? compassionate access?
-- RED = urgent now; ORANGE = important; WATCH = monitor
-- Be honest: if nothing truly new, say so.
+═══ INSTRUCTIONS ═══
+Analyze ONLY items not already known. Apply strict relevance filter — only include if genuinely relevant to this patient.
+- Trials: Is patient age ≤29 months eligible? Any EGFR ex20 note? Any thalamic location inclusion?
+- Developments: Does this change the understanding of Hili's situation, Zegfrovy, ONC201, or treatment options?
+- Do NOT create alerts just to seem active. If nothing new is relevant, say so clearly.
+- Unify related findings into one development rather than creating multiple.
+- Priority:
+  URGENT = requires immediate medical attention (new contraindication, safety signal, time-sensitive trial)
+  DISCUSS = important for next team meeting (new relevant data, trial opening, treatment option)
+  MONITOR = worth watching but no immediate action needed
 
-Return ONLY valid JSON:
+Return ONLY valid JSON (no markdown, no preamble):
 {{
   "new_trials": [
     {{
       "nct_id": "NCT...",
-      "title_he": "כותרת עברית קצרה",
-      "title_en": "English title",
+      "title_he": "כותרת עברית ברורה — המשמעות הרפואית, לא שם המחקר",
+      "title_en": "Short English title",
       "phase": "Phase X",
       "match_category": "reasonable|possible|follow|not_eligible",
-      "priority": "RED|ORANGE|WATCH",
+      "priority": "URGENT|DISCUSS|MONITOR",
       "score": 70,
       "age_eligible": true,
       "recruiting_status": "Recruiting",
       "location_he": "מיקום",
-      "summary_he": "סיכום בעברית",
-      "key_inclusion": ["קריטריון"],
-      "egfr_note": "הערה על ONC201/EGFR או null",
-      "action_he": "פעולה מומלצת",
+      "summary_he": "סיכום 2-3 שורות: מה זה, למה רלוונטי, מה לא ידוע",
+      "key_inclusion": ["קריטריון הכללה מרכזי"],
+      "egfr_note": "הערה על ONC201/EGFR exon 20 אם רלוונטי, אחרת null",
+      "bbb_note": "נתוני חדירת BBB זמינים? מה הם?",
+      "action_he": "פעולה אחת ברורה",
       "source_url": "https://clinicaltrials.gov/study/NCT..."
     }}
   ],
   "new_developments": [
     {{
-      "id": "UNIQUE-ID-{TODAY.replace('-','')}",
-      "priority": "RED|ORANGE|WATCH",
-      "is_new": true,
-      "title_he": "כותרת",
-      "title_en": "English",
+      "id": "KEYWORD-YYYYMMDD",
+      "priority": "URGENT|DISCUSS|MONITOR",
+      "title_he": "כותרת ברורה בעברית — משמעות רפואית, לא שם מדעי",
+      "title_en": "Clear English title",
       "category": "research|regulatory|access|trial|news",
-      "what_changed": "מה חדש",
-      "why_matters_bullets": ["סיבה 1"],
-      "action": "פעולה",
+      "what_changed": "מה חדש — 2-3 שורות ברורות. לא לחזור על השם המדעי.",
+      "why_matters_bullets": ["סיבה ספציפית 1 — עם קשר לפרופיל הילי", "סיבה 2"],
+      "relevance_to_hili": {{
+        "level": "confirmed|possible|needs_more_info|no_match",
+        "explanation": "הסבר קצר מדוע — על בסיס נתוני המוטציות והטיפול המאומתים"
+      }},
+      "evidence_quality": {{
+        "level": "human_clinical|human_case|animal|preclinical|hypothesis|preprint",
+        "details": "מה המקור: כמה חולים? מה שלב המחקר?"
+      }},
+      "bbb_assessment": {{
+        "evidence": "yes|partial|no|unknown",
+        "details": "מה הראיות לחדירת BBB, אם קיימות"
+      }},
+      "expandable_details": {{
+        "scientific_explanation": "הסבר מדעי מפורט יותר",
+        "study_limitations": "מגבלות: גודל מדגם, population, follow-up",
+        "connection_to_current_treatment": "קשר ל-Zegfrovy ו/או ONC201 — האם משלים? מתחרה? לא ידוע?"
+      }},
+      "action": "פעולה אחת ברורה: להעלות בפגישה / לפנות לצוות / להמשיך לעקוב / אין צורך בפעולה",
       "source_url": "https://...",
       "date_detected": "{TODAY}"
     }}
   ],
-  "key_findings": ["ממצא 1", "ממצא 2"],
+  "key_findings": ["ממצא מהותי 1", "ממצא מהותי 2"],
   "changes_detected": true,
-  "scan_notes": "what was scanned and found",
+  "scan_notes": "brief: what sources were scanned, how many items, what was found/not found",
   "research_hypotheses": [
     {{
-      "id": "HYP-UNIQUE-ID",
-      "title_he": "כיוון מחקרי לבחינה בעברית",
-      "title_en": "Research direction in English",
+      "id": "HYP-KEYWORD",
+      "title_he": "כיוון שילוב לבחינה — ניסוח כשאלה",
+      "title_en": "Research direction as a question",
       "urgency": "HIGH|MEDIUM|SPECULATIVE",
-      "rationale_he": "הסבר בעברית — למה זה רלוונטי לפרופיל של הילי",
-      "supporting_evidence": ["ראיה 1", "ראיה 2"],
-      "next_step": "מה לעשות בפועל",
+      "rationale_he": "למה זה רלוונטי לפרופיל הספציפי של הילי — H3K27M + EGFR ex20 + Zegfrovy",
+      "supporting_evidence": ["ראיה מבוססת 1", "ראיה 2"],
+      "next_step": "פעולה ספציפית: שאל רופא / חפש מחקר / בקש גישה",
       "relevant_trials": ["NCT..."],
       "date_generated": "{TODAY}"
     }}
