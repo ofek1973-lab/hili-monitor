@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-25",
+    "last_updated": "2026-10-26",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -588,6 +588,24 @@
       "action": "התייעץ עם EGFR-מומחה הגלימה ו-DMG מיד. אם שוקלים ONC201, הצדק. בחן Afatinib/Neratinib/BLU5082 כי זיקוף הקריטי EGFR.",
       "source_url": "SNO 2025 conference",
       "date_detected": "2026-10-25"
+    },
+    {
+      "id": "EGFR-EX20-ONC201-CLINICAL-IMPLICATION-20261026",
+      "priority": "RED",
+      "is_new": false,
+      "title_he": "EGFR exon 20 insertion מפחיתה efficacy ONC201 — השלכה קלינית עבור ותיקול",
+      "title_en": "EGFR exon 20 insertion reduces ONC201 efficacy (SNO 2025) — clinical implication for this patient",
+      "category": "research",
+      "what_changed": "ידע קיים מ-SNO 2025 מצביע על כך שה-EGFR exon 20 insertion (טיפוס של ותיקול) מנטרל את היעילות של ONC201. עובדה זו צריכה להשפיע על היערכות קלינית וחיפוש אלטרנטיבה.",
+      "why_matters_bullets": [
+        "ONC201 הוא קו טיפול ראשוני מבוסס לגליומות H3K27M",
+        "ותיקול בעלת שני גורמים בעדיפות גבוהה: H3K27M ו-EGFR ex20",
+        "הקונפליקט הזה מצביע על צורך במנגנון חלופי: inhibitor ישיר של EGFR ex20 (כגון afatinib, neratinib, BLU5082) או immunotherapy",
+        "ONC201 אינו אופציה פעילה; חיפוש חלופי הוא דחוף"
+      ],
+      "action": "1. סלול דיוק של מצב EGFR ex20 במול afatinib, neratinib, או BLU5082 preclinical data. 2. בחן אם גישה immunotherapy (PD-1/PD-L1, LAG-3, גישות antigenicity) עשויה להחליף. 3. עדכן את הציפיות קליניות כי ONC201 עלול שלא להתגים.",
+      "source_url": null,
+      "date_detected": "2026-10-26"
     }
   ]
 }

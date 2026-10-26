@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-25",
+    "last_updated": "2026-10-26",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -825,6 +825,132 @@
       "egfr_note": "Tovorafenib אינו מעכב EGFR; כמה צלילות עשויות להיות רלוונטיות ל-FGFR שנוי בפיתוח DMG אך לא מטפל ב-EGFR ex20.",
       "action_he": "הרשם למייל עדכונים. כשמתחילים מגויסות בדוק נתוני בטיחות/תגובה בהקשר למטופל זה.",
       "source_url": "https://clinicaltrials.gov/study/NCT07206849"
+    },
+    {
+      "nct_id": "NCT06161974",
+      "title_he": "מחקר אולוטסידניב וטמוזולומיד בגליומות ממאירות",
+      "title_en": "Study of Olutasidenib and Temozolomide in HGG",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "ORANGE",
+      "score": 55,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "בריטניה, הולנד, גרמניה",
+      "summary_he": "ותיקול היא בת 29 חודשים; הניסוי דורש גיל ≥12 שנה. אך ולוטסידניב (IDH1 inhibitor) משנה היגיון אפיגנטי בגליומות דיפוזיות. אין התאמה גילית כרגע, אך עשוי להיות רלוונטי להתפתחויות עתידיות.",
+      "key_inclusion": [
+        "גיל ≥12 שנים",
+        "גליומה ממאירה",
+        "מוטציה IDH"
+      ],
+      "egfr_note": "לא רלוונטי ישירות; אך IDH inhibition עשוי להיות קומפלמנטרי ל-EGFR-targeted therapy בהקשר H3K27M",
+      "action_he": "עקוב לעדכוני גיל או קוהורטות פדיאטריות; בחן אם ההיגיון של ולוטסידניב חל על קו טיפול עתידי",
+      "source_url": "https://clinicaltrials.gov/study/NCT06161974"
+    },
+    {
+      "nct_id": "NCT06357377",
+      "title_he": "בטיחות, מינון והעברת NEO100 בגידולי מוח ילדים",
+      "title_en": "A Study of the Safety, Dosing, and Delivery of NEO100 in Pediatric Brain Tumors",
+      "phase": "Phase I/II",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 45,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "NEO100 הוא inhibitor של pyruvate dehydrogenase kinase (PDHK); עשוי להשפיע על מטבוליזם לקטט בגליומות H3K27M. גיל מינימלי 5 שנים; ותיקול בת 29 חודשים עלולה שלא להיות מוכשרת כעת, אך מנגנון זה רלוונטי למחקרי אפיגנזה שנצפו (H3K27M-lactate metabolism).",
+      "key_inclusion": [
+        "גיל ≥5 שנים",
+        "גידולי מוח ממאירים",
+        "פדיאטריה"
+      ],
+      "egfr_note": null,
+      "action_he": "עקוב; השקע בהבנת נתונים פדיאטריים על לקטט ומטבוליזם ב-DMG H3K27M",
+      "source_url": "https://clinicaltrials.gov/study/NCT06357377"
+    },
+    {
+      "nct_id": "NCT07562971",
+      "title_he": "Ultra-focused להפתיחת BBB ב-DMG פונטיני להגברת יעילות תרופה",
+      "title_en": "Focused Ultrasound Blood-Brain Barrier Opening in Pontine DMG to Enhance Drug Delivery",
+      "phase": "Phase I/II",
+      "match_category": "reasonable",
+      "priority": "ORANGE",
+      "score": 68,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "הולנד",
+      "summary_he": "תהודה מוקדת לפתיחת BBB — טכנולוגיה לשיפור דיפוזיה של תרופות למוח. ותיקול הנמצאת ב-thalamus + brainstem עלולה להפיק תועלת משיפור חדירה של EGFR inhibitors או immunotherapy. גיל מינימלי 4 שנים; ותיקול בת 29 חודשים עדיין צעירה מדי, אך עקוב.",
+      "key_inclusion": [
+        "גיל ≥4 שנים",
+        "DMG פונטיני או מיידליני",
+        "אפשרות טכנית של ultrasound"
+      ],
+      "egfr_note": "עשוי להגביר חדירת EGFR inhibitors או ONC206 דרך BBB; אך מכיוון שה-EGFR ex20 מפחיתה ONC201 efficacy, שיפור חדירה עלול שלא להיתן בעצמו)",
+      "action_he": "עקוב לעדכוני גיל וקוהורטות פדיאטריות; שקול התייעצות עם מרכז גל מוקדות בהולנד או יציאה גיאוגרפית",
+      "source_url": "https://clinicaltrials.gov/study/NCT07562971"
+    },
+    {
+      "nct_id": "NCT07767110",
+      "title_he": "הזרקה ממוקדת של LSAM-Cisplatin בגליומות, הערכת תגובה",
+      "title_en": "Targeted LSAM-Cisplatin Infusion in Gliomas, Evaluation of Response",
+      "phase": "Phase I/II",
+      "match_category": "possible",
+      "priority": "WATCH",
+      "score": 50,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "מקום: לא צוין",
+      "summary_he": "LSAM (lipid-based systemic arteriole-mediated) delivery של cisplatin עם זילוח מוקדת. הגיל המינימלי הוא 3 שנים — ותיקול עשויה להיות מוכשרת. אך בגלל TP53 x3 mutations, רגישות ל-platinum chemotherapy צפויה להיות מורכבת. טרם מתחיל הגיוס.",
+      "key_inclusion": [
+        "גיל ≥3 שנים",
+        "גליומות",
+        "חשיפות ממוקדות אפשריות"
+      ],
+      "egfr_note": null,
+      "action_he": "עקוב לעדכוני הוועדה; בחן את הפרוטוקול כשיתחיל גיוס; שים לב למצב TP53",
+      "source_url": "https://clinicaltrials.gov/study/NCT07767110"
+    },
+    {
+      "nct_id": "NCT06624371",
+      "title_he": "אטובבקוואן בשילוב עם radiotherapy בגידולי מוח ממאירים בילדים",
+      "title_en": "Atovaquone Combined With Radiation in Children With Malignant Brain Tumors",
+      "phase": "Phase II",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 48,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "אטוביקוואן הוא antimitochondrial agent שעלול להשפיע על metabolism ורדיוסנסיטיביטי. ותיקול כבר סיימה RT ב-2026-08-08. אך קומבינציה זו עשויה להיות רלוונטית לטיפול עתידי או recurrence. גיל מינימלי 2 שנים — ותיקול מוכשרת.",
+      "key_inclusion": [
+        "גיל ≥2 שנים",
+        "גידול מוח ממאיר",
+        "סיום או בתוך radiotherapy"
+      ],
+      "egfr_note": null,
+      "action_he": "עקוב; בחן רלוונטיות לטיפול משמור (maintenance) או recurrent disease בהקשר H3K27M",
+      "source_url": "https://clinicaltrials.gov/study/NCT06624371"
+    },
+    {
+      "nct_id": "NCT05096481",
+      "title_he": "חיסון PEP-CMV ליעוד antigen CMV בגליומות ממאירות ילדים חדשות אבחנה ו-DIPG",
+      "title_en": "PEP-CMV Vaccine Targeting CMV Antigen in Newly Diagnosed Pediatric HGG and DIPG",
+      "phase": "Phase II",
+      "match_category": "reasonable",
+      "priority": "ORANGE",
+      "score": 65,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "חיסון CMV-targeted immunotherapy. לא תלוי ישירות ב-EGFR או H3K27M mutations, אך עלול להיות שלם בחזית immune therapy ל-newly diagnosed ו-recurrent DMG. גיל מינימלי 3 שנים; ותיקול בת 29 חודשים צעירה מעט אבל קרובה לגבול.",
+      "key_inclusion": [
+        "גיל ≥3 שנים",
+        "HGG חדש אבחנה או DIPG/DMG",
+        "CMV seropositive (אפשר)"
+      ],
+      "egfr_note": null,
+      "action_he": "בדוק אם קוהורטה פדיאטרית צעירה זמינה; בחן CMV status של ותיקול; שקול participation אם מגיל מתאים",
+      "source_url": "https://clinicaltrials.gov/study/NCT05096481"
     }
   ]
 }

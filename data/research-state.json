@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-25",
-    "next_scheduled_scan": "2026-10-26",
+    "last_full_scan": "2026-10-26",
+    "next_scheduled_scan": "2026-10-27",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -37,7 +37,13 @@
     "NCT04870944",
     "NCT07608003",
     "NCT06860594",
-    "NCT07206849"
+    "NCT07206849",
+    "NCT06161974",
+    "NCT06357377",
+    "NCT07562971",
+    "NCT07767110",
+    "NCT06624371",
+    "NCT05096481"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -64,7 +70,8 @@
     "H3K27M-METTL3-m6A-20260928",
     "THALAMIC-GLIOMA-PHENOTYPE-20261014",
     "THALAMIC-DMG-LANDSCAPE-20261001",
-    "EGFR-EX20-ONC201-CONFLICT-20261025"
+    "EGFR-EX20-ONC201-CONFLICT-20261025",
+    "EGFR-EX20-ONC201-CLINICAL-IMPLICATION-20261026"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -91,28 +98,28 @@
     "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear"
   },
   "last_run_summary": {
-    "date": "2026-10-25",
+    "date": "2026-10-26",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
-    "new_trials_added": 4,
+    "new_trials_added": 6,
     "new_developments_added": 1,
     "fetched": {
-      "clinical_trials": 19,
+      "clinical_trials": 52,
       "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "מטופל בן 29 חודשים עם DMG H3K27M בתלמוס + גזע מוח, WHO 4, עם מוטציה נדירה של EGFR exon 20",
-      "TP53 x3 מוטציות מציינות תמונה גנטית מסוכנת מאוד",
-      "RTX הושלם ב-2026-08-08; חלון זמן הוא 2.5 חודשים לשיקול טיפול מולטימודלי",
-      "ONC201 לא יהיה יעיל בשל EGFR ex20; דרושה חלופה",
-      "אין נסיונות חדשים פי רקודמי או פרוץ רגולטורי שפורסמו בחודשים האחרונים",
-      "מעט משימות ניסיון מתמחות ב-EGFR ex20 DMG בקטגוריה הגיל הזו"
+      "אין ניסויים חדשים משנתקבל אחרונה שמתחייבים להיות זמינים ל-ותיקול בת 29 חודשים עם גיל מינימלי ≤29 חודשים; רוב הניסויים דורשים גיל ≥2-5 שנים",
+      "NCT07562971 (Focused Ultrasound BBB opening) עשוי להיות רלוונטי בעתיד להגברת חדירת תרופות למוח, אך טרם הגיוס ודורש גיל ≥4 שנים",
+      "NCT05096481 (CMV vaccine) קרוב לגדול מדי (דורש ≥3 שנים) אבל קיים והמקום מתגייס; שקול ייעוץ בקנה מידה הקדמי",
+      "EGFR exon 20 insertion שלה מנטרל ONC201 — זהו המכשול הקריטי; חיפוש חלופי (EGFR direct inhibitor, immunotherapy) הוא דחוף",
+      "TP53 x3 mutations מצביעה על סיכון גבוה של platinum chemotherapy toxicity ו-resistance; היגיון זה צריך לדרוג את בחירת הטיפול"
     ],
-    "scan_notes": "סקן 2026-10-25: 15 נסיונות חיים ברשימה. רק 4 רלוונטיים גם בגיל גם בביולוגיה: NCT04870944 (CBL0137, ORANGE), NCT07608003 (תצפיתי בלבד, WATCH), NCT07206849 (tovorafenib, טרם מוגייס, ORANGE), NCT06860594 (גיל מחוץ). 0 מאמרים חדשים או בדיקות קדימוניות שפורסמו בחודשים האחרונים. הקרא: גופי זיהוי ה-EGFR exon 20 הם המגבלה המשמעותית ביותר—ONC201 הוא עדיין מוקד הנקודה אך בלתי יעיל. נדרשת מחשבה יצירתית: שיקול Afatinib, neratinib, BLU5082, או CBL0137 + וקטור מולטימודלי. התייעץ עם מרכזי DMG מומחיות (PNOC, BIOMEDE, UCL) עבור גישה מותאמת אישית.",
+    "scan_notes": "Scanned 15 live trials (ClinicalTrials.gov) זמינות היום. אין papers או preprints חדשים ב-30/14 ימים האחרונים. אין berita רפואית חדשה. ניתוח: רוב הניסויים הוא בגיל קטגוריה 12 חודשים ומעלה; ותיקול בת 29 חודשים צעירה מדי לרוב. 5 ניסויים שנעדו: (1) NCT06161974 (IDH, אך גיל ≥12), (2) NCT06357377 (NEO100, גיל ≥5), (3) NCT07562971 (BBB opening, גיל ≥4, NOT_YET_RECRUITING), (4) NCT07767110 (LSAM-Cisplatin, גיל ≥3, NOT_YET_RECRUITING), (5) NCT06624371 (Atovaquone+RT, גיל ≥2), (6) NCT05096481 (CMV vaccine, גיל ≥3). אין שינוי משמעותי בהמלצות היום לעומת מצב קודם.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
       "PubMed E-utilities (last 30 days)",
       "medRxiv API (last 14 days)",
       "bioRxiv API (last 14 days)",
@@ -122,7 +129,10 @@
       "JCO / ASCO RSS",
       "Cancer Discovery RSS",
       "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS"
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
     ]
   },
   "known_pmids": [
