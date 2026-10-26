@@ -43,7 +43,9 @@
     "NCT07562971",
     "NCT07767110",
     "NCT06624371",
-    "NCT05096481"
+    "NCT05096481",
+    "NCT05768880",
+    "NCT06140719"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -71,7 +73,8 @@
     "THALAMIC-GLIOMA-PHENOTYPE-20261014",
     "THALAMIC-DMG-LANDSCAPE-20261001",
     "EGFR-EX20-ONC201-CONFLICT-20261025",
-    "EGFR-EX20-ONC201-CLINICAL-IMPLICATION-20261026"
+    "EGFR-EX20-ONC201-CLINICAL-IMPLICATION-20261026",
+    "PNOC023-ONC206-EU-NETHERLANDS-20261026"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -85,55 +88,49 @@
     "NCT05544526": "Recruiting — NOT ELIGIBLE (thalamic exclusion confirmed)",
     "NCT05298995": "Recruiting — Arm C: thalamic DMG (for recurrence)",
     "NCT05843253": "Recruiting",
-    "NCT07584499": "Recruiting (verified 2026-10-24) — for recurrence only",
+    "NCT07584499": "Recruiting (verified 2026-10-26) — for relapse only, China",
     "NCT04732065": "Recruiting",
     "NCT04808245": "Active, not recruiting (adults only; verified 2026-10-25)",
     "NCT06838676": "Recruiting — SickKids Toronto (new 2026)",
     "NCT07501156": "Not yet recruiting (estimated 2027, China)",
-    "NCT07796061": "Recruiting — Group B thalamic DMG, window 4–22 wk post-RT (~until 2027-01-09)",
+    "NCT07796061": "Recruiting (verified 2026-10-26) — Group B thalamic DMG, window 4–22 wk post-RT (~until 2027-01-09)",
     "NCT07076498": "Recruiting — NOT ELIGIBLE (4–8 wk post-RT window passed ~2026-10-03)",
     "NCT05762419": "Recruiting — for progression only",
     "NCT07664176": "Recruiting — for relapse/progression only",
     "NCT04099797": "Recruiting — Cohort 1 newly diagnosed DMG ≥4 wk post-RT; verify size <5 cm & concurrent-therapy exclusion",
-    "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear"
+    "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear",
+    "NCT07767110": "Not yet recruiting (start Dec 2026) — 4–12 wk post-RT window closes ~2026-10-31; likely not eligible",
+    "NCT05768880": "Active, not recruiting (Seattle; verified 2026-10-26)",
+    "NCT06140719": "Recruiting — observational registry only"
   },
   "last_run_summary": {
     "date": "2026-10-26",
-    "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 6,
+    "type": "DAILY_AUTOMATED",
+    "changes_detected": true,
+    "new_trials_added": 2,
     "new_developments_added": 1,
+    "items_found": 65,
     "fetched": {
-      "clinical_trials": 52,
-      "pubmed_papers": 0,
+      "clinical_trials": 101,
+      "pubmed_papers": 3,
       "preprints": 0,
       "rss_articles": 0
     },
-    "key_findings": [
-      "אין ניסויים חדשים משנתקבל אחרונה שמתחייבים להיות זמינים ל-ותיקול בת 29 חודשים עם גיל מינימלי ≤29 חודשים; רוב הניסויים דורשים גיל ≥2-5 שנים",
-      "NCT07562971 (Focused Ultrasound BBB opening) עשוי להיות רלוונטי בעתיד להגברת חדירת תרופות למוח, אך טרם הגיוס ודורש גיל ≥4 שנים",
-      "NCT05096481 (CMV vaccine) קרוב לגדול מדי (דורש ≥3 שנים) אבל קיים והמקום מתגייס; שקול ייעוץ בקנה מידה הקדמי",
-      "EGFR exon 20 insertion שלה מנטרל ONC201 — זהו המכשול הקריטי; חיפוש חלופי (EGFR direct inhibitor, immunotherapy) הוא דחוף",
-      "TP53 x3 mutations מצביעה על סיכון גבוה של platinum chemotherapy toxicity ו-resistance; היגיון זה צריך לדרוג את בחירת הטיפול"
-    ],
-    "scan_notes": "Scanned 15 live trials (ClinicalTrials.gov) זמינות היום. אין papers או preprints חדשים ב-30/14 ימים האחרונים. אין berita רפואית חדשה. ניתוח: רוב הניסויים הוא בגיל קטגוריה 12 חודשים ומעלה; ותיקול בת 29 חודשים צעירה מדי לרוב. 5 ניסויים שנעדו: (1) NCT06161974 (IDH, אך גיל ≥12), (2) NCT06357377 (NEO100, גיל ≥5), (3) NCT07562971 (BBB opening, גיל ≥4, NOT_YET_RECRUITING), (4) NCT07767110 (LSAM-Cisplatin, גיל ≥3, NOT_YET_RECRUITING), (5) NCT06624371 (Atovaquone+RT, גיל ≥2), (6) NCT05096481 (CMV vaccine, גיל ≥3). אין שינוי משמעותי בהמלצות היום לעומת מצב קודם.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (8 queries: H3K27M, H3 K27M, diffuse midline glioma, DIPG, EGFR exon 20 glioma, BLU-5082, dordaviprone, ONC201)",
+      "PubMed E-utilities (2026-10-18 → 2026-10-26)",
+      "EU CTIS (via web search)",
+      "Web search: Jazz/dordaviprone news, ACTION phase 3, BLU-5082, Israeli hospitals (Hebrew), jRCT/ChiCTR",
+      "WHO ICTRP, medRxiv/bioRxiv, journal RSS (via earlier DAILY_REALTIME run today)"
+    ],
+    "key_findings": [
+      "NCT07767110 (LSAM-ציספלטין, DMG, גיל 3–21) חדש — חלון 4–12 שבועות אחרי RT נסגר ~31.10, הניסוי נפתח רק בדצמבר: כנראה לא מתאים",
+      "NCT05768880 BrainChild-04 (CAR-T עם EGFR806) — סגור לגיוס; לעקוב לפתיחה מחדש",
+      "ONC206 (PNOC023) מגייס גם בהולנד לפי EU CTIS",
+      "אין עדכון ציבורי על BLU-5082 ואין תוצאות ACTION שלב 3",
+      "תיקון גיל: הילי בת ~4.5 (לא 29 חודשים) — ניסויים עם גיל מינימום 2–4 שנים (NCT06624371, NCT05096481, NCT07562971) עומדים בדרישת הגיל ויש לבחון אותם מחדש"
+    ],
+    "scan_notes": "סריקה 2026-10-26: לא נמצא ניסוי חדש פתוח בישראל. jRCT/ChiCTR/UMIN לא נבדקו ישירות (לא נמצאו תוצאות בחיפוש רשת). הערה: הסיכום מ-25.10 ציין בטעות גיל 29 חודשים — הגיל הנכון ~4 שנים ו-5 חודשים. גם סריקת DAILY_REALTIME מוקדם יותר היום (6 ניסויים: NCT06161974, NCT06357377, NCT07562971, NCT07767110, NCT06624371, NCT05096481) הניחה גיל 29 חודשים — בגיל 4.5 הילי עומדת בדרישות גיל ≥2/≥3/≥4 של NCT06624371, NCT05096481, NCT07562971, NCT07767110; יש לבחון אותם מחדש לפי שאר הקריטריונים."
   },
   "known_pmids": [
     "42926464",
@@ -165,7 +162,10 @@
     "42873296",
     "42377275",
     "42878559",
-    "42809047"
+    "42809047",
+    "42930184",
+    "42898014",
+    "42895298"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []

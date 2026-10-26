@@ -951,6 +951,50 @@
       "egfr_note": null,
       "action_he": "בדוק אם קוהורטה פדיאטרית צעירה זמינה; בחן CMV status של ותיקול; שקול participation אם מגיל מתאים",
       "source_url": "https://clinicaltrials.gov/study/NCT05096481"
+    },
+    {
+      "nct_id": "NCT05768880",
+      "title_he": "BrainChild-04: CAR-T מרובע (B7-H3, EGFR806, HER2, IL13) תוך-חדרי ל-DIPG/DMG",
+      "title_en": "Study of B7-H3, EGFR806, HER2, And IL13-Zetakine (Quad) CAR T Cell Locoregional Immunotherapy For Pediatric DIPG, DMG, And Recurrent CNS Tumors",
+      "phase": "Phase I",
+      "match_category": "closed_to_accrual",
+      "priority": "WATCH",
+      "score": 40,
+      "age_eligible": true,
+      "recruiting_status": "ACTIVE_NOT_RECRUITING",
+      "location_he": "Seattle Children's Hospital, ארה\"ב",
+      "summary_he": "תאי CAR-T עם ארבעה מטרות (כולל EGFR806) הניתנים דרך קטטר Ommaya לחדרי המוח. גיל 1–26, DMG בכל שלב אחרי הקרנות. הניסוי סגור כרגע לגיוס (עודכן 2026-10-13).",
+      "key_inclusion": [
+        "גיל 1–26",
+        "DMG בכל שלב אחרי RT",
+        "קטטר Ommaya/Rickham",
+        "Lansky ≥60"
+      ],
+      "egfr_note": "EGFR806 מכוון לאפיטופ של EGFR מוגבר/פעיל — לא ספציפי ל-exon 20, אך זו אחת הגישות היחידות המכוונות ל-EGFR ב-DMG ילדים.",
+      "action_he": "לעקוב אחר פתיחה מחדש או ניסוי המשך (BrainChild) של Seattle Children's.",
+      "source_url": "https://clinicaltrials.gov/study/NCT05768880",
+      "date_detected": "2026-10-26"
+    },
+    {
+      "nct_id": "NCT06140719",
+      "title_he": "xPedite: רישום תצפיתי ל-DIPG/DMG",
+      "title_en": "xPedite: A Study to Expedite DIPG and DMG Research",
+      "phase": "Observational",
+      "match_category": "observational",
+      "priority": "WATCH",
+      "score": 15,
+      "age_eligible": true,
+      "recruiting_status": "RECRUITING",
+      "location_he": "xCures, ארה\"ב (מרחוק; ייתכן מוגבל לתושבי ארה\"ב)",
+      "summary_he": "איסוף נתוני היסטוריה טבעית מרשומות רפואיות ודיווחי משפחות, כולל DMG תלמי. אין טיפול.",
+      "key_inclusion": [
+        "DMG לפי WHO 2021, כולל תלמוס",
+        "כל מצב תפקודי"
+      ],
+      "egfr_note": "לא רלוונטי.",
+      "action_he": "לא טיפולי — אופציונלי בלבד.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06140719",
+      "date_detected": "2026-10-26"
     }
   ]
 }

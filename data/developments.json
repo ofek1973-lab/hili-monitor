@@ -9,7 +9,7 @@
     {
       "id": "PNOC022-SHEBA",
       "priority": "RED",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ניסוי PNOC022 — ONC201 + פקסאליסיב — מגייס בשיבא ובשערי צדק",
       "title_en": "PNOC022: ONC201 (dordaviprone) ± paxalisib at Sheba Medical Center & Shaare Zedek",
       "nct_id": "NCT05009992",
@@ -64,7 +64,7 @@
     {
       "id": "DORDAVIPRONE-FDA-APPROVED",
       "priority": "RED",
-      "is_new": true,
+      "is_new": false,
       "title_he": "דורדאביפרון (Modeyso) — אושר FDA — הטיפול הראשון אי פעם ל-H3K27M DMG",
       "title_en": "Dordaviprone (Modeyso / ONC201): FDA Accelerated Approval August 6, 2025 — H3K27M+ recurrent DMG, age ≥1 yr",
       "what_changed": "ביום 6 באוגוסט 2025 קיבלה ג'אז פארמצוטיקלס אישור FDA מואץ לדורדאביפרון (Modeyso) לטיפול במבוגרים וילדים מגיל שנה אחת ומעלה עם DMG H3K27M+ חוזר/מתקדם לאחר טיפול קודם. זהו הטיפול המאושר הראשון אי פעם למחלה זו.",
@@ -90,7 +90,7 @@
     {
       "id": "ACTION-PHASE3-NCT05580562",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ACTION — ניסוי פאזה 3 — דורדאביפרון לאחר הקרנה, DMG מאובחן חדש",
       "title_en": "ACTION Phase 3 Trial (NCT05580562): Dordaviprone vs placebo in newly diagnosed H3K27M DMG post-radiation",
       "nct_id": "NCT05580562",
@@ -117,7 +117,7 @@
     {
       "id": "GD2-CART-STANFORD-NCT04196413",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "GD2 CAR-T — ניסוי סטנפורד (NCT04196413) — גיוס פעיל, גיל ≥2",
       "title_en": "GD2 CAR-T Cells for DIPG/DMG — Stanford (NCT04196413), recruiting, age ≥2",
       "nct_id": "NCT04196413",
@@ -144,7 +144,7 @@
     {
       "id": "EGFR-EX20-MOLECULAR-ACTION",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "EGFR Exon 20 Insertion — ייחוד מולקולרי נדיר — נדרש ייעוץ molecular tumor board",
       "title_en": "EGFR Exon 20 Insertion in H3K27M DMG — Rare subtype requiring dedicated molecular tumor board consultation",
       "what_changed": "שילוב EGFR exon 20 insertion עם H3K27M ב-DMG הוא נדיר ולא מוגדר כתת-קבוצה מולקולרית עם פרוטוקול טיפולי ייעודי. תרופות שאושרו לאחרונה לאינסרציה בexon 20 של EGFR בסרטן ריאות (sunvozertinib, zipalertinib) הן מחדירות לCNS ועשויות להיות רלוונטיות — אך אין נתוני DMG.",
@@ -169,7 +169,7 @@
     {
       "id": "GD2-CART-PHASE1-RESULTS-NATURE",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "GD2 CAR-T — תוצאות פאזה 1 — רגרסיית גידול עד 100% בחלק מהחולים (Nature)",
       "title_en": "GD2 CAR-T Phase 1 Results Published in Nature: 4/11 patients with major tumor regression, 1 complete response >30 months",
       "what_changed": "תוצאות ניסוי הפאזה 1 (NCT05316155) של GD2 CAR-T ב-DMG/DIPG פורסמו ב-Nature. 4 מתוך 11 חולים מטופלים הראו הצטמקות גידול משמעותית (52%, 54%, 91%, 100%). חולה אחד השיג תגובה מלאה הנמשכת >30 חודשים.",
@@ -193,7 +193,7 @@
     {
       "id": "ONC206-NCT04732065",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ONC206 — ה-'ONC201 הדור הבא' — ניסוי פאזה 1 בגיוס, גיל ≥2",
       "title_en": "ONC206: Next-generation imipridone — Phase 1 trial (NCT04732065), authorized EU, ages ≥2",
       "nct_id": "NCT04732065",
@@ -219,7 +219,7 @@
     {
       "id": "UCL-GD2-CART-NOT-MATCH",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "GD2 CAR-T UCL/GOSH (NCT05544526) — אינו מתאים: לא כולל גידול תלמי",
       "title_en": "UCL/GOSH CARMIGO GD2 CAR-T (NCT05544526): Recruiting UK, ages 2-16 — EXCLUDES thalamic DMG",
       "nct_id": "NCT05544526",
@@ -244,7 +244,7 @@
     {
       "id": "H3K27M-VACCINE-PNOC007",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "חיסון פפטיד H3K27M — נתוני ילדים מ-PNOC007 — תגובה חיסונית קשורה לHOS ממושך",
       "title_en": "H3K27M Peptide Vaccine (PNOC007): Immune responders had longer OS; ongoing phase 1/2 trials",
       "what_changed": "ניסוי PNOC007 (29 ילדים עם DMG H3.3K27M+) הראה כי חולים שפיתחו תגובת CD8+ ל-H3K27M הראו הישרדות ממושכת יותר לעומת אלו שלא פיתחו תגובה. ישנן שתי שאלות חשובות למקרה הנוכחי: (1) הילי H3.3K27M או H3.1K27M? (2) מה סטטוס HLA שלה?",
@@ -269,7 +269,7 @@
     {
       "id": "RHENIUM-CED-NCT07061626",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "Rhenium-186 Obisbemeda — CED תוך-גידולי — ניסוי פאזה 1/2 בגידולי מוח גבוהים בילדים",
       "title_en": "Rhenium-186 Obisbemeda (Reyobiq) — Convection Enhanced Delivery Phase 1/2 in pediatric HGG/ependymoma",
       "nct_id": "NCT07061626",
@@ -295,7 +295,7 @@
     {
       "id": "ONC201-ISRAEL-ACCESS-PATHWAYS",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ONC201 (Modeyso) בישראל — נתיבי גישה + אנשי קשר ישראליים מאומתים",
       "title_en": "ONC201 (Modeyso) Access in Israel — 7 Israeli Sites + Compassionate Use Pathways",
       "what_changed": "מחקר ישראלי מאשר: (1) ACTION trial (NCT05580562) פתוח ב-7 אתרים ישראליים כולל שיבא; (2) PNOC022 פתוח בשיבא ושערי צדק; (3) Modeyso אינה מאושרת בישראל — דרך compassionate use ממשרד הבריאות קיימת לטיפול חוזר; (4) אנשי קשר ספציפיים עם מספרי טלפון לכל אתר.",
@@ -321,7 +321,7 @@
     {
       "id": "GD2-CART01-BAMBINO-GESU-ITALY",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "GD2 CAR-T — במבינו ג'זו רומא (איטליה) — Arm C: גידולי מידליין תלמיים ספציפית",
       "title_en": "GD2-CART01 Phase 1 — Bambino Gesù Ospedale Pediatrico, Rome — Arm C: thalamic DMG/DIPG",
       "nct_id": "NCT05298995",
@@ -347,7 +347,7 @@
     {
       "id": "BLU5082-EGFR-PRECLINICAL",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "BLU5082 — מעכב EGFR חודר-מוח — פעילות פרה-קלינית מבטיחה נגד EGFR exon 20 insertion ב-DMG",
       "title_en": "BLU5082 (Blueprint Medicines) — brain-penetrant EGFR inhibitor — preclinical data in EGFR exon 20 insertion DMG",
       "what_changed": "Blueprint Medicines הציגה BLU5082 בכנס SNO 2025 — מעכב EGFR חודר-מוח (TKI) עם פעילות פרה-קלינית מובהקת נגד EGFR exon 20 insertions ב-DMG. IC50 <0.2 µM נגד וריאנט 767delins; מחקה גידולים בניסויי זינוגרפט בעכברים ב-50 mg/kg.",
@@ -372,7 +372,7 @@
     {
       "id": "LIFT-THALAMIC-NCT07796061",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ניסוי חדש LIFT (Children's National) — מקבל DMG תלמי עד 22 שבועות אחרי הקרנה",
       "title_en": "New LIFT trial (Children's National) accepts newly diagnosed thalamic DMG up to 22 weeks post-RT",
       "nct_id": "NCT07796061",
@@ -401,7 +401,7 @@
     {
       "id": "EGFR-DORDAVIPRONE-AUTOPSY-OSIMERTINIB",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "מחקר אוטופסיות: מוטציות EGFR ב-23% מגידולי DMG שטופלו בדורדביפרון; נבחן שילוב עם אוסימרטיניב",
       "title_en": "Autopsy study: EGFR alterations in 23% of dordaviprone-treated DMGs; dordaviprone + osimertinib combination explored",
       "what_changed": "תקציר חדש ב-Neuro-Oncology Pediatrics (Subramaniam, Koschmann, Mueller, Nazarian, Waszak ואחרים; ID #1110): פרופיל גנומי של 25 נתיחות DMG. מוטציות/הגברות EGFR נמצאו ב-3/13 גידולים שטופלו בדורדביפרון ולא בקבוצת ההשוואה. נבחן בתרביות שילוב דורדביפרון + אוסימרטיניב (מעכב EGFR).",
@@ -428,7 +428,7 @@
     {
       "id": "EGFR-ICR-AFATINIB-NERATINIB-FGFR",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "ICR לונדון: אפטיניב ונרטיניב הכי חזקים במודל DMG עם מוטציית EGFR exon 20; סינרגיה עם מעכבי FGFR",
       "title_en": "ICR London: afatinib/neratinib most potent in EGFR exon 20–mutant DMG model; synergy with FGFR inhibitors",
       "what_changed": "תקציר חדש ב-Neuro-Oncology Pediatrics (Pereira, Mackay, Carceller, Chris Jones ואחרים; ID #690): ניתוח 1,487 גידולי HGG בילדים — מוטציות EGFR ב-8.2%, מועשרות בתת-קבוצת DMG-EGFR (אקסונים 7 ו-20). במעבדה, אפטיניב ונרטיניב הראו את העוצמה הגבוהה ביותר, במיוחד במודל עם מוטציה באקסון 20, ונמצאה סינרגיה עם מעכבי FGFR.",
@@ -455,7 +455,7 @@
     {
       "id": "H3K27M-LACTATE-EPIGENETIC-20261006",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "תפקיד לקטט במצבי תא הגידול בגידולים H3K27M",
       "title_en": "Lactate Epigenetically Shapes Tumor Cell States in H3K27M DMG",
       "category": "research",
@@ -472,7 +472,7 @@
     {
       "id": "H3K27M-OPC-STEMNESS-INTRATHECAL-20261001",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "H3K27M מניע OPC stemness וחדירות טיפולית intrathecal בגידולי גזע-מוח",
       "title_en": "H3K27M Drives OPC Stemness and Intrathecal Therapeutic Vulnerability",
       "category": "research",
@@ -489,7 +489,7 @@
     {
       "id": "H3K27M-HDAC-INHIBITION-20261001",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "עכבה selectiva של HDAC בגידולים H3K27M כאסטרטגיה טיפולית",
       "title_en": "Selective HDAC Inhibition as Therapeutically Relevant Strategy in H3K27M",
       "category": "research",
@@ -506,7 +506,7 @@
     {
       "id": "H3K27M-ANTIGENIC-LANDSCAPE-20260928",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "H3K27M mutation משנה את הנוף האנטיגני בגידול",
       "title_en": "H3K27M Mutation Modulates the Antigenic Landscape in DMG",
       "category": "research",
@@ -523,7 +523,7 @@
     {
       "id": "H3K27M-METTL3-m6A-20260928",
       "priority": "WATCH",
-      "is_new": true,
+      "is_new": false,
       "title_he": "H3K27me3 loss ו-METTL3 m6A משלבים להנעת SOX11/SMARCA4 בגידולים H3K27-altered",
       "title_en": "H3K27me3 Loss and METTL3-m6A Converge to Upregulate SOX11/SMARCA4",
       "category": "research",
@@ -540,7 +540,7 @@
     {
       "id": "THALAMIC-GLIOMA-PHENOTYPE-20261014",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "פנוטיפ MR חוקי לגליומות תלמוסיות בילדים",
       "title_en": "Paediatric thalamic tumours: a predictive MR phenotype (PMID 42873296)",
       "category": "research",
@@ -557,7 +557,7 @@
     {
       "id": "THALAMIC-DMG-LANDSCAPE-20261001",
       "priority": "ORANGE",
-      "is_new": true,
+      "is_new": false,
       "title_he": "הנוף הקליני ומולקולרי של גליומה תלמוסית",
       "title_en": "The clinical and molecular landscape of thalamic glioma (PMID 42377275)",
       "category": "research",
@@ -605,6 +605,23 @@
       ],
       "action": "1. סלול דיוק של מצב EGFR ex20 במול afatinib, neratinib, או BLU5082 preclinical data. 2. בחן אם גישה immunotherapy (PD-1/PD-L1, LAG-3, גישות antigenicity) עשויה להחליף. 3. עדכן את הציפיות קליניות כי ONC201 עלול שלא להתגים.",
       "source_url": null,
+      "date_detected": "2026-10-26"
+    },
+    {
+      "id": "PNOC023-ONC206-EU-NETHERLANDS-20261026",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "ניסוי ONC206 (PNOC023) רשום ומגייס גם באירופה — הולנד",
+      "title_en": "PNOC023 ONC206 trial authorised and recruiting in EU CTIS (Netherlands site)",
+      "category": "trial_access",
+      "what_changed": "רישום EU CTIS 2025-521180-13-00 מציג את ניסוי ONC206 לילדים ומבוגרים צעירים עם DMG חדש או חוזר כמאושר ומגייס באתר אחד בהולנד (מאז מרץ 2026). זה מקביל ל-NCT04732065 שכבר במעקב.",
+      "why_matters_bullets": [
+        "אתר אירופי — קרוב יותר מארה\"ב",
+        "ONC206 הוא imipridone מדור שני (קרוב ל-ONC201)",
+        "יעילות במוטציית EGFR exon 20 לא ידועה"
+      ],
+      "action": "לשאול את הצוות המטפל אם האתר בהולנד מקבל מטופלים מחו\"ל ומה הקריטריונים לזרוע אחרי הקרנות.",
+      "source_url": "https://ctis.eu/trial/2025-521180-13-00.html",
       "date_detected": "2026-10-26"
     }
   ]
