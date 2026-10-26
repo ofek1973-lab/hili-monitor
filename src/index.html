@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>הילי הודיה — מעקב טיפולי עולמי</title>
+<title>הילי הודיה — מעקב טיפולי</title>
 <style>
   :root {
     --bg: #f4f6fb;
@@ -35,189 +35,206 @@
     min-height: 100vh;
   }
 
-  /* Header */
+  /* ── Header (minimal) ──────────────────────────────────────────────── */
   .header {
-    background: linear-gradient(135deg, #e8ecf8 0%, #f4f6fb 100%);
+    background: #fff;
     border-bottom: 1px solid var(--border);
-    padding: 20px 24px;
+    padding: 14px 24px;
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
   }
-
   .header-inner {
-    max-width: 1100px;
+    max-width: 820px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 12px;
+    flex-wrap: wrap;
   }
-
   .header-title {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--text);
-    letter-spacing: 0.01em;
   }
-
-  .header-title span {
-    color: var(--accent2);
-  }
-
+  .header-title span { color: var(--accent2); }
   .header-meta {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: var(--text3);
-    text-align: left;
     direction: ltr;
+    text-align: right;
   }
-
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-
-  .status-ok { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
-  .status-alert { background: var(--red-bg); color: var(--red); border: 1px solid rgba(214,48,49,0.3); }
-  .status-warn { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
-
-  /* Main */
-  .main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px 16px;
-  }
-
-  /* Stats bar */
-  .stats-bar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-
-  .stat-card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 16px;
-    text-align: center;
-  }
-
-  .stat-num {
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 0.72rem;
-    color: var(--text3);
-    margin-top: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .stat-red .stat-num { color: var(--red); }
-  .stat-orange .stat-num { color: var(--orange); }
-  .stat-blue .stat-num { color: var(--accent2); }
-  .stat-green .stat-num { color: var(--green); }
-
-  /* Tabs */
-  .tabs {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0;
-    overflow-x: auto;
-  }
-
-  .tab {
-    padding: 8px 18px;
-    border-radius: 8px 8px 0 0;
-    border: 1px solid transparent;
-    border-bottom: none;
-    cursor: pointer;
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: var(--text2);
+  .toggle-profile-btn {
     background: transparent;
-    white-space: nowrap;
+    border: 1px solid var(--border);
+    color: var(--text3);
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.78rem;
     transition: all 0.2s;
-    position: relative;
-    bottom: -1px;
+  }
+  .toggle-profile-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  /* ── Main layout ───────────────────────────────────────────────────── */
+  .main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
   }
 
-  .tab:hover { background: var(--bg3); color: var(--text); }
+  /* ── Treatment status card ─────────────────────────────────────────── */
+  .treatment-status-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .treatment-status-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text3);
+    margin-bottom: 10px;
+  }
+  .treatment-status-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .treatment-status-row:last-child { margin-bottom: 0; }
 
-  .tab.active {
-    background: var(--bg2);
+  .treatment-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 600;
+    white-space: nowrap;
+  }
+  .treatment-active  { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .treatment-pending { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+
+  /* ── Disclaimer ────────────────────────────────────────────────────── */
+  .disclaimer {
+    background: rgba(230,126,34,0.06);
+    border: 1px solid rgba(230,126,34,0.2);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 0.78rem;
+    color: var(--text3);
+    line-height: 1.5;
+  }
+
+  /* ── Collapsible sections ──────────────────────────────────────────── */
+  .cc-section {
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #fff;
+  }
+  .cc-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .cc-section-header:hover { background: var(--bg3); }
+  .cc-section-title {
+    font-size: 0.95rem;
+    font-weight: 700;
     color: var(--text);
-    border-color: var(--border);
-    border-bottom-color: var(--bg2);
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
-
-  .tab-count {
+  .cc-section-count {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    font-size: 0.7rem;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background: var(--bg3);
+    color: var(--text2);
+    font-size: 0.75rem;
     font-weight: 700;
-    margin-right: 6px;
+    padding: 0 6px;
+  }
+  .section-urgent .cc-section-header { background: var(--red-bg); border-bottom: 1px solid rgba(214,48,49,0.2); }
+  .section-urgent .cc-section-title  { color: var(--red); }
+  .section-urgent .cc-section-count  { background: var(--red); color: #fff; }
+
+  .section-discuss .cc-section-header { background: var(--orange-bg); border-bottom: 1px solid rgba(230,126,34,0.2); }
+  .section-discuss .cc-section-title  { color: var(--orange); }
+  .section-discuss .cc-section-count  { background: var(--orange); color: #fff; }
+
+  .section-new .cc-section-header { background: rgba(45,63,212,0.06); border-bottom: 1px solid rgba(45,63,212,0.15); }
+
+  .cc-section-icon {
+    font-size: 0.65rem;
+    color: var(--text3);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .cc-section-body {
+    padding: 12px 12px;
+    background: var(--bg);
   }
 
-  .tab-count-red { background: var(--red); color: white; }
-  .tab-count-orange { background: var(--orange); color: black; }
-  .tab-count-blue { background: var(--accent); color: white; }
-  .tab-count-green { background: var(--green); color: white; }
+  /* ── Sub-section headers (inside sections) ─────────────────────────── */
+  .sub-section-header {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text3);
+    font-weight: 700;
+    margin: 16px 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sub-section-header:first-child { margin-top: 0; }
 
-  /* Cards */
+  /* ── Cards ─────────────────────────────────────────────────────────── */
   .card {
-    background: var(--bg2);
+    background: #fff;
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 22px;
-    margin-bottom: 16px;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
     transition: border-color 0.2s;
   }
-
+  .card:last-child { margin-bottom: 0; }
   .card:hover { border-color: var(--accent); }
-
-  .card-red { border-right: 4px solid var(--red); }
+  .card-red    { border-right: 4px solid var(--red); }
   .card-orange { border-right: 4px solid var(--orange); }
-  .card-watch { border-right: 4px solid var(--watch); }
+  .card-watch  { border-right: 4px solid var(--watch); }
 
   .card-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 14px;
+    gap: 10px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
   }
-
   .card-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--text);
     flex: 1;
-    min-width: 200px;
+    min-width: 180px;
+    line-height: 1.4;
   }
-
   .card-title-en {
-    font-size: 0.8rem;
+    font-size: 0.77rem;
     color: var(--text3);
     font-weight: 400;
     margin-top: 2px;
@@ -228,97 +245,58 @@
   .badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
     align-items: center;
+    flex-shrink: 0;
   }
-
   .badge {
-    padding: 3px 10px;
+    padding: 3px 9px;
     border-radius: 12px;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     white-space: nowrap;
   }
-
-  .badge-red { background: var(--red-bg); color: var(--red); border: 1px solid rgba(214,48,49,0.3); }
+  .badge-red    { background: var(--red-bg);    color: var(--red);    border: 1px solid rgba(214,48,49,0.3); }
   .badge-orange { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
-  .badge-watch { background: var(--watch-bg); color: var(--watch); border: 1px solid rgba(45,63,212,0.3); }
-  .badge-level { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
-  .badge-score { background: rgba(65,88,208,0.10); color: var(--accent); border: 1px solid rgba(65,88,208,0.25); }
-  .badge-recruiting { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .badge-watch  { background: var(--watch-bg);  color: var(--watch);  border: 1px solid rgba(45,63,212,0.3); }
+  .badge-level  { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
+  .badge-score  { background: rgba(65,88,208,0.10); color: var(--accent); border: 1px solid rgba(65,88,208,0.25); }
+  .badge-recruiting     { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
   .badge-not-recruiting { background: rgba(150,150,150,0.08); color: var(--text3); border: 1px solid var(--border); }
-  .badge-watch-status { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+  .badge-watch-status   { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+  .badge-evidence       { background: rgba(45,63,212,0.08); color: var(--watch); border: 1px solid rgba(45,63,212,0.20); }
+  .badge-bbb-yes        { background: rgba(39,174,96,0.10); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+  .badge-bbb-partial    { background: rgba(230,126,34,0.10); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+  .badge-bbb-no         { background: rgba(214,48,49,0.08); color: var(--red); border: 1px solid rgba(214,48,49,0.3); }
+  .badge-bbb-unknown    { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
 
   .card-body { font-size: 0.88rem; }
 
-  .card-section {
-    margin-bottom: 12px;
-  }
-
+  .card-section { margin-bottom: 10px; }
   .card-section-title {
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text3);
-    margin-bottom: 4px;
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text3); margin-bottom: 3px;
   }
+  .card-section-content { color: var(--text2); }
 
-  .card-section-content {
-    color: var(--text2);
-  }
-
-  .bullets {
-    list-style: none;
-    padding: 0;
-  }
-
-  .bullets li {
-    padding: 2px 0 2px 12px;
-    position: relative;
-    color: var(--text2);
-  }
-
-  .bullets li::before {
-    content: '•';
-    position: absolute;
-    right: auto;
-    left: 0;
-    color: var(--accent2);
-  }
-
-  html[dir="rtl"] .bullets li {
-    padding: 2px 12px 2px 0;
-  }
-
-  html[dir="rtl"] .bullets li::before {
-    right: 0;
-    left: auto;
-  }
+  .bullets { list-style: none; padding: 0; }
+  .bullets li { padding: 2px 12px 2px 0; position: relative; color: var(--text2); }
+  .bullets li::before { content: '•'; position: absolute; right: 0; color: var(--accent2); }
 
   .action-box {
     background: rgba(65,88,208,0.06);
     border: 1px solid rgba(65,88,208,0.20);
     border-radius: 8px;
     padding: 10px 14px;
-    margin-top: 12px;
-    font-size: 0.85rem;
+    margin-top: 10px;
+    font-size: 0.84rem;
   }
-
   .action-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--accent2);
-    margin-bottom: 4px;
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--accent2); margin-bottom: 3px;
   }
-
-  .action-text {
-    color: var(--text);
-    font-weight: 500;
-  }
+  .action-text { color: var(--text); font-weight: 500; }
 
   .limitation-box {
     background: rgba(214,48,49,0.05);
@@ -326,341 +304,29 @@
     border-radius: 8px;
     padding: 8px 12px;
     margin-top: 8px;
-    font-size: 0.83rem;
+    font-size: 0.82rem;
     color: var(--text2);
   }
-
   .limitation-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--red);
-    margin-bottom: 2px;
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--red); margin-bottom: 2px;
   }
 
   .card-meta-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 8px;
-    margin-top: 12px;
-    padding-top: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
     border-top: 1px solid var(--border);
   }
-
-  .meta-item {}
-  .meta-label {
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text3);
-    font-weight: 700;
-  }
-  .meta-value {
-    font-size: 0.8rem;
-    color: var(--text2);
-    direction: ltr;
-  }
-
-  .source-link {
-    color: var(--accent2);
-    text-decoration: none;
-    font-size: 0.78rem;
-    direction: ltr;
-  }
-
+  .meta-label { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text3); font-weight: 700; }
+  .meta-value { font-size: 0.8rem; color: var(--text2); direction: ltr; }
+  .source-link { color: var(--accent2); text-decoration: none; font-size: 0.78rem; direction: ltr; }
   .source-link:hover { text-decoration: underline; }
 
-  details.tech-details {
-    margin-top: 12px;
-  }
-
-  details.tech-details summary {
-    cursor: pointer;
-    font-size: 0.78rem;
-    color: var(--text3);
-    user-select: none;
-    padding: 4px 0;
-  }
-
-  details.tech-details summary:hover { color: var(--text2); }
-
-  .tech-content {
-    margin-top: 8px;
-    padding: 12px;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    font-size: 0.8rem;
-    color: var(--text2);
-    direction: ltr;
-  }
-
-  /* Empty state */
-  .empty-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text3);
-  }
-
-  .empty-state-icon { font-size: 3rem; margin-bottom: 16px; }
-  .empty-state-title { font-size: 1.1rem; font-weight: 600; color: var(--text2); margin-bottom: 8px; }
-
-  /* Profile panel */
-  .profile-panel {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    display: none;
-  }
-
-  .profile-panel.visible { display: block; }
-
-  .profile-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-  }
-
-  .profile-item {}
-  .profile-label {
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text3);
-    font-weight: 700;
-    margin-bottom: 2px;
-  }
-  .profile-value {
-    font-size: 0.85rem;
-    color: var(--text);
-  }
-  .profile-value-en {
-    font-size: 0.8rem;
-    color: var(--text2);
-    direction: ltr;
-    display: block;
-  }
-
-  .toggle-profile-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text3);
-    padding: 6px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: all 0.2s;
-  }
-
-  .toggle-profile-btn:hover {
-    border-color: var(--accent);
-    color: var(--text);
-  }
-
-  /* Scan indicator */
-  .scan-info {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    font-size: 0.82rem;
-    color: var(--text3);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .pulse {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--green);
-    margin-left: 6px;
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.2); }
-    100% { opacity: 1; transform: scale(1); }
-  }
-
-  /* Disclaimer */
-  .disclaimer {
-    background: rgba(230,126,34,0.06);
-    border: 1px solid rgba(230,126,34,0.2);
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    font-size: 0.78rem;
-    color: var(--text3);
-    line-height: 1.5;
-  }
-
-  /* Filter */
-  .filter-bar {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .filter-label {
-    font-size: 0.78rem;
-    color: var(--text3);
-  }
-
-  .filter-btn {
-    padding: 4px 12px;
-    border-radius: 16px;
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--text3);
-    font-size: 0.78rem;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-
-  .filter-btn:hover, .filter-btn.active {
-    background: var(--bg3);
-    color: var(--text);
-    border-color: var(--accent);
-  }
-
-  /* Responsive — mobile */
-  @media (max-width: 768px) {
-    .main { padding: 16px 12px; }
-
-    .header { padding: 14px 14px; }
-    .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
-    .header-title { font-size: 1.1rem; }
-    .header-meta { text-align: right; direction: rtl; font-size: 0.75rem; }
-
-    .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 20px; }
-    .stat-card { padding: 10px 12px; }
-    .stat-num { font-size: 1.7rem; }
-
-    .tabs { gap: 2px; -webkit-overflow-scrolling: touch; padding-bottom: 0; }
-    .tab { padding: 8px 12px; font-size: 0.82rem; }
-
-    .card { padding: 14px 14px; }
-    .card-title { font-size: 0.97rem; min-width: 0; }
-    .card-title-en { font-size: 0.75rem; }
-    .card-header { gap: 8px; margin-bottom: 10px; }
-    .card-body { font-size: 0.84rem; }
-    .card-meta-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-
-    .badges { gap: 4px; }
-    .badge { padding: 3px 8px; font-size: 0.68rem; }
-
-    .hide-btn, .unhide-btn { padding: 6px 12px; font-size: 0.78rem; min-height: 34px; }
-
-    .filter-bar { gap: 6px; }
-    .filter-btn { padding: 6px 12px; font-size: 0.78rem; min-height: 34px; }
-
-    .profile-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-
-    .scan-info { flex-direction: column; align-items: flex-start; font-size: 0.78rem; }
-
-    .action-box { padding: 10px 12px; font-size: 0.82rem; }
-
-    .tech-content { font-size: 0.76rem; }
-    .no-change-banner { padding: 16px; }
-  }
-
-  @media (max-width: 420px) {
-    .header-title { font-size: 1rem; }
-    .stats-bar { grid-template-columns: repeat(2, 1fr); }
-    .stat-num { font-size: 1.5rem; }
-    .profile-grid { grid-template-columns: 1fr; }
-    .tab { padding: 7px 10px; font-size: 0.78rem; }
-    .card { padding: 12px; }
-  }
-
-  .tab-content { display: none; }
-  .tab-content.active { display: block; }
-
-  .section-header {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text3);
-    font-weight: 700;
-    margin: 24px 0 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .no-change-banner {
-    background: var(--green-bg);
-    border: 1px solid rgba(39,174,96,0.3);
-    border-radius: 10px;
-    padding: 20px 24px;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .no-change-banner .icon { font-size: 2rem; margin-bottom: 8px; }
-  .no-change-banner .text { color: var(--green); font-size: 1rem; font-weight: 600; }
-  .no-change-banner .sub { color: var(--text3); font-size: 0.82rem; margin-top: 4px; }
-
-  .hide-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text3);
-    padding: 4px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.75rem;
-    transition: all 0.2s;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .hide-btn:hover { border-color: var(--orange); color: var(--orange); }
-
-  .unhide-btn {
-    background: transparent;
-    border: 1px solid rgba(46,213,115,0.3);
-    color: var(--green);
-    padding: 4px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.75rem;
-    transition: all 0.2s;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .unhide-btn:hover { background: var(--green-bg); }
-
-  .card.reviewed-card { opacity: 0.75; }
-
-  /* ── Relevance indicator ─────────────────────────────────────────────── */
-  .relevance-row {
-    display: flex; align-items: flex-start; gap: 8px;
-    padding: 8px 12px; border-radius: 8px; margin: 8px 0; font-size: 0.83rem;
-  }
-  .relevance-confirmed  { background: rgba(39,174,96,0.08);  border: 1px solid rgba(39,174,96,0.25); }
-  .relevance-possible   { background: rgba(230,126,34,0.08); border: 1px solid rgba(230,126,34,0.25); }
-  .relevance-needs-info { background: rgba(45,63,212,0.06);  border: 1px solid rgba(45,63,212,0.20); }
-  .relevance-no-match   { background: var(--bg3); border: 1px solid var(--border); }
-  .relevance-dot { font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
-  .relevance-label { font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
-  .relevance-confirmed .relevance-label  { color: var(--green); }
-  .relevance-possible  .relevance-label  { color: var(--orange); }
-  .relevance-needs-info .relevance-label { color: var(--watch); }
-  .relevance-no-match  .relevance-label  { color: var(--text3); }
-  .relevance-explanation { color: var(--text2); font-size: 0.82rem; }
-
   /* ── Expandable details ──────────────────────────────────────────────── */
-  details.card-expand { margin-top: 12px; }
+  details.card-expand { margin-top: 10px; }
   details.card-expand > summary {
     cursor: pointer; font-size: 0.78rem; color: var(--accent2);
     user-select: none; padding: 4px 0; list-style: none;
@@ -670,167 +336,211 @@
   details.card-expand > summary::before { content: '▶'; font-size: 0.55rem; transition: transform 0.2s; }
   details.card-expand[open] > summary::before { transform: rotate(90deg); }
   details.card-expand > summary:hover { color: var(--accent); }
-  .expand-content { margin-top: 10px; padding: 12px; background: var(--bg3); border-radius: 8px; border: 1px solid var(--border); font-size: 0.8rem; color: var(--text2); }
+  .expand-content {
+    margin-top: 8px; padding: 12px; background: var(--bg3);
+    border-radius: 8px; border: 1px solid var(--border);
+    font-size: 0.8rem; color: var(--text2);
+  }
   .expand-section { margin-bottom: 10px; }
   .expand-section:last-child { margin-bottom: 0; }
-  .expand-label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 3px; }
-
-  /* ── Evidence & BBB badges ───────────────────────────────────────────── */
-  .badge-evidence  { background: rgba(45,63,212,0.08);  color: var(--watch); border: 1px solid rgba(45,63,212,0.20); }
-  .badge-bbb-yes   { background: rgba(39,174,96,0.10);  color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
-  .badge-bbb-partial { background: rgba(230,126,34,0.10); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
-  .badge-bbb-no    { background: rgba(214,48,49,0.08);  color: var(--red);   border: 1px solid rgba(214,48,49,0.3); }
-  .badge-bbb-unknown { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
-
-  /* ── Treatment status pill ───────────────────────────────────────────── */
-  .treatment-pill {
-    display: inline-flex; align-items: center; gap: 5px;
-    padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; font-weight: 600;
+  .expand-label {
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text3); margin-bottom: 3px;
   }
-  .treatment-active { background: var(--green-bg); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
-  .treatment-pending { background: var(--orange-bg); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+
+  /* ── Relevance ───────────────────────────────────────────────────────── */
+  .relevance-row {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 8px 10px; border-radius: 8px; margin: 8px 0; font-size: 0.82rem;
+  }
+  .relevance-confirmed  { background: rgba(39,174,96,0.08);  border: 1px solid rgba(39,174,96,0.25); }
+  .relevance-possible   { background: rgba(230,126,34,0.08); border: 1px solid rgba(230,126,34,0.25); }
+  .relevance-needs-info { background: rgba(45,63,212,0.06);  border: 1px solid rgba(45,63,212,0.20); }
+  .relevance-no-match   { background: var(--bg3); border: 1px solid var(--border); }
+  .relevance-dot { font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+  .relevance-label { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .relevance-confirmed .relevance-label  { color: var(--green); }
+  .relevance-possible  .relevance-label  { color: var(--orange); }
+  .relevance-needs-info .relevance-label { color: var(--watch); }
+  .relevance-no-match  .relevance-label  { color: var(--text3); }
+  .relevance-explanation { color: var(--text2); font-size: 0.82rem; }
+
+  /* ── Buttons ─────────────────────────────────────────────────────────── */
+  .hide-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--text3);
+    padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.73rem;
+    transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
+  }
+  .hide-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .unhide-btn {
+    background: transparent; border: 1px solid rgba(46,213,115,0.3); color: var(--green);
+    padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.73rem;
+    transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
+  }
+  .unhide-btn:hover { background: var(--green-bg); }
+  .card.reviewed-card { opacity: 0.72; }
+
+  /* ── Empty / loading states ─────────────────────────────────────────── */
+  .empty-state { text-align: center; padding: 40px 20px; color: var(--text3); }
+  .empty-state-icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .empty-state-title { font-size: 1rem; font-weight: 600; color: var(--text2); margin-bottom: 6px; }
+  .no-change-banner {
+    background: var(--green-bg); border: 1px solid rgba(39,174,96,0.3);
+    border-radius: 10px; padding: 20px; text-align: center; margin: 12px 0;
+  }
+  .no-change-banner .icon { font-size: 2rem; margin-bottom: 8px; }
+  .no-change-banner .text { color: var(--green); font-size: 1rem; font-weight: 600; }
+  .no-change-banner .sub  { color: var(--text3); font-size: 0.82rem; margin-top: 4px; }
+
+  /* ── Profile panel ───────────────────────────────────────────────────── */
+  .profile-panel {
+    background: #fff; border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px; margin-bottom: 14px; display: none;
+  }
+  .profile-panel.visible { display: block; }
+  .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .profile-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text3); font-weight: 700; margin-bottom: 2px; }
+  .profile-value { font-size: 0.84rem; color: var(--text); }
+  .profile-value-en { font-size: 0.78rem; color: var(--text2); direction: ltr; display: block; }
+  .section-header-label {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--text3); font-weight: 700; margin: 0 0 12px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Technical footer ────────────────────────────────────────────────── */
+  .tech-footer {
+    margin-top: 24px;
+    padding: 14px 18px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.76rem;
+    color: var(--text3);
+    line-height: 1.7;
+  }
+  .tech-footer-title {
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text3); margin-bottom: 8px;
+  }
+
+  /* ── Pulse dot ───────────────────────────────────────────────────────── */
+  .pulse {
+    display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green); margin-left: 5px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%   { opacity:1; transform:scale(1); }
+    50%  { opacity:0.5; transform:scale(1.2); }
+    100% { opacity:1; transform:scale(1); }
+  }
+
+  /* ── Mobile ──────────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .header { padding: 12px 14px; }
+    .header-title { font-size: 1rem; }
+    .main { padding: 14px 10px 32px; }
+    .card { padding: 13px 14px; }
+    .card-title { font-size: 0.95rem; min-width: 0; }
+    .cc-section-header { padding: 12px 14px; }
+    .cc-section-body { padding: 10px 10px; }
+    .treatment-status-card { padding: 13px 14px; }
+    .profile-grid { grid-template-columns: 1fr 1fr; }
+    .hide-btn, .unhide-btn { min-height: 32px; }
+  }
+  @media (max-width: 380px) {
+    .card-meta-grid { grid-template-columns: 1fr 1fr; }
+    .profile-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
 
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
 <div class="header">
   <div class="header-inner">
-    <div>
-      <div class="header-title"><span>הילי הודיה</span> — מעקב טיפולי עולמי</div>
-    </div>
-    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <div id="overall-status-badge" class="status-badge status-warn">⚠ נדרשת סקירה</div>
+    <div class="header-title"><span>הילי הודיה</span> — מעקב טיפולי</div>
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
       <button class="toggle-profile-btn" onclick="toggleProfile()">פרופיל מטופלת</button>
-      <div class="header-meta" id="scan-date-header">טוען...</div>
+      <div class="header-meta" id="scan-date-header">...</div>
     </div>
   </div>
 </div>
 
+<!-- ── Main ───────────────────────────────────────────────────────────────── -->
 <div class="main">
 
-  <!-- Patient profile panel (hidden by default) -->
+  <!-- Profile panel (hidden by default) -->
   <div class="profile-panel" id="profile-panel">
-    <div class="section-header" style="margin-top:0">פרופיל מטופלת — לשימוש פנימי בלבד</div>
-    <div class="profile-grid" id="profile-grid">
-      <div class="profile-item">
+    <div class="section-header-label" style="margin-top:0">פרופיל מטופלת — לשימוש פנימי בלבד</div>
+    <div class="profile-grid">
+      <div>
         <div class="profile-label">שם</div>
         <div class="profile-value">הילי הודיה שמואל</div>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">תאריך לידה</div>
-        <div class="profile-value">06.05.2022 (גיל 4)</div>
+        <div class="profile-value">06.05.2022 (גיל ~4.5)</div>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">אבחנה</div>
         <div class="profile-value">Diffuse Midline Glioma</div>
-        <span class="profile-value-en">H3 K27-altered, EGFR-altered subtype · WHO Grade 4</span>
+        <span class="profile-value-en">H3 K27-altered, EGFR-altered · WHO Grade 4</span>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">מאפיינים מולקולריים</div>
         <div class="profile-value">H3K27M · EGFR exon 20 insertion · TP53 ×3</div>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">מיקום גידול</div>
-        <div class="profile-value">תלמוס ימין (ראשי), גזע מוח, מיד-בריין דו-צדדי</div>
+        <div class="profile-value">תלמוס ימין, גזע מוח, מיד-בריין</div>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">הקרנה</div>
-        <div class="profile-value">54 Gy / 30 פרקציות (הושלמה)</div>
+        <div class="profile-value">54 Gy / 30 פרקציות — הושלמה 08.08.2026</div>
       </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">Shunt</div>
-        <div class="profile-value">VP Shunt CERTAS (הוכנס 19.06.2026)</div>
+        <div class="profile-value">VP Shunt CERTAS (19.06.2026)</div>
       </div>
-      <div class="profile-item">
-        <div class="profile-label">טיפול פעיל</div>
-        <div class="profile-value">
-          <span class="treatment-pill treatment-active">✅ Zegfrovy (Sunvozertinib)</span>
-          <div style="font-size:0.78rem;color:var(--text3);margin-top:3px">מעכב EGFR exon 20, דור 3 — נבחר בין השאר בשל חדירת BBB</div>
-        </div>
-      </div>
-      <div class="profile-item">
-        <div class="profile-label">טיפול שאושר והוזמן</div>
-        <div class="profile-value">
-          <span class="treatment-pill treatment-pending">🔜 ONC201 (Dordaviprone)</span>
-          <div style="font-size:0.78rem;color:var(--text3);margin-top:3px">אושר FDA אוג׳ 2025 — בדרך לישראל, טרם הוחל</div>
-        </div>
-      </div>
-      <div class="profile-item">
-        <div class="profile-label">שיקול מרכזי בבחירת טיפול</div>
-        <div class="profile-value" style="font-size:0.82rem">חדירת מחסום דם-מוח (BBB) — תנאי הכרחי. Zegfrovy נבחר על פני Amivantamab בשל עדיפות BBB</div>
-      </div>
-      <div class="profile-item">
+      <div>
         <div class="profile-label">מוסד מטפל</div>
-        <div class="profile-value">ביה"ח שיבא — מח' המטו-אונקולוגיה ילדים</div>
+        <div class="profile-value">ביה"ח שיבא — המטו-אונקולוגיה ילדים</div>
+      </div>
+      <div>
+        <div class="profile-label">שיקול מרכזי בבחירת טיפול</div>
+        <div class="profile-value" style="font-size:0.8rem">חדירת מחסום דם-מוח (BBB) — תנאי הכרחי. Zegfrovy נבחר על פני Amivantamab בשל עדיפות BBB</div>
       </div>
     </div>
   </div>
 
-  <!-- Scan info -->
-  <div class="scan-info">
-    <span id="scan-bar-main"><span class="pulse"></span> טוען נתוני סריקה...</span>
-    <span id="source-count" style="direction:ltr"></span>
+  <!-- Treatment status — always visible at top -->
+  <div class="treatment-status-card">
+    <div class="treatment-status-title">סטטוס טיפול</div>
+    <div class="treatment-status-row">
+      <span class="treatment-pill treatment-active">✅ Zegfrovy (Sunvozertinib)</span>
+      <span style="font-size:0.8rem;color:var(--text2)">מעכב EGFR exon 20, דור 3 · פעיל · נבחר בין השאר בשל חדירת BBB</span>
+    </div>
+    <div class="treatment-status-row">
+      <span class="treatment-pill treatment-pending">🔜 ONC201 (Dordaviprone)</span>
+      <span style="font-size:0.8rem;color:var(--text2)">אושר FDA אוגוסט 2025 · בדרך לישראל · טרם הוחל</span>
+    </div>
   </div>
+
+  <!-- Sections — rendered by JS -->
+  <div id="sections-container"></div>
 
   <!-- Disclaimer -->
   <div class="disclaimer">
-    ⚕️ <strong>הערה חשובה:</strong> מערכת זו מבצעת סינון מחקרי בלבד. אין לה ולא ניתן לה להחליף רופא מטפל. כל פריט "לפעולה" מיועד לדיון עם הצוות הרפואי של הילי בשיבא בלבד. אין לנקוט פעולה רפואית על סמך תוצאות המערכת ללא אישור רופא.
+    ⚕️ <strong>הערה חשובה:</strong> מערכת זו מבצעת סינון מחקרי אוטומטי בלבד. היא אינה מחליפה רופא מטפל. כל פריט "לפעולה" מיועד לדיון עם הצוות הרפואי בשיבא בלבד. אין לנקוט פעולה רפואית ללא אישור רופא.
   </div>
 
-  <!-- Stats bar -->
-  <div class="stats-bar" id="stats-bar">
-    <div class="stat-card stat-red">
-      <div class="stat-num" id="stat-red">0</div>
-      <div class="stat-label">🔴 דורש התייחסות מיידית</div>
-    </div>
-    <div class="stat-card stat-orange">
-      <div class="stat-num" id="stat-orange">0</div>
-      <div class="stat-label">🟠 חשוב לדיון עם הצוות</div>
-    </div>
-    <div class="stat-card stat-blue">
-      <div class="stat-num" id="stat-watch">0</div>
-      <div class="stat-label">🔵 במעקב מחקרי</div>
-    </div>
-    <div class="stat-card stat-green">
-      <div class="stat-num" id="stat-trials">0</div>
-      <div class="stat-label">ניסויים קליניים</div>
-    </div>
+  <!-- Technical footer -->
+  <div class="tech-footer" id="tech-footer">
+    <div class="tech-footer-title">מידע טכני על הסריקה</div>
+    <div id="tech-footer-content" style="color:var(--text3)">טוען...</div>
   </div>
-
-  <!-- Tabs — 4, no overlap -->
-  <div class="tabs">
-    <div class="tab active" onclick="showTab('updates')" id="tab-updates">
-      📋 עדכונים ומחקר
-      <span class="tab-count tab-count-red" id="tab-updates-count" style="display:none">0</span>
-    </div>
-    <div class="tab" onclick="showTab('trials')" id="tab-trials">
-      🧪 ניסויים קליניים
-      <span class="tab-count tab-count-blue" id="tab-trials-count" style="display:none">0</span>
-    </div>
-    <div class="tab" onclick="showTab('directions')" id="tab-directions">
-      💡 כיוונים לחקירה
-      <span class="tab-count tab-count-green" id="tab-directions-count" style="display:none">0</span>
-    </div>
-    <div class="tab" onclick="showTab('reviewed')" id="tab-reviewed">
-      ✓ נסקר והוסתר
-    </div>
-  </div>
-
-  <!-- Filter chips — shown only inside Updates tab -->
-  <div id="filter-bar" class="filter-bar" style="display:none">
-    <span class="filter-label">סנן:</span>
-    <button class="filter-btn active" data-f="all"       onclick="applyFilter(this)">הכל</button>
-    <button class="filter-btn"        data-f="today"     onclick="applyFilter(this)">🆕 יום אחרון</button>
-    <button class="filter-btn"        data-f="urgent"    onclick="applyFilter(this)">🔴 דורש התייחסות</button>
-    <button class="filter-btn"        data-f="important" onclick="applyFilter(this)">🟠 לדיון עם הצוות</button>
-    <button class="filter-btn"        data-f="watch"     onclick="applyFilter(this)">🔵 במעקב מחקרי</button>
-  </div>
-
-  <!-- Tab Contents -->
-  <div id="content-updates" class="tab-content active"></div>
-  <div id="content-trials" class="tab-content"></div>
-  <div id="content-directions" class="tab-content"></div>
-  <div id="content-reviewed" class="tab-content"></div>
 
 </div>
 
@@ -853,8 +563,8 @@ function dismissItem(id, isTrialId) {
   saveDismissed(ids);
   const prefix = isTrialId ? 'trial-' : 'item-';
   const el = document.getElementById(prefix + id);
-  if (el) el.style.transition = 'opacity 0.3s'; el && (el.style.opacity = '0');
-  setTimeout(() => { if (el) el.style.display = 'none'; renderReviewedTab(); }, 300);
+  if (el) { el.style.transition = 'opacity 0.3s'; el.style.opacity = '0'; }
+  setTimeout(() => { if (el) el.style.display = 'none'; renderCommandCenter(); }, 300);
 }
 
 function undismissItem(id) {
@@ -862,29 +572,7 @@ function undismissItem(id) {
   location.reload();
 }
 
-function renderReviewedTab() {
-  const dismissed = getDismissed();
-  const dismissedDevs = _allDevs.filter(d => dismissed.includes(d.id));
-  const dismissedTrials = _allTrials.filter(t => dismissed.includes(t.nct_id));
-  const el = document.getElementById('content-reviewed');
-  if (!el) return;
-  if (dismissedDevs.length === 0 && dismissedTrials.length === 0) {
-    el.innerHTML = `<div class="empty-state"><div class="empty-state-icon">✓</div><div class="empty-state-title">אין פריטים שהוסתרו עדיין — לחץ "הסתר" על כרטיס להעביר אותו לכאן</div></div>`;
-    return;
-  }
-  let html = '';
-  if (dismissedDevs.length) {
-    html += `<div class="section-header">פיתוחים שהוסתרו (${dismissedDevs.length})</div>`;
-    html += dismissedDevs.map(d => buildCard(d, true)).join('');
-  }
-  if (dismissedTrials.length) {
-    html += `<div class="section-header">ניסויים שהוסתרו (${dismissedTrials.length})</div>`;
-    html += dismissedTrials.map(t => buildTrialCard(t, true)).join('');
-  }
-  el.innerHTML = html;
-}
-
-// ─── Data loading ───────────────────────────────────────────────────────────
+// ─── Data loading ────────────────────────────────────────────────────────────
 async function loadJSON(path) {
   try {
     const r = await fetch(path + '?t=' + Date.now());
@@ -896,24 +584,7 @@ async function loadJSON(path) {
   }
 }
 
-// ─── Tab switching ────────────────────────────────────────────────────────
-let _currentFilter = 'all';
-
-function showTab(tab) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-  document.getElementById('tab-' + tab).classList.add('active');
-  document.getElementById('content-' + tab).classList.add('active');
-  document.getElementById('filter-bar').style.display = (tab === 'updates') ? 'flex' : 'none';
-}
-
-function applyFilter(btn) {
-  document.querySelectorAll('#filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  _currentFilter = btn.dataset.f;
-  renderUpdatesTab(_currentFilter);
-}
-
+// ─── Utilities ────────────────────────────────────────────────────────────
 function fmtDate(iso) {
   if (!iso) return '—';
   try {
@@ -926,47 +597,34 @@ function nextDay(iso) {
 }
 
 function toggleProfile() {
-  const p = document.getElementById('profile-panel');
-  p.classList.toggle('visible');
+  document.getElementById('profile-panel').classList.toggle('visible');
 }
 
 // ─── Priority badge ────────────────────────────────────────────────────────
 function priorityBadge(priority) {
   if (!priority) return '';
   const p = priority.toUpperCase();
-  if (['RED','CRITICAL','URGENT'].includes(p))  return '<span class="badge badge-red">🔴 דורש התייחסות מיידית</span>';
-  if (['ORANGE','HIGH','DISCUSS'].includes(p))  return '<span class="badge badge-orange">🟠 חשוב לדיון עם הצוות</span>';
-  if (['WATCH','MONITOR'].includes(p))          return '<span class="badge badge-watch">🔵 במעקב מחקרי</span>';
+  if (['RED','CRITICAL','URGENT'].includes(p))  return '<span class="badge badge-red">🔴 דחוף</span>';
+  if (['ORANGE','HIGH','DISCUSS'].includes(p))  return '<span class="badge badge-orange">🟠 לדיון</span>';
+  if (['WATCH','MONITOR'].includes(p))          return '<span class="badge badge-watch">🔵 מעקב</span>';
   return '';
-}
-
-function evidenceBadge(level) {
-  if (!level) return '';
-  return `<span class="badge badge-level">רמת עדות: ${level}</span>`;
-}
-
-function scoreBadge(score) {
-  if (score == null) return '';
-  let label = score >= 90 ? '🔴 ≥90' : score >= 75 ? '🟠 ≥75' : score >= 55 ? '🔵 ≥55' : `${score}`;
-  return `<span class="badge badge-score">התאמה: ${label}/100</span>`;
 }
 
 function accessBadge(access) {
   if (!access) return '';
   const a = access.toLowerCase();
-  if (a.includes('recruit')) return '<span class="badge badge-recruiting">מגייס</span>';
-  if (a.includes('expanded') || a.includes('compassion')) return '<span class="badge badge-watch-status">גישה מורחבת</span>';
+  if (a.includes('recruit'))                    return '<span class="badge badge-recruiting">מגייס</span>';
+  if (a.includes('expanded')||a.includes('compassion')) return '<span class="badge badge-watch-status">גישה מורחבת</span>';
   return `<span class="badge badge-not-recruiting">${access}</span>`;
 }
 
-// ─── Card builder (5-question framework) ──────────────────────────────────
+// ─── Card builder ──────────────────────────────────────────────────────────
 function buildCard(item, isReviewed) {
   const priority = (item.priority || '').toUpperCase();
   const cardClass = (['RED','CRITICAL','URGENT'].includes(priority) ? 'card-red'
     : ['ORANGE','HIGH','DISCUSS'].includes(priority) ? 'card-orange'
     : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
 
-  // Q2: Relevance to Hili
   let relevanceHtml = '';
   if (item.relevance_to_hili) {
     const lvl = item.relevance_to_hili.level || 'needs_more_info';
@@ -974,7 +632,7 @@ function buildCard(item, isReviewed) {
     const R = {
       confirmed:      { cls:'relevance-confirmed',  dot:'🟢', lbl:'רלוונטיות אישית מאומתת' },
       possible:       { cls:'relevance-possible',   dot:'🟡', lbl:'רלוונטיות אפשרית' },
-      needs_more_info:{ cls:'relevance-needs-info', dot:'🔵', lbl:'נדרש מידע נוסף לאימות' },
+      needs_more_info:{ cls:'relevance-needs-info', dot:'🔵', lbl:'נדרש מידע נוסף' },
       no_match:       { cls:'relevance-no-match',   dot:'⚪', lbl:'לא נמצאה התאמה אישית' },
     };
     const r = R[lvl] || R.needs_more_info;
@@ -984,67 +642,38 @@ function buildCard(item, isReviewed) {
     </div>`;
   }
 
-  // Q1: what changed (old schema: why_matters_bullets too)
   const bulletsHtml = (item.why_matters_bullets||[]).length
     ? `<ul class="bullets" style="margin:6px 0">${item.why_matters_bullets.map(b=>`<li>${b}</li>`).join('')}</ul>` : '';
 
-  // Q5: Action — always visible
   const actionText = item.action_he || item.action || '';
   const actionHtml = actionText
     ? `<div class="action-box"><div class="action-label">מה לעשות?</div><div class="action-text">${actionText}</div></div>` : '';
 
-  // ── Expandable details ──────────────────────────────────────────────────
   let expandParts = [];
-
-  // Q3: Evidence quality
   if (item.evidence_quality) {
     const eq = item.evidence_quality;
-    const lvlMap = {
-      human_clinical:'מחקר קליני בבני אדם', human_case:'דיווחי מקרה (בני אדם)',
-      animal:'מחקר בבעלי חיים', preclinical:'קדם-קליני / מעבדה',
-      hypothesis:'השערה מנגנונית', preprint:'פרה-פרינט (טרם ביקורת עמיתים)',
-    };
-    expandParts.push(`<div class="expand-section">
-      <div class="expand-label">רמת הראיות</div>
-      <span class="badge badge-evidence">${lvlMap[eq.level]||eq.level||'לא ידוע'}</span>
-      ${eq.details?`<div style="margin-top:4px">${eq.details}</div>`:''}
-    </div>`);
+    const lvlMap = { human_clinical:'מחקר קליני בבני אדם', human_case:'דיווחי מקרה', animal:'מחקר בבעלי חיים', preclinical:'קדם-קליני', hypothesis:'השערה מנגנונית', preprint:'פרה-פרינט' };
+    expandParts.push(`<div class="expand-section"><div class="expand-label">רמת הראיות</div><span class="badge badge-evidence">${lvlMap[eq.level]||eq.level||'לא ידוע'}</span>${eq.details?`<div style="margin-top:4px">${eq.details}</div>`:''}</div>`);
   }
-
-  // Q4: BBB assessment
   if (item.bbb_assessment) {
     const bbb = item.bbb_assessment;
-    const bM={yes:['bbb-yes','חודרת BBB ✓'],partial:['bbb-partial','חדירה חלקית ~'],no:['bbb-no','לא חודרת BBB ✗'],unknown:['bbb-unknown','חדירת BBB לא ידועה ?']};
+    const bM={yes:['bbb-yes','חודרת BBB ✓'],partial:['bbb-partial','חדירה חלקית ~'],no:['bbb-no','לא חודרת BBB ✗'],unknown:['bbb-unknown','BBB לא ידוע ?']};
     const [bcls,blbl]= bM[bbb.evidence]||bM.unknown;
-    expandParts.push(`<div class="expand-section">
-      <div class="expand-label">מחסום דם-מוח (BBB)</div>
-      <span class="badge badge-${bcls}">${blbl}</span>
-      ${bbb.details?`<div style="margin-top:4px">${bbb.details}</div>`:''}
-    </div>`);
+    expandParts.push(`<div class="expand-section"><div class="expand-label">מחסום דם-מוח (BBB)</div><span class="badge badge-${bcls}">${blbl}</span>${bbb.details?`<div style="margin-top:4px">${bbb.details}</div>`:''}</div>`);
   }
-
-  // Scientific explanation
   const sciExp = item.expandable_details?.scientific_explanation || item.technical_details || '';
   if (sciExp) expandParts.push(`<div class="expand-section"><div class="expand-label">הסבר מדעי</div><div>${sciExp}</div></div>`);
-
-  // Study limitations
   const limText = item.expandable_details?.study_limitations || item.key_limitation || '';
-  if (limText) expandParts.push(`<div class="expand-section"><div class="expand-label">מגבלות המחקר</div><div>${limText}</div></div>`);
-
-  // Connection to current treatment
+  if (limText) expandParts.push(`<div class="expand-section"><div class="expand-label">מגבלות</div><div>${limText}</div></div>`);
   const connText = item.expandable_details?.connection_to_current_treatment || '';
-  if (connText) expandParts.push(`<div class="expand-section"><div class="expand-label">קשר לטיפול הנוכחי (Zegfrovy / ONC201)</div><div>${connText}</div></div>`);
-
-  // Source
-  const srcUrl = item.source_url || item.source_url_secondary || '';
-  if (srcUrl) expandParts.push(`<div class="expand-section"><a class="source-link" href="${srcUrl}" target="_blank" rel="noopener">🔗 מקור ראשי</a></div>`);
+  if (connText) expandParts.push(`<div class="expand-section"><div class="expand-label">קשר לטיפול הנוכחי</div><div>${connText}</div></div>`);
+  const srcUrl = item.source_url || '';
+  if (srcUrl) expandParts.push(`<div class="expand-section"><a class="source-link" href="${srcUrl}" target="_blank" rel="noopener">🔗 מקור</a></div>`);
+  const dateStr = item.date_detected||item.date_published;
+  if (dateStr) expandParts.push(`<div class="expand-section"><div class="expand-label">תאריך גילוי</div><div>${dateStr}</div></div>`);
 
   const expandHtml = expandParts.length
     ? `<details class="card-expand"><summary>פרטים נוספים</summary><div class="expand-content">${expandParts.join('')}</div></details>` : '';
-
-  // Date footer
-  const dateFooter = (item.date_detected||item.date_published)
-    ? `<div style="font-size:0.72rem;color:var(--text3);margin-top:8px">נגלה: ${item.date_detected||item.date_published}</div>` : '';
 
   const hideBtn = isReviewed
     ? `<button class="unhide-btn" onclick="undismissItem('${(item.id||'').replace(/'/g,"\\'")}')">↩ שחזר</button>`
@@ -1057,98 +686,63 @@ function buildCard(item, isReviewed) {
         <div class="card-title">${item.title_he||item.title||''}</div>
         ${item.title_en?`<span class="card-title-en">${item.title_en}</span>`:''}
       </div>
-      <div class="badges" style="align-items:flex-start;gap:5px">
-        ${priorityBadge(item.priority)}
-        ${hideBtn}
-      </div>
+      <div class="badges">${hideBtn}</div>
     </div>
     <div class="card-body">
-      ${item.what_changed?`<div style="margin-bottom:8px;font-size:0.87rem;color:var(--text)">${item.what_changed}</div>`:''}
+      ${item.what_changed?`<div style="margin-bottom:8px;font-size:0.86rem;color:var(--text)">${item.what_changed}</div>`:''}
       ${bulletsHtml}
       ${relevanceHtml}
       ${actionHtml}
       ${expandHtml}
-      ${dateFooter}
     </div>
   </div>`;
-}
-
-// ─── Render tab ────────────────────────────────────────────────────────────
-function renderItems(items, containerId, emptyMessage) {
-  const el = document.getElementById(containerId);
-  if (!items || items.length === 0) {
-    el.innerHTML = `<div class="empty-state">
-      <div class="empty-state-icon">✓</div>
-      <div class="empty-state-title">${emptyMessage}</div>
-    </div>`;
-    return;
-  }
-  el.innerHTML = items.map(item => buildCard(item)).join('');
 }
 
 // ─── Trial card builder ────────────────────────────────────────────────────
 function buildTrialCard(trial, isReviewed) {
   const verdict = trial.eligibility_status || trial.eligibility_verdict || '';
   const cat = trial.match_category || '';
-  const isLikely = cat === 'reasonable' || verdict.includes('LIKELY');
-  const isPossible = cat === 'possible' || verdict.includes('POSSIBLE');
-  const matchClass = (isLikely ? 'card-orange' : isPossible ? 'card-orange' : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
+  const isLikely   = cat === 'reasonable' || verdict.includes('LIKELY');
+  const isPossible = cat === 'possible'   || verdict.includes('POSSIBLE');
+  const matchClass = (isLikely||isPossible ? 'card-orange' : 'card-watch') + (isReviewed ? ' reviewed-card' : '');
 
-  const title = trial.title_short_he || trial.title_he || trial.title || '';
-  const titleEn = trial.title_short_en || trial.title_en || '';
+  const title    = trial.title_short_he || trial.title_he || trial.title || '';
+  const titleEn  = trial.title_short_en || trial.title_en || '';
   const actionText = trial.action_he || trial.action || '';
-  const ageMin = trial.age_min || trial.age_min_years || '';
+  const ageMin   = trial.age_min || trial.age_min_years || '';
   const location = trial.location_he || trial.location_country || '';
   const statusText = trial.status || trial.recruiting_status || '';
   const matchScore = trial.match_score;
 
   const timingAlert = trial.enrollment_timing_alert
-    ? `<div class="limitation-box"><div class="limitation-label">⏰ חלון זמן</div><div class="limitation-text">${trial.enrollment_timing_alert}</div></div>`
-    : '';
-
-  const inclusionHtml = (trial.key_inclusion || []).length
-    ? `<div class="card-section"><div class="card-section-title">קריטריוני הכללה מרכזיים</div>
-       <ul style="margin:4px 0 0 0;padding-right:16px;font-size:0.82rem;color:var(--text-secondary)">
-       ${(trial.key_inclusion || []).map(k => `<li>${k}</li>`).join('')}
-       </ul></div>` : '';
-
+    ? `<div class="limitation-box"><div class="limitation-label">⏰ חלון זמן</div><div>${trial.enrollment_timing_alert}</div></div>` : '';
   const exclusionCritical = trial.key_exclusion_critical
-    ? `<div class="limitation-box"><div class="limitation-label">חסימה קריטית</div><div class="limitation-text">${trial.key_exclusion_critical}</div></div>`
-    : '';
+    ? `<div class="limitation-box"><div class="limitation-label">חסימה קריטית</div><div>${trial.key_exclusion_critical}</div></div>` : '';
+  const gapsHtml = (trial.eligibility_gaps||[]).length
+    ? `<ul style="margin:6px 0;padding-right:16px;font-size:0.82rem;color:#f59e0b">${(trial.eligibility_gaps||[]).map(g=>`<li>${g}</li>`).join('')}</ul>` : '';
 
-  const gapsHtml = (trial.eligibility_gaps || []).length
-    ? `<div class="card-section"><div class="card-section-title">🔍 מידע חסר לקביעת זכאות</div>
-       <ul style="margin:4px 0 0 0;padding-right:16px;font-size:0.82rem;color:#f59e0b">
-       ${(trial.eligibility_gaps || []).map(g => `<li>${g}</li>`).join('')}
-       </ul></div>` : '';
-
-  // BBB assessment for trial
   function bbbTrialBadge(level) {
     if (!level) return '';
-    const map = {yes:'badge-bbb-yes', partial:'badge-bbb-partial', no:'badge-bbb-no', unknown:'badge-bbb-unknown'};
-    const label = {yes:'✅ חודר BBB', partial:'⚠️ חדירה חלקית', no:'❌ לא חודר BBB', unknown:'❓ BBB — לא ידוע'};
+    const map   = {yes:'badge-bbb-yes',partial:'badge-bbb-partial',no:'badge-bbb-no',unknown:'badge-bbb-unknown'};
+    const label = {yes:'✅ חודר BBB',partial:'⚠️ חדירה חלקית',no:'❌ לא חודר BBB',unknown:'❓ BBB — לא ידוע'};
     return `<span class="badge ${map[level]||'badge-bbb-unknown'}">${label[level]||level}</span>`;
   }
 
   const bbbHtml = (trial.bbb_note || (trial.bbb_assessment && trial.bbb_assessment.evidence))
     ? (() => {
-        const bbbLevel = trial.bbb_assessment && trial.bbb_assessment.evidence;
+        const bbbLevel   = trial.bbb_assessment && trial.bbb_assessment.evidence;
         const bbbDetails = (trial.bbb_assessment && trial.bbb_assessment.details) || trial.bbb_note || '';
         return `<div style="padding:8px 12px;background:rgba(45,63,212,0.04);border:1px solid rgba(45,63,212,0.15);border-radius:8px;margin:8px 0">
-          <div style="font-size:0.78rem;font-weight:600;color:var(--text3);margin-bottom:4px">מחסום דם-מוח (BBB)</div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--text3);margin-bottom:4px">מחסום דם-מוח (BBB)</div>
           ${bbbLevel ? bbbTrialBadge(bbbLevel) : ''}
-          ${bbbDetails ? `<div style="font-size:0.81rem;color:var(--text2);margin-top:4px">${bbbDetails}</div>` : ''}
+          ${bbbDetails ? `<div style="font-size:0.8rem;color:var(--text2);margin-top:4px">${bbbDetails}</div>` : ''}
         </div>`;
-      })()
-    : '';
+      })() : '';
 
   const egfrNote = trial.egfr_note
-    ? `<div class="limitation-box"><div class="limitation-label">הערת EGFR / ONC201</div><div class="limitation-text">${trial.egfr_note}</div></div>`
-    : '';
-
+    ? `<div class="limitation-box"><div class="limitation-label">הערת EGFR / ONC201</div><div>${trial.egfr_note}</div></div>` : '';
   const summaryHtml = trial.summary_he
-    ? `<div style="font-size:0.87rem;color:var(--text2);margin:8px 0;line-height:1.55">${trial.summary_he}</div>`
-    : '';
+    ? `<div style="font-size:0.86rem;color:var(--text2);margin:6px 0;line-height:1.5">${trial.summary_he}</div>` : '';
 
   const trialHideBtn = isReviewed
     ? `<button class="unhide-btn" onclick="undismissItem('${(trial.nct_id||'').replace(/'/g,"\\'")}')">↩ בטל הסתרה</button>`
@@ -1159,10 +753,10 @@ function buildTrialCard(trial, isReviewed) {
     <div class="card-header">
       <div>
         <div class="card-title">${title}</div>
-        ${titleEn ? `<span class="card-title-en" style="font-size:0.78rem;color:var(--text-secondary)">${titleEn}</span>` : ''}
+        ${titleEn ? `<span class="card-title-en">${titleEn}</span>` : ''}
       </div>
-      <div class="badges" style="align-items:center">
-        ${matchScore != null ? `<span class="badge badge-score" style="background:#1a2a1a;color:#4ade80">${matchScore}/100</span>` : ''}
+      <div class="badges">
+        ${matchScore != null ? `<span class="badge badge-score">${matchScore}/100</span>` : ''}
         ${accessBadge(statusText)}
         ${trial.nct_id ? `<span class="badge badge-level">${trial.nct_id}</span>` : ''}
         ${trialHideBtn}
@@ -1174,76 +768,139 @@ function buildTrialCard(trial, isReviewed) {
       ${exclusionCritical}
       ${bbbHtml}
       ${egfrNote}
-      ${inclusionHtml}
       ${gapsHtml}
       ${actionText ? `<div class="action-box"><div class="action-label">מה לעשות עכשיו?</div><div class="action-text">${actionText}</div></div>` : ''}
       <div class="card-meta-grid">
-        ${ageMin ? `<div class="meta-item"><div class="meta-label">גיל מינימלי</div><div class="meta-value">${ageMin}</div></div>` : ''}
-        ${location ? `<div class="meta-item"><div class="meta-label">מיקום</div><div class="meta-value">${location}</div></div>` : ''}
-        ${trial.phase ? `<div class="meta-item"><div class="meta-label">שלב</div><div class="meta-value">${trial.phase}</div></div>` : ''}
-        ${trial.nct_id ? `<div class="meta-item"><div class="meta-label">ClinicalTrials.gov</div><div class="meta-value"><a class="source-link" href="${trial.source_url || 'https://clinicaltrials.gov/study/'+trial.nct_id}" target="_blank">${trial.nct_id}</a></div></div>` : ''}
+        ${ageMin    ? `<div><div class="meta-label">גיל מינימלי</div><div class="meta-value">${ageMin}</div></div>` : ''}
+        ${location  ? `<div><div class="meta-label">מיקום</div><div class="meta-value">${location}</div></div>` : ''}
+        ${trial.phase  ? `<div><div class="meta-label">שלב</div><div class="meta-value">${trial.phase}</div></div>` : ''}
+        ${trial.nct_id ? `<div><div class="meta-label">ClinicalTrials</div><div class="meta-value"><a class="source-link" href="${trial.source_url||'https://clinicaltrials.gov/study/'+trial.nct_id}" target="_blank">${trial.nct_id}</a></div></div>` : ''}
       </div>
     </div>
   </div>`;
 }
 
-// ─── Render: Updates tab (developments, filtered by priority) ──────────────
-function renderDirectionsTab() {
-  const el = document.getElementById('content-directions');
-  const hyps = (window._allHypotheses || []);
-  if (!hyps.length) {
-    el.innerHTML = `<div class="no-change-banner"><div class="icon">💡</div><div class="text">כיוונים לחקירה יופיעו לאחר הסריקה הבאה</div><div class="sub">Claude יציע שילובי תרופות ורעיונות לבחינה על בסיס המוטציות של הילי</div></div>`;
-    return;
-  }
-  const urgencyColor = {'HIGH':'var(--red)','MEDIUM':'var(--orange)','SPECULATIVE':'var(--watch)'};
-  el.innerHTML = hyps.map(h => `
-    <div class="card" style="border-right: 4px solid ${urgencyColor[h.urgency]||'var(--watch)'}">
-      <div class="card-header">
-        <div>
-          <div class="card-title">${h.title_he || h.title_en || ''}</div>
-          ${h.title_en ? `<div class="card-subtitle">${h.title_en}</div>` : ''}
-        </div>
-        <span class="priority-badge" style="background:${urgencyColor[h.urgency]||'var(--watch)'}20;color:${urgencyColor[h.urgency]||'var(--watch)'}">${h.urgency||'SPECULATIVE'}</span>
-      </div>
-      <div class="card-body">
-        <div style="margin-bottom:8px">${h.rationale_he || ''}</div>
-        ${h.supporting_evidence && h.supporting_evidence.length ? `<ul style="margin:6px 0 6px 0;padding-right:18px">${h.supporting_evidence.map(e=>`<li style="font-size:0.85rem;color:var(--text2)">${e}</li>`).join('')}</ul>` : ''}
-        ${h.next_step ? `<div style="margin-top:8px;padding:8px 12px;background:var(--bg3);border-radius:6px;font-size:0.85rem"><strong>צעד הבא:</strong> ${h.next_step}</div>` : ''}
-        ${h.relevant_trials && h.relevant_trials.length ? `<div style="margin-top:6px;font-size:0.82rem;color:var(--text3)">ניסויים רלוונטיים: ${h.relevant_trials.join(', ')}</div>` : ''}
-      </div>
-    </div>`).join('');
+// ─── Section builder ───────────────────────────────────────────────────────
+function toggleSection(id) {
+  const body = document.getElementById('section-body-' + id);
+  const icon = document.getElementById('section-icon-' + id);
+  if (!body) return;
+  const isOpen = body.style.display !== 'none';
+  body.style.display = isOpen ? 'none' : 'block';
+  if (icon) icon.textContent = isOpen ? '▶' : '▼';
 }
 
-function renderUpdatesTab(filter) {
+function buildSection(id, title, count, contentHtml, defaultOpen, extraClass) {
+  const open = defaultOpen !== false;
+  return `
+    <div class="cc-section${extraClass ? ' '+extraClass : ''}">
+      <div class="cc-section-header" onclick="toggleSection('${id}')">
+        <div class="cc-section-title">
+          ${title}
+          <span class="cc-section-count">${count}</span>
+        </div>
+        <span class="cc-section-icon" id="section-icon-${id}">${open?'▼':'▶'}</span>
+      </div>
+      <div class="cc-section-body" id="section-body-${id}" style="display:${open?'block':'none'}">
+        ${contentHtml}
+      </div>
+    </div>`;
+}
+
+// ─── Command center renderer ────────────────────────────────────────────────
+function renderCommandCenter() {
   const dismissed = getDismissed();
-  // Exclude developments that are trial-specific (nct_id set) — those show in the trials tab
-  let items = _allDevs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
+  const allVisDev = _allDevs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
 
-  if (filter === 'today') {
-    const todayStr = new Date().toISOString().slice(0, 10);
-    items = items.filter(d => (d.date_detected || '').slice(0, 10) === todayStr);
-  } else if (filter === 'urgent')    items = items.filter(d => ['RED','CRITICAL','URGENT'].includes((d.priority||'').toUpperCase()));
-  else if (filter==='important') items = items.filter(d => ['ORANGE','HIGH','DISCUSS'].includes((d.priority||'').toUpperCase()));
-  else if (filter==='watch')  items = items.filter(d => ['WATCH','MONITOR'].includes((d.priority||'').toUpperCase()));
-
-  // Sort: priority first, then match_score
-  const pOrder = {'RED':0,'CRITICAL':0,'ORANGE':1,'HIGH':1,'WATCH':2};
-  items.sort((a,b) => {
-    const pa = pOrder[(a.priority||'').toUpperCase()] ?? 3;
-    const pb = pOrder[(b.priority||'').toUpperCase()] ?? 3;
-    return pa !== pb ? pa - pb : (b.match_score||0) - (a.match_score||0);
+  const pU = d => (d.priority||'').toUpperCase();
+  const pOrder = {'RED':0,'CRITICAL':0,'URGENT':0,'ORANGE':1,'HIGH':1,'DISCUSS':1,'WATCH':2,'MONITOR':2};
+  allVisDev.sort((a,b) => {
+    const pa = pOrder[pU(a)] ?? 3;
+    const pb = pOrder[pU(b)] ?? 3;
+    return pa !== pb ? pa-pb : (b.match_score||0)-(a.match_score||0);
   });
 
-  const el = document.getElementById('content-updates');
-  if (items.length === 0) {
-    if (_allDevs.length === 0) {
-      el.innerHTML = `<div class="no-change-banner"><div class="icon">🔬</div><div class="text">הסריקה בביצוע</div><div class="sub">נתוני המחקר יופיעו לאחר הסריקה הראשונה</div></div>`;
-    } else {
-      el.innerHTML = `<div class="no-change-banner"><div class="icon">✓</div><div class="text">אין פריטים בקטגוריה זו</div><div class="sub">שנה פילטר לראות פריטים נוספים</div></div>`;
-    }
-    return;
+  const urgentItems  = allVisDev.filter(d => ['RED','CRITICAL','URGENT'].includes(pU(d)));
+  const discussItems = allVisDev.filter(d => ['ORANGE','HIGH','DISCUSS'].includes(pU(d)));
+  const newItems     = allVisDev.filter(d => d.is_new && !['RED','CRITICAL','URGENT'].includes(pU(d)) && !['ORANGE','HIGH','DISCUSS'].includes(pU(d)));
+  const watchItems   = allVisDev.filter(d => ['WATCH','MONITOR'].includes(pU(d)));
+
+  const visTri = _allTrials.filter(t => !dismissed.includes(t.nct_id));
+  const hyps   = window._allHypotheses || [];
+
+  let html = '';
+
+  if (urgentItems.length > 0) {
+    const body = urgentItems.map(d => buildCard(d,false)).join('');
+    html += buildSection('urgent', '🔴 דורש בירור מיידי עם הצוות הרפואי', urgentItems.length, body, true, 'section-urgent');
   }
-  el.innerHTML = items.map(item => buildCard(item, false)).join('');
+
+  if (discussItems.length > 0) {
+    const body = discussItems.map(d => buildCard(d,false)).join('');
+    html += buildSection('discuss', '🟠 לדיון עם הצוות הרפואי', discussItems.length, body, true, 'section-discuss');
+  }
+
+  if (newItems.length > 0) {
+    const body = newItems.map(d => buildCard(d,false)).join('');
+    html += buildSection('new', '🆕 חדש מאז הסריקה האחרונה', newItems.length, body, true, 'section-new');
+  }
+
+  if (watchItems.length > 0) {
+    const body = watchItems.map(d => buildCard(d,false)).join('');
+    html += buildSection('watch', '🔵 במעקב מחקרי', watchItems.length, body, false);
+  }
+
+  if (visTri.length > 0) {
+    const cat = t => t.match_category || '';
+    const likely   = visTri.filter(t => cat(t)==='reasonable');
+    const possible = visTri.filter(t => cat(t)==='possible');
+    const follow   = visTri.filter(t => cat(t)==='follow');
+    const notElig  = visTri.filter(t => cat(t)==='not_eligible'||(!['reasonable','possible','follow'].includes(cat(t))&&cat(t)));
+    const rest     = visTri.filter(t => !cat(t));
+    let triHtml = '';
+    if (likely.length)   triHtml += `<div class="sub-section-header">✅ התאמה סבירה — כדאי לפנות (${likely.length})</div>` + likely.map(t=>buildTrialCard(t)).join('');
+    if (possible.length) triHtml += `<div class="sub-section-header">🔍 התאמה אפשרית — חסר מידע (${possible.length})</div>` + possible.map(t=>buildTrialCard(t)).join('');
+    if (follow.length)   triHtml += `<div class="sub-section-header">👁 מעקב לעתיד (${follow.length})</div>` + follow.map(t=>buildTrialCard(t)).join('');
+    if (rest.length)     triHtml += `<div class="sub-section-header">🧪 ניסויים נוספים (${rest.length})</div>` + rest.map(t=>buildTrialCard(t)).join('');
+    if (notElig.length)  triHtml += `<div class="sub-section-header">✗ לא מתאים כרגע (${notElig.length})</div>` + notElig.map(t=>buildTrialCard(t)).join('');
+    html += buildSection('trials', '🧪 ניסויים קליניים', visTri.length, triHtml, false);
+  }
+
+  if (hyps.length > 0) {
+    const urgencyColor = {'HIGH':'var(--red)','MEDIUM':'var(--orange)','SPECULATIVE':'var(--watch)'};
+    const hypHtml = hyps.map(h => `
+      <div class="card" style="border-right:4px solid ${urgencyColor[h.urgency]||'var(--watch)'}">
+        <div class="card-header">
+          <div><div class="card-title">${h.title_he||h.title_en||''}</div></div>
+          <span class="badge" style="background:${urgencyColor[h.urgency]||'var(--watch-bg)'};color:${urgencyColor[h.urgency]||'var(--watch)'}">${h.urgency||'SPECULATIVE'}</span>
+        </div>
+        <div class="card-body">
+          <div style="margin-bottom:6px">${h.rationale_he||''}</div>
+          ${h.supporting_evidence&&h.supporting_evidence.length?`<ul style="margin:6px 0;padding-right:18px">${h.supporting_evidence.map(e=>`<li style="font-size:0.84rem;color:var(--text2)">${e}</li>`).join('')}</ul>`:''}
+          ${h.next_step?`<div style="margin-top:8px;padding:8px 12px;background:var(--bg3);border-radius:6px;font-size:0.84rem"><strong>צעד הבא:</strong> ${h.next_step}</div>`:''}
+        </div>
+      </div>`).join('');
+    html += buildSection('directions', '💡 כיוונים לחקירה', hyps.length, hypHtml, false);
+  }
+
+  // Reviewed section
+  const dismissedDevs = _allDevs.filter(d => dismissed.includes(d.id));
+  const dismissedTri  = _allTrials.filter(t => dismissed.includes(t.nct_id));
+  const reviewedTotal = dismissedDevs.length + dismissedTri.length;
+  let reviewedHtml = '';
+  if (reviewedTotal === 0) {
+    reviewedHtml = `<div class="empty-state"><div class="empty-state-icon">✓</div><div class="empty-state-title">אין פריטים שהוסתרו — לחץ "הסתר" על כרטיס להעביר אותו לכאן</div></div>`;
+  } else {
+    if (dismissedDevs.length) reviewedHtml += dismissedDevs.map(d=>buildCard(d,true)).join('');
+    if (dismissedTri.length)  reviewedHtml += dismissedTri.map(t=>buildTrialCard(t,true)).join('');
+  }
+  html += buildSection('reviewed', '✓ נסקר והוסתר', reviewedTotal, reviewedHtml, false);
+
+  if (!html) {
+    html = `<div class="no-change-banner"><div class="icon">🔬</div><div class="text">הסריקה בביצוע</div><div class="sub">נתוני המחקר יופיעו לאחר הסריקה הראשונה</div></div>`;
+  }
+
+  document.getElementById('sections-container').innerHTML = html;
 }
 
 // ─── Main init ─────────────────────────────────────────────────────────────
@@ -1255,108 +912,50 @@ async function init() {
     loadJSON('../data/hypotheses.json'),
   ]);
 
-  const devs = devData?.developments || [];
-  const trials = trialsData?.trials || [];
-  const state = stateData || {};
-  const hyps = hypData?.hypotheses || [];
+  const devs   = devData?.developments || [];
+  const trials = trialsData?.trials     || [];
+  const state  = stateData || {};
+  const hyps   = hypData?.hypotheses    || [];
 
   _allDevs = devs;
   _allTrials = trials;
   window._allHypotheses = hyps;
 
-  // ── Dynamic dates ────────────────────────────────────────────────────────
+  // Scan date in header
   const lastScan = state?._meta?.last_full_scan || state?.last_run_summary?.date;
   const nextScan = state?._meta?.next_scheduled_scan;
   if (lastScan) {
     const lf = fmtDate(lastScan);
-    document.getElementById('scan-date-header').textContent = 'סריקה אחרונה: ' + lf;
+    document.getElementById('scan-date-header').textContent = 'סריקה: ' + lastScan;
     const nf = nextScan ? fmtDate(nextScan) : nextDay(lastScan);
-    document.getElementById('scan-bar-main').innerHTML =
-      `<span class="pulse"></span> סריקה אחרונה: <strong>${lf}</strong> | סריקה הבאה: ${nf}`;
+    document.getElementById('scan-date-header').innerHTML =
+      `<span class="pulse"></span> סריקה: ${lastScan} | הבאה: ${nextScan||nextDay(lastScan)}`;
   }
 
-  // ── Source count ─────────────────────────────────────────────────────────
+  // Technical footer
   const sources = state?.last_run_summary?.sources_checked || [];
-  if (Array.isArray(sources) && sources.length) {
-    document.getElementById('source-count').textContent =
-      `${sources.length} מקורות: ${sources.slice(0,3).join(' · ')}${sources.length>3?' ועוד...':''}`;
-  } else if (typeof sources === 'number' && sources > 0) {
-    document.getElementById('source-count').textContent = `מקורות שנבדקו: ${sources}`;
+  const keyFindings = state?.last_run_summary?.key_findings || [];
+  const scanNotes = state?.last_run_summary?.scan_notes || '';
+  let techHtml = '';
+  if (lastScan) techHtml += `<div>סריקה אחרונה: ${lastScan}</div>`;
+  if (nextScan) techHtml += `<div>סריקה הבאה: ${nextScan}</div>`;
+  if (state?.last_run_summary) {
+    const s = state.last_run_summary;
+    if (s.fetched) techHtml += `<div>שאובו: ניסויים ${s.fetched.clinical_trials||0} · מאמרים PubMed ${s.fetched.pubmed_papers||0} · RSS ${s.fetched.rss_articles||0}</div>`;
+    if (s.new_trials_added || s.new_developments_added) {
+      techHtml += `<div>חדשים: ${s.new_trials_added||0} ניסויים · ${s.new_developments_added||0} עדכונים</div>`;
+    }
   }
-
-  // ── Stats ────────────────────────────────────────────────────────────────
-  const dismissed = getDismissed();
-  const visDev = devs.filter(d => !dismissed.includes(d.id) && !d.nct_id);
-  const red    = visDev.filter(d => ['RED','CRITICAL','URGENT'].includes((d.priority||'').toUpperCase()));
-  const orange = visDev.filter(d => ['ORANGE','HIGH','DISCUSS'].includes((d.priority||'').toUpperCase()));
-  const watch  = visDev.filter(d => ['WATCH','MONITOR'].includes((d.priority||'').toUpperCase()));
-
-  document.getElementById('stat-red').textContent    = red.length;
-  document.getElementById('stat-orange').textContent = orange.length;
-  document.getElementById('stat-watch').textContent  = watch.length;
-  document.getElementById('stat-trials').textContent = trials.filter(t=>!dismissed.includes(t.nct_id)).length;
-
-  // ── Overall status badge ─────────────────────────────────────────────────
-  const badge = document.getElementById('overall-status-badge');
-  if (red.length > 0) {
-    badge.className = 'status-badge status-alert';
-    badge.textContent = `🔴 ${red.length} פריטים דורשים סקירה מיידית`;
-  } else if (orange.length > 0) {
-    badge.className = 'status-badge status-warn';
-    badge.textContent = `⚠ ${orange.length} פריטים לסקירה`;
-  } else if (devs.length === 0) {
-    badge.className = 'status-badge status-ok';
-    badge.textContent = '✓ ממתין לנתוני מחקר';
-  } else {
-    badge.className = 'status-badge status-ok';
-    badge.textContent = '✓ אין פיתוחים דחופים כרגע';
+  if (sources.length) {
+    techHtml += `<details style="margin-top:8px"><summary style="cursor:pointer;font-size:0.74rem;color:var(--text3)">מקורות שנבדקו (${sources.length})</summary><div style="margin-top:6px;font-size:0.74rem;line-height:1.7">${sources.map(s=>`<div>· ${s}</div>`).join('')}</div></details>`;
   }
-
-  // ── Tab badge counts ─────────────────────────────────────────────────────
-  const updCount = red.length + orange.length + watch.length;
-  if (updCount > 0) {
-    const el = document.getElementById('tab-updates-count');
-    el.textContent = updCount; el.style.display = 'inline-flex';
+  if (keyFindings.length) {
+    techHtml += `<details style="margin-top:4px"><summary style="cursor:pointer;font-size:0.74rem;color:var(--text3)">ממצאים עיקריים בסריקה</summary><div style="margin-top:6px;font-size:0.74rem;line-height:1.7">${keyFindings.map(f=>`<div>· ${f}</div>`).join('')}</div></details>`;
   }
-  const triCount = trials.filter(t=>!dismissed.includes(t.nct_id)).length;
-  if (triCount > 0) {
-    const el = document.getElementById('tab-trials-count');
-    el.textContent = triCount; el.style.display = 'inline-flex';
-  }
-  if (hyps.length > 0) {
-    const el = document.getElementById('tab-directions-count');
-    el.textContent = hyps.length; el.style.display = 'inline-flex';
-  }
+  if (scanNotes) techHtml += `<details style="margin-top:4px"><summary style="cursor:pointer;font-size:0.74rem;color:var(--text3)">הערות סריקה</summary><div style="margin-top:6px;font-size:0.74rem;line-height:1.5">${scanNotes}</div></details>`;
+  document.getElementById('tech-footer-content').innerHTML = techHtml || 'לא נמצא מידע טכני.';
 
-  // Show filter bar for updates tab
-  document.getElementById('filter-bar').style.display = 'flex';
-
-  // ── Render tabs ───────────────────────────────────────────────────────────
-  renderUpdatesTab('all');
-  renderDirectionsTab();
-
-  // Trials tab
-  const trialsEl = document.getElementById('content-trials');
-  const visTri = trials.filter(t => !dismissed.includes(t.nct_id));
-  if (visTri.length === 0) {
-    trialsEl.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🧪</div><div class="empty-state-title">ניסויים קליניים יוצגו לאחר הסריקה</div></div>`;
-  } else {
-    const cat  = t => t.match_category || '';
-    const likely   = visTri.filter(t => cat(t)==='reasonable');
-    const possible = visTri.filter(t => cat(t)==='possible');
-    const follow   = visTri.filter(t => cat(t)==='follow');
-    const notElig  = visTri.filter(t => cat(t)==='not_eligible' || (!['reasonable','possible','follow'].includes(cat(t)) && cat(t)));
-    const rest     = visTri.filter(t => !cat(t));
-    let html = '';
-    if (likely.length)   html += `<div class="section-header">✅ התאמה סבירה — כדאי לפנות (${likely.length})</div>` + likely.map(t=>buildTrialCard(t)).join('');
-    if (possible.length) html += `<div class="section-header">🔍 התאמה אפשרית — חסר מידע (${possible.length})</div>` + possible.map(t=>buildTrialCard(t)).join('');
-    if (follow.length)   html += `<div class="section-header">👁 מעקב לעתיד (${follow.length})</div>` + follow.map(t=>buildTrialCard(t)).join('');
-    if (rest.length)     html += `<div class="section-header">🧪 ניסויים נוספים (${rest.length})</div>` + rest.map(t=>buildTrialCard(t)).join('');
-    if (notElig.length)  html += `<div class="section-header">✗ לא מתאים כרגע (${notElig.length})</div>` + notElig.map(t=>buildTrialCard(t)).join('');
-    trialsEl.innerHTML = html;
-  }
-
-  renderReviewedTab();
+  renderCommandCenter();
 }
 
 init();
