@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-26",
-    "next_scheduled_scan": "2026-10-27",
+    "last_full_scan": "2026-10-27",
+    "next_scheduled_scan": "2026-10-28",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -45,7 +45,10 @@
     "NCT06624371",
     "NCT05096481",
     "NCT05768880",
-    "NCT06140719"
+    "NCT06140719",
+    "NCT07589257",
+    "NCT05839379",
+    "NCT06333899"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -73,7 +76,8 @@
     "THALAMIC-GLIOMA-PHENOTYPE-20261014",
     "THALAMIC-DMG-LANDSCAPE-20261001",
     "EGFR-EX20-ONC201-CONFLICT-20261025",
-    "PNOC023-ONC206-EU-NETHERLANDS-20261026"
+    "PNOC023-ONC206-EU-NETHERLANDS-20261026",
+    "GLIOBLASTOMA-IMMUNOTHERAPY-20261027"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -103,33 +107,40 @@
     "NCT06140719": "Recruiting — observational registry only"
   },
   "last_run_summary": {
-    "date": "2026-10-26",
-    "type": "DAILY_AUTOMATED",
-    "changes_detected": true,
-    "new_trials_added": 2,
+    "date": "2026-10-27",
+    "type": "DAILY_REALTIME",
+    "changes_detected": false,
+    "new_trials_added": 3,
     "new_developments_added": 1,
-    "items_found": 65,
     "fetched": {
-      "clinical_trials": 101,
-      "pubmed_papers": 3,
+      "clinical_trials": 45,
+      "pubmed_papers": 5,
       "preprints": 0,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (8 queries: H3K27M, H3 K27M, diffuse midline glioma, DIPG, EGFR exon 20 glioma, BLU-5082, dordaviprone, ONC201)",
-      "PubMed E-utilities (2026-10-18 → 2026-10-26)",
-      "EU CTIS (via web search)",
-      "Web search: Jazz/dordaviprone news, ACTION phase 3, BLU-5082, Israeli hospitals (Hebrew), jRCT/ChiCTR",
-      "WHO ICTRP, medRxiv/bioRxiv, journal RSS (via earlier DAILY_REALTIME run today)"
-    ],
     "key_findings": [
-      "NCT07767110 (LSAM-ציספלטין, DMG, גיל 3–21) חדש — חלון 4–12 שבועות אחרי RT נסגר ~31.10, הניסוי נפתח רק בדצמבר: כנראה לא מתאים",
-      "NCT05768880 BrainChild-04 (CAR-T עם EGFR806) — סגור לגיוס; לעקוב לפתיחה מחדש",
-      "ONC206 (PNOC023) מגייס גם בהולנד לפי EU CTIS",
-      "אין עדכון ציבורי על BLU-5082 ואין תוצאות ACTION שלב 3",
-      "תיקון גיל: הילי בת ~4.5 (לא 29 חודשים) — ניסויים עם גיל מינימום 2–4 שנים (NCT06624371, NCT05096481, NCT07562971) עומדים בדרישת הגיל ויש לבחון אותם מחדש"
+      "NCT05839379 (Targeted Pediatric HGG) גיל-תואם (≥12 חודשים) ודורש בירור מיידי זמינות ו-criteria הכללה מדויקים",
+      "אין ניסויים חדשים ספציפיים ל-H3K27M + EGFR exon 20 בחודשים האחרונים בClinicalTrials.gov",
+      "מחקר preclinical ב-oncolytic/immunotherapy בglioblastoma עולה אך עדיין prelude לקלינית"
     ],
-    "scan_notes": "סריקה 2026-10-26: לא נמצא ניסוי חדש פתוח בישראל. jRCT/ChiCTR/UMIN לא נבדקו ישירות (לא נמצאו תוצאות בחיפוש רשת). הערה: הסיכום מ-25.10 ציין בטעות גיל 29 חודשים — הגיל הנכון ~4 שנים ו-5 חודשים. גם סריקת DAILY_REALTIME מוקדם יותר היום (6 ניסויים: NCT06161974, NCT06357377, NCT07562971, NCT07767110, NCT06624371, NCT05096481) הניחה גיל 29 חודשים — בגיל 4.5 הילי עומדת בדרישות גיל ≥2/≥3/≥4 של NCT06624371, NCT05096481, NCT07562971, NCT07767110; יש לבחון אותם מחדש לפי שאר הקריטריונים."
+    "scan_notes": "סקור: ClinicalTrials.gov (15 ניסויים live, 3 רלוונטיים ל-age/GMG); PubMed (5 מאמרים אוקטובר 2026, אחד preclinical ברור); bioRxiv/medRxiv (0); RSS news (0). סה״כ 3 פעמים צפויות חדשות אך 2 מהן או לא-גיל-תואמות (NCT07589257: ≥18 שנים בלבד) או אינן-גנוטיפ-משלוח (NCT06333899: ALK/ROS). NCT05839379 דורש follow-up.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",
@@ -164,7 +175,12 @@
     "42809047",
     "42930184",
     "42898014",
-    "42895298"
+    "42895298",
+    "42665862",
+    "42908192",
+    "42715820",
+    "42475978",
+    "42378823"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []

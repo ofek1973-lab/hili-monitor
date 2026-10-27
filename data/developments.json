@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-26",
+    "last_updated": "2026-10-27",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -604,6 +604,39 @@
       "action": "לשאול את הצוות המטפל אם האתר בהולנד מקבל מטופלים מחו\"ל ומה הקריטריונים לזרוע אחרי הקרנות.",
       "source_url": "https://ctis.eu/trial/2025-521180-13-00.html",
       "date_detected": "2026-10-26"
+    },
+    {
+      "id": "GLIOBLASTOMA-IMMUNOTHERAPY-20261027",
+      "priority": "MONITOR",
+      "title_he": "חדשות טיפולים בגליובלסטומה: אימונותרפיה וחדשנויות",
+      "title_en": "Next-Generation Immunotherapies and Oncolytic Approaches in Glioblastoma",
+      "category": "research",
+      "what_changed": "שלושה מקורות PubMed מחודש אוקטובר 2026 מתארים כיווני מחקר חדשים: (1) וירוסים אנקוליטיים הנדסיים עם חלבוני עקירה חיסוני; (2) אימונותרפיה מבוססת דרגה וסטטוס IDH; (3) vacinia virus מהונדס לביטוי מעכבי PD-L1. שום אחד מהם לא מפורטים כניסויים קליניים פעילים בעלויות H3K27M או EGFR exon 20 במיוחד.",
+      "why_matters_bullets": [
+        "קרקע מדעית עולה — אימונותרפיה/oncolytic בגליומה גבוהה דרגה, אך עדיין בשלב preclinical/early animal",
+        "שיחות עתידיות עם צוות עשויות לציין אפשרויות חדשות לאחר Zegfrovy/ONC201 אם נדרש שינוי",
+        "אין ראיה בשלב קליני עבור Hili כעת — טיפולים נוכחיים (מעכבי EGFR + ONC201) עדיין בחזית"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "ילדה עם H3K27M + EGFR exon 20 עשויה להיות מועמדת לטיפולים אימוניים כאשר resistance יפתח. כרגע, טיפולים היעדיים מובילים. מחקר זה משקף כיווני ארוכי טווח בתחום."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "שלושה סקירות/מחקרים בחודש אוקטובר 2026; בעיקר animal models וin-vitro. קליניקה: oncolytic viruses בglioblastoma עדיין בשלב early phase ללא outcome data חזקה בילדים או H3K27M."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "viruses ו-extracellular vesicles עשויים להקיף BBB; נתונים פיזיקוכימיים מוגבלים. לא בגודל אנושי."
+      },
+      "expandable_details": {
+        "scientific_explanation": "גישות oncolytic + immunomodulation משפרות חדירה אימונית לקרום וסטיפול, תיאורטית עשוי לשפר גבול CNS. אך בילדים עם H3K27M, הרקע אימוני שונה מ-GBM קלאסי בבוגרים.",
+        "study_limitations": "כל הנתונים preclinical. אין ניסויים קליניים פעילים בילדים עם DMG+H3K27M בעלויות immunotherapy זו כעת. דוגמה: GD2-CAR T (שכבר נסקור) היא הגישה immunologic היחידה בשלב clinical advanced בילדים עם גליומה.",
+        "connection_to_current_treatment": "לא משלם עם Zegfrovy (מעכב EGFR) או ONC201 (agonist ClpP/DRD2). אומן סינרגיה נאורטית אך ללא נתוני קלינית."
+      },
+      "action": "עקוב בספרות לניסויים קליניים emergent בglioblastoma pediatric עם oncolytic ו/או CAR-T; אל תעדכן תכנית טיפול עכשיו.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42908192/; https://pubmed.ncbi.nlm.nih.gov/42715820/; https://pubmed.ncbi.nlm.nih.gov/42378823/",
+      "date_detected": "2026-10-27"
     }
   ]
 }

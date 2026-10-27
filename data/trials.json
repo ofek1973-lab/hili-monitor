@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-26",
+    "last_updated": "2026-10-27",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -995,6 +995,72 @@
       "action_he": "לא טיפולי — אופציונלי בלבד.",
       "source_url": "https://clinicaltrials.gov/study/NCT06140719",
       "date_detected": "2026-10-26"
+    },
+    {
+      "nct_id": "NCT07589257",
+      "title_he": "VRT106 בשילוב עם קרינה לחולים עם גליומה של קו האמצע",
+      "title_en": "VRT106 Combined With Radiotherapy in Diffuse Midline Glioma",
+      "phase": "Phase II/III",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 55,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "סין",
+      "summary_he": "ניסוי של מעכב EGFR דור-3 (VRT106) בשילוב קרינה בגליומה של קו האמצע. בניגוד ל-Zegfrovy (Sunvozertinib), VRT106 נבחן בחולים בגיל ≥18 שנים בלבד. נתונים על חדירת BBB ו-efficacy בעלויות H3K27M או EGFR exon 20 עדיין מוגבלים בפומי.",
+      "key_inclusion": [
+        "Diffuse midline glioma (any grade)",
+        "Age ≥18 years",
+        "Any EGFR status (not stratified by exon 20)"
+      ],
+      "egfr_note": "VRT106 היא מעכב EGFR דור-3 אך אין ציון ספציפי לexon 20 insertion בתיאור הניסוי. לא ברור אם יש יתרון על פני Zegfrovy או Amivantamab.",
+      "bbb_note": "אין נתוני PK של חדירת BBB בבני אדם שפורסמו. מנגנון לא שונה מ-Zegfrovy.",
+      "action_he": "עקוב בספרות לנתוני ביניים של VRT106 בעלות H3K27M; לא משל אחרת גיל הילי אינו תואם.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07589257"
+    },
+    {
+      "nct_id": "NCT05839379",
+      "title_he": "טיפול קילוני במעוקד לגליומה גבוהה דרגה אצל ילדים והצעירים",
+      "title_en": "Targeted Pediatric High-Grade Glioma Therapy",
+      "phase": "Phase II",
+      "match_category": "possible",
+      "priority": "DISCUSS",
+      "score": 72,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ניו זילנד, ארה״ב, בריטניה",
+      "summary_he": "ניסוי אפשרי לחולים ≥12 חודשים עם גליומה גבוהה דרגה, כולל קו אמצע. הילי גיל-תואם (29 חודשים). פרטים תיקיימ/עדכוניים מוגבלים בClinicalTrials.gov — דרוש יצור קשר ישיר לאתר הניסוי לברור: (א) קריטריוני הכללה מדוייקים (H3K27M?); (ב) מדינות משתתפות באישור גיאוגרפי; (ג) פתיחה בישראל או גישה בינלאומית.",
+      "key_inclusion": [
+        "Age 12 months – 18 years",
+        "High-grade glioma (includes midline)",
+        "Stratification likely by molecular subtype"
+      ],
+      "egfr_note": "לא ידוע. דרוש תיאור מלא של אופציות טיפול.",
+      "bbb_note": "אין נתונים חדשים. תלוי בתוכן הטיפול שיתבהר.",
+      "action_he": "פנה להנהלת הניסוי (Stanford/UCSF ROBIN Center) לברור אם הילי פוגעת בקריטריוני הכללה ואם ישראל במרשמת הארצות המשתתפות.",
+      "source_url": "https://clinicaltrials.gov/study/NCT05839379"
+    },
+    {
+      "nct_id": "NCT06333899",
+      "title_he": "לורלטיניב לגליומה גבוהה דרגה חדישה עם ROS או ALK",
+      "title_en": "Lorlatinib for Newly-Diagnosed High-Grade Glioma With ROS or ALK Fusion",
+      "phase": "Phase II",
+      "match_category": "not_eligible",
+      "priority": "MONITOR",
+      "score": 25,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ניו זילנד, ארה״ב, הולנד",
+      "summary_he": "ניסוי של לורלטיניב (מעכב ALK/ROS) בגליומה גבוהה דרגה עם fuzion ROS1 או ALK. הילי אינה משתנית ל-ALK או ROS1 (H3K27M + EGFR exon 20 + TP53). לא רלוונטי למצבה המוטציוני.",
+      "key_inclusion": [
+        "Age ≥1 year",
+        "ROS1 or ALK fusion (mandatory)",
+        "High-grade glioma"
+      ],
+      "egfr_note": "null — מטרה ALK/ROS, לא EGFR",
+      "bbb_note": "lorlatinib בעל חדירת BBB טובה אך לא רלוונטי לילדה זו.",
+      "action_he": "דילוג. לא משלה ללא ALK/ROS fusion.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06333899"
     }
   ]
 }
