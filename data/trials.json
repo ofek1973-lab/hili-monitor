@@ -295,17 +295,17 @@
       "title_short_en": "ILLUMINATE Phase 2: BCB-276 (B7-H3 CAR T) — Pivotal trial for DIPG",
       "phase": "Phase II (Pivotal)",
       "sponsor": "BrainChild Bio",
-      "status": "Recruiting (verify — estimated start August 2026)",
+      "status": "Recruiting (verified 2026-10-28) — actual start 2026-09-04; open: Atlanta, Philadelphia, Seattle; not yet: LA, Chicago, Columbus",
       "match_category": "follow",
       "priority": "WATCH",
-      "match_score": 60,
+      "match_score": 20,
       "age_min": 1,
       "age_max": 26,
       "age_eligible": true,
       "location_he": "ארה\"ב — 6 מרכזי ילדים מובילים",
       "location_en": "USA — 6 pediatric neuro-oncology centers",
       "nct_url": "https://clinicaltrials.gov/study/NCT07680439",
-      "enrollment_timing_alert": "⚠️ ניסוי זה דורש גיוס תוך 6 שבועות מסיום RT. אם RT הסתיים ~8 אוגוסט, חלון נסגר ~19 ספטמבר 2026 — עבר. לאמת.",
+      "enrollment_timing_alert": "❌ חלון 6 שבועות אחרי RT נסגר (~19.9.2026). בנוסף: DIPG פונטיני בלבד, ואסור טיפול קודם מעבר ל-RT±טמוזולומיד (הילי מקבלת Zegfrovy).",
       "note": "ניסוי זה רוצה DIPG (פונטיני) ספציפית כרגע. הגידול התלמי של הילי עלול שלא לעמוד בדרישות — יש לאמת עם ספונסור.",
       "key_inclusion": [
         "גיל 1–26, משקל ≥10 ק\"ג — הילי עומדת",
@@ -320,9 +320,11 @@
         "⚠️ גרורות",
         "⚠️ חלון ה-6 שבועות post-RT עשוי להיות מאוחר מדי"
       ],
-      "eligibility_verdict": "TIMING AND LOCATION CONCERNS — DIPG-specific currently; window may have passed",
-      "action_he": "לאמת: (1) האם גידול תלמי (לא DIPG) כשיר? (2) מה חלון הגיוס post-RT? (3) אם הניסוי חדש ופתוח — לדון עם ספונסור.",
-      "source_url": "https://clinicaltrials.gov/study/NCT07680439"
+      "eligibility_verdict": "NOT ELIGIBLE NOW — pontine DIPG only, ≤6 wk post-RT, no prior therapy beyond RT/TMZ",
+      "action_he": "לא מתאים כעת. לעקוב רק אם יורחב ל-DMG תלמי או לזרוע הישנות.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07680439",
+      "recruiting_status": "RECRUITING",
+      "last_verified": "2026-10-28"
     },
     {
       "nct_id": "NCT05544526",
@@ -1083,6 +1085,38 @@
       "bbb_note": "אנטיבודים מונוקלונלים; חדירת BBB מוגבלת מטבעה. אין נתוני CNS-specific efficacy בדמוגרפיה זו.",
       "action_he": "אין פעולה כעת — גיל לא זכאי. ערוך monitoring עבור עדכונים אם הגבלת גיל תשתנה או אם נפתחו גרסאות pediatric.",
       "source_url": "https://clinicaltrials.gov/study/NCT07644312"
+    },
+    {
+      "nct_id": "NCT06946680",
+      "title_he": "CAR-T נגד CD70 (עם קולטן IL-8) לגליומה בדרגה גבוהה בילדים ו-DIPG",
+      "title_en": "IL-8 Receptor-modified CD70 CAR T Cell Therapy in CD70+ Newly Diagnosed and Recurrent pHGG and Newly Diagnosed DIPG",
+      "phase": "Phase I",
+      "sponsor": "University of Florida",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 40,
+      "age_min": 4,
+      "age_max": 30,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "status": "Not yet recruiting — estimated start Nov 2026",
+      "location_he": "גיינסוויל, פלורידה, ארה\"ב (UF Health)",
+      "summary_he": "תאי CAR-T נגד CD70 עם קולטן IL-8 לשיפור הגעה לגידול. כולל HGG חדש (גיל 4–18), HGG חוזר (4–30) ו-DIPG חדש (אחרי 2 המטופלים הראשונים).",
+      "key_inclusion": [
+        "גיל 4–18 ל-HGG חדש — הילי (4.5) עומדת",
+        "דרגה III/IV מאושרת היסטולוגית",
+        "CD70 חיובי (≥5%, 1+) בבדיקת IHC ברקמה — דורש רקמת גידול",
+        "Lansky >60"
+      ],
+      "key_exclusion": [
+        "⚠️ דורש רקמה לבדיקת CD70 (הנוסח מתייחס לרקמה מניתוח — לברר אם ביופסיה מספיקה)",
+        "⚠️ גליומטוזיס צרברי"
+      ],
+      "egfr_note": "לא תלוי EGFR — אפשרות שאינה מושפעת ממוטציית exon 20.",
+      "eligibility_verdict": "POSSIBLE — depends on CD70 status of tissue and whether newly-diagnosed arm accepts post-RT thalamic DMG",
+      "action_he": "לשאול את הצוות אם ניתן לבדוק CD70 על רקמת הביופסה הקיימת; רלוונטי גם כאופציה בהישנות (זרוע rHGG עד גיל 30).",
+      "source_url": "https://clinicaltrials.gov/study/NCT06946680",
+      "date_detected": "2026-10-28"
     }
   ]
 }

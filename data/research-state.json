@@ -49,7 +49,8 @@
     "NCT07589257",
     "NCT05839379",
     "NCT06333899",
-    "NCT07644312"
+    "NCT07644312",
+    "NCT06946680"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -91,7 +92,7 @@
     "NCT06305910": "Recruiting (timing window likely passed)",
     "NCT04943848": "Recruiting",
     "NCT04185038": "Recruiting",
-    "NCT07680439": "Recruiting (verify - est. Aug 2026 start)",
+    "NCT07680439": "Recruiting (verified 2026-10-28) — NOT ELIGIBLE (pontine only, ≤6 wk post-RT, no prior therapy)",
     "NCT05544526": "Recruiting — NOT ELIGIBLE (thalamic exclusion confirmed)",
     "NCT05298995": "Recruiting — Arm C: thalamic DMG (for recurrence)",
     "NCT05843253": "Recruiting",
@@ -108,43 +109,36 @@
     "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear",
     "NCT07767110": "Not yet recruiting (start Dec 2026) — 4–12 wk post-RT window closes ~2026-10-31; likely not eligible",
     "NCT05768880": "Active, not recruiting (Seattle; verified 2026-10-26)",
-    "NCT06140719": "Recruiting — observational registry only"
+    "NCT06140719": "Recruiting — observational registry only",
+    "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue"
   },
   "last_run_summary": {
     "date": "2026-10-28",
-    "type": "DAILY_REALTIME",
+    "type": "DAILY_AUTOMATED",
     "changes_detected": true,
-    "new_trials_added": 1,
+    "new_trials_added": 2,
     "new_developments_added": 3,
+    "items_found": 43,
     "fetched": {
-      "clinical_trials": 45,
-      "pubmed_papers": 21,
+      "clinical_trials": 231,
+      "pubmed_papers": 7,
       "preprints": 0,
       "rss_articles": 0
     },
-    "key_findings": [
-      "Lineage plasticity in DIPG can emerge after therapy, potentially limiting single-agent EGFR inhibitor efficacy; serial genomic profiling during Zegfrovy treatment may identify early resistance mechanisms.",
-      "Macrophage lipid signaling in glioblastoma TME offers new therapeutic vulnerability that may complement or limit ONC201's immune mechanisms in H3K27M tumors.",
-      "Developmental immune dysregulation in young pediatric patients may interact unpredictably with EGFR and DRD2-targeted therapies; immune monitoring during Zegfrovy/ONC201 combination is warranted."
-    ],
-    "scan_notes": "Scanned: 15 live trials (3 new entries since last profile), 15 PubMed papers (last 30 days), 0 preprints (last 14 days), 0 medical news items. Findings: 1 trial update (NCT07644312, not age-eligible but monitoring-level); 3 new developments (lineage plasticity in DIPG CDK4/6 therapy [high relevance], macrophage lipid signaling in GBM [possible relevance], pediatric developmental immunity in brain tumors [possible relevance]). No regulatory updates, no new trials matching Hili's age/mutation profile.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (10 queries: H3K27M, H3 K27M, diffuse midline glioma, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma)",
+      "PubMed E-utilities (2026-10-25 → 2026-10-28)",
+      "Web search: Jazz/dordaviprone news, ACTION phase 3, BLU-5082, Israeli hospitals (Hebrew), jRCT/Japan",
+      "Earlier DAILY_REALTIME run today: WHO ICTRP, medRxiv/bioRxiv, journal RSS"
+    ],
+    "key_findings": [
+      "ניסוי חדש במעקב: NCT06946680 — CAR-T נגד CD70 לילדים עם HGG/DIPG (פלורידה), גיל 4–18, צפוי להיפתח בנובמבר 2026; דורש CD70 חיובי ברקמה",
+      "NCT07680439 ILLUMINATE (CAR-T B7-H3) התחיל לגייס (ספטמבר 2026) באטלנטה, פילדלפיה וסיאטל — לא מתאים להילי (פונטיני בלבד, חלון 6 שבועות עבר, טיפול קודם)",
+      "מהסריקה המוקדמת היום: פלסטיות שושלתית ב-DIPG אחרי טיפול עלולה להגביל יעילות מעכב EGFR יחיד — שווה לשאול על פרופיל גנומי חוזר במהלך Zegfrovy",
+      "אין תוצאות ACTION שלב 3 ואין חדשות רגולטוריות חדשות על dordaviprone; אין עדכון ציבורי על BLU-5082",
+      "לא נמצא ניסוי חדש פתוח בישראל"
+    ],
+    "scan_notes": "סריקה אוטומטית 2026-10-28 (מוזגה עם ריצת DAILY_REALTIME מוקדמת יותר היום, שהוסיפה NCT07644312 ו-3 התפתחויות). NCT05099003 (סלינקסור+RT ל-DIPG) עבר ל-SUSPENDED — לא במעקב ולא רלוונטי. NCT07180927 (DLL3 CAR-T, סין, הישנות, 2027) — לא נוסף. jRCT/ChiCTR/UMIN לא נבדקו ישירות. סיכום הריצה המוקדמת: Scanned: 15 live trials (3 new entries since last profile), 15 PubMed papers (last 30 days), 0 preprints (last 14 days), 0 medical news items. Findings: 1 trial update (NCT07644312, not age-eligible but monitoring-level); 3 new developments (lineage plasticity in DIPG CDK4/6 therapy [high relevance], macrophage lipid signaling in GBM [possible relevance], pediatric developmental immunity in brain tumors [possible relevance]). No regulatory updates, no new trials matching Hili's age/mutation profile."
   },
   "known_pmids": [
     "42926464",
@@ -205,7 +199,10 @@
     "42895304",
     "42753723",
     "42886346",
-    "42877971"
+    "42877971",
+    "42947570",
+    "42946762",
+    "42940191"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []
