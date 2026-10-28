@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-27",
+    "last_updated": "2026-10-28",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -1061,6 +1061,28 @@
       "bbb_note": "lorlatinib בעל חדירת BBB טובה אך לא רלוונטי לילדה זו.",
       "action_he": "דילוג. לא משלה ללא ALK/ROS fusion.",
       "source_url": "https://clinicaltrials.gov/study/NCT06333899"
+    },
+    {
+      "nct_id": "NCT07644312",
+      "title_he": "רלטליליماב + ניוולומאב (Opdualag) בגליומות עם פגם תיקון DNA",
+      "title_en": "Relatlimab and Nivolumab (Opdualag) in Replication Repair Deficient HGG and DIPG",
+      "phase": "Phase 2",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 45,
+      "age_eligible": false,
+      "recruiting_status": "NOT_YET_RECRUITING",
+      "location_he": "מיקום לא ידוע",
+      "summary_he": "משולב אימונותרפיה (anti-LAG3 + anti-PD1) בגליומות DIPG/HGG עם פגם בתיקון DNA. הילי אינה זכאית (גיל <12 שנים). ללא נתונים כיצד TP53×3 משפיע על פעילות זו.",
+      "key_inclusion": [
+        "Age ≥12 years",
+        "Replication repair deficiency (MLH1, MSH2, MSH6, PMS2, POLE, POLD1)",
+        "HGG or DIPG"
+      ],
+      "egfr_note": null,
+      "bbb_note": "אנטיבודים מונוקלונלים; חדירת BBB מוגבלת מטבעה. אין נתוני CNS-specific efficacy בדמוגרפיה זו.",
+      "action_he": "אין פעולה כעת — גיל לא זכאי. ערוך monitoring עבור עדכונים אם הגבלת גיל תשתנה או אם נפתחו גרסאות pediatric.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07644312"
     }
   ]
 }

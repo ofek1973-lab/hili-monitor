@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-27",
-    "next_scheduled_scan": "2026-10-28",
+    "last_full_scan": "2026-10-28",
+    "next_scheduled_scan": "2026-10-29",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -48,7 +48,8 @@
     "NCT06140719",
     "NCT07589257",
     "NCT05839379",
-    "NCT06333899"
+    "NCT06333899",
+    "NCT07644312"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -77,7 +78,10 @@
     "THALAMIC-DMG-LANDSCAPE-20261001",
     "EGFR-EX20-ONC201-CONFLICT-20261025",
     "PNOC023-ONC206-EU-NETHERLANDS-20261026",
-    "GLIOBLASTOMA-IMMUNOTHERAPY-20261027"
+    "GLIOBLASTOMA-IMMUNOTHERAPY-20261027",
+    "LINEAGE-PLASTICITY-CDK4-6-DMG-20261028",
+    "MACROPHAGE-LIPID-SIGNALING-GLIOMA-20261027",
+    "PEDIATRIC-BRAIN-IMMUNITY-INFLAMMATION-20261014"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -107,23 +111,23 @@
     "NCT06140719": "Recruiting — observational registry only"
   },
   "last_run_summary": {
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 3,
-    "new_developments_added": 1,
+    "changes_detected": true,
+    "new_trials_added": 1,
+    "new_developments_added": 3,
     "fetched": {
       "clinical_trials": 45,
-      "pubmed_papers": 5,
+      "pubmed_papers": 21,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "NCT05839379 (Targeted Pediatric HGG) גיל-תואם (≥12 חודשים) ודורש בירור מיידי זמינות ו-criteria הכללה מדויקים",
-      "אין ניסויים חדשים ספציפיים ל-H3K27M + EGFR exon 20 בחודשים האחרונים בClinicalTrials.gov",
-      "מחקר preclinical ב-oncolytic/immunotherapy בglioblastoma עולה אך עדיין prelude לקלינית"
+      "Lineage plasticity in DIPG can emerge after therapy, potentially limiting single-agent EGFR inhibitor efficacy; serial genomic profiling during Zegfrovy treatment may identify early resistance mechanisms.",
+      "Macrophage lipid signaling in glioblastoma TME offers new therapeutic vulnerability that may complement or limit ONC201's immune mechanisms in H3K27M tumors.",
+      "Developmental immune dysregulation in young pediatric patients may interact unpredictably with EGFR and DRD2-targeted therapies; immune monitoring during Zegfrovy/ONC201 combination is warranted."
     ],
-    "scan_notes": "סקור: ClinicalTrials.gov (15 ניסויים live, 3 רלוונטיים ל-age/GMG); PubMed (5 מאמרים אוקטובר 2026, אחד preclinical ברור); bioRxiv/medRxiv (0); RSS news (0). סה״כ 3 פעמים צפויות חדשות אך 2 מהן או לא-גיל-תואמות (NCT07589257: ≥18 שנים בלבד) או אינן-גנוטיפ-משלוח (NCT06333899: ALK/ROS). NCT05839379 דורש follow-up.",
+    "scan_notes": "Scanned: 15 live trials (3 new entries since last profile), 15 PubMed papers (last 30 days), 0 preprints (last 14 days), 0 medical news items. Findings: 1 trial update (NCT07644312, not age-eligible but monitoring-level); 3 new developments (lineage plasticity in DIPG CDK4/6 therapy [high relevance], macrophage lipid signaling in GBM [possible relevance], pediatric developmental immunity in brain tumors [possible relevance]). No regulatory updates, no new trials matching Hili's age/mutation profile.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -180,7 +184,28 @@
     "42908192",
     "42715820",
     "42475978",
-    "42378823"
+    "42378823",
+    "42872492",
+    "42865900",
+    "42829067",
+    "42497658",
+    "42942833",
+    "42930186",
+    "42941829",
+    "42891328",
+    "42861629",
+    "42860508",
+    "42921135",
+    "42854890",
+    "42532370",
+    "42945959",
+    "42920018",
+    "42918957",
+    "42942857",
+    "42895304",
+    "42753723",
+    "42886346",
+    "42877971"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-27",
+    "last_updated": "2026-10-28",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -637,6 +637,106 @@
       "action": "עקוב בספרות לניסויים קליניים emergent בglioblastoma pediatric עם oncolytic ו/או CAR-T; אל תעדכן תכנית טיפול עכשיו.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42908192/; https://pubmed.ncbi.nlm.nih.gov/42715820/; https://pubmed.ncbi.nlm.nih.gov/42378823/",
       "date_detected": "2026-10-27"
+    },
+    {
+      "id": "LINEAGE-PLASTICITY-CDK4-6-DMG-20261028",
+      "priority": "DISCUSS",
+      "title_he": "שינוי פנוטיפ בDIPG לאחר טיפול צירופי: חשיבות מוטציית EGFR וה-H3K27M",
+      "title_en": "Therapy-associated lineage plasticity in DIPG following CDK4/6 inhibitor + TMZ: implications for EGFR-driven tumors",
+      "category": "research",
+      "what_changed": "מחקר חדש (PMID 42532370, פורסם 28 אוקטובר 2026) מדגים כי טיפול צירופי בעוררי CDK4/6 וטמוזולומידה מגביר את פלסטיות הלינאז בDIPG. זה כרוך בהפעלה מחודשת של נתיבים בחודר אחרים, שעלול להשפיע על תגובה לעוררי EGFR.",
+      "why_matters_bullets": [
+        "הילי סיימה RT וכעת במטופל עם Zegfrovy (EGFR exon 20 inhibitor). פלסטיות לינאז עלולה להסביר את נכישות ההתנגדות או חוסר התגובה בטיפול המטרה.",
+        "מוטציית EGFR exon 20 היא עצמה אינדיקטור לנטייה להסתגלות גנומית. הנתונים מציעים שטיפול חוקי צוקו-מולקולרי עלול להאיץ תהליכים אלו.",
+        "יש לבחון האם צירוף Zegfrovy עם CDK4/6 inhibitor (למשל palbociclib) או HDAC inhibitor (כדי לשחזר המיתיליציה של H3K27) יכול להפחית את הסיכון להסתגלות."
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי מטופלת בZegfrovy לאחר RT. אם פלסטיות לינאז חלקה כבר בה, עלול להיות צורך בטיפול כפול או רציף, כולל ניהול H3K27M-specific mechanisms (למשל HDACi). הנתונים מציעים שצוקו-מולקולריים בודדים עלולים להיות לא מספיקים."
+      },
+      "evidence_quality": {
+        "level": "human_case",
+        "details": "פרסום בـ Cancer Letters, עדכון אחרון. עומק: סדרה קלינית קטנה עם biologic tracking (סדרה של דגימות תאיות/מולקולריות במהלך טיפול). לא ניסוי קליני מובחן."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר אינו עוסק במיוחד בחדירת BBB. Zegfrovy נבחר בחלקו על בסיס BBB penetration. לא ברור כיצד פלסטיות לינאז משפיעה על הצבירה של Zegfrovy או קינטיקה אינטרא-קראניאלית."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M דיכאה HDAC-dependent chromatin remodeling. טיפול במטרה בודד (EGFR inhibitor) יכול ליצור לחץ בחירה. גנים משנים את הביטוי, לעתים קרובות דרך רה-אקטיבציה של נתיבי PRK (RTK, Wnt) או הידרדרות differentiative. CDK4/6 יוצר פי זה הספירה הגנומית, חומרת זה.",
+        "study_limitations": "דוח המקרה / סדרה קטנה. דינמיקה זו עלולה להיות קשה ל-predict ex vivo. לא בדוק בתא thalamic specifically.",
+        "connection_to_current_treatment": "Zegfrovy יעיל כנגד EGFR exon 20 insertion *בתנאי שמשהו לא השתנה*. פלסטיות עלולה להסביר את resensitization או failure-on-therapy. אם הילי תציג progressive disease תוך 3-6 חודשים, בחן מיד עבור lineage switch."
+      },
+      "action": "העלה בפגישה הבאה עם הצוות: האם יש תוכניות ל-serial genomic profiling או liquid biopsy במהלך טיפול Zegfrovy? האם יש תעדוף ל-combination (Zegfrovy + CDK4/6i או + HDACi) במקרה של resist לא מתופעל?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42532370/",
+      "date_detected": "2026-10-28"
+    },
+    {
+      "id": "MACROPHAGE-LIPID-SIGNALING-GLIOMA-20261027",
+      "priority": "MONITOR",
+      "title_he": "מנגנון עמיד למיקרו-סביבה: signaling ליפידי מקרופאג כנושא טיפולי",
+      "title_en": "Macrophage lipid signaling drives GBM invasion: new immunotherapy vulnerability",
+      "category": "research",
+      "what_changed": "מחקר חדש (PMID 42945959, Cancer Cell, 27 אוקטובר 2026) חושף כי macrophages המופעלות בגליוסקומה משתמשות בעיבוד ליפידי (של כל הדברים — SLC35F6, וכו') לתגברה על הפלישה. הזיהוי מצביע על vulnerabilities immune-metabolic חדשות.",
+      "why_matters_bullets": [
+        "H3K27M gliomas מציגות TME (tumor microenvironment) מדוכא ב-עיכול חיסוני והשהיית T-cell. מקרופאג משחק תפקיד חיוני בכניסה להסתגלות.",
+        "אם מנגנון זה ישים גם בDIPG, זה חוקק מטרה חדשה — immune-metabolic, לא סתם immune checkpoint. ONC201 עובד בחלקו דרך דיכאון של TAM (macrophage); אם lipid signaling זה האופן בו TAMs הם מסייעים לגדילה, מתחם זה עלול להגביל את הטיפול.",
+        "קשור ל-Zegfrovy: טיפול בודד בטרגט-מולקולרי + immune-suppressive TME = failure risk. שילוב עם immunotherapy או immune metabolic inhibitor עלול להיות מעוצב."
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הנתונים הם glioblastoma adult-focused. אין נתוני DIPG/DMG specific. עם זאת, H3K27M הוא דיכאה אימונית חזקה. אם הילי תראה resistance ל-Zegfrovy, רמז כי macrophage-driven TME עלול להיות חלק מהבעיה."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "פרסום בפילוח גבוה (Cancer Cell). סדרה קלינית + נתוני מכ\"ם tumor tissue. לא עדיין translation ל-DMG pediatric."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר קיבוע על lipid uptake ותמסיסות tumor-associated TAMs. לא בדוקה ארכיטקטורה או חדירה של inhibitors אלו ב-CNS."
+      },
+      "expandable_details": {
+        "scientific_explanation": "SLC35F6 ו-FABPs (fatty acid binding proteins) הם carriers של lipids ומתסיסי signaling חיסוני. TAMs תלויים בתשומה זו כדי שלא לשנות אותם ל-pro-tumor phenotype (M2-skewing). עיכול זה עלול להפעיל NF-κB ו-STAT3, דיכאה חיסוני מפתח.",
+        "study_limitations": "Adult GBM model. לא ידוע האם H3K27M gliomas מותבע יותר או פחות. דרישה להשלמה ב-DMG models.",
+        "connection_to_current_treatment": "Zegfrovy משחק אצל T-cells בעקיפין (דרך שחרור EGFR-driven suppression בתא גיטור). אם TAM = מפתח, Zegfrovy לבד אולי לא מספיק. ONC201 יש מנגנון TAM-modulatory (DRD2+ אות), אבל אם lipid-driven skewing זה main mechanism, צירוף או רציף עם lipid inhibitor עלול להיות מעוצב."
+      },
+      "action": "ללא צורך בפעולה מיידית. נוטר את הנושא עבור סדרות קליניות המשלבות EGFR inhibitor + immune-metabolic inhibitor בDIPG. אם תראה disease progression, בקש ה-TME profiling (macrophage phenotype, lipid markers).",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42945959/",
+      "date_detected": "2026-10-28"
+    },
+    {
+      "id": "PEDIATRIC-BRAIN-IMMUNITY-INFLAMMATION-20261014",
+      "priority": "MONITOR",
+      "title_he": "פתיסולוגיה של יחסים התפתחותיים בחסינות בגוז CNS: קשר אל H3K27M",
+      "title_en": "Developmental immunity and inflammation in pediatric brain tumors: insights for H3K27M biology",
+      "category": "research",
+      "what_changed": "פרסום ביולוג-אונקולוגיה (14 אוקטובר 2026, PMID 42872492) חוקר כיצד זופפי התפתחויות בחסינות (developmental immune priming, microglia immaturity) משפיעות על pericellular environment בגוזי CNS של ילדים. היבט חדש: H3K27M עשוי לנצל זופפי הבחורות לדכא חסינות.",
+      "why_matters_bullets": [
+        "הילי היא 29 חודשים. מערכת החסינות שלה עדיין בתפתוח. microglia היא עדיין בבחורות immature-prone (למשל פחות קו-קדימות anti-tumor, יותר pro-developmental).",
+        "H3K27M דיכאה HDAC, שגם משחק בתורת התפתוח הנוירוני. יכול שיש feedback loop: H3K27M משדר גם על מערכת החסינות ב-developmental stage זה.",
+        "Zegfrovy (EGFR inhibitor) יכול להשפיע גם על developed immune priming במקרה זה (אולי דרך שחרור של תא גיטור או microglia reactivation).",
+        "ONC201 עם DRD2 agonism: DRD2 משחק בחסינות מוקד-מקורית. בילד צעיר, זה עלול להיות פעולה שונה או יתר-רגישה."
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "נתון מודגש בחסינות של גוזי ילדים. הילי היא בגבול הצעיר של דמוגרפיה זו. אם developmental immune vulnerability זה significant factor בsusceptibility של H3K27M, זה עלול להסביר את aggressive course ו-short survival rates."
+      },
+      "evidence_quality": {
+        "level": "preclinical|human_case",
+        "details": "סקירה מקיפה + נתוני מכ\"ם בעלי חיים. מעט נתונים זדיים ישירים על pediatric DMG immune infiltrate. עדיין speculative כיצד זה Translates להילי."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר אינו עוסק ישירות בחדירת BBB של גורמים פעילים או סוכנים טיפוליים."
+      },
+      "expandable_details": {
+        "scientific_explanation": "בילדים צעירים, microglia היא עדיין בגלגול תחליפי מאנטריות מסיביות (yolk sac > bone marrow) לבחורות. H3K27M דיכאה באופיין של microglia — שינוי מהomeostatic ל-pro-tumor נטייה. ONC201 ו-Zegfrovy עלולים להתקיימו בתוך זה על ידי forcing re-maturation או activation, אבל בילד צעיר זה עלול להיות זמנו יתר או לא מלא.",
+        "study_limitations": "ממוצע מודגשות בעלי חיים היתרוביות (חולדות, עכברים). פעם ונתונים זדיים ישירים על חסינות microglia בילדים 2-3 שנה. בדוק לא H3K27M-specific.",
+        "connection_to_current_treatment": "Zegfrovy יעיל בטרגט-עם, אבל אם תא מנהלי גנומי חסינות/developmental זה שומר את הטיפול, שילוב עם immune re-programming עלול להיות מעוצב. ONC201 + Zegfrovy עלול להיות ניסוי טוב בחלקו."
+      },
+      "action": "ללא צורך בפעולה מיידית. הנושא: בדוק אם צוות מנטר immune activation markers (T-cell activation, microglia phenotyping) במהלך טיפול Zegfrovy. עם סדרה קלינית זו כבסיס, בקש ה-immune profiling דינאמי.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42872492/",
+      "date_detected": "2026-10-28"
     }
   ]
 }
