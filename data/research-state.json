@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-28",
-    "next_scheduled_scan": "2026-10-29",
+    "last_full_scan": "2026-10-29",
+    "next_scheduled_scan": "2026-10-30",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -50,7 +50,9 @@
     "NCT05839379",
     "NCT06333899",
     "NCT07644312",
-    "NCT06946680"
+    "NCT06946680",
+    "NCT05956821",
+    "NCT06894225"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -113,32 +115,40 @@
     "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue"
   },
   "last_run_summary": {
-    "date": "2026-10-28",
-    "type": "DAILY_AUTOMATED",
-    "changes_detected": true,
+    "date": "2026-10-29",
+    "type": "DAILY_REALTIME",
+    "changes_detected": false,
     "new_trials_added": 2,
-    "new_developments_added": 3,
-    "items_found": 43,
+    "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 231,
-      "pubmed_papers": 7,
+      "clinical_trials": 44,
+      "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (10 queries: H3K27M, H3 K27M, diffuse midline glioma, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma)",
-      "PubMed E-utilities (2026-10-25 → 2026-10-28)",
-      "Web search: Jazz/dordaviprone news, ACTION phase 3, BLU-5082, Israeli hospitals (Hebrew), jRCT/Japan",
-      "Earlier DAILY_REALTIME run today: WHO ICTRP, medRxiv/bioRxiv, journal RSS"
-    ],
     "key_findings": [
-      "ניסוי חדש במעקב: NCT06946680 — CAR-T נגד CD70 לילדים עם HGG/DIPG (פלורידה), גיל 4–18, צפוי להיפתח בנובמבר 2026; דורש CD70 חיובי ברקמה",
-      "NCT07680439 ILLUMINATE (CAR-T B7-H3) התחיל לגייס (ספטמבר 2026) באטלנטה, פילדלפיה וסיאטל — לא מתאים להילי (פונטיני בלבד, חלון 6 שבועות עבר, טיפול קודם)",
-      "מהסריקה המוקדמת היום: פלסטיות שושלתית ב-DIPG אחרי טיפול עלולה להגביל יעילות מעכב EGFR יחיד — שווה לשאול על פרופיל גנומי חוזר במהלך Zegfrovy",
-      "אין תוצאות ACTION שלב 3 ואין חדשות רגולטוריות חדשות על dordaviprone; אין עדכון ציבורי על BLU-5082",
-      "לא נמצא ניסוי חדש פתוח בישראל"
+      "אין מחקרים חדשים או עדכונים בשנים האחרונות ישירות רלוונטיים לדיפוז מיליין גליומה H3K27M עם EGFR exon 20 insertion בילדים בגיל <3 שנים",
+      "שני מחקרים בהרשמה תמשך נוגעים ל-EGFR-altered או relapsed/refractory intracranial glioma; שניהם מחוץ לטווח הגיל של הילי או לא ספציפיים ל-H3K27M",
+      "אין עדכונים בעלי מידע ישיר על Zegfrovy, ONC201, או אינטראקציות ביניהם בתקופת ה-30 יום האחרונה"
     ],
-    "scan_notes": "סריקה אוטומטית 2026-10-28 (מוזגה עם ריצת DAILY_REALTIME מוקדמת יותר היום, שהוסיפה NCT07644312 ו-3 התפתחויות). NCT05099003 (סלינקסור+RT ל-DIPG) עבר ל-SUSPENDED — לא במעקב ולא רלוונטי. NCT07180927 (DLL3 CAR-T, סין, הישנות, 2027) — לא נוסף. jRCT/ChiCTR/UMIN לא נבדקו ישירות. סיכום הריצה המוקדמת: Scanned: 15 live trials (3 new entries since last profile), 15 PubMed papers (last 30 days), 0 preprints (last 14 days), 0 medical news items. Findings: 1 trial update (NCT07644312, not age-eligible but monitoring-level); 3 new developments (lineage plasticity in DIPG CDK4/6 therapy [high relevance], macrophage lipid signaling in GBM [possible relevance], pediatric developmental immunity in brain tumors [possible relevance]). No regulatory updates, no new trials matching Hili's age/mutation profile."
+    "scan_notes": "נסקנו: ClinicalTrials.gov (15 ניסויים פעילים), PubMed (30 יום אחרונים — 0 תוצאות), medRxiv/bioRxiv (14 יום אחרונים — 0 תוצאות), חדשות רפואיות (0 תוצאות). ממצא: שני ניסויים עם קשר שולי ל-EGFR או relapsed glioma, אך שניהם מחוץ לטווח הגיל או מחוץ לטווח האנוטיפוט של הילי. לא נמצאו מידע חדש על ONC201 × EGFR exon 20 conflict או על שילובי Zegfrovy + ONC201.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-28",
+    "last_updated": "2026-10-29",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -1117,6 +1117,48 @@
       "action_he": "לשאול את הצוות אם ניתן לבדוק CD70 על רקמת הביופסה הקיימת; רלוונטי גם כאופציה בהישנות (זרוע rHGG עד גיל 30).",
       "source_url": "https://clinicaltrials.gov/study/NCT06946680",
       "date_detected": "2026-10-28"
+    },
+    {
+      "nct_id": "NCT05956821",
+      "title_he": "טיפול בגליומה תוך-קרנית חוזרת/עמידה בילדים מתחת לגיל 22",
+      "title_en": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years",
+      "phase": "Not specified",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 45,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "מחקר לטיפול בגליומות תוך-קרניות חוזרות בילדים עד גיל 22. הילי בגיל 29 חודשים (2.4 שנים) — עשויה להיות כשירה. עם זאת, לא ברור ממש מה הטיפולים הנבדקים ו/או האם קיימת ניסיון EGFR exon 20 או H3K27M ספציפי.",
+      "key_inclusion": [
+        "גיל עד 22 שנים",
+        "גליומה תוך-קרנית חוזרת או עמידה לתרופות"
+      ],
+      "egfr_note": "לא מוזכר בפירוט מתי זמין בהרשמה; יש לבדוק ישירות",
+      "bbb_note": "לא מוזכר בתיאור המחקר",
+      "action_he": "בדוק בהפניית הגדול — האם מחקר זה מכסה טיפולים דומים או חלופיים לאלה שהילי כבר מקבלת; אם כן, האם יכול להיות רלוונטי בשלב חוזרות עתידי",
+      "source_url": "https://clinicaltrials.gov/study/NCT05956821"
+    },
+    {
+      "nct_id": "NCT06894225",
+      "title_he": "ACT001 בגליובלסטומה חוזרת עם EGFR שונה",
+      "title_en": "ACT001 in Recurrent Glioblastoma with EGFR Alteration",
+      "phase": "Phase I/II equivalent",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 55,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "סינגפור",
+      "summary_he": "מחקר ACT001 (likely compound שונה מ-ONC201) בגליובלסטומה חוזרת עם תיקייה EGFR. הילי בגיל 29 חודשים — לא עומדת בקריטריון גיל מינימום 21 שנים. משמעותי: קיום מחקר ממוקד ב-EGFR-altered glioblastoma, אך עבור ילדים בגיל מבוגר בלבד.",
+      "key_inclusion": [
+        "גיל ≥21 שנים",
+        "גליובלסטומה חוזרת עם EGFR alteration"
+      ],
+      "egfr_note": "כן — EGFR alterations מנוגנים, אך לא מתייחס בפירוט לexon 20 insertion",
+      "bbb_note": "לא ידוע; יש לבדוק פרמיטר של ACT001 BBB penetration אם מגבבה",
+      "action_he": "עקוב כמידע כללי על גישות EGFR-altered בגליומה; לא מתאים לילדה בגיל הנוכחי, אך עשוי להיות רלוונטי כעדכון על טיפולים מקבילים",
+      "source_url": "https://clinicaltrials.gov/study/NCT06894225"
     }
   ]
 }
