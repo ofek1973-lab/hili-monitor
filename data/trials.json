@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-10-29",
+    "last_updated": "2026-10-30",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 11
@@ -1159,6 +1159,27 @@
       "bbb_note": "לא ידוע; יש לבדוק פרמיטר של ACT001 BBB penetration אם מגבבה",
       "action_he": "עקוב כמידע כללי על גישות EGFR-altered בגליומה; לא מתאים לילדה בגיל הנוכחי, אך עשוי להיות רלוונטי כעדכון על טיפולים מקבילים",
       "source_url": "https://clinicaltrials.gov/study/NCT06894225"
+    },
+    {
+      "nct_id": "NCT04541082",
+      "title_he": "ONC206 בטיפול בגידולי CNS נדירים ונשנים — פאז 1 בחולים מבוגרים",
+      "title_en": "Phase I Study of Oral ONC206 in Recurrent and Rare Primary CNS Neoplasms",
+      "phase": "Phase 1",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 35,
+      "age_eligible": false,
+      "recruiting_status": "Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "ONC206 הוא קדם של ONC201 (Dordaviprone) — בעל פרופיל דומה (DRD2/ClpP) אך מינון נמוך יותר. מחקר זה בחולים בוגרים בלבד (18+), אך נתוני הבטיחות והתגובה עשויים להיות רלוונטיים להערכת הפרופיל של ONC201 בתוך CNS, במיוחד בגידולים דיפוזיים.",
+      "key_inclusion": [
+        "Recurrent or rare primary CNS neoplasms",
+        "Age ≥18 years (NOT eligible for Hili)"
+      ],
+      "egfr_note": "ONC206 לא נבחן באופן ספציפי בהקשר EGFR exon 20 insertion. מודע: SNO 2025 הדגים הפחתה בעיוכלות ONC201 עם EGFR exon 20. ONC206 עשוי לחזור לאותה בעיה.",
+      "bbb_note": "אין נתוני PK אנושיים חדשים זמינים. ONC206 מתוכנן כאגנט חדיר BBB דומה ל-ONC201, אך לא מתויק בשום צורה.",
+      "action_he": "עקוב אחר פרסום נתוני בטיחות/יעילות ONC206 כדי להעריך את הפרופיל הביולוגי של משפחת ONC. אין צורך בפעולה מיידית עבור הילי.",
+      "source_url": "https://clinicaltrials.gov/study/NCT04541082"
     }
   ]
 }

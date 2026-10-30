@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-29",
-    "next_scheduled_scan": "2026-10-30",
+    "last_full_scan": "2026-10-30",
+    "next_scheduled_scan": "2026-10-31",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -52,7 +52,8 @@
     "NCT07644312",
     "NCT06946680",
     "NCT05956821",
-    "NCT06894225"
+    "NCT06894225",
+    "NCT04541082"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -84,7 +85,10 @@
     "GLIOBLASTOMA-IMMUNOTHERAPY-20261027",
     "LINEAGE-PLASTICITY-CDK4-6-DMG-20261028",
     "MACROPHAGE-LIPID-SIGNALING-GLIOMA-20261027",
-    "PEDIATRIC-BRAIN-IMMUNITY-INFLAMMATION-20261014"
+    "PEDIATRIC-BRAIN-IMMUNITY-INFLAMMATION-20261014",
+    "EGFR-ANTIBODY-TOXIN-26101606",
+    "EGFR-STAT3-RESISTANCE-26100808",
+    "CAR-MICROGLIA-BRAIN-TUMOR-26102706"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -115,23 +119,23 @@
     "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue"
   },
   "last_run_summary": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 2,
-    "new_developments_added": 0,
+    "changes_detected": true,
+    "new_trials_added": 1,
+    "new_developments_added": 3,
     "fetched": {
-      "clinical_trials": 44,
-      "pubmed_papers": 0,
+      "clinical_trials": 41,
+      "pubmed_papers": 10,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "אין מחקרים חדשים או עדכונים בשנים האחרונות ישירות רלוונטיים לדיפוז מיליין גליומה H3K27M עם EGFR exon 20 insertion בילדים בגיל <3 שנים",
-      "שני מחקרים בהרשמה תמשך נוגעים ל-EGFR-altered או relapsed/refractory intracranial glioma; שניהם מחוץ לטווח הגיל של הילי או לא ספציפיים ל-H3K27M",
-      "אין עדכונים בעלי מידע ישיר על Zegfrovy, ONC201, או אינטראקציות ביניהם בתקופת ה-30 יום האחרונה"
+      "EGFR-targeted antibody-toxin conjugates (ADCs) מציגים פוטנציאל למוטציות EGFR resistant — אפשרות שנייה/שלישית אם Zegfrovy יאבד יעילות, אך חדירת BBB היא אתגר ובדיקה קליניקלית בילדים לא קיימת כרגע.",
+      "EGFR-STAT3 axis עשוי להניע התנגדות adaptative — שילוב של STAT3 inhibitor + EGFR inhibitor הוא השערה רלוונטית, אך דורש STAT3 inhibitors עם חדירת BBB ובדיקה בפעילות DMG.",
+      "CAR-engineered microglia היא strategy חדשה ל-immune activation של גידולי brain המדומה, עדיין preclinical — מעקב দרוש לשלבי translation, בעלי עדיין 2-3 שנים מ-clinical readiness."
     ],
-    "scan_notes": "נסקנו: ClinicalTrials.gov (15 ניסויים פעילים), PubMed (30 יום אחרונים — 0 תוצאות), medRxiv/bioRxiv (14 יום אחרונים — 0 תוצאות), חדשות רפואיות (0 תוצאות). ממצא: שני ניסויים עם קשר שולי ל-EGFR או relapsed glioma, אך שניהם מחוץ לטווח הגיל או מחוץ לטווח האנוטיפוט של הילי. לא נמצאו מידע חדש על ONC201 × EGFR exon 20 conflict או על שילובי Zegfrovy + ONC201.",
+    "scan_notes": "Scanned: 1 live trial list (15 trials; 1 relevant [NCT04541082, ONC206 Phase 1 — follow only]), 10 PubMed papers from last 30 days (3 with genuine relevance detected), 0 preprints, 0 news feeds. Focus: EGFR-targeted strategies, resistance mechanisms, CNS delivery, immunotherapy. Most papers are general glioma/oncology; 3 papers intersect with Hili's genotype/treatment trajectory.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -212,7 +216,17 @@
     "42877971",
     "42947570",
     "42946762",
-    "42940191"
+    "42940191",
+    "42947166",
+    "42842373",
+    "42894377",
+    "42888247",
+    "42885740",
+    "42702131",
+    "42585601",
+    "42848171",
+    "42886048",
+    "42949664"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []

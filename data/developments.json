@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-29",
+    "last_updated": "2026-10-30",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -737,6 +737,105 @@
       "action": "ללא צורך בפעולה מיידית. הנושא: בדוק אם צוות מנטר immune activation markers (T-cell activation, microglia phenotyping) במהלך טיפול Zegfrovy. עם סדרה קלינית זו כבסיס, בקש ה-immune profiling דינאמי.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42872492/",
       "date_detected": "2026-10-28"
+    },
+    {
+      "id": "EGFR-ANTIBODY-TOXIN-26101606",
+      "priority": "DISCUSS",
+      "title_he": "קוnjugates של נוגדנים שמטרתם EGFR וטוקסינים — יעילות בגליומות נשנות",
+      "title_en": "EGFR-targeted antibody-toxin conjugate shows activity in recurrent glioma",
+      "category": "research",
+      "what_changed": "מחקר פאז 1 חדש (Nature Medicine, אוקטובר 2026) מדגים כי conjugates של נוגדנים-טוקסינים המכוונים ל-EGFR גורמים לתגובות בגליומות נשנות, כולל אלה עם EGFR wild-type. זה מוצע כגישה משלימה לעומת inhibitors של TKI.",
+      "why_matters_bullets": [
+        "הילי נושאת EGFR exon 20 insertion — מוטציה שמקנה התנגדות חלקית ל-TKIs (כולל Zegfrovy בתחום מסוים של קונצנטרציות)",
+        "conjugates של נוגדנים-טוקסינים אינם תלויים בחסימה של kinase ישירה — הם עובדים דרך סוג שונה של מנגנון (תאימה + סחרור ותשלול)",
+        "חדירת BBB היא אתגר: הקשר הגדול של נוגדנים מופחת חדירת BBB לעומת small molecules. אך נוגדנים מדומיינים מסוגים מסוימים עשויים לחדור דרך endothelial ADCC או תאים חיסוניים"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "אם Zegfrovy מתגבר על התנגדות או הופך פחות יעיל, conjugates של נוגדנים עשויים להיות אופציה שנייה/שלישית. אך זה עדיין פאז 1 בחולים מבוגרים עם גליובלסטומה; קיימת אי-ודאות בשנגנון חדירת BBB ובמדימיות של דיולי מדיים לתלמוס ודעיכה."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "Phase 1 trial, Nature Medicine (peer-reviewed). גודל מדגם ותוצאות מפורשות לא חלצו מהאתר אך נדמה שמדובר בנתונים חסויים (תיאור תמציתי). יש צורך בגישה למלא הטקסט כדי להעריך גודל מדגם, population, ותגובות objective."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "נוגדנים בדרך כלל חודרים BBB בצורה עלובה (<0.1% ID). עם זאת, conjugates עם toxins מטרה-חדיר עשויים למשוך תאים חיסוניים (מקרופאגים, T cells) המסוגלים לחדור BBB. מיתאים לתלמוס (מקום הגידול של הילי) יכול להיות טוב יותר מאזורים אחרים של CNS בגלל פרנצ'ה BBB ודלקת מקומית. אך זו השערה."
+      },
+      "expandable_details": {
+        "scientific_explanation": "conjugates של נוגדנים-טוקסינים (ADCs) מטרה-חדיר קרינו EGFR לביטויי הגבוהים על תאי גיליומה. בגלל ש-EGFR exon 20 insertions מתאפיינים במטריט structural שונה ממוטציות אחרות (זיכרון מתנועע), חלק מ-TKIs אינם יעילים באותה מידה. ADCs עובדים באמצעות (1) קשירה לעילי בעל זיקות גבוהה, (2) internalization, (3) שחרור toxin בתוך התא. זה עשוי לעקוף התנגדויות שנובעות מ-reduced binding או altered kinase activity.",
+        "study_limitations": "עדיין Phase 1 — מוקדש לבטיחות ו-MTD. יעילות היא משנית. Population היא חולים בוגרים עם גליובלסטומה נשנות עם EGFR amplification או wild-type. אין נתונים ספציפיים על mutant EGFR (כולל exon 20). בגידול של הילי בתלמוס ודעיכה, עדיין לא ברור אם הנוגד חדור בכמות מספיקה.",
+        "connection_to_current_treatment": "משלים אם לא סינרגיסטי עם Zegfrovy. אם Zegfrovy יאבד יעילות בגלל התנגדות adaptations, קפיצה ל-ADC עשויה להיות הגיונית. עם זאת, זה דורש (א) גישה קליניקלית (עדיין לא בפרקטיקה רוטינית), (ב) קביעה של BBB penetration בתלמוס של הילי, (ג) בדיקת EGFR expression/mutation status בטו."
+      },
+      "action": "העלה בדיון עם צוות ONO/המומחה: האם יש גישה ממוקדמת ל-EGFR ADCs לילדים עם H3K27M + EGFR exon 20? אם כן, זה צריך להיות דיון לאחר ONC201, בהינתן התנגדות או רגישות אובדנת ל-Zegfrovy.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42888247/",
+      "date_detected": "2026-10-30"
+    },
+    {
+      "id": "EGFR-STAT3-RESISTANCE-26100808",
+      "priority": "MONITOR",
+      "title_he": "EGFR-STAT3 axis — ציר ההתנגדות האדפטיבית בגליובלסטומה",
+      "title_en": "Breaking adaptive EGFR-STAT3-driven resistance in glioblastoma",
+      "category": "research",
+      "what_changed": "קריאה מחודשת של מנגנון התנגדות adaptative בגליובלסטומה המדגמת כי EGFR-STAT3 signaling axis מניע התנגדות קליניקלית קצר-מועד ל-EGFR TKI monotherapy. הצעה: שילוב של EGFR inhibitor + STAT3 inhibitor.",
+      "why_matters_bullets": [
+        "הילי מקבלת Zegfrovy (EGFR exon 20 inhibitor) כמונו-טיפול. אם ציר EGFR-STAT3 ממלא תפקיד בהתנגדות קצרת-טווח, זה עשוי להסביר התפתחות עתידית של התנגדות.",
+        "H3K27M gliomas עם EGFR mutations עשויות להיות בעלות STAT3 activation גבוה דרך מנגנונים מקבילים (epigenetic + EGFR co-activation).",
+        "ONC201 (Dordaviprone) פועל דרך DRD2 ו-ClpP — לא נראה שהוא מעכב STAT3 ישירות. שילוב של ONC201 + Zegfrovy אינו עשוי לטחון את ציר EGFR-STAT3 מספיק."
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "ממצא מדעי רלוונטי לגליומות כולל thalamic/brainstem lesions, אך עדיין משערה עבור DMG H3K27M. יש צורך בנתונים ספציפיים H3K27M כדי לאמת. מומלץ מעקב אחר STAT3 expression בטו של הילי (אם קיים) או בהתבסס על literature על STAT3 ב-DMG."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מודעה בעיתון peer-reviewed (Medical Oncology, October 2026). אך ממצא זה נראה משפטי/preclinical — אין טיפול קליני מוקדמות מדוגמא קונקרטית. יש צורך בפעולה העמיקה."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "מאמר לא מפורט על חדירת BBB של STAT3 inhibitors. רוב ה-STAT3 inhibitors הם hydrophilic או בעלי תכונות logP גרועות; חדירת BBB היא בעיה שכנה. זה מחייב בדיקה אם STAT3 inhibitor ספציפי יעביר BBB בריכוז טיפולי."
+      },
+      "expandable_details": {
+        "scientific_explanation": "STAT3 הוא גורם תעתיקות קריטי בתמיכת הגדילות וההתנגדות בגליובלסטומה. כאשר EGFR מופעל (wild-type או mutant), STAT3 מופעל עקיפות דרך IL-6 signaling ו/או IL-6R trans-signaling ב-tumor microenvironment. זה מניע גדילות תא סרטן וגם פעילויות חיסוניות מנכחות. Zegfrovy אינו עוצר STAT3 — הוא חוסם EGFR kinase. STAT3 יכול להיות activated דרך כל מקור אחר (פציינטים מקומיים, autoinflammatory loops), כך שהעלמת monotherapy עשויה להיות בלתי מספקת.",
+        "study_limitations": "לא מוזכר בשם המאמר אם זה animal model או cell line study. אין נתוני בני-אדם. Generalizability ל-H3K27M DMG ספציפית אינה מובטחת; אלה נבדלות מגליובלסטומה ado IDH-wildtype.",
+        "connection_to_current_treatment": "שילוב פוטנציאלי: Zegfrovy (EGFR inhibitor) + STAT3 inhibitor. עם זאת, זה יהיה טיפול משלישי אחרי ONC201. יש צורך בבדיקה מול ONC201 + Zegfrovy first."
+      },
+      "action": "אל תפעל כעת. תעקוב אחר כל מאמר קליני חדש על שילוב EGFR + STAT3 inhibition ב-H3K27M או pediatric DMG. בקש מצוות אונקולוגיה: האם יש נתונים על STAT3 activation בטו של הילי?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42848171/",
+      "date_detected": "2026-10-30"
+    },
+    {
+      "id": "CAR-MICROGLIA-BRAIN-TUMOR-26102706",
+      "priority": "MONITOR",
+      "title_he": "מיקרוגליה מעונדסת CAR — פגוז חדש של immune targeting בגידולי brain",
+      "title_en": "CAR-engineered microglia exploit phagocytosis to target brain tumors in organoid models",
+      "category": "research",
+      "what_changed": "מחקר חדש (Cell Reports, October 2026) מדגם כי מיקרוגליה שעברה הנדסה של CAR (receptors של antigen כימרה) עשויה לכובשה תאים של גידול brain דרך phagocytosis, עקיפת חלק מן ה-cold tumor immune suppression שמיוחד ל-CNS.",
+      "why_matters_bullets": [
+        "גדילומות DMG H3K27M הן עתירות suppression — TAMs (tumor-associated macrophages), immunosuppressive T cells, מעט CD8 infiltration. CAR-microglia עשוי לשבור הדפנות אלה.",
+        "זה עדיין preclinical (organoid models), אך המנגנון של phagocytosis-based killing הוא שונה ממחקרים קוד GD2-CAR שטיפלו בטיפולים דיפוזיים.",
+        "אם viable, זה עשוי להיות משלימה ל-Zegfrovy + ONC201, או חלק מ-multi-modal strategy להיורים עתידיים."
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "זה עדיין 2-3 שנים מ-translational כדי קליניקה. זה לא צריך להיות חלק מ-immediate discussion, אך זה שווה לעקוב בגלל הפוטנציאל שלו ל-pediatric DMG המתסוג-לחסומה."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "Cell Reports, peer-reviewed. אך preclinical בלבד (organoid models, אולי mouse models בתיאור מלא). אין נתוני בני-אדם."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "מיקרוגליה היא חלק מה-BBB; הוא resident immune cell בתוך CNS. CAR-microglia לא צריך לחדור BBB כי הוא כבר בתוך brain tissue. עם זאת, manufacturing, delivery ו-expansion בתוך tumor microenvironment כל אלה are challenges."
+      },
+      "expandable_details": {
+        "scientific_explanation": "מיקרוגליה (microglia) היא התא החיסוני העיקרי ב-CNS, המקורי מ-mesoderm ול-hematopoietic stem cells, בניגוד לתאים חיסוניים אחרים. CAR-microglia יוכל להיות הנדסה קנטאניהם כדי לזהות antigen על תאי גידול (כגון GD2, EGFR, H3K27M peptide presentation). phagocytosis-mediated killing הוא אלטרנטיבה ל-cytotoxic granule release ויכול להיות יעיל כנגד תאים קשוחים.",
+        "study_limitations": "Organoid models הם simplified; אין full TME, לא מימוש vascularization, לא immune trafficking מורכב. Mouse models עשויים להיות בעלי immunogenicity שונה מבני-אדם. אין ספציפיות ל-thalamic lesions או DMG H3K27M.",
+        "connection_to_current_treatment": "אם viable ל-clinic, זה היה חלק מ-future multi-modal approach (טיפול שנות 3+). בשנים 1-2, Zegfrovy + ONC201 יהיו הפוקוס."
+      },
+      "action": "עקוב אחר translation אל clinical trials. אם trial pediatric ימינו (לטבל בנתונים לביו), העלה.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42842373/",
+      "date_detected": "2026-10-30"
     }
   ]
 }
