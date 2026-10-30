@@ -53,7 +53,10 @@
     "NCT06946680",
     "NCT05956821",
     "NCT06894225",
-    "NCT04541082"
+    "NCT04541082",
+    "NCT06639607",
+    "NCT06720727",
+    "NCT03101813"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -88,7 +91,8 @@
     "PEDIATRIC-BRAIN-IMMUNITY-INFLAMMATION-20261014",
     "EGFR-ANTIBODY-TOXIN-26101606",
     "EGFR-STAT3-RESISTANCE-26100808",
-    "CAR-MICROGLIA-BRAIN-TUMOR-26102706"
+    "CAR-MICROGLIA-BRAIN-TUMOR-26102706",
+    "SYNNOTCH-CART-DMG-STM-20261028"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -116,43 +120,38 @@
     "NCT07767110": "Not yet recruiting (start Dec 2026) — 4–12 wk post-RT window closes ~2026-10-31; likely not eligible",
     "NCT05768880": "Active, not recruiting (Seattle; verified 2026-10-26)",
     "NCT06140719": "Recruiting — observational registry only",
-    "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue"
+    "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue",
+    "NCT06639607": "Suspended (verified 2026-10-30) — age 4–25, has recurrent-DMG stratum; watch for reopening",
+    "NCT06720727": "Recruiting (India, Tata Memorial) — NOT ELIGIBLE (upfront craniospinal RT, no prior therapy allowed)",
+    "NCT03101813": "Recruiting — international DIPG/DMG registry (observational only)"
   },
   "last_run_summary": {
     "date": "2026-10-30",
-    "type": "DAILY_REALTIME",
+    "type": "DAILY_AUTOMATED",
     "changes_detected": true,
     "new_trials_added": 1,
-    "new_developments_added": 3,
+    "new_developments_added": 1,
+    "items_found": 22,
     "fetched": {
-      "clinical_trials": 41,
-      "pubmed_papers": 10,
+      "clinical_trials": 16,
+      "pubmed_papers": 3,
       "preprints": 0,
       "rss_articles": 0
     },
-    "key_findings": [
-      "EGFR-targeted antibody-toxin conjugates (ADCs) מציגים פוטנציאל למוטציות EGFR resistant — אפשרות שנייה/שלישית אם Zegfrovy יאבד יעילות, אך חדירת BBB היא אתגר ובדיקה קליניקלית בילדים לא קיימת כרגע.",
-      "EGFR-STAT3 axis עשוי להניע התנגדות adaptative — שילוב של STAT3 inhibitor + EGFR inhibitor הוא השערה רלוונטית, אך דורש STAT3 inhibitors עם חדירת BBB ובדיקה בפעילות DMG.",
-      "CAR-engineered microglia היא strategy חדשה ל-immune activation של גידולי brain המדומה, עדיין preclinical — מעקב দרוש לשלבי translation, בעלי עדיין 2-3 שנים מ-clinical readiness."
-    ],
-    "scan_notes": "Scanned: 1 live trial list (15 trials; 1 relevant [NCT04541082, ONC206 Phase 1 — follow only]), 10 PubMed papers from last 30 days (3 with genuine relevance detected), 0 preprints, 0 news feeds. Focus: EGFR-targeted strategies, resistance mechanisms, CNS delivery, immunotherapy. Most papers are general glioma/oncology; 3 papers intersect with Hili's genotype/treatment trajectory.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (13 queries, updated since 2026-10-20: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, zipalertinib, sunvozertinib, firmonertinib)",
+      "PubMed E-utilities (2026-10-27 → 2026-10-30)",
+      "Web search: Jazz/Modeyso news, ACTION phase 3, BLU-5082/Blueprint, SNO 2026, Hebrew (Israeli trials), Japanese (jRCT/ONC201)",
+      "Earlier DAILY_REALTIME run today: WHO ICTRP, medRxiv/bioRxiv, journal RSS"
+    ],
+    "key_findings": [
+      "מחקר חדש (Sci Transl Med, 28.10): תאי CAR-T \"חשים-מוח\" (synNotch) מחסלים DMG בעכברים — פרה-קליני, מטרות לא תלויות ב-EGFR",
+      "ניסוי במעקב: NCT06639607 (חיסון PEP-CMV + ניבולומאב, גיל 4–25) — כרגע מושהה (SUSPENDED); רלוונטי בעיקר להישנות אם ייפתח מחדש",
+      "תזכורת זמן: לפי הדשבורד חלון הגיוס ל-PNOC022 (שיבא/שערי צדק) מוערך עד ~1.11.2026, וחלון NCT07767110 נסגר ~31.10 — כדאי לוודא מול הצוות",
+      "אין תוצאות ACTION שלב 3 ואין חדשות רגולטוריות על dordaviprone; אין מידע ציבורי חדש על BLU-5082; SNO 2026 יתקיים 12–15.11 בפילדלפיה — לעקוב אחרי תקצירי DMG/EGFR",
+      "לא נמצא ניסוי חדש פתוח בישראל; לא נמצאו רישומי jRCT רלוונטיים"
+    ],
+    "scan_notes": "סריקה אוטומטית מלאה 2026-10-30, מוזגה עם ריצת DAILY_REALTIME מוקדמת יותר היום (שהוסיפה NCT04541082 ו-3 התפתחויות). נבדקו NCT06720727 (CHARM, הודו — לא מתאים: הקרנה ראשונית ללא טיפול קודם) ו-NCT03101813 (רישום תצפיתי) — נוספו ל-known בלבד. NCT05099003 עדיין SUSPENDED. שאר העדכונים ב-ClinicalTrials.gov נוגעים למבוגרים/NSCLC. jRCT/ChiCTR/CRIS/UMIN לא נבדקו ישירות (רק דרך חיפוש רשת)."
   },
   "known_pmids": [
     "42926464",
@@ -226,7 +225,8 @@
     "42585601",
     "42848171",
     "42886048",
-    "42949664"
+    "42949664",
+    "42950017"
   ],
   "known_preprint_ids": [],
   "known_rss_ids": []

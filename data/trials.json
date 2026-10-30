@@ -1180,6 +1180,29 @@
       "bbb_note": "אין נתוני PK אנושיים חדשים זמינים. ONC206 מתוכנן כאגנט חדיר BBB דומה ל-ONC201, אך לא מתויק בשום צורה.",
       "action_he": "עקוב אחר פרסום נתוני בטיחות/יעילות ONC206 כדי להעריך את הפרופיל הביולוגי של משפחת ONC. אין צורך בפעולה מיידית עבור הילי.",
       "source_url": "https://clinicaltrials.gov/study/NCT04541082"
+    },
+    {
+      "nct_id": "NCT06639607",
+      "title_he": "חיסון PEP-CMV + ניבולומאב ל-DMG/HGG חדש ונשנה בילדים ומבוגרים צעירים",
+      "title_en": "PEP-CMV + Nivolumab for Newly Diagnosed and Recurrent DMG/HGG, Medulloblastoma, and Ependymoma",
+      "phase": "Phase 1/2",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 30,
+      "age_eligible": true,
+      "recruiting_status": "Suspended (verified 2026-10-30)",
+      "location_he": "ארצות הברית — WashU סנט לואיס, Duke, MD Anderson",
+      "summary_he": "חיסון פפטיד נגד CMV (PEP-CMV) בשילוב מעכב PD-1 (ניבולומאב). גיל 4–25 — הילי עומדת בדרישת הגיל. כולל זרוע ל-DMG חדש וזרוע ל-DMG נשנה. הניסוי מסומן כרגע SUSPENDED (מושהה) ב-ClinicalTrials.gov, ולכן אינו מגייס.",
+      "key_inclusion": [
+        "Age 4–25 years",
+        "Stratum I: newly diagnosed HGG/DMG (H3K27M)",
+        "Separate stratum for recurrent DMG/HGG",
+        "Adequate marrow/renal/liver function"
+      ],
+      "egfr_note": "אין התייחסות ל-EGFR — מנגנון חיסוני שאינו תלוי במוטציה.",
+      "bbb_note": "גישה חיסונית (חיסון + מעכב checkpoint) — לא תלויה בחדירת מולקולה קטנה ל-BBB.",
+      "action_he": "מעקב בלבד: אם הניסוי יחזור לגייס, רלוונטי בעיקר לזרוע ההישנות. אין פעולה מיידית.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06639607"
     }
   ]
 }

@@ -836,6 +836,34 @@
       "action": "עקוב אחר translation אל clinical trials. אם trial pediatric ימינו (לטבל בנתונים לביו), העלה.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42842373/",
       "date_detected": "2026-10-30"
+    },
+    {
+      "id": "SYNNOTCH-CART-DMG-STM-20261028",
+      "priority": "WATCH",
+      "title_he": "תאי CAR-T \"חשים-מוח\" (synNotch) מחסלים DMG במודלים פרה-קליניים — UCSF",
+      "title_en": "Brain-sensing synNotch-CAR T cells enable precise targeting and clearance of diffuse midline glioma in multiple preclinical models",
+      "category": "research",
+      "what_changed": "מאמר חדש ב-Science Translational Medicine (28.10.2026, UCSF, קבוצת Okada/Lim): תאי T עם מעגל synNotch שמזהה חלבון ייחודי למוח (brevican) ורק אז מבטא CAR נגד EphA2, IL-13Rα2 או B7-H3. במודלים של DMG — חדירה לגידול, התמדה לאורך זמן והארכת הישרדות; במודל עכבר בעל מערכת חיסון תקינה — העלמת גידול עמידה ללא רעילות עצבית.",
+      "why_matters_bullets": [
+        "מגביל את פעילות ה-CAR למוח בלבד — מנסה לפתור את בעיית הרעילות מחוץ לגידול שמגבילה CAR-T נגד B7-H3/GD2",
+        "אזהרה חשובה: מתן ישיר לחדרי המוח (icv) של גרסת B7-H3 גרם לרעילות עצבית קטלנית במודל אחד — הבטיחות עדיין לא פתורה",
+        "מטרות (EphA2, IL-13Rα2, B7-H3) אינן תלויות ב-EGFR — רלוונטי גם לגידול עם EGFR exon 20"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "פרה-קליני בלבד. גישת synNotch כבר נבחנת בניסוי מוקדם במבוגרים עם גליובלסטומה ב-UCSF; ניסוי בילדים עם DMG עדיין לא קיים. כדאי לעקוב — אופציה עתידית אפשרית בהישנות."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "Sci Transl Med, peer-reviewed. מודלים בעכברים (כולל מודל סינגני עם מערכת חיסון תקינה). אין נתוני בני אדם ב-DMG."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "תאי T עברו לגידול גם בהזרקה לווריד (iv), לא רק דרך חדרי המוח."
+      },
+      "action": "מעקב: אם יירשם ניסוי synNotch CAR-T לילדים עם DMG (UCSF / PNOC) — להעלות לדיון.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42950017/",
+      "date_detected": "2026-10-30"
     }
   ]
 }
