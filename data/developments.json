@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-30",
+    "last_updated": "2026-10-31",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -864,6 +864,40 @@
       "action": "מעקב: אם יירשם ניסוי synNotch CAR-T לילדים עם DMG (UCSF / PNOC) — להעלות לדיון.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42950017/",
       "date_detected": "2026-10-30"
+    },
+    {
+      "id": "EZHIP-PRC2-20261031",
+      "priority": "MONITOR",
+      "title_he": "דינמיקת התפתחות EZHIP — מעכב PRC2 בגידולי H3K27M",
+      "title_en": "Dynamic evolution of EZHIP — PRC2 inhibition in H3K27M gliomas",
+      "category": "research",
+      "what_changed": "פרסום בioRxiv על מנגנון EZHIP (inhibitor טבעי של PRC2 המופקד על ידי גנומי DMG H3K27M) והאבולוציה הדינמית שלו. EZHIP הוא גורם מהותי בפתוגנזה של DMG H3K27-altered.",
+      "why_matters_bullets": [
+        "H3K27M בגנום הילי פועל דרך PRC2 inhibition — זהו מנגנון הליבה של גידולה",
+        "EZHIP עשוי להיות מטרה תרפויטית פוטנציאלית בגישה antitumor בלא-ישירה (דרך גנום-dependent PRC2 restoration)",
+        "הבנה טובה יותר של דינמיקה זו עשויה להדריך שילוב עתידי של HDAC inhibitors או PRC2 agonists",
+        "רלוונטי במיוחד לנושא TP53 × 3 של הילי — TP53 wild-type שיחזור עשוי להיות מתווך על-ידי PRC2 activity"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "H3K27M הוא הנהג המולקולרי של DMG של הילי; EZHIP הוא המרכז האפיגנטי. מחקר זה עשוי לחקור מנגנוני oppertunistic לעיכול PRC2 restoration כאלטרנטיבה ל-inhibition ישיר של EGFR או Dordaviprone."
+      },
+      "evidence_quality": {
+        "level": "preprint",
+        "details": "bioRxiv preprint — מתודולוגיה לא ידועה, כמות חולים לא מוגדרת, מראה מחקר תיאורטי או ex-vivo. נדרשת פרסום peer-reviewed לפני שימוש קליני."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "לא מוזכרת חדירת BBB בשרטוט ה-abstract. EZHIP הוא inhibitor של PRC2 — סביר שמולקולה חלבונית או RNA-based, לא סביר חדירה עצמאית של BBB."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M (missense mutation בגן H3F3A או HIST1H3B) מפנק PRC2 complex, מוביל להסרת H3K27me3 repressive marks בגנום. זה מוביל dedifferentiation, stemness, ו-oncogenic gene expression. EZHIP (Embryonic Ectoderm Development-associated protein with H3K27M-like function) הוא מעכב PRC2 טבעי המופקד על-ידי DIPG/DMG genomes. מחקר זה בioRxiv בוחן את האבולוציה התזמונית של EZHIP protein ויחסם לפעילות PRC2 וסימנים אפיגנטיים.",
+        "study_limitations": "preprint בלי נתוני חולים קליניים או in-vivo validation ברור. שפירת EZHIP dynamic evolution עדיין תיאורטית.",
+        "connection_to_current_treatment": "Zegfrovy + ONC201 משניים שניהם מעכבי EGFR ו-DRD2/ClpP agonist — לא מעכבי PRC2 או EZHIP. מחקר זה מעניין לכיוונים יישומיים עתידיים (למשל, שילוב עם HDAC inhibitors ש-restore PRC2 function), אך אינו ישר מתחרה או משלים לטיפול הנוכחי."
+      },
+      "action": "עקוב לפרסום peer-reviewed סופי; אל תעלה בפגישה עוד כן עד שנתונים קליניים מופיעים",
+      "source_url": "https://doi.org/10.64898/2025.12.12.693809",
+      "date_detected": "2026-10-31"
     }
   ]
 }

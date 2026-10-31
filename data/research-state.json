@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-30",
-    "next_scheduled_scan": "2026-10-31",
+    "last_full_scan": "2026-10-31",
+    "next_scheduled_scan": "2026-11-01",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -92,7 +92,8 @@
     "EGFR-ANTIBODY-TOXIN-26101606",
     "EGFR-STAT3-RESISTANCE-26100808",
     "CAR-MICROGLIA-BRAIN-TUMOR-26102706",
-    "SYNNOTCH-CART-DMG-STM-20261028"
+    "SYNNOTCH-CART-DMG-STM-20261028",
+    "EZHIP-PRC2-20261031"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -126,32 +127,40 @@
     "NCT03101813": "Recruiting — international DIPG/DMG registry (observational only)"
   },
   "last_run_summary": {
-    "date": "2026-10-30",
-    "type": "DAILY_AUTOMATED",
-    "changes_detected": true,
-    "new_trials_added": 1,
+    "date": "2026-10-31",
+    "type": "DAILY_REALTIME",
+    "changes_detected": false,
+    "new_trials_added": 0,
     "new_developments_added": 1,
-    "items_found": 22,
     "fetched": {
-      "clinical_trials": 16,
-      "pubmed_papers": 3,
-      "preprints": 0,
+      "clinical_trials": 40,
+      "pubmed_papers": 0,
+      "preprints": 1,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (13 queries, updated since 2026-10-20: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, zipalertinib, sunvozertinib, firmonertinib)",
-      "PubMed E-utilities (2026-10-27 → 2026-10-30)",
-      "Web search: Jazz/Modeyso news, ACTION phase 3, BLU-5082/Blueprint, SNO 2026, Hebrew (Israeli trials), Japanese (jRCT/ONC201)",
-      "Earlier DAILY_REALTIME run today: WHO ICTRP, medRxiv/bioRxiv, journal RSS"
-    ],
     "key_findings": [
-      "מחקר חדש (Sci Transl Med, 28.10): תאי CAR-T \"חשים-מוח\" (synNotch) מחסלים DMG בעכברים — פרה-קליני, מטרות לא תלויות ב-EGFR",
-      "ניסוי במעקב: NCT06639607 (חיסון PEP-CMV + ניבולומאב, גיל 4–25) — כרגע מושהה (SUSPENDED); רלוונטי בעיקר להישנות אם ייפתח מחדש",
-      "תזכורת זמן: לפי הדשבורד חלון הגיוס ל-PNOC022 (שיבא/שערי צדק) מוערך עד ~1.11.2026, וחלון NCT07767110 נסגר ~31.10 — כדאי לוודא מול הצוות",
-      "אין תוצאות ACTION שלב 3 ואין חדשות רגולטוריות על dordaviprone; אין מידע ציבורי חדש על BLU-5082; SNO 2026 יתקיים 12–15.11 בפילדלפיה — לעקוב אחרי תקצירי DMG/EGFR",
-      "לא נמצא ניסוי חדש פתוח בישראל; לא נמצאו רישומי jRCT רלוונטיים"
+      "אין ניסויים קליניים חדשים בעלי סיכוי גבוה להיות מתאימים לגיל (29 חודשים) או למוטציות ספציפיות של הילי.",
+      "אין פרסומים עדכניים (30 יום אחרונים) בPubMed הרלוונטיים לDMG H3K27M או EGFR exon 20 insertion בילדים.",
+      "preprint אחד על EZHIP/PRC2 — רלוונטי מחקרי למנגנון H3K27M אך לא מרתק לטיפול הנוכחי או אפשרויות עתידיות מידיות."
     ],
-    "scan_notes": "סריקה אוטומטית מלאה 2026-10-30, מוזגה עם ריצת DAILY_REALTIME מוקדמת יותר היום (שהוסיפה NCT04541082 ו-3 התפתחויות). נבדקו NCT06720727 (CHARM, הודו — לא מתאים: הקרנה ראשונית ללא טיפול קודם) ו-NCT03101813 (רישום תצפיתי) — נוספו ל-known בלבד. NCT05099003 עדיין SUSPENDED. שאר העדכונים ב-ClinicalTrials.gov נוגעים למבוגרים/NSCLC. jRCT/ChiCTR/CRIS/UMIN לא נבדקו ישירות (רק דרך חיפוש רשת)."
+    "scan_notes": "סריקה של ClinicalTrials.gov (15 ניסויים חיים), PubMed (0 מאמרים באחרונים 30 ימים), bioRxiv/medRxiv (1 preprint). לא נמצאו ניסויים חדשים עם הגבלות גיל המתאימות לילדים <3 שנים בשילוב עם H3K27M, EGFR exon 20, או thalamic glioma. ניסויים קיימים בסקירה הקודמת עדיין פעילים או לא עדיין מתאימים (גיל, שלב, מוטציה). דפי חדשות רפואיות ריקה.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",
@@ -228,6 +237,8 @@
     "42949664",
     "42950017"
   ],
-  "known_preprint_ids": [],
+  "known_preprint_ids": [
+    "biorxiv:10.64898/2025.12.12.693809"
+  ],
   "known_rss_ids": []
 }
