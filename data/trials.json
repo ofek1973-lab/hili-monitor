@@ -4,7 +4,7 @@
     "last_updated": "2026-10-31",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
-    "weeks_post_rt_at_last_run": 11
+    "weeks_post_rt_at_last_run": 12
   },
   "trials": [
     {
@@ -896,11 +896,11 @@
       "title_he": "הזרקה ממוקדת של LSAM-Cisplatin בגליומות, הערכת תגובה",
       "title_en": "Targeted LSAM-Cisplatin Infusion in Gliomas, Evaluation of Response",
       "phase": "Phase I/II",
-      "match_category": "possible",
+      "match_category": "not_eligible",
       "priority": "WATCH",
-      "score": 50,
+      "score": 25,
       "age_eligible": true,
-      "recruiting_status": "NOT_YET_RECRUITING",
+      "recruiting_status": "NOT_YET_RECRUITING (verified 2026-10-31; start Dec 2026)",
       "location_he": "מקום: לא צוין",
       "summary_he": "LSAM (lipid-based systemic arteriole-mediated) delivery של cisplatin עם זילוח מוקדת. הגיל המינימלי הוא 3 שנים — ותיקול עשויה להיות מוכשרת. אך בגלל TP53 x3 mutations, רגישות ל-platinum chemotherapy צפויה להיות מורכבת. טרם מתחיל הגיוס.",
       "key_inclusion": [
@@ -909,7 +909,7 @@
         "חשיפות ממוקדות אפשריות"
       ],
       "egfr_note": null,
-      "action_he": "עקוב לעדכוני הוועדה; בחן את הפרוטוקול כשיתחיל גיוס; שים לב למצב TP53",
+      "action_he": "חלון הזכאות של 4–12 שבועות אחרי סיום ההקרנה נסגר בערך היום (31.10.2026), והניסוי עוד לא התחיל לגייס — סביר שהילי לא תהיה זכאית. נשאר במעקב רק למקרה של שינוי בפרוטוקול.",
       "source_url": "https://clinicaltrials.gov/study/NCT07767110"
     },
     {
@@ -1203,6 +1203,30 @@
       "bbb_note": "גישה חיסונית (חיסון + מעכב checkpoint) — לא תלויה בחדירת מולקולה קטנה ל-BBB.",
       "action_he": "מעקב בלבד: אם הניסוי יחזור לגייס, רלוונטי בעיקר לזרוע ההישנות. אין פעולה מיידית.",
       "source_url": "https://clinicaltrials.gov/study/NCT06639607"
+    },
+    {
+      "nct_id": "NCT03914768",
+      "title_he": "חיסון תאים דנדריטיים (DC) מותאם אישית לגידולי מוח, כולל DIPG — שנזן, סין",
+      "title_en": "Immune Modulatory DC Vaccine Against Brain Tumor",
+      "phase": "Phase 1",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 20,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING (verified 2026-10-31; start est. 2026-12-31)",
+      "location_he": "סין — Shenzhen Geno-immune Medical Institute",
+      "summary_he": "חיסון מתאים דנדריטיים של המטופל עצמו, \"טעונים\" באנטיגנים של הגידול (כולל ניאו-אנטיגנים). גיל 6 חודשים עד 80 — הילי עומדת בדרישת הגיל. מיועד ל-DIPG או GBM עם גידול נמדד, אחרי טיפול סטנדרטי (הקרנה). שלב 1 (בטיחות), מוסד יחיד בסין, ועוד לא מגייס. התוצאות מתייחסות ל-DIPG — לא ברור אם גידול תלמי מתקבל.",
+      "key_inclusion": [
+        "Age 6 months – 80 years",
+        "DIPG or GBM with measurable tumor after standard therapy (RT ~54–60 Gy)",
+        "Lansky/KPS ≥60, life expectancy >3 months",
+        "Dexamethasone ≤4 mg/day at cell collection",
+        "Lymphocyte count ≥0.8×10^9/L"
+      ],
+      "egfr_note": "אין התייחסות ל-EGFR — גישה חיסונית שאינה תלויה במוטציה.",
+      "bbb_note": "גישה חיסונית (תאי T שמופעלים בגוף) — לא תלויה בחדירת תרופה ל-BBB.",
+      "action_he": "מעקב בלבד: ניסוי שלב 1 במוסד יחיד בסין, עדיין לא מגייס, ומוגדר ל-DIPG. אין פעולה מיידית.",
+      "source_url": "https://clinicaltrials.gov/study/NCT03914768"
     }
   ]
 }

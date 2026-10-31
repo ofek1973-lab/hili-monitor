@@ -56,7 +56,10 @@
     "NCT04541082",
     "NCT06639607",
     "NCT06720727",
-    "NCT03101813"
+    "NCT03101813",
+    "NCT03914768",
+    "NCT04573140",
+    "NCT03170141"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -118,49 +121,45 @@
     "NCT07664176": "Recruiting — for relapse/progression only",
     "NCT04099797": "Recruiting — Cohort 1 newly diagnosed DMG ≥4 wk post-RT; verify size <5 cm & concurrent-therapy exclusion",
     "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear",
-    "NCT07767110": "Not yet recruiting (start Dec 2026) — 4–12 wk post-RT window closes ~2026-10-31; likely not eligible",
+    "NCT07767110": "Not yet recruiting (start Dec 2026; verified 2026-10-31) — 4–12 wk post-RT window closed ~2026-10-31; NOT ELIGIBLE",
     "NCT05768880": "Active, not recruiting (Seattle; verified 2026-10-26)",
     "NCT06140719": "Recruiting — observational registry only",
     "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue",
     "NCT06639607": "Suspended (verified 2026-10-30) — age 4–25, has recurrent-DMG stratum; watch for reopening",
     "NCT06720727": "Recruiting (India, Tata Memorial) — NOT ELIGIBLE (upfront craniospinal RT, no prior therapy allowed)",
-    "NCT03101813": "Recruiting — international DIPG/DMG registry (observational only)"
+    "NCT03101813": "Recruiting — international DIPG/DMG registry (observational only)",
+    "NCT03914768": "Not yet recruiting (est. start 2026-12-31, Shenzhen China) — DC vaccine, DIPG/GBM post-RT, age 6 mo–80",
+    "NCT04573140": "Recruiting (US) — NOT ELIGIBLE (newly diagnosed pHGG, needs surgical tissue + post-op MRI ≤7 days)",
+    "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
     "date": "2026-10-31",
-    "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 0,
+    "type": "DAILY_AUTOMATED",
+    "changes_detected": true,
+    "new_trials_added": 1,
     "new_developments_added": 1,
+    "items_found": 18,
     "fetched": {
-      "clinical_trials": 40,
-      "pubmed_papers": 0,
+      "clinical_trials": 12,
+      "pubmed_papers": 5,
       "preprints": 1,
       "rss_articles": 0
     },
-    "key_findings": [
-      "אין ניסויים קליניים חדשים בעלי סיכוי גבוה להיות מתאימים לגיל (29 חודשים) או למוטציות ספציפיות של הילי.",
-      "אין פרסומים עדכניים (30 יום אחרונים) בPubMed הרלוונטיים לDMG H3K27M או EGFR exon 20 insertion בילדים.",
-      "preprint אחד על EZHIP/PRC2 — רלוונטי מחקרי למנגנון H3K27M אך לא מרתק לטיפול הנוכחי או אפשרויות עתידיות מידיות."
-    ],
-    "scan_notes": "סריקה של ClinicalTrials.gov (15 ניסויים חיים), PubMed (0 מאמרים באחרונים 30 ימים), bioRxiv/medRxiv (1 preprint). לא נמצאו ניסויים חדשים עם הגבלות גיל המתאימות לילדים <3 שנים בשילוב עם H3K27M, EGFR exon 20, או thalamic glioma. ניסויים קיימים בסקירה הקודמת עדיין פעילים או לא עדיין מתאימים (גיל, שלב, מוטציה). דפי חדשות רפואיות ריקה.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (14 queries, updated since 2026-10-29: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, zipalertinib, sunvozertinib, firmonertinib, pediatric HGG)",
+      "ClinicalTrials.gov — recruiting glioma trials with sites in Israel",
+      "PubMed E-utilities (last 4 days: DMG/DIPG/H3K27M, dordaviprone/ONC201/ONC206, EGFR pediatric glioma, pediatric HGG)",
+      "Web search: Jazz/Modeyso news, BLU-5082, new DMG trials, Hebrew (Israeli trials), Japanese (jRCT), SNO 2026",
+      "Earlier DAILY_REALTIME run today: WHO ICTRP (international trials), medRxiv API (last 14 days), bioRxiv API (last 14 days), Neuro-Oncology Journal RSS, Lancet Oncology RSS, Nature Medicine RSS, JCO / ASCO RSS, Cancer Discovery RSS, NCI News RSS, Pediatric Blood Cancer Journal RSS, NEJM RSS, FDA Drug Approvals RSS, SNO News RSS"
+    ],
+    "key_findings": [
+      "ניסוי חדש במעקב: NCT03914768 — חיסון תאים דנדריטיים ל-DIPG/GBM אחרי הקרנה (שנזן, סין), גיל 6 חודשים–80, עוד לא מגייס (התחלה משוערת סוף 12.2026) — WATCH",
+      "NCT07767110 (LSAM-Cisplatin): חלון 4–12 שבועות אחרי ההקרנה נסגר היום והניסוי עוד לא מגייס — סומן כלא מתאים",
+      "תזכורת זמן: לפי הדשבורד חלון הגיוס ל-PNOC022 (שיבא/שערי צדק) מוערך עד ~1.11.2026 — לוודא מול הצוות מיד",
+      "אין חדשות רגולטוריות על dordaviprone ואין תוצאות ACTION שלב 3; אין מידע ציבורי חדש על BLU-5082; SNO 2026 ב-12–15.11",
+      "לא נמצא ניסוי DMG חדש בישראל; ב-jRCT רק ACTION (jRCT2051240141) שכבר במעקב; אין מאמרי PubMed חדשים ישירות על DMG/EGFR"
+    ],
+    "scan_notes": "סריקה אוטומטית 2026-10-31. נבדקו גם NCT04573140 (חיסון RNA-LP, ארה\"ב — לא מתאים: דורש רקמה מניתוח ו-MRI עד 7 ימים אחריו) ו-NCT03170141 (הסתיים, מבוגרים) — נוספו ל-known בלבד. בישראל נמצאו רק ניסויים ל-LGG/מדולובלסטומה/GBM במבוגרים. jRCT/ChiCTR/CRIS/UMIN/EUCTR לא נבדקו ישירות (רק דרך חיפוש רשת). מוזג עם ריצת DAILY_REALTIME מוקדמת יותר היום (הוסיפה את ההתפתחות EZHIP-PRC2-20261031 — preprint מחקרי על מנגנון H3K27M, ללא השלכה טיפולית מיידית)."
   },
   "known_pmids": [
     "42926464",
@@ -235,7 +234,12 @@
     "42848171",
     "42886048",
     "42949664",
-    "42950017"
+    "42950017",
+    "42954328",
+    "42947256",
+    "42944591",
+    "42942023",
+    "42938895"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809"
