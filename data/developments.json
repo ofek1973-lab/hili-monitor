@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-10-31",
+    "last_updated": "2026-11-01",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -898,6 +898,72 @@
       "action": "עקוב לפרסום peer-reviewed סופי; אל תעלה בפגישה עוד כן עד שנתונים קליניים מופיעים",
       "source_url": "https://doi.org/10.64898/2025.12.12.693809",
       "date_detected": "2026-10-31"
+    },
+    {
+      "id": "DMG-H3K27M-REVIEW-20261101",
+      "priority": "DISCUSS",
+      "title_he": "סקירה עדכנית על גידולי קו האמצע מפוזרים (DMG) בעידן התרופות ממוקדות למוטציית H3K27",
+      "title_en": "Updated review: Diffuse midline glioma in the H3K27-altered precision medicine era",
+      "category": "research",
+      "what_changed": "פרסום סקירה קומפרהנסיבית בנובמבר 2026 בנושא DMG H3K27-altered. הסקירה מכסה טיפולים ממוקדים מולקולריים ופרוגנוזה עדכנית לאור התקדמויות בשנים האחרונות.",
+      "why_matters_bullets": [
+        "משקפת מצב הידע העדכני ביותר בנוגע לטיפול DMG בתלאמוס (כמו במקרה של הילי)",
+        "עשויה להכיל נתונים חדשים על פרוגנוזה או תגובה לטיפול בחולים עם H3K27M + EGFR exon 20 insertion",
+        "עלולה להציע חלופות טיפול או שילובים שעדיין לא נחקרו בחולים צעירים"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "הילי סובלת מ-DMG H3K27M בתלאמוס וגזע המוח — בדיוק הפופולציה שעליה דנה הסקירה. סקירה זו צפויה לכלול נתונים עדכניים על גישות טיפול ועל משמעות מוטציות נוספות (כמו EGFR exon 20) בהקשר זה."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "סקירה בזמן אמת בכתב עת עיקרי (Critical Reviews in Oncology/Hematology) — מקבלת ומסכמת נתונים קליניים מפורסמים"
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "סקירה בנושא קליני צפויה לעסוק בנושאי חדירת BBB בקשר לטיפולים ספציפיים, אך לא ברור אם תתמקד בנושא זה באופן מעמיק"
+      },
+      "expandable_details": {
+        "scientific_explanation": "סקירה זו מנתחת את מצב הידע הנוכחי בנוגע לגידולי קו האמצע המפוזרים עם מוטציית H3K27, תוך התייחסות לטיפולים ממוקדים (EGFR inhibitors, ONC201, vaccine approaches, immunotherapy) ולמקום של טיפול קונבנציונלי (כימותרפיה, קרינה). הסקירה צפויה להציע פרספקטיבה על שילובי טיפול אפשריים.",
+        "study_limitations": "זוהי סקירה ספרותית, לא חקר מקורי — ערכה תלוי בבחירת המחברים של מקורות ובאיכות הספרות הזמינה",
+        "connection_to_current_treatment": "רלוונטית ישירות ל-Zegfrovy (EGFR inhibitor) ול-ONC201. הסקירה עשויה להציע נתונים על יעילות יחסית, סדר הפעלה, או שילובים אפשריים."
+      },
+      "action": "להשיג את הסקירה המלאה וליעץ עם צוות הטיפול בשאלה האם היא מכילה נתונים חדשים על שילוב Zegfrovy + ONC201 או על הנבואה הנוכחית",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42692100/",
+      "date_detected": "2026-11-01"
+    },
+    {
+      "id": "PRECISION-GLIOMA-REVIEW-20261101",
+      "priority": "MONITOR",
+      "title_he": "סקירת דיוק רפואי בגידולי גליאנים: תובנות מולקולריות וטיפול ממוקד",
+      "title_en": "Precision medicine in diffuse gliomas: molecular insights and targeted therapy",
+      "category": "research",
+      "what_changed": "פרסום סקירה שנייה בנובמבר 2026 בנושא טיפול מדויק בגידולים גליומטיים, עם התמקדות בתובנות מולקולריות וטיפול ממוקד.",
+      "why_matters_bullets": [
+        "עשויה להכיל פרספקטיבה רחבה על תפקידה של דיוק מולקולרי בטיפול בילדים עם DMG",
+        "סקירה זו עשויה להתמקד בשילובי טיפול או על התפתחויות הרגולטוריות בשנת 2026",
+        "יתכן שתשפיל עדויות על אינטראקציות בין מוטציות (H3K27M + EGFR exon 20 + TP53)"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי מייצגת מקרה דיוק מולקולרי מורכב (שלוש מוטציות עיקריות). סקירה כללית זו עשויה להציע הבנה חדשה על אינטראקציות בין מוטציות או על עדיפויות טיפול בהקשר של מוטציות מרובות."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "סקירה בזמן אמת בכתב עת עיקרי — סוקרת ספרות קלינית עדכנית"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "לא ברור אם הסקירה תעסוק בנושא BBB penetration כנושא ריכוזי"
+      },
+      "expandable_details": {
+        "scientific_explanation": "סקירה כללית על טיפול ממוקד בגידולים גליומטיים, צפויה להכיל דיון על מוטציות מפתח (IDH, TP53, EGFR, H3K27M) ועל בחירת טיפול בהתאם.",
+        "study_limitations": "סקירה כללית — עשויה שלא להתמקד בהווה החולה הספציפית (DMG בתלאמוס, גיל צעיר)",
+        "connection_to_current_treatment": "קשר עקיף: עשויה לספק הקשר רחב למשמעות EGFR exon 20 insertion ול-TP53 multiplicity בהקשר של בחירת טיפול"
+      },
+      "action": "עקוב בסקירה זו כמשאב כללי; לא דורש פעולה מיידית",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42556593/",
+      "date_detected": "2026-11-01"
     }
   ]
 }

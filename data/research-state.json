@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-10-31",
-    "next_scheduled_scan": "2026-11-01",
+    "last_full_scan": "2026-11-01",
+    "next_scheduled_scan": "2026-11-02",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -96,7 +96,9 @@
     "EGFR-STAT3-RESISTANCE-26100808",
     "CAR-MICROGLIA-BRAIN-TUMOR-26102706",
     "SYNNOTCH-CART-DMG-STM-20261028",
-    "EZHIP-PRC2-20261031"
+    "EZHIP-PRC2-20261031",
+    "DMG-H3K27M-REVIEW-20261101",
+    "PRECISION-GLIOMA-REVIEW-20261101"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -133,33 +135,40 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
-    "date": "2026-10-31",
-    "type": "DAILY_AUTOMATED",
+    "date": "2026-11-01",
+    "type": "DAILY_REALTIME",
     "changes_detected": true,
-    "new_trials_added": 1,
-    "new_developments_added": 1,
-    "items_found": 18,
+    "new_trials_added": 0,
+    "new_developments_added": 2,
     "fetched": {
-      "clinical_trials": 12,
-      "pubmed_papers": 5,
-      "preprints": 1,
+      "clinical_trials": 38,
+      "pubmed_papers": 2,
+      "preprints": 0,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (14 queries, updated since 2026-10-29: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, zipalertinib, sunvozertinib, firmonertinib, pediatric HGG)",
-      "ClinicalTrials.gov — recruiting glioma trials with sites in Israel",
-      "PubMed E-utilities (last 4 days: DMG/DIPG/H3K27M, dordaviprone/ONC201/ONC206, EGFR pediatric glioma, pediatric HGG)",
-      "Web search: Jazz/Modeyso news, BLU-5082, new DMG trials, Hebrew (Israeli trials), Japanese (jRCT), SNO 2026",
-      "Earlier DAILY_REALTIME run today: WHO ICTRP (international trials), medRxiv API (last 14 days), bioRxiv API (last 14 days), Neuro-Oncology Journal RSS, Lancet Oncology RSS, Nature Medicine RSS, JCO / ASCO RSS, Cancer Discovery RSS, NCI News RSS, Pediatric Blood Cancer Journal RSS, NEJM RSS, FDA Drug Approvals RSS, SNO News RSS"
-    ],
     "key_findings": [
-      "ניסוי חדש במעקב: NCT03914768 — חיסון תאים דנדריטיים ל-DIPG/GBM אחרי הקרנה (שנזן, סין), גיל 6 חודשים–80, עוד לא מגייס (התחלה משוערת סוף 12.2026) — WATCH",
-      "NCT07767110 (LSAM-Cisplatin): חלון 4–12 שבועות אחרי ההקרנה נסגר היום והניסוי עוד לא מגייס — סומן כלא מתאים",
-      "תזכורת זמן: לפי הדשבורד חלון הגיוס ל-PNOC022 (שיבא/שערי צדק) מוערך עד ~1.11.2026 — לוודא מול הצוות מיד",
-      "אין חדשות רגולטוריות על dordaviprone ואין תוצאות ACTION שלב 3; אין מידע ציבורי חדש על BLU-5082; SNO 2026 ב-12–15.11",
-      "לא נמצא ניסוי DMG חדש בישראל; ב-jRCT רק ACTION (jRCT2051240141) שכבר במעקב; אין מאמרי PubMed חדשים ישירות על DMG/EGFR"
+      "שתי סקירות מדעיות חדשות בנובמבר 2026 בנושא DMG H3K27-altered וטיפול דיוק מולקולרי בגליאומות — שתיהן רלוונטיות לפרופיל של הילי",
+      "לא זוהו שינויים רגולטוריים חדשים בנוגע ל-Zegfrovy או ל-ONC201 מחוץ לנתונים כבר ידועים",
+      "לא זוהו ניסויים קליניים חדשים פתוחים לגיוס בטווח הגיל והאבחנה של הילי"
     ],
-    "scan_notes": "סריקה אוטומטית 2026-10-31. נבדקו גם NCT04573140 (חיסון RNA-LP, ארה\"ב — לא מתאים: דורש רקמה מניתוח ו-MRI עד 7 ימים אחריו) ו-NCT03170141 (הסתיים, מבוגרים) — נוספו ל-known בלבד. בישראל נמצאו רק ניסויים ל-LGG/מדולובלסטומה/GBM במבוגרים. jRCT/ChiCTR/CRIS/UMIN/EUCTR לא נבדקו ישירות (רק דרך חיפוש רשת). מוזג עם ריצת DAILY_REALTIME מוקדמת יותר היום (הוסיפה את ההתפתחות EZHIP-PRC2-20261031 — preprint מחקרי על מנגנון H3K27M, ללא השלכה טיפולית מיידית)."
+    "scan_notes": "סרוק: ClinicalTrials.gov (15 ניסויים פעילים — אף אחד לא עונה לקריטריונים של הילי: גיל ≤29 חודשים + DMG + thalamic location), PubMed (2 סקירות חדשות בנובמבר 2026 בנושאים רלוונטיים), bioRxiv/medRxiv (אין preprints בתחום רלוונטי ב-14 הימים האחרונים), RSS medical news (אין עדכונים חדשים). סה\"כ: 2 מקורות רלוונטיים חדשים (סקירות), שאחדם (DMG review) דורש סקירה והשנייה (precision glioma) רלוונטית אך כללית.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",
@@ -239,7 +248,9 @@
     "42947256",
     "42944591",
     "42942023",
-    "42938895"
+    "42938895",
+    "42692100",
+    "42556593"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809"
