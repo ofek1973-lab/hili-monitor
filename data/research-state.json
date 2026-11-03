@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-02",
-    "next_scheduled_scan": "2026-11-03",
+    "last_full_scan": "2026-11-03",
+    "next_scheduled_scan": "2026-11-04",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -59,7 +59,9 @@
     "NCT03101813",
     "NCT03914768",
     "NCT04573140",
-    "NCT03170141"
+    "NCT03170141",
+    "NCT06607692",
+    "NCT04250064"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -98,7 +100,9 @@
     "SYNNOTCH-CART-DMG-STM-20261028",
     "EZHIP-PRC2-20261031",
     "DMG-H3K27M-REVIEW-20261101",
-    "PRECISION-GLIOMA-REVIEW-20261101"
+    "PRECISION-GLIOMA-REVIEW-20261101",
+    "CLPP-CHEMOACTIVATION-20261031",
+    "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -135,23 +139,23 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
-    "date": "2026-11-02",
+    "date": "2026-11-03",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
-    "new_trials_added": 0,
-    "new_developments_added": 0,
+    "new_trials_added": 2,
+    "new_developments_added": 2,
     "fetched": {
       "clinical_trials": 38,
-      "pubmed_papers": 0,
-      "preprints": 1,
+      "pubmed_papers": 7,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified with genuine eligibility for 29-month-old patient with H3K27M DMG and EGFR exon 20 insertion",
-      "No new published research (last 30 days) or preprints (last 14 days) with direct clinical relevance to current treatment pathway",
-      "One bioRxiv preprint on GBM biomarker discovery identified but lacks specificity to H3K27M, EGFR exon 20, or thalamic location — mechanistic significance unknown"
+      "ClpP mitochondrial apoptosis mechanism in ONC201 clarified (preclinical); reinforces rationale for TP53-deficient DMG, but not clinical change yet",
+      "FUS immune remodeling technology emerging for glioblastoma; potential future modality, not yet pediatric or clinically active",
+      "No new EGFR exon 20-specific trials identified; no new trials opening for thalamic DMG in this scan"
     ],
-    "scan_notes": "Scanned: 15 live ClinicalTrials.gov entries (all phases, all locations), 0 new PubMed publications, 1 bioRxiv preprint, 0 medical news items. ELIGIBILITY FILTER: NCT07455045 (China, FZ-AD005, age ≥18y — NOT eligible, age cutoff excludes toddlers); NCT04250064 (India, bevacizumab + RT, age ≥3y — possible match for age but no EGFR-specific data, not recruiting-critical); NCT06607692 (Spain, Lu-177 DOTATATE + PARP, age ≥3y — no EGFR relevance); NCT06465199 (DFMO + AMXT, CNS tumors, pediatric — age eligibility unclear, no EGFR/H3K27M-specific data); NCT06396481 (China, gamma-delta T cells, age ≥4y — NOT eligible); remaining trials focus on adult malignancies (colorectal, ovarian, endometrial, neuroblastoma CAR-T variants without H3K27M or EGFR ex20 focus). BioRxiv preprint on ceRNA/GBM biomarkers is general GBM discovery work without patient-specific mutation focus.",
+    "scan_notes": "Scanned: 15 live trials (ClinicalTrials.gov), 7 recent PubMed papers (last 30 days), 0 preprints (last 14 days), 0 medical news items. Trial scan: 2 trials with pediatric eligibility identified (NCT06607692, NCT04250064), neither targeting EGFR exon 20 or thalamic DMG specifically; both low to moderate relevance. Paper scan: 1 mechanistic paper on ONC201 (PMID 42891548) with clinical relevance; 1 focused ultrasound paper (PMID 42854918) with future potential but no immediate actionability. No regulatory approvals, access pathway changes, or safety signals detected.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -250,7 +254,14 @@
     "42942023",
     "42938895",
     "42692100",
-    "42556593"
+    "42556593",
+    "42891548",
+    "42426296",
+    "42854918",
+    "42948208",
+    "42744036",
+    "41778729",
+    "42967130"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",

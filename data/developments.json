@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-03",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -964,6 +964,72 @@
       "action": "עקוב בסקירה זו כמשאב כללי; לא דורש פעולה מיידית",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42556593/",
       "date_detected": "2026-11-01"
+    },
+    {
+      "id": "CLPP-CHEMOACTIVATION-20261031",
+      "priority": "DISCUSS",
+      "title_he": "הפעלת ClpP בחלבון מיטוכונדריאלי — מנגנון אחר של ONC201",
+      "title_en": "ClpP Chemoactivation Mechanism: Mitochondrial Pathway Elucidation in ONC201",
+      "category": "research",
+      "what_changed": "פרסום חדש (FASEB J, Oct 31, 2026) שמפרט את השפעת ההפעלה של ClpP על תפקוד מיטוכונדריאלי. ONC201 פועל כ-ClpP agonist; פרסום זה מבהיר מנגנון נוסף של אינדוקציה של apoptosis דרך stress מיטוכונדריאלי.",
+      "why_matters_bullets": [
+        "ONC201 עומד להתחיל בהילי בימים הקרובים — הבנת מנגנוני הפעולה משפרת את היכולת להעריך פוטנציאלי תוצאות ובטיחות",
+        "TP53 מוטציות משפיעות על תגובת אפופטוזיס — ClpP activation עלול להיות מנגנון 'bypass' חיוני ב-TP53-mutant גידולים",
+        "אין אינטראקציה ידועה עם Zegfrovy (EGFR inhibitor); שני מנגנונים משלימים אפשריים"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "הילי עם TP53×3 (לא פונקציונלי) + ONC201 מיד. מנגנון apoptosis מיטוכונדריאלי הוא סלילה חיוני כשהנתיבים הקלאסיים (p53-mediated) מושבתים. ההבנה הזו מתמכת על עלויות/הטבות של ONC201 בהקשר זה."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "FASEB J publication — likely cell/model systems, mechanistic study. לא טיפול קליני בחולים; כן כימיה מולקולרית מבוססת."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "ONC201 BBB penetration ידוע (מעכב TP53, סלקטיבי ל-DMG). מנגנון ClpP זה תוך-מיטוכונדריאלי; לא מוסיף מידע חדש על BBB, אך מקדם הבנה של CNS-relevant apoptosis."
+      },
+      "expandable_details": {
+        "scientific_explanation": "ClpP (Caseinolytic protease P) הוא protease מיטוכונדריאלי שפועל ב-AAA+ protease complex. בתנאים נורמליים, הוא חלק מנוקליאז-דלקת המיטוכונדריה; ONC201 'מפעיל' אותו יתר על המידה, מה שמוביל ל-degradation של חלבונים חיוניים ול-mitochondrial apoptosis. בחולים עם TP53-deficient tumors, דרך זו חשובה במיוחד, כי מנגנוני הגנה הנורמליים (p53-dependent) אינם פעילים.",
+        "study_limitations": "פרסום זה כנראה in-vitro או model system — לא נתוני חולים קליניים. יש צורך בוודאות דלא דרך מודל או מחקר בחיות חיים כדי לאשר כי דרך זו פעילה בגידולים אנושיים ב-vivo.",
+        "connection_to_current_treatment": "Zegfrovy (EGFR inhibitor) חוסם EGFR-signaling עלול להעביר תאים ל-metabolic stress; combination עם ONC201 (ClpP activation) אפשרי לגרום לסינרגיה מיטוכונדריאלית. זה היפוטטי, אך שדוג עדיין ראוי לפקחות."
+      },
+      "action": "העלה בפגישת הצוות הרפואי: האם יש נתוני pre-clinical או pilot מתוך בדיקת syngeneic model DMG+EGFR exon 20+TP53-mut עם combination Zegfrovy+ONC201? זה עלול להנחות את ניטור התגובה.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42891548/",
+      "date_detected": "2026-11-03"
+    },
+    {
+      "id": "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110",
+      "priority": "MONITOR",
+      "title_he": "אולטרסאונד ממוקד לעיצוב סביבת החיסון בגליובלסטומה",
+      "title_en": "Focused Ultrasound for Reshaping Immune Microenvironment in Glioblastoma",
+      "category": "research",
+      "what_changed": "פרסום חדש (J Controlled Release, Nov 10, 2026) על שימוש בפוקסד אולטרסאונד (FUS) כדי לשנות את סביבת החיסון של גידולי גוף. השיטה תומכת בטransport של natalizumab/אנטי-VEGF agents ובחדירה של תאי חיסוניים.",
+      "why_matters_bullets": [
+        "DMG/H3K27M immuno-suppressive בטבעו — כל שיטה להשיג immune infiltration או להגביר את יעילות immunotherapy אפשרית רלוונטית",
+        "BBB disruption: FUS שיטה לעביר תרופות/תאים דרך BBB לא-פולשנית — ייתכן משמעותי להגבור של ONC201 או Zegfrovy uptake בתלמוס עמוק",
+        "עדיין research stage — לא trial קליני פתוח לילדים"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי עם DMG thalamic עמוק + H3K27M immunosuppression. אם ONC201 respone יהיה חלקי, FUS עלול להיות modality future להגביר delivery או immune engagement — אבל זה עדיין הרחק מclinical reality בפדיאטריה."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "Journal article; likely animal models (murine GBM). לא טיפול קליני פעיל; יופיר חוקר מעניין לעתיד."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "FUS כתוכנית להפרעת BBB ידועה בעיקרון; זה פרסום מיישם אותה לsetting immunotherapy. לא בדיקות של תלמוס כך או DMG specifics."
+      },
+      "expandable_details": {
+        "scientific_explanation": "Focused ultrasound (FUS) יוצר cavitation bubbles בנוזל עמוד השדרה המוח, המחודדת את חדירות BBB באופן temporarily ו-localized. זה יכול לשחרר את הצבירה של אנטי-גנים או תאי חיסוניים. המטבח על immune remodeling הוא שהם מכוונות את FUS כדי להנחות T-cell infiltration וmacrophage activation.",
+        "study_limitations": "עדיין בעלי חיים; לא pediatric-specific; טכנוקרטיה הפיה יקרה וקשה להפעול בקליניקה ילדים בשלב זה.",
+        "connection_to_current_treatment": "אם ONC201/Zegfrovy עד כה טובים אך לא מלאים בתגובה, FUS עלול להיות add-on future כדי להגביר immune infiltration. כיום, בלא נתוני pilot, לא לבחון."
+      },
+      "action": "אין צורך בפעולה כעת — עקוב אחרי evolving clinical trials באזור זה בשנים הקרובות.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42854918/",
+      "date_detected": "2026-11-03"
     }
   ]
 }

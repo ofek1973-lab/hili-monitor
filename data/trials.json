@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-03",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 12
@@ -1227,6 +1227,50 @@
       "bbb_note": "גישה חיסונית (תאי T שמופעלים בגוף) — לא תלויה בחדירת תרופה ל-BBB.",
       "action_he": "מעקב בלבד: ניסוי שלב 1 במוסד יחיד בסין, עדיין לא מגייס, ומוגדר ל-DIPG. אין פעולה מיידית.",
       "source_url": "https://clinicaltrials.gov/study/NCT03914768"
+    },
+    {
+      "nct_id": "NCT06607692",
+      "title_he": "177Lu-DOTATATE משולב עם מעכבי PARP בילדים וצעירים עם גידולי CNS",
+      "title_en": "177Lu-DOTATATE Combined With PARP Inhibitors in Children/Adolescents With CNS Tumors",
+      "phase": "Phase I/II",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 55,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "ספרד",
+      "summary_he": "טיפול מיזוגי: רדיונוקליד מכוון SSTR2 (177Lu-DOTATATE) + מעכבי PARP. בילדים/בני נוער עם גידולי מוח ממאירים. TP53 עלול להיות רלוונטי (מעכבי PARP משפרים בהפרות TP53).",
+      "key_inclusion": [
+        "גיל ≥3 שנים",
+        "גידולי מוח זדוני",
+        "מצב ביצועים מספיק"
+      ],
+      "egfr_note": "לא מוזכר EGFR exon 20 — לא סלקטיבי להפרות EGFR",
+      "bbb_note": "177Lu-DOTATATE: חדירה BBB דלה; מעכבי PARP: חדירה BBB משתנה (olaparib בינונית, ניראפריב נמוכה). לא סלקטיבי לתלמוס.",
+      "action_he": "עקוב אחרי עדכונים — לא מיעדי לעת עתה; רלוונטי רק אם TP53 מוטציות הופכות לנושא טיפול ראשוני.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06607692"
+    },
+    {
+      "nct_id": "NCT04250064",
+      "title_he": "בווקה-זומב בנמוך דוזה + רדיותרפיה קונוונציונלית לגידולים פנימיים של גשר המוח",
+      "title_en": "Low-Dose Bevacizumab + Radiotherapy for Diffuse Intrinsic Pontine Glioma",
+      "phase": "Phase II",
+      "match_category": "not_eligible",
+      "priority": "MONITOR",
+      "score": 40,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "הודו",
+      "summary_he": "קוהורט DIP (ponte מוח), לא תלמוס. RT הושלמה כבר בספטמבר 2026. בווקא-זומב (אנטי-VEGF) לא מכוון ל-H3K27M או EGFR. רלוונטיות נמוכה.",
+      "key_inclusion": [
+        "DIP (diffuse intrinsic pontine glioma)",
+        "גיל ≥3 שנים",
+        "אחרי RT"
+      ],
+      "egfr_note": null,
+      "bbb_note": "בווקא-זומב: מולקולה גדולה, חדירה BBB מינימלית — לא סלקטיבי לתלמוס עמוק.",
+      "action_he": "אין — חולה זה עם DMG ברמה תלמוס, לא ponte; אבות טיפול שונים.",
+      "source_url": "https://clinicaltrials.gov/study/NCT04250064"
     }
   ]
 }
