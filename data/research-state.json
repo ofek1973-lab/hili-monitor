@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-04",
-    "next_scheduled_scan": "2026-11-05",
+    "last_full_scan": "2026-11-05",
+    "next_scheduled_scan": "2026-11-06",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -139,24 +139,23 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 37,
+      "clinical_trials": 36,
       "pubmed_papers": 0,
-      "preprints": 1,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinically relevant trials identified in current ClinicalTrials.gov live registry matching patient age (29 months) and diagnosis (DMG H3K27M, EGFR exon 20 insertion, thalamic location)",
-      "No recent PubMed publications (last 30 days) detected",
-      "No recent preprints with direct relevance to DMG, H3K27M, EGFR exon 20 inhibition, or ONC201 efficacy in this context",
-      "No new medical news items relevant to patient's active treatments (Zegfrovy, pending ONC201)"
+      "No new clinical trials identified with genuine eligibility for 29-month-old patient with H3K27M DMG, EGFR exon 20 insertion, and thalamic location.",
+      "No new publications, preprints, or regulatory updates detected in past 14–30 days relevant to patient's specific mutation profile or current treatment regimen.",
+      "Live trial scan: NCT07455045 (FZ-AD005, HGG, China, age ≥18) — not eligible; NCT06396481 (Vγ9Vδ2 T cells, brain glioma, age ≥4) — age ineligible; NCT04837547 (PEACH/precision CAR-T, age ≥1) — no EGFR ex20 or DMG-specific data; NCT05542407, NCT05630794, NCT04055649 (ONC201 in ovarian/endometrial/colorectal) — non-CNS, adult only, not relevant."
     ],
-    "scan_notes": "Scanned: 15 live ClinicalTrials.gov trials (recruitment status, eligibility, interventions); 1 preprint (NLP for brain metastasis labeling — not relevant to DMG/H3K27M pediatric case); 0 recent PubMed items; 0 medical news items. Result: No new, eligible, clinically actionable information beyond established profile. All pediatric CNS trials examined either: (a) age minimum >29 months or explicitly adult-only; (b) tumor type not primary DMG/thalamic glioma; (c) no EGFR exon 20 specificity; or (d) already in skip list.",
+    "scan_notes": "Scanned: 15 live ClinicalTrials.gov trials (all phases), 0 PubMed papers (last 30 days), 0 bioRxiv/medRxiv preprints (last 14 days), 0 medical news items. Filtering applied: pediatric age (<29 months), EGFR exon 20 mutations, DMG/midline glioma, BBB-penetrant agents, H3K27M-relevant therapies. Excluded 37 trials/developments previously known to team. Result: No new actionable items identified.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
