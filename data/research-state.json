@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-05",
-    "next_scheduled_scan": "2026-11-06",
+    "last_full_scan": "2026-11-06",
+    "next_scheduled_scan": "2026-11-07",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -61,7 +61,8 @@
     "NCT04573140",
     "NCT03170141",
     "NCT06607692",
-    "NCT04250064"
+    "NCT04250064",
+    "NCT07918105"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -102,7 +103,9 @@
     "DMG-H3K27M-REVIEW-20261101",
     "PRECISION-GLIOMA-REVIEW-20261101",
     "CLPP-CHEMOACTIVATION-20261031",
-    "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110"
+    "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110",
+    "DORDAVIPRONE-ADC-RESPONSE-20261101",
+    "DMGRAS-INHIBITION-20261101"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -139,23 +142,23 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 0,
-    "new_developments_added": 0,
+    "changes_detected": true,
+    "new_trials_added": 1,
+    "new_developments_added": 2,
     "fetched": {
       "clinical_trials": 36,
-      "pubmed_papers": 0,
-      "preprints": 0,
+      "pubmed_papers": 7,
+      "preprints": 1,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified with genuine eligibility for 29-month-old patient with H3K27M DMG, EGFR exon 20 insertion, and thalamic location.",
-      "No new publications, preprints, or regulatory updates detected in past 14–30 days relevant to patient's specific mutation profile or current treatment regimen.",
-      "Live trial scan: NCT07455045 (FZ-AD005, HGG, China, age ≥18) — not eligible; NCT06396481 (Vγ9Vδ2 T cells, brain glioma, age ≥4) — age ineligible; NCT04837547 (PEACH/precision CAR-T, age ≥1) — no EGFR ex20 or DMG-specific data; NCT05542407, NCT05630794, NCT04055649 (ONC201 in ovarian/endometrial/colorectal) — non-CNS, adult only, not relevant."
+      "Early ADC shift on MRI may predict ONC201 response — actionable biomarker for הילי once treatment starts",
+      "Pan-RAS inhibition emerging as potential salvage strategy for DMG; not current but worth monitoring if primary therapy resistance develops",
+      "No new safety signals, BBB-specific data, or trial openings directly matching הילי's age/mutations/location"
     ],
-    "scan_notes": "Scanned: 15 live ClinicalTrials.gov trials (all phases), 0 PubMed papers (last 30 days), 0 bioRxiv/medRxiv preprints (last 14 days), 0 medical news items. Filtering applied: pediatric age (<29 months), EGFR exon 20 mutations, DMG/midline glioma, BBB-penetrant agents, H3K27M-relevant therapies. Excluded 37 trials/developments previously known to team. Result: No new actionable items identified.",
+    "scan_notes": "Scanned: 7 recent PubMed articles (last 30 days), 1 preprint (last 14 days), 0 medical news items, 15 live clinical trials. Filtered by relevance to pediatric DMG, H3K27M, EGFR exon 20, BBB penetration, and current treatments (Zegfrovy, pending ONC201). Found 2 research developments with clinical relevance; 1 trial age-eligible but not location/mechanism specific to הילי. No new regulatory approvals, access pathways, or contraindications detected.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -261,12 +264,20 @@
     "42948208",
     "42744036",
     "41778729",
-    "42967130"
+    "42967130",
+    "42482168",
+    "42371788",
+    "41974509",
+    "42494116",
+    "42482124",
+    "42446117",
+    "42437539"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",
     "biorxiv:10.64898/2026.08.16.744525",
-    "medrxiv:10.64898/2026.06.10.26355415"
+    "medrxiv:10.64898/2026.06.10.26355415",
+    "biorxiv:10.64898/2026.10.21.760833"
   ],
   "known_rss_ids": []
 }

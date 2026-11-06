@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-05",
+    "last_updated": "2026-11-06",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1030,6 +1030,72 @@
       "action": "אין צורך בפעולה כעת — עקוב אחרי evolving clinical trials באזור זה בשנים הקרובות.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42854918/",
       "date_detected": "2026-11-03"
+    },
+    {
+      "id": "DORDAVIPRONE-ADC-RESPONSE-20261101",
+      "priority": "DISCUSS",
+      "title_he": "שינוי מוקדם בתמונת MRI כנבא להשפעת ONC201",
+      "title_en": "Early ADC (Apparent Diffusion Coefficient) Changes Predict ONC201 Response",
+      "category": "research",
+      "what_changed": "פרסום חדש (Nov 2026) בNeuroncology מראה שעלייה מוקדמת ב-ADC (מדד דיפוזיה ב-MRI) קשורה לתגובה טובה ל-ONC201 (דורדווויפרון). זה מספק סימן קליני בזמן אמת שיכול לעזור בהערכת התגובה של הילי לאחר התחלת ONC201.",
+      "why_matters_bullets": [
+        "ONC201 מתחיל בקרוב בישראל — מדד זה יכול לשמש כעלות מוקדמת של היעילות (בעוד שבועות עד חודשים)",
+        "ADC הוא קל לעקוב ב-MRI קליניות קבוע (לא דורש ביופסיה או ביולוגי נוזלים)",
+        "הילי כבר תחת הנראות קרינתית קבועה — זו נקודת זמן טבעית לעקוב"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "הילי היא בטוח ONC201 (דורדווויפרון) קרוב מאד, ויש לה EGFR exon 20 insertion שנודע להפחית את יעילות ONC201. ADC response pattern עלול להיות בעל משקל מיוחד בהערכת האם הטיפול עובד בקביעות פרטנית זו."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "נתון בעבודת Neuro-oncology; סקירה מלאה של גודל המחקר, מספר החולים, ותקופת ההמשך עדיין לא זמינה מהכותרת בלבד, אך זה מקור קליני ועדכני"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "ADC הוא מדד דיפוזיה של מים בתוך הרקמה, לא מדד ישיר של חדירת BBB. עם זאת, שינוי ADC בגידול עלול להשקף שינויים בצפיפות תאים או ממס — האם זה תלוי בחדירת ONC201 כרגע לא ברור מכותרת זו"
+      },
+      "expandable_details": {
+        "scientific_explanation": "ADC (apparent diffusion coefficient) מודד דיפוזיה של מים בתוך רקמה; ירידה ב-ADC עادה משויכת לדחיסות תאית גבוהה (גבול מעצור), בעוד שעלייה ב-ADC עשויה לשקף תוך-טוליות, נכס מוות של התא, או שחזור הנוזל. ב-ONC201, עלייה ב-ADC מוקדמת היא סימן אפוא שלא רק נכנסות אפופטוזיס או שינוי מבנה, אלא יתכן ותא-מוות לא מוגבל. זה עשוי להיות חזק במיוחד בגידולי H3K27M, אשר מסוכנים לעתים קרובות מסיבות טרנסקריפציוניות",
+        "study_limitations": "יש להוציא בדיקה מלאה: גודל קבוצה, תקופת ביצוע, כיול בין מוקדים, קריטריוני תגובה (RANO? RAPNO?), משך עקיבות",
+        "connection_to_current_treatment": "Zegfrovy (EGFR inhibitor) + ONC201 (DRD2/ClpP agonist) הם בעלי מנגנונים שונים. Zegfrovy עשוי לפעול כבר בתאים עם EGFR exon 20, אך יעילות מופחתת. ONC201 עובד ב-mannered שונה לחלוטין (DRD2 pathway, מיטוכונדריא ClpP). ADC shift עלול להשקף תגובה קומבינטורית או תגובה ספציפית ל-ONC201 בלבד — לא ברור בשלב זה"
+      },
+      "action": "לבקש ממשימת הרפואה בשמיים בשמיים לתכנן MRI baseline עם ADC sequences טוב לפני או קרוב מאד להתחלת ONC201; לאחר מכן לעקוב ADC בסדרות קבוע (2-4 שבועות) כדי לתעד pattern response",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42482168/",
+      "date_detected": "2026-11-06"
+    },
+    {
+      "id": "DMGRAS-INHIBITION-20261101",
+      "priority": "MONITOR",
+      "title_he": "עיכול RAS בגידולי אמצע דיפוזיים — כיוון טיפולי חדש",
+      "title_en": "Pan-RAS Inhibition as Novel Therapy for Diffuse Midline Glioma",
+      "category": "research",
+      "what_changed": "פרסום בNeuroncology (Nov 2026) בחן עיכול RAS על תוקפנות DMG. זה משלים, אך אינו תחליף, לטיפול EGFR המלומד על ידי Zegfrovy.",
+      "why_matters_bullets": [
+        "H3K27M gliomas ידוע שיש להם פעילות RAS מוגברת בתנאים מסוימים (פעילות MAPK pathway)",
+        "Zegfrovy מטרות EGFR; עיכול RAS קרוב במעגל אך לא זהה — יכול להיות משלים או להגביל התנגדויות",
+        "אם הילי מתנגד ל-Zegfrovy ו/או ONC201 בעתיד, עיכול RAS עשוי להיות אפשרות"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי כרגע משפיע ממשלב מינימלי של EGFR exon 20 + TP53 ×3. RAS pathway פעולות לעתים קרובות בתנאים אלה אך אינה הנהג ישיר. עיכול RAS אינו פעולה נוכחית, אך עשוי להיות בתכנון במשך עמידות."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מעבר לכותרת, סוג ההראיות (בשר הניסוי, מודל החיוני, קליני) לא ברור. יש צורך בהערכה של המלא הנייר כדי לקבוע אם זה דיוקי מחקר או גישה קליניית בה פתוח שטח"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "לא צוין בתמצית. BBB penetration היא קריטיקלית לטיפול DMG. יש לבדוק אם הגורם (agents) שנבדקו היו בעלי נתונים BBB."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M גידולים עשויים להסתמך על MAPK signaling (ERK1/2, p38) כדי לשמור על stemness וקשיחות. עיכול RAS upstream של MEK/ERK יכול לפרוט מעגל זה. עם זאת, RAS inherently redundant ו-mutation-laden. ניסיונות קודמים לעיכול מלא-RAS כללו klotho (סינתטי זקן) ו-G12C inhibitors. רלוונטיות לילי תלויה ב-RAS mutation status (לא ידוע כרגע) ובמנגנון התנגדות שנגיע.",
+        "study_limitations": "Unspecified — יש להוציא נייר מלא",
+        "connection_to_current_treatment": "Zegfrovy = EGFR inhibitor (receptor tyrosine kinase); RAS = downstream MAPK effector. עיכול RAS יכול להיות מתחם (שניים inhibitor sequences מנגנוני שונים). עם זאת, לא ידוע אם Zegfrovy כבר דורך מעגל RAS בתלי הילי. ONC201 (DRD2/ClpP) אינו משויך לאופן ישיר ל-RAS, אך יתכן קרויים לעקוב."
+      },
+      "action": "לא פעולה נדרשת בעת זה. לעקוב למקרה של התנגדות או טוקסיות מ-Zegfrovy / ONC201; בשלב זה, בקש אם RAS status יודוע מפילוח המוקורי",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42371788/",
+      "date_detected": "2026-11-06"
     }
   ]
 }

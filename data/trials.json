@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-11-05",
+    "last_updated": "2026-11-06",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 12
@@ -1271,6 +1271,27 @@
       "bbb_note": "בווקא-זומב: מולקולה גדולה, חדירה BBB מינימלית — לא סלקטיבי לתלמוס עמוק.",
       "action_he": "אין — חולה זה עם DMG ברמה תלמוס, לא ponte; אבות טיפול שונים.",
       "source_url": "https://clinicaltrials.gov/study/NCT04250064"
+    },
+    {
+      "nct_id": "NCT07918105",
+      "title_he": "טיפול בקרינה בנמוך משיעור דופק לגידולי אמצע דיפוזיים",
+      "title_en": "Pulsed Low-dose Rate Radiotherapy in Diffuse Midline Glioma",
+      "phase": "Phase 1",
+      "match_category": "possible",
+      "priority": "MONITOR",
+      "score": 55,
+      "age_eligible": true,
+      "recruiting_status": "Recruiting",
+      "location_he": "איטליה",
+      "summary_he": "בדיקת טיפול קרינה יצירתי לגידולי אמצע דיפוזיים. הילי כבר סיימה RT קונוונציונלית (אוגוסט 2026), אך טכניקה חדשה זו עשויה להיות רלוונטית אם יהיה הצורך בRT נוסף או טיפול משחזר. לא ברור אם זה מתאים להשלמת כימותרפיה או לטיפול במחלה מתקדמת.",
+      "key_inclusion": [
+        "גידולי אמצע דיפוזיים (כולל תלמוס וגזע המוח)",
+        "קבוצת גיל ברורה לא צוינה בתמצית"
+      ],
+      "egfr_note": null,
+      "bbb_note": null,
+      "action_he": "לא פעולה נדרשת כרגע — לעקוב אם יתפתח התנגדות לטיפול הנוכחי",
+      "source_url": "https://clinicaltrials.gov/study/NCT07918105"
     }
   ]
 }
