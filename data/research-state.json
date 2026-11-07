@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-06",
-    "next_scheduled_scan": "2026-11-07",
+    "last_full_scan": "2026-11-07",
+    "next_scheduled_scan": "2026-11-08",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -142,23 +142,23 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
   },
   "last_run_summary": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "type": "DAILY_REALTIME",
-    "changes_detected": true,
-    "new_trials_added": 1,
-    "new_developments_added": 2,
+    "changes_detected": false,
+    "new_trials_added": 0,
+    "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 36,
-      "pubmed_papers": 7,
-      "preprints": 1,
+      "clinical_trials": 35,
+      "pubmed_papers": 0,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "Early ADC shift on MRI may predict ONC201 response — actionable biomarker for הילי once treatment starts",
-      "Pan-RAS inhibition emerging as potential salvage strategy for DMG; not current but worth monitoring if primary therapy resistance develops",
-      "No new safety signals, BBB-specific data, or trial openings directly matching הילי's age/mutations/location"
+      "No new clinical trials identified with genuine eligibility for 29-month-old patient with thalamic H3K27M DMG and EGFR exon 20 insertion",
+      "No new publications or preprints in last 30 days addressing EGFR exon 20 inhibition, ONC201 efficacy modulation, or pediatric thalamic glioma treatment",
+      "No new regulatory or access pathway announcements affecting Zegfrovy or ONC201 availability in Israel"
     ],
-    "scan_notes": "Scanned: 7 recent PubMed articles (last 30 days), 1 preprint (last 14 days), 0 medical news items, 15 live clinical trials. Filtered by relevance to pediatric DMG, H3K27M, EGFR exon 20, BBB penetration, and current treatments (Zegfrovy, pending ONC201). Found 2 research developments with clinical relevance; 1 trial age-eligible but not location/mechanism specific to הילי. No new regulatory approvals, access pathways, or contraindications detected.",
+    "scan_notes": "Scanned: 15 live ClinicalTrials.gov entries (0 with pediatric thalamic DMG focus or EGFR ex20 specificity); PubMed last 30 days (0 relevant results); medRxiv/bioRxiv last 14 days (0 results); medical RSS feeds (0 new entries). All trials returned were either adult-only (min_age ≥18 years), pediatric non-CNS focus (PEACH—solid tumors only), or observational non-intervention registries. No ONC201 brain tumor trials currently recruiting. No new EGFR inhibitor CNS data detected.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
