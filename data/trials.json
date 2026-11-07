@@ -4,7 +4,7 @@
     "last_updated": "2026-11-07",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
-    "weeks_post_rt_at_last_run": 12
+    "weeks_post_rt_at_last_run": 13
   },
   "trials": [
     {
@@ -32,7 +32,7 @@
       ],
       "nct_url": "https://clinicaltrials.gov/study/NCT05009992",
       "relevant_cohort": "Cohort 6 — Newly diagnosed thalamic OR pontine DMG, post-RT",
-      "enrollment_window_note": "⚠️ דחוף: Cohort 6 פתוח 4–14 שבועות לאחר סיום הקרנה. אם ה-RT הסתיים ~8 אוגוסט 2026, 14 שבועות = ~14 נובמבר 2026 (תיקון חישוב בסריקת 24.10 — בעבר נכתב ~1 נובמבר). נותרו כ-3 שבועות. יש לאמת תאריך סיום RT מדויק ולפנות מיידית.",
+      "enrollment_window_note": "⚠️ דחוף ביותר (עדכון 7.11.2026): Cohort 6 פתוח 4–14 שבועות לאחר סיום הקרנה. RT הסתיים ~8.8.2026 → 14 שבועות = ~14.11.2026. נותר כשבוע אחד. יש לאמת מול הצוות היום, כולל השאלה אם טיפול קודם/מתוכנן ב-ONC201 פוסל (ONC201 קודם הוא קריטריון אי-הכללה).",
       "key_inclusion": [
         "גיל 2–39 — הילי (4) עומדת בדרישה",
         "DMG H3K27-altered (Cohort 4/6) — הילי עומדת בדרישה",
@@ -982,11 +982,11 @@
       "title_he": "xPedite: רישום תצפיתי ל-DIPG/DMG",
       "title_en": "xPedite: A Study to Expedite DIPG and DMG Research",
       "phase": "Observational",
-      "match_category": "observational",
+      "match_category": "closed_to_accrual",
       "priority": "WATCH",
-      "score": 15,
+      "score": 0,
       "age_eligible": true,
-      "recruiting_status": "RECRUITING",
+      "recruiting_status": "WITHDRAWN (verified 2026-11-07)",
       "location_he": "xCures, ארה\"ב (מרחוק; ייתכן מוגבל לתושבי ארה\"ב)",
       "summary_he": "איסוף נתוני היסטוריה טבעית מרשומות רפואיות ודיווחי משפחות, כולל DMG תלמי. אין טיפול.",
       "key_inclusion": [
@@ -994,7 +994,7 @@
         "כל מצב תפקודי"
       ],
       "egfr_note": "לא רלוונטי.",
-      "action_he": "לא טיפולי — אופציונלי בלבד.",
+      "action_he": "הרישום בוטל (Withdrawn) ב-ClinicalTrials.gov — לא רלוונטי יותר.",
       "source_url": "https://clinicaltrials.gov/study/NCT06140719",
       "date_detected": "2026-10-26"
     },
@@ -1292,6 +1292,31 @@
       "bbb_note": null,
       "action_he": "לא פעולה נדרשת כרגע — לעקוב אם יתפתח התנגדות לטיפול הנוכחי",
       "source_url": "https://clinicaltrials.gov/study/NCT07918105"
+    },
+    {
+      "nct_id": "NCT07180927",
+      "title_he": "CAR-T נגד DLL3 לגידולי מוח כולל DIPG/DMG — שנזן, סין",
+      "title_en": "4sCAR-DLL3 CAR-T Therapy Targeting Brain Tumors",
+      "phase": "Phase 1/2",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 20,
+      "age_eligible": true,
+      "recruiting_status": "NOT_YET_RECRUITING (verified 2026-11-07; start est. 2027-06-01)",
+      "location_he": "סין — Shenzhen Geno-Immune Medical Institute",
+      "summary_he": "תאי CAR-T נגד DLL3 לגידולי מוח חוזרים/עמידים שמבטאים DLL3, כולל DIPG/DMG. גיל 2–70 — הילי עומדת בדרישת הגיל. מיועד רק למחלה חוזרת עם נגע מדיד, ודורש בדיקת ביטוי DLL3 ברקמה. מוסד יחיד בסין, הגיוס צפוי רק ביוני 2027.",
+      "key_inclusion": [
+        "Age 2–70",
+        "Recurrent/refractory DLL3+ brain tumor with measurable lesion after standard therapy (RT ~54–60 Gy)",
+        "KPS ≥60, life expectancy >3 months",
+        "Dexamethasone ≤4 mg/day at leukapheresis",
+        "Lymphocytes ≥0.8×10^9/L"
+      ],
+      "egfr_note": "אין התייחסות ל-EGFR — גישה חיסונית שאינה תלויה במוטציה.",
+      "bbb_note": "תאי CAR-T — לא תלוי בחדירת תרופה ל-BBB.",
+      "action_he": "מעקב בלבד: רלוונטי רק במקרה של התקדמות מחלה, ורק אם הגידול מבטא DLL3. הגיוס לא צפוי לפני 2027.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07180927",
+      "date_detected": "2026-11-07"
     }
   ]
 }

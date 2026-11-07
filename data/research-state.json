@@ -62,7 +62,9 @@
     "NCT03170141",
     "NCT06607692",
     "NCT04250064",
-    "NCT07918105"
+    "NCT07918105",
+    "NCT07180927",
+    "NCT04837547"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -105,7 +107,8 @@
     "CLPP-CHEMOACTIVATION-20261031",
     "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110",
     "DORDAVIPRONE-ADC-RESPONSE-20261101",
-    "DMGRAS-INHIBITION-20261101"
+    "DMGRAS-INHIBITION-20261101",
+    "QUAD-CART-BRAINCHILD04-RESULTS-20261107"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -132,50 +135,46 @@
     "NCT06221553": "Recruiting — DIPG only (Thailand); thalamic eligibility unclear",
     "NCT07767110": "Not yet recruiting (start Dec 2026; verified 2026-10-31) — 4–12 wk post-RT window closed ~2026-10-31; NOT ELIGIBLE",
     "NCT05768880": "Active, not recruiting (Seattle; verified 2026-10-26)",
-    "NCT06140719": "Recruiting — observational registry only",
+    "NCT06140719": "Withdrawn (verified 2026-11-07) — observational registry, no longer relevant",
     "NCT06946680": "Not yet recruiting (est. Nov 2026, Gainesville FL) — needs CD70+ tissue",
     "NCT06639607": "Suspended (verified 2026-10-30) — age 4–25, has recurrent-DMG stratum; watch for reopening",
     "NCT06720727": "Recruiting (India, Tata Memorial) — NOT ELIGIBLE (upfront craniospinal RT, no prior therapy allowed)",
     "NCT03101813": "Recruiting — international DIPG/DMG registry (observational only)",
     "NCT03914768": "Not yet recruiting (est. start 2026-12-31, Shenzhen China) — DC vaccine, DIPG/GBM post-RT, age 6 mo–80",
     "NCT04573140": "Recruiting (US) — NOT ELIGIBLE (newly diagnosed pHGG, needs surgical tissue + post-op MRI ≤7 days)",
-    "NCT03170141": "Terminated — adult GBM IgT cells, not relevant"
+    "NCT03170141": "Terminated — adult GBM IgT cells, not relevant",
+    "NCT07180927": "Not yet recruiting (est. start 2027-06-01, Shenzhen China) — DLL3 CAR-T, recurrent only, age 2–70",
+    "NCT07918105": "Recruiting (Aviano, Italy) — NOT ELIGIBLE (excludes prior brainstem RT)",
+    "NCT04837547": "Recruiting (US, PEACH) — NOT ELIGIBLE (DIPG must be pre-RT, within 2 months of diagnosis)"
   },
   "last_run_summary": {
     "date": "2026-11-07",
-    "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 0,
-    "new_developments_added": 0,
+    "type": "DAILY_AUTOMATED",
+    "changes_detected": true,
+    "new_trials_added": 1,
+    "new_developments_added": 1,
+    "items_found": 21,
     "fetched": {
-      "clinical_trials": 35,
-      "pubmed_papers": 0,
-      "preprints": 0,
+      "clinical_trials": 18,
+      "pubmed_papers": 2,
+      "preprints": 1,
       "rss_articles": 0
     },
-    "key_findings": [
-      "No new clinical trials identified with genuine eligibility for 29-month-old patient with thalamic H3K27M DMG and EGFR exon 20 insertion",
-      "No new publications or preprints in last 30 days addressing EGFR exon 20 inhibition, ONC201 efficacy modulation, or pediatric thalamic glioma treatment",
-      "No new regulatory or access pathway announcements affecting Zegfrovy or ONC201 availability in Israel"
-    ],
-    "scan_notes": "Scanned: 15 live ClinicalTrials.gov entries (0 with pediatric thalamic DMG focus or EGFR ex20 specificity); PubMed last 30 days (0 relevant results); medRxiv/bioRxiv last 14 days (0 results); medical RSS feeds (0 new entries). All trials returned were either adult-only (min_age ≥18 years), pediatric non-CNS focus (PEACH—solid tumors only), or observational non-intervention registries. No ONC201 brain tumor trials currently recruiting. No new EGFR inhibitor CNS data detected.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (13 queries, updated since 2026-10-30: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, pediatric HGG, zipalertinib, sunvozertinib)",
+      "PubMed E-utilities (2026-10-31 → 2026-11-07: DMG/DIPG/H3K27M, dordaviprone/ONC201/ONC206, EGFR pediatric glioma)",
+      "Web search: Modeyso/dordaviprone news, BLU-5082, SNO 2026 abstracts, new DMG trial results",
+      "Web search Hebrew: ניסויים קליניים DMG בישראל",
+      "Web search Japanese: jRCT / ドルダビプロン (ACTION jRCT2051240141 only)"
+    ],
+    "key_findings": [
+      "⏰ PNOC022 (שיבא/שערי צדק): לפי חישוב 14 שבועות מסוף ההקרנה, חלון Cohort 6 נסגר בערך ב-14.11.2026 — נותר כשבוע. לוודא מול הצוות מיד, כולל אם ONC201 קודם/מתוכנן פוסל",
+      "התפתחות חדשה: תוצאות BrainChild-04 (CAR-T מרובע כולל EGFR806) ב-DIPG — בטוח, חציון הישרדות 8.6 חודשים; הניסוי סגור לגיוס — MONITOR",
+      "ניסוי חדש במעקב: NCT07180927 — CAR-T נגד DLL3 (שנזן), למחלה חוזרת בלבד, גיוס צפוי 6.2027 — WATCH",
+      "נבדקו ונמצאו לא מתאימים: NCT07918105 (הקרנה חדשה באיטליה — פוסל הקרנה קודמת לגזע המוח), NCT04837547 PEACH (רק לפני הקרנה); xPedite NCT06140719 בוטל",
+      "אין חדשות רגולטוריות על dordaviprone, אין תוצאות ACTION, אין מידע ציבורי חדש על BLU-5082; כנס SNO 2026 ב-12–15.11 — לבדוק תקצירים בסריקה הבאה"
+    ],
+    "scan_notes": "סריקה אוטומטית 2026-11-07 (פער של שבוע מאז הסריקה הקודמת ב-31.10). שאר הניסויים המעודכנים ב-CT.gov היו סגורים/הושלמו/למבוגרים (NCT03893487, NCT04049669, NCT05099003, NCT05660408, NCT00788125, NCT03099499, NCT05973773, NCT06045065) — לא נוספו. בישראל לא נמצא ניסוי DMG חדש. jRCT/ChiCTR/CRIS/UMIN/EUCTR/WHO ICTRP לא נבדקו ישירות — רק דרך חיפוש רשת. מוזג עם ריצת DAILY_REALTIME מוקדמת יותר היום (35 ניסויים נסרקו, ללא שינויים)."
   },
   "known_pmids": [
     "42926464",
@@ -271,7 +270,9 @@
     "42494116",
     "42482124",
     "42446117",
-    "42437539"
+    "42437539",
+    "42990810",
+    "42974225"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",

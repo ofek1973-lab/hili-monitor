@@ -1096,6 +1096,35 @@
       "action": "לא פעולה נדרשת בעת זה. לעקוב למקרה של התנגדות או טוקסיות מ-Zegfrovy / ONC201; בשלב זה, בקש אם RAS status יודוע מפילוח המוקורי",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42371788/",
       "date_detected": "2026-11-06"
+    },
+    {
+      "id": "QUAD-CART-BRAINCHILD04-RESULTS-20261107",
+      "priority": "MONITOR",
+      "is_new": true,
+      "title_he": "תוצאות ראשונות: CAR-T מרובע (כולל EGFR806) תוך-חדרי ב-DIPG — BrainChild-04",
+      "title_en": "First-in-human quad-targeting CAR T cells for DIPG: a phase 1 trial (BrainChild-04, NCT05768880, Arm A)",
+      "nct_id": "NCT05768880",
+      "what_changed": "פורסמו (preprint, Research Square, 27.10.2026) תוצאות זרוע A של BrainChild-04 מסיאטל: תאי CAR-T נגד 4 מטרות (B7-H3, EGFR806, HER2, IL13Rα2) שניתנו שוב ושוב לחדרי המוח ב-26 ילדים וצעירים עם DIPG/DMG פונטיני. הטיפול היה בטוח וסביל (רוב תופעות הלוואי דרגה 1–2), התאים נמצאו בנוזל השדרה בכל המטופלים. חציון הישרדות מהעירוי הראשון: 8.6 חודשים.",
+      "why_matters_bullets": [
+        "אחת הגישות היחידות בילדים שמכוונות גם ל-EGFR (EGFR806) — רלוונטי למוטציית EGFR של הילי, אם כי לא ספציפי ל-exon 20",
+        "מראה שמתן חוזר של CAR-T לחדרי המוח אפשרי ובטוח בילדים",
+        "הניסוי עצמו סגור כרגע לגיוס (Active, not recruiting) — אין גישה מיידית",
+        "תוצאות יעילות צנועות; עדיין אין הוכחה לשיפור הישרדות"
+      ],
+      "key_limitation": "preprint שלא עבר ביקורת עמיתים; זרוע A כללה רק גידולים פונטיניים; ללא קבוצת ביקורת; הניסוי לא מגייס.",
+      "action": "מעקב: לשאול את הצוות אם ידוע על ניסוי המשך של Seattle Children's (BrainChild) שייפתח לגידולים תלמיים / למחלה חוזרת.",
+      "evidence_level": "preprint — phase 1, n=26",
+      "match_score": 25,
+      "access": "Closed to accrual",
+      "location": "Seattle Children's Hospital, ארה\"ב",
+      "age_eligibility": "1–26",
+      "date_published": "2026-10-27",
+      "date_detected": "2026-11-07",
+      "last_verified": "2026-11-07",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42990810/",
+      "technical_details": "Ronsley R, Vitanza N et al. Res Sq preprint rs.3.rs-11447687 (PMID 42990810). Repetitive ICV quad-CAR T (B7-H3/EGFR806/HER2/IL13Rα2). 26 enrolled, 21 infused (median 8 infusions), no DLT in dose-finding window, 1 late DLT (acoustic nerve disorder). CAR T detected in CSF in 100%. Median OS from first infusion 8.6 mo (95% CI 5.2–10.3).",
+      "eligibility_status": "not_accessible",
+      "eligibility_notes": "הניסוי סגור לגיוס; זרוע A מיועדת ל-DIPG פונטיני בלבד."
     }
   ]
 }
