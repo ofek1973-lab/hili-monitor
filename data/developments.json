@@ -1125,6 +1125,63 @@
       "technical_details": "Ronsley R, Vitanza N et al. Res Sq preprint rs.3.rs-11447687 (PMID 42990810). Repetitive ICV quad-CAR T (B7-H3/EGFR806/HER2/IL13Rα2). 26 enrolled, 21 infused (median 8 infusions), no DLT in dose-finding window, 1 late DLT (acoustic nerve disorder). CAR T detected in CSF in 100%. Median OS from first infusion 8.6 mo (95% CI 5.2–10.3).",
       "eligibility_status": "not_accessible",
       "eligibility_notes": "הניסוי סגור לגיוס; זרוע A מיועדת ל-DIPG פונטיני בלבד."
+    },
+    {
+      "id": "PAEDNEOVAX-AUSTRALIA-20261109",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "PaedNEO-VAX — חיסון mRNA מותאם אישית לילדים עם גידולי מוח, כולל DMG שאובחן לאחרונה (אוסטרליה)",
+      "title_en": "PaedNEO-VAX: personalised neoantigen mRNA vaccine trial for paediatric high-grade brain tumours incl. newly diagnosed DMG (ANZCHOG)",
+      "nct_id": null,
+      "what_changed": "זוהה לראשונה בסריקה: ניסוי פאזה 1/2 אוסטרלי (ANZCHOG, UQ, SAHMRI, Providence Therapeutics) של חיסון mRNA שמיוצר לכל ילד לפי ריצוף הגידול שלו. מיועד לילדים ומתבגרים עם גידולי מוח בדרגה גבוהה חוזרים/עמידים, וגם ל-DMG שאובחן לאחרונה. 8 בתי חולים לילדים באוסטרליה; זמן ייצור כ-10 שבועות מההרשמה למנה הראשונה. לפי הודעות מתחילת 2026 הגיוס אמור להתחיל במהלך 2026.",
+      "why_matters_bullets": [
+        "אחד הניסויים הבודדים שכוללים במפורש DMG שאובחן לאחרונה ולא רק מחלה חוזרת",
+        "גישה מותאמת אישית שאינה תלויה במוטציית EGFR",
+        "נדרשת רקמת גידול לריצוף — יש לבדוק אם הביופסיה של הילי מספיקה",
+        "מיקום: אוסטרליה בלבד; לא ידוע אם מקבלים מטופלים מחו\"ל"
+      ],
+      "key_limitation": "לא נמצא מספר רישום (ANZCTR) ולא סטטוס גיוס עדכני; קריטריונים מפורטים (כולל חלון זמן אחרי הקרנה) לא פורסמו.",
+      "action": "לשאול את הצוות המטפל אם ניתן לברר מול ANZCHOG זכאות למטופלים בינלאומיים ומה חלון הזמן ל-DMG חדש.",
+      "evidence_level": "trial announcement — phase 1/2, not yet results",
+      "match_score": 30,
+      "access": "Opening 2026 (status unverified)",
+      "location": "אוסטרליה (8 בתי חולים לילדים)",
+      "age_eligibility": "ילדים ומתבגרים",
+      "date_published": "2026-02-04",
+      "date_detected": "2026-11-09",
+      "last_verified": "2026-11-09",
+      "source_url": "https://anzchog.org/paedneovax-world-first-personalised-vaccine-trial-launches/",
+      "technical_details": "Sponsor ANZCHOG; clinical lead Prof. Jordan Hansford; mRNA platform Providence Therapeutics, manufacturing Southern RNA (Australia). Phase I dose-finding, Phase II tumour control. Sources: SAHMRI news, UQ news Feb 2026.",
+      "eligibility_status": "unclear",
+      "eligibility_notes": "כולל DMG חדש, אך חלון הזמן אחרי הקרנה ונגישות למטופלים מחו\"ל לא ידועים."
+    },
+    {
+      "id": "ELICIT-CART-EUROPE-20261109",
+      "priority": "WATCH",
+      "is_new": true,
+      "title_he": "ELICIT — ניסוי CAR-T אירופי ל-DMG בהמשך ל-BIOMEDE, צפוי להיפתח ב-2027",
+      "title_en": "ELICIT: European CAR-T immunotherapy study for DMG building on BIOMEDE (planned 2027)",
+      "nct_id": null,
+      "what_changed": "זוהה לראשונה בסריקה: לפי Gustave Roussy (אפריל 2026), כחלק מהתוכנית שמרחיבה את BIOMEDE, מתוכנן ניסוי CAR-T בשם ELICIT שייבנה על טיפולי BIOMEDE וייפתח ב-2027.",
+      "why_matters_bullets": [
+        "אפשרות CAR-T עתידית באירופה — קרוב יותר לישראל מארה\"ב",
+        "לא תלוי במוטציית EGFR",
+        "עדיין לא פתוח; פרטי זכאות (מיקום תלמי, מחלה חוזרת) לא ידועים"
+      ],
+      "key_limitation": "מידע מוקדם בלבד מהודעה לעיתונות; אין רישום בניסויים ואין קריטריונים.",
+      "action": "מעקב: לבדוק ב-CTIS/Gustave Roussy כשיתפרסם רישום.",
+      "evidence_level": "planned trial announcement",
+      "match_score": 20,
+      "access": "Not yet open (planned 2027)",
+      "location": "אירופה (Gustave Roussy, צרפת ושותפים)",
+      "age_eligibility": "לא פורסם",
+      "date_published": "2026-04-24",
+      "date_detected": "2026-11-09",
+      "last_verified": "2026-11-09",
+      "source_url": "https://www.gustaveroussy.fr/en/nature-medicine-major-international-clinical-trial-sheds-new-light-paediatric-brain-cancer",
+      "technical_details": "Mentioned alongside BIOMEDE 2.0 (everolimus vs ONC201, 368 pts, 10 countries) in Gustave Roussy press release on BIOMEDE Nature Medicine publication.",
+      "eligibility_status": "not_yet_open",
+      "eligibility_notes": "ייפתח ב-2027 לפי ההודעה."
     }
   ]
 }

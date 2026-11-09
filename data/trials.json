@@ -1169,7 +1169,7 @@
       "priority": "MONITOR",
       "score": 35,
       "age_eligible": false,
-      "recruiting_status": "Recruiting",
+      "recruiting_status": "ACTIVE_NOT_RECRUITING (changed from Recruiting; verified 2026-11-09)",
       "location_he": "ארצות הברית",
       "summary_he": "ONC206 הוא קדם של ONC201 (Dordaviprone) — בעל פרופיל דומה (DRD2/ClpP) אך מינון נמוך יותר. מחקר זה בחולים בוגרים בלבד (18+), אך נתוני הבטיחות והתגובה עשויים להיות רלוונטיים להערכת הפרופיל של ONC201 בתוך CNS, במיוחד בגידולים דיפוזיים.",
       "key_inclusion": [
@@ -1179,7 +1179,8 @@
       "egfr_note": "ONC206 לא נבחן באופן ספציפי בהקשר EGFR exon 20 insertion. מודע: SNO 2025 הדגים הפחתה בעיוכלות ONC201 עם EGFR exon 20. ONC206 עשוי לחזור לאותה בעיה.",
       "bbb_note": "אין נתוני PK אנושיים חדשים זמינים. ONC206 מתוכנן כאגנט חדיר BBB דומה ל-ONC201, אך לא מתויק בשום צורה.",
       "action_he": "עקוב אחר פרסום נתוני בטיחות/יעילות ONC206 כדי להעריך את הפרופיל הביולוגי של משפחת ONC. אין צורך בפעולה מיידית עבור הילי.",
-      "source_url": "https://clinicaltrials.gov/study/NCT04541082"
+      "source_url": "https://clinicaltrials.gov/study/NCT04541082",
+      "last_verified": "2026-11-09"
     },
     {
       "nct_id": "NCT06639607",
@@ -1317,6 +1318,30 @@
       "action_he": "מעקב בלבד: רלוונטי רק במקרה של התקדמות מחלה, ורק אם הגידול מבטא DLL3. הגיוס לא צפוי לפני 2027.",
       "source_url": "https://clinicaltrials.gov/study/NCT07180927",
       "date_detected": "2026-11-07"
+    },
+    {
+      "nct_id": "NCT05887882",
+      "title_he": "PNOC028 — תאי NK לתוך הגידול דרך Ommaya בגידולי מוח חוזרים בילדים",
+      "title_en": "Intra-Tumoral Injections of Natural Killer Cells for Recurrent Malignant Pediatric Brain Tumors (PNOC028)",
+      "phase": "Phase 1",
+      "match_category": "follow",
+      "priority": "WATCH",
+      "score": 10,
+      "age_eligible": true,
+      "recruiting_status": "SUSPENDED (verified 2026-11-09; enrollment on hold while reviewing an SAE)",
+      "location_he": "ארה\"ב (10 מרכזי PNOC, כולל UCSF, סיאטל, פילדלפיה); הרחבה מתוכננת לאוסטרליה/ניו זילנד",
+      "summary_he": "ניסוי של קונסורציום PNOC: תאי NK מוכנים במיוחד מוזרקים ישירות לחלל הגידול דרך Ommaya, לגידולי מוח ממאירים חוזרים/מתקדמים. גיל 1–39 — הילי עומדת בדרישת הגיל. דורש מועמדות לכריתה כירורגית של הגידול החוזר (חלל כריתה ≥2×2 ס\"מ) — דבר שכמעט אינו אפשרי בגידול תלמי/גזע מוח דיפוזי. הגיוס מושהה כרגע עקב בדיקת תופעת לוואי חמורה.",
+      "key_inclusion": [
+        "Age 1–39",
+        "Recurrent/progressive malignant brain tumor after first-line therapy",
+        "Candidate for resection + intra-cavitary/intra-tumoral Ommaya (cavity ≥2×2 cm)",
+        "Lansky/Karnofsky ≥50"
+      ],
+      "egfr_note": "גישה חיסונית שאינה תלויה ב-EGFR.",
+      "bbb_note": "מתן מקומי ישיר לגידול — עוקף את ה-BBB.",
+      "action_he": "מעקב בלבד: רלוונטי רק במחלה חוזרת, ובפועל כנראה לא מתאים בגלל דרישת הכריתה. הניסוי מושהה.",
+      "source_url": "https://clinicaltrials.gov/study/NCT05887882",
+      "date_detected": "2026-11-09"
     }
   ]
 }

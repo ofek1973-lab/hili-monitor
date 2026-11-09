@@ -64,7 +64,8 @@
     "NCT04250064",
     "NCT07918105",
     "NCT07180927",
-    "NCT04837547"
+    "NCT04837547",
+    "NCT05887882"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -108,7 +109,9 @@
     "FOCUSED-ULTRASOUND-GBM-IMMUNE-20261110",
     "DORDAVIPRONE-ADC-RESPONSE-20261101",
     "DMGRAS-INHIBITION-20261101",
-    "QUAD-CART-BRAINCHILD04-RESULTS-20261107"
+    "QUAD-CART-BRAINCHILD04-RESULTS-20261107",
+    "PAEDNEOVAX-AUSTRALIA-20261109",
+    "ELICIT-CART-EUROPE-20261109"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -145,43 +148,41 @@
     "NCT03170141": "Terminated — adult GBM IgT cells, not relevant",
     "NCT07180927": "Not yet recruiting (est. start 2027-06-01, Shenzhen China) — DLL3 CAR-T, recurrent only, age 2–70",
     "NCT07918105": "Recruiting (Aviano, Italy) — NOT ELIGIBLE (excludes prior brainstem RT)",
-    "NCT04837547": "Recruiting (US, PEACH) — NOT ELIGIBLE (DIPG must be pre-RT, within 2 months of diagnosis)"
+    "NCT04837547": "Recruiting (US, PEACH) — NOT ELIGIBLE (DIPG must be pre-RT, within 2 months of diagnosis)",
+    "NCT04541082": "Active, not recruiting (changed 2026-11-09; adults only)",
+    "NCT05887882": "Suspended (verified 2026-11-09; SAE review) — PNOC028 NK cells, recurrent only, requires resection"
   },
   "last_run_summary": {
     "date": "2026-11-09",
-    "type": "DAILY_REALTIME",
-    "changes_detected": false,
-    "new_trials_added": 0,
-    "new_developments_added": 0,
+    "type": "DAILY_AUTOMATED",
+    "changes_detected": true,
+    "new_trials_added": 1,
+    "new_developments_added": 2,
+    "status_changes": 1,
+    "items_found": 14,
     "fetched": {
-      "clinical_trials": 34,
-      "pubmed_papers": 0,
+      "clinical_trials": 9,
+      "pubmed_papers": 1,
       "preprints": 0,
       "rss_articles": 0
     },
-    "key_findings": [
-      "No new clinical trials identified with eligible age criteria (≤29 months) for H3K27M diffuse midline glioma in the last 14 days.",
-      "No new peer-reviewed publications, preprints, or medical news detected in the last 30 days relevant to EGFR exon 20 insertion in pediatric DMG, Zegfrovy CNS efficacy, or ONC201-EGFR exon 20 interactions.",
-      "All active trials in live database either exceed age criteria (≥18 years adult populations) or address non-relevant disease areas (colorectal cancer, endometrial cancer, hematologic malignancies)."
-    ],
-    "scan_notes": "Scanned: ClinicalTrials.gov (15 live trials returned); PubMed last 30 days (0 results); medRxiv/bioRxiv last 14 days (0 results); RSS medical news feeds (0 results). All items against known trial/development blacklist (37 entries). No new information identified that meets clinical relevance threshold for this patient.",
     "sources_checked": [
-      "ClinicalTrials.gov API v2 (live)",
-      "WHO ICTRP (international trials)",
-      "PubMed E-utilities (last 30 days)",
-      "medRxiv API (last 14 days)",
-      "bioRxiv API (last 14 days)",
-      "Neuro-Oncology Journal RSS",
-      "Lancet Oncology RSS",
-      "Nature Medicine RSS",
-      "JCO / ASCO RSS",
-      "Cancer Discovery RSS",
-      "NCI News RSS",
-      "Pediatric Blood Cancer Journal RSS",
-      "NEJM RSS",
-      "FDA Drug Approvals RSS",
-      "SNO News RSS"
-    ]
+      "ClinicalTrials.gov API v2 (11 queries updated since 2026-11-05: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, pediatric HGG) + live status check of all 59 known trial IDs",
+      "ClinicalTrials.gov targeted: PNOC028, PaedNEO-VAX, TarGeT",
+      "PubMed E-utilities (EDAT 2026-11-06 → 2026-11-09)",
+      "Web search: dordaviprone/Modeyso news, SNO 2026 abstracts, BLU-5082",
+      "Web search Hebrew: ניסויים קליניים DMG ילדים",
+      "Web search Japanese: jRCT / びまん性正中グリオーマ",
+      "Web: ANZCHOG (PNOC028, PaedNEO-VAX, TarGeT), CONNECT consortium, Gustave Roussy / CTIS Europe"
+    ],
+    "key_findings": [
+      "⏰ PNOC022 (שיבא/שערי צדק): חלון Cohort 6 (עד 14 שבועות אחרי הקרנה) נסגר בערך ב-14.11.2026 — נותרו כ-5 ימים. דחוף לוודא מול הצוות",
+      "התפתחות חדשה (WATCH): PaedNEO-VAX — חיסון mRNA מותאם אישית באוסטרליה, כולל DMG שאובחן לאחרונה; סטטוס גיוס ומספר רישום לא אומתו",
+      "ניסוי חדש במעקב: NCT05887882 (PNOC028, תאי NK לתוך הגידול) — מושהה, למחלה חוזרת בלבד ודורש כריתה — כנראה לא מתאים",
+      "התפתחות חדשה (WATCH): ELICIT — ניסוי CAR-T אירופי ל-DMG צפוי להיפתח ב-2027",
+      "שינוי סטטוס: NCT04541082 (ONC206 במבוגרים) הפסיק לגייס; אין חדשות רגולטוריות על dordaviprone, אין מידע חדש על BLU-5082; תקצירי SNO 2026 (12–15.11) עדיין לא פורסמו"
+    ],
+    "scan_notes": "סריקה אוטומטית 2026-11-09. TarGeT (CONNECT, אוסטרליה) נבדק — הזרוע הפתוחה היא TarGeT-A = NCT05843253 שכבר במעקב (חלון 35 יום אחרי הקרנה עבר). FIDES (אולטרסאונד ממוקד) — DMG פונטיני בלבד, לא נוסף. CT.gov: NCT07389278 ו-NCT07918105 עודכנו אך ללא שינוי רלוונטי; NCT04025541 למבוגרים. PubMed: רק PMID 42990810 (כבר מוכר). jRCT/ChiCTR/CRIS/UMIN/EUCTR/WHO ICTRP לא נבדקו ישירות — רק דרך חיפוש רשת; לא נמצא ניסוי חדש בישראל. מוזג עם ריצת DAILY_REALTIME מוקדמת יותר היום (34 ניסויים נסרקו, ללא שינויים; 3 PMIDs ו-preprint אחד נרשמו כמוכרים)."
   },
   "known_pmids": [
     "42926464",
