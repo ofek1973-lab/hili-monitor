@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-08",
-    "next_scheduled_scan": "2026-11-09",
+    "last_full_scan": "2026-11-09",
+    "next_scheduled_scan": "2026-11-10",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -148,23 +148,23 @@
     "NCT04837547": "Recruiting (US, PEACH) — NOT ELIGIBLE (DIPG must be pre-RT, within 2 months of diagnosis)"
   },
   "last_run_summary": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
       "clinical_trials": 34,
-      "pubmed_papers": 3,
-      "preprints": 1,
+      "pubmed_papers": 0,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinically actionable trials identified — all pediatric glioma/DMG/EGFR-targeted trials in live registry are either already known, adult-only (≥18y), or geographically/mechanistically remote from Hili's profile",
-      "Recent PubMed publications are review-level or mechanistic nanoparticle studies — no new clinical CNS data on H3K27M, EGFR exon 20, or ONC201/Zegfrovy efficacy",
-      "One preprint on panitumumab + EGFRvIII proteomics detected but not relevant — Hili has EGFR exon 20 insertion (not vIII); panitumumab is not current/planned therapy"
+      "No new clinical trials identified with eligible age criteria (≤29 months) for H3K27M diffuse midline glioma in the last 14 days.",
+      "No new peer-reviewed publications, preprints, or medical news detected in the last 30 days relevant to EGFR exon 20 insertion in pediatric DMG, Zegfrovy CNS efficacy, or ONC201-EGFR exon 20 interactions.",
+      "All active trials in live database either exceed age criteria (≥18 years adult populations) or address non-relevant disease areas (colorectal cancer, endometrial cancer, hematologic malignancies)."
     ],
-    "scan_notes": "Sources scanned: 15 live trials (ClinicalTrials.gov), 3 recent PubMed papers (2026, CNS/BBB/resistance focus), 1 bioRxiv preprint (2026-10-22, EGFR antibody), 0 medical news items, 31 known trial/dev IDs excluded per protocol. Result: No new genuine clinical relevance identified for 29-month-old female with H3K27M DMG, EGFR ex20 insertion, on Zegfrovy, pending ONC201. All trials either adult-restricted, mechanistically unrelated, or previously documented. Recent literature remains at hypothesis/review level for pediatric DMG molecular resistance.",
+    "scan_notes": "Scanned: ClinicalTrials.gov (15 live trials returned); PubMed last 30 days (0 results); medRxiv/bioRxiv last 14 days (0 results); RSS medical news feeds (0 results). All items against known trial/development blacklist (37 entries). No new information identified that meets clinical relevance threshold for this patient.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
