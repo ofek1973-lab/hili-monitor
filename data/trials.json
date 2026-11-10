@@ -474,7 +474,7 @@
       "title_short_en": "LIFT: Exablate LIFU BBB opening + T-cell infusion, newly diagnosed DMG (thalamic Group B)",
       "phase": "Phase I",
       "sponsor": "Children's National Research Institute",
-      "status": "Recruiting",
+      "status": "Recruiting (CT.gov updated 2026-11-10: estimated start date moved to December 2026)",
       "match_category": "possible",
       "priority": "ORANGE",
       "match_score": 70,
@@ -488,7 +488,7 @@
       ],
       "nct_url": "https://clinicaltrials.gov/study/NCT07796061",
       "relevant_cohort": "Group B — DMG תלמי מאובחן לאחרונה לאחר סיום הקרנה (נדרשת אבחנה רקמתית)",
-      "enrollment_window_note": "חלון: דגימת הדם הראשונה (procurement) 4–22 שבועות לאחר סיום RT ב-Group B. אם RT הסתיים ~8.8.2026 — החלון פתוח עד ~9 ינואר 2027. ניסוי חדש (נרשם 31.8.2026, התחלה אוקטובר 2026).",
+      "enrollment_window_note": "חלון: דגימת הדם הראשונה (procurement) 4–22 שבועות לאחר סיום RT ב-Group B. אם RT הסתיים ~8.8.2026 — החלון פתוח עד ~9 ינואר 2027. ⚠️ עדכון 10.11.2026: תאריך ההתחלה המשוער נדחה לדצמבר 2026 (במקום אוקטובר) — החלון האפקטיבי מצטמצם לכ-5 שבועות (דצמבר עד 9.1.2027). אתר יחיד: Children's National (סטטוס האתר: Recruiting).",
       "key_inclusion": [
         "גיל 3–25 — הילי (4.5) עומדת",
         "DMG תלמי מאובחן לאחרונה אחרי RT — מתאים (Group B)",
@@ -509,10 +509,11 @@
         "מינון סטרואידים נוכחי",
         "האם הרחבה לגזע המוח מאפשרת LIFU לפי נוירוכירורג"
       ],
-      "action_he": "לשאול את הצוות המטפל לגבי הפניה ל-Children's National (וושינגטון). ניסוי חדש שמקבל במפורש DMG תלמי עם חלון זמן רחב (עד ~9.1.2027). לשקול מול PNOC022 — ככל הנראה לא ניתן לשלב.",
+      "action_he": "דחוף יחסית: לשאול את הצוות המטפל לגבי הפניה ל-Children's National (וושינגטון) כבר עכשיו — הניסוי צפוי להתחיל בפועל רק בדצמבר 2026 והחלון של הילי נסגר ~9.1.2027, כך שיש לתאם מראש (סינון, היקף ראש, סטרואידים). לשקול מול PNOC022 — ככל הנראה לא ניתן לשלב.",
       "contact": "Children's National Hospital — Brain Tumor Institute",
       "source_url": "https://clinicaltrials.gov/study/NCT07796061",
-      "date_detected": "2026-10-24"
+      "date_detected": "2026-10-24",
+      "last_verified": "2026-11-10"
     },
     {
       "nct_id": "NCT07076498",
@@ -1351,18 +1352,19 @@
       "match_category": "follow",
       "priority": "MONITOR",
       "score": 45,
-      "age_eligible": false,
+      "age_eligible": true,
       "recruiting_status": "Not Yet Recruiting",
       "location_he": "סין",
-      "summary_he": "טיפול תא חיסונאי בגליומות ממאירות של המוח. הילי בגיל 29 חודשים — מתחת לגיל המינימום (4 שנים). אין ראיות נוכחיות לתועלת בדיפיוז מידליין גליומה עם H3K27M או EGFR exon 20. לא רלוונטי כעת, אך שווה עקבוב אם יינתנה אפשרות התאמה גיל.",
+      "summary_he": "טיפול בתאי Vγ9Vδ2 T אלוגניים (מתורם) לגליומות ממאירות במוח, כולל DIPG ו-GBM. גיל מינימום 4 — הילי (~4.5) עומדת בדרישת הגיל. הניסוי בסין וטרם החל לגייס. אין עדיין ראיות לתועלת ספציפית ב-DMG עם H3K27M או EGFR exon 20; לא ברור אם DMG תלמי נכלל.",
       "key_inclusion": [
         "High-grade glioma",
         "CNS malignancy"
       ],
       "egfr_note": null,
       "bbb_note": "אין נתונים על חדירת BBB לגבי תאים אלו בספרות הקלינית הזמינה.",
-      "action_he": "עקוב על מצב הגיוס; בדוק אם ישנן הטיות גיל בעתיד.",
-      "source_url": "https://clinicaltrials.gov/study/NCT06396481"
+      "action_he": "מעקב: לבדוק מתי מתחיל הגיוס והאם DMG תלמי ומחלה לאחר הקרנה נכללים.",
+      "source_url": "https://clinicaltrials.gov/study/NCT06396481",
+      "last_verified": "2026-11-10"
     },
     {
       "nct_id": "NCT06465199",
