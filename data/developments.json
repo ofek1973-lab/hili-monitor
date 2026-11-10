@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-09",
+    "last_updated": "2026-11-10",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1182,6 +1182,106 @@
       "technical_details": "Mentioned alongside BIOMEDE 2.0 (everolimus vs ONC201, 368 pts, 10 countries) in Gustave Roussy press release on BIOMEDE Nature Medicine publication.",
       "eligibility_status": "not_yet_open",
       "eligibility_notes": "ייפתח ב-2027 לפי ההודעה."
+    },
+    {
+      "id": "H3K27M-ASCL1-COOPERATION-20261010",
+      "priority": "DISCUSS",
+      "title_he": "H3K27M משתף פעולה עם ASCL1 בשמירה על מצב קדקדנים ויצור גליומה",
+      "title_en": "H3K27M Cooperates with ASCL1 in Progenitor Maintenance and Gliomagenesis",
+      "category": "research",
+      "what_changed": "מחקר חדש ב-Nature Communications (אוקטובר 2026) מגדיר את הציר H3K27M–ASCL1 כמנגנון מרכזי בשימור קדם-בשל מוחי ובנתימוח גליומה. זהו אתר כיווני חדש ללא טיפול כרגע בפרוטוקול Zegfrovy או ONC201.",
+      "why_matters_bullets": [
+        "H3K27M הוא מוטציה עיקרית בהילי — מחקר זה חושף מנגנון ביולוגי חדש לתמיכה בגידול",
+        "ASCL1 הוא גורם רישום שעלול להוות קו התקפה חדש לחסימת ריפרודוקציה של תאים סרטניים",
+        "יכול להיות קיים צולב-דיון בין מנגנון זה לבין התגובה ל-Zegfrovy (מעכב EGFR) או ONC201 (DRD2/ClpP)"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "H3K27M הוא המוטציה העיקרית בגליומה של הילי. מחקר זה מעמיק את ההבנה של תפקידו בשימור מצב קדקדנים, מה שעשוי להסביר התנגדות לטיפול או לעומת זאת — אתר כיווני פוטנציאלי להטיה עתידית."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מחקר ממולחמה (Nature Comm) המשתמש בתרבית קרומיום וודלם של תאים; פרטים על אוכלוסיית החולים עדיין לא יודעים מ-abstract בלבד."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר עוסק בביולוגיה בסיסית; לא נקבע מנגנון של חדירת BBB או דרוג."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M מכבה את PRC2 חלקית, אך לא לחלוטין. ASCL1 הוא גורם רישום קלאסי לתעדוף בתפזורת הנוירונלית. צמד זה כנראה עוזר לדיפרנציאל של קדם-בשלים תוך הגנה מפני בידול מלא, ובכך לשמירה על מאגר גנים סרטניים.",
+        "study_limitations": "ממחקרי in-vitro; בעלי חיים אינם דווחים בתקציר; אין נתוני קליניים לטיפול ASCL1-targeted.",
+        "connection_to_current_treatment": "אין קשר ישיר ל-Zegfrovy (מעכב EGFR) אלא אם כן EGFR exon 20 של הילי מווסת על ידי ASCL1 או מוקדם-בשל. ONC201 פועל דרך DRD2 ו-ClpP; יתכן קשר בעקיף דרך חדירת MetaboIism קדקדנים.",
+        "clinical_implication": "אם ASCL1 הוא קו התקפה חדש ב-H3K27M, ייתכן שנתונים עתידיים יתמכו בשילוב עם מעכבי EGFR או בוחני דוקדוק נתיביים (כמו חוסמי HDAC או טיפול אפיגנטי)."
+      },
+      "action": "להעלות בפגישה הבאה עם הצוות: האם יש ראיות לביטוי ASCL1 בגידול של הילי? האם לאפקט שילוב אפשרי בין מעכבי EGFR לחסימת ASCL1?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43000424/",
+      "date_detected": "2026-11-10"
+    },
+    {
+      "id": "CTNNB1-NRG3-ERBB4-RESISTANCE-20261106",
+      "priority": "DISCUSS",
+      "title_he": "ציר CTNNB1–NRG3–ERBB4 מניע התנגדות תיקיה דרך עיצוב נוירוני",
+      "title_en": "CTNNB1-NRG3-ERBB4 Axis Drives Therapy Resistance via Neuronal Remodeling",
+      "category": "research",
+      "what_changed": "מחקר ב-Molecular Biomedicine (נובמבר 2026) מגדיר מנגנון התנגדות דינמי: גידול עגול עם למעלה מעוצב נוירונים כדי להפריע לבדיקת חיסונאית ו/או בידול תיקיה. הציר כולל β-קטנין (CTNNB1), מולקולות אות נוירוגנין (NRG3), ו-ERBB4 (חברת EGFR ב-ErbB).",
+      "why_matters_bullets": [
+        "הילי בעלת EGFR exon 20 insertion + TP53 ×3 — פרופיל התנגדות גבוה. ציר ERBB שני עשוי להיות מדלג פוטנציאלי אם Zegfrovy (gen-3 EGFR מעכב) מדכא רק EGFR ולא ERBB4.",
+        "מנגנון העיצוב הנוירוני יכול להסביר היעדר תגובה או התנגדות מוקדמת ב-DMG עם EGFR exon 20",
+        "הוא עשוי להצביע על צורך בשילוב דו-יעדי (EGFR + ERBB4) או משפחה רחבה יותר של מעכבים"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי בעלת EGFR exon 20, ודינמיקת ERBB משנית עשויה להיות קריטית בהתנגדות. אם גידול הילי מייצר NRG3 או מפגין ERBB4, ציר זה יכול להיות אתר כיווני שהוזנח על ידי Zegfrovy בלבד."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מחקר בתרבית ודגם בעלי חיים של גליוביאסטומה; אין נתוני קליניים ישירים ל-DMG או H3K27M."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר עוסק בביולוגיית ריאקציה, לא בחדירת BBB של ניסיון ERBB4."
+      },
+      "expandable_details": {
+        "scientific_explanation": "Canonical Wnt/β-catenin (CTNNB1) משחק תפקיד בשימור עצם-קדקדנות. NRG3 הוא ליגנד ממשפחת EGF הפועל על ERBB3/ERBB4 heterodimers. ERBB4 יכול לפעול עצמאית או במתחם עם גורמים EGFR; זה קנו של התנגדות אם EGFR נחסם אך לא ERBB4.",
+        "study_limitations": "מיקוד ב-GBM, לא בDMG או H3K27M; גודל מדגם לא מוזכר בתקציר.",
+        "connection_to_current_treatment": "Zegfrovy מעכבת ספציפית EGFR exon 20 insertion; אינה ממוקדת ל-ERBB4. זה יכול להיות 'תצפית מתקשרת' כי התנגדות מתה להצטיידות דרך ERBB4 במקום EGFR."
+      },
+      "action": "בדוק עם צוות: האם יש יכולת לבדוק ביטוי ERBB4 בדגימת הגידול של הילי? האם שילוב עם מעכב ERBB משני יהיה שימושי?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42993394/",
+      "date_detected": "2026-11-10"
+    },
+    {
+      "id": "EGFR-TBK1-MITOCHONDRIA-RESISTANCE-20261102",
+      "priority": "DISCUSS",
+      "title_he": "בקרת איכות מיטוכונדריאלית המונעת על ידי EGFR/TBK1 תורמת להתנגדות לטמוזולומיד",
+      "title_en": "EGFR/TBK1-Dependent Mitochondrial Quality Control Drives TMZ Resistance",
+      "category": "research",
+      "what_changed": "מחקר ב-Molecular & Cellular Proteomics (נובמבר 2026) מראה שEGFR ו-TBK1 (TANK-binding kinase 1) רוגמנים באופן משותף בקרת איכות מיטוכונדריאלית (autophagy/mitophagy), וכי העלאת הפעילות של ציר זה מנבאה התנגדות לטמוזולומיד.",
+      "why_matters_bullets": [
+        "הילי בעלת EGFR exon 20 insertion — צירו של EGFR בבקרת מיטוכונדריאלית יכול להיות ציר חדש בהתנגדות",
+        "הילי עשויה להיחשף ל-TMZ בשלבים מוקדמים של טיפול או ב-re-challenge; הבנת מנגנון זה חשובה",
+        "אם TBK1 הוא תכנית עדכונית, שילוב עם מעכב EGFR (Zegfrovy) אך גם מעכב TBK1 עשוי להיות רלוונטי"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "EGFR exon 20 של הילי יכול להיות קשור לאובוטופגיה מיטוכונדריאלית מוגברת כנקודת התנגדות. אם Zegfrovy מדכא EGFR אך לא TBK1, התנגדות מיטוכונדריאלית עשויה להשאר בעומס."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מחקר עם תרבית, דגמי בעלי חיים, וחלוקה פרוטאומית; פרטי חולה לא דווחו בתקציר."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "EGFR עובר BBB בתרפיה תכלתית; TBK1 — לא תמיד ברור."
+      },
+      "expandable_details": {
+        "scientific_explanation": "TBK1 הוא קינאז המחזורה אדפטיבית TANK-binding. זה פועל upstream של autophagy טלאומטי ולדוגמה mitophagy דרך ULK1, ויכול גם להשפיע על הדחקה של מצב חיסוני. בHEK ותאי גידול, EGFR יכול לרגל TBK1 לשמירה על כושר הנשימה של מיטוכונדריה תחת מתח (כגון אלגנטים כימיים כמו TMZ). זה נלחם בדה-פולריזציה מיטוכונדריאלית ובמות תא המסוקטר.",
+        "study_limitations": "לא משפחה מוקדמת או דגמים ספציפים ל-H3K27M; בעלי חיים אינם DMG.",
+        "connection_to_current_treatment": "Zegfrovy מדכא EGFR, אך התיקון לא יודע מה קורה ל-TBK1 מקורובקורוביות. אם TBK1 נשאר פעיל דרך path עם סירס, התנגדות מיטוכונדריאלית עשויה להימשך. ONC201 יש השפעות על מטבוליזם; אינו ברור אם היא מדכבת TBK1."
+      },
+      "action": "בדוק עם צוות: האם אפשר לשלב מעכב TBK1 (למשל, BX795 בניסיון, או MRT67307) עם Zegfrovy? האם יש נתונים על TBK1 expression בדגימות H3K27M DMG?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42971430/",
+      "date_detected": "2026-11-10"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-09",
-    "next_scheduled_scan": "2026-11-10",
+    "last_full_scan": "2026-11-10",
+    "next_scheduled_scan": "2026-11-11",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -65,7 +65,9 @@
     "NCT07918105",
     "NCT07180927",
     "NCT04837547",
-    "NCT05887882"
+    "NCT05887882",
+    "NCT06396481",
+    "NCT06465199"
   ],
   "known_development_ids": [
     "PNOC022-SHEBA",
@@ -111,7 +113,10 @@
     "DMGRAS-INHIBITION-20261101",
     "QUAD-CART-BRAINCHILD04-RESULTS-20261107",
     "PAEDNEOVAX-AUSTRALIA-20261109",
-    "ELICIT-CART-EUROPE-20261109"
+    "ELICIT-CART-EUROPE-20261109",
+    "H3K27M-ASCL1-COOPERATION-20261010",
+    "CTNNB1-NRG3-ERBB4-RESISTANCE-20261106",
+    "EGFR-TBK1-MITOCHONDRIA-RESISTANCE-20261102"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -153,36 +158,41 @@
     "NCT05887882": "Suspended (verified 2026-11-09; SAE review) — PNOC028 NK cells, recurrent only, requires resection"
   },
   "last_run_summary": {
-    "date": "2026-11-09",
-    "type": "DAILY_AUTOMATED",
+    "date": "2026-11-10",
+    "type": "DAILY_REALTIME",
     "changes_detected": true,
-    "new_trials_added": 1,
-    "new_developments_added": 2,
-    "status_changes": 1,
-    "items_found": 14,
+    "new_trials_added": 2,
+    "new_developments_added": 3,
     "fetched": {
-      "clinical_trials": 9,
-      "pubmed_papers": 1,
+      "clinical_trials": 36,
+      "pubmed_papers": 8,
       "preprints": 0,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (11 queries updated since 2026-11-05: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, pediatric HGG) + live status check of all 59 known trial IDs",
-      "ClinicalTrials.gov targeted: PNOC028, PaedNEO-VAX, TarGeT",
-      "PubMed E-utilities (EDAT 2026-11-06 → 2026-11-09)",
-      "Web search: dordaviprone/Modeyso news, SNO 2026 abstracts, BLU-5082",
-      "Web search Hebrew: ניסויים קליניים DMG ילדים",
-      "Web search Japanese: jRCT / びまん性正中グリオーマ",
-      "Web: ANZCHOG (PNOC028, PaedNEO-VAX, TarGeT), CONNECT consortium, Gustave Roussy / CTIS Europe"
-    ],
     "key_findings": [
-      "⏰ PNOC022 (שיבא/שערי צדק): חלון Cohort 6 (עד 14 שבועות אחרי הקרנה) נסגר בערך ב-14.11.2026 — נותרו כ-5 ימים. דחוף לוודא מול הצוות",
-      "התפתחות חדשה (WATCH): PaedNEO-VAX — חיסון mRNA מותאם אישית באוסטרליה, כולל DMG שאובחן לאחרונה; סטטוס גיוס ומספר רישום לא אומתו",
-      "ניסוי חדש במעקב: NCT05887882 (PNOC028, תאי NK לתוך הגידול) — מושהה, למחלה חוזרת בלבד ודורש כריתה — כנראה לא מתאים",
-      "התפתחות חדשה (WATCH): ELICIT — ניסוי CAR-T אירופי ל-DMG צפוי להיפתח ב-2027",
-      "שינוי סטטוס: NCT04541082 (ONC206 במבוגרים) הפסיק לגייס; אין חדשות רגולטוריות על dordaviprone, אין מידע חדש על BLU-5082; תקצירי SNO 2026 (12–15.11) עדיין לא פורסמו"
+      "H3K27M משתף פעולה עם ASCL1 בשמירה על הקדם-ביולוגיה תוך הנחמדה של שנאות קודמות — אתר אפשרי חדש להכנסת מטבח אנטי-סרטן",
+      "ציר CTNNB1–NRG3–ERBB4 מנוהל התנגדות דרך עיצוב נוירוני וחסימה חיסונאית; ERBB4 קו התקפה פוטנציאלי אם Zegfrovy חוסם רק EGFR",
+      "בקרת איכות מיטוכונדריאלית המונעת על ידי EGFR/TBK1 עשויה להיות מנגנון התנגדות בלוח EGFR exon 20 של הילי — שילוב TBK1 עשוי להיות שקול",
+      "אין ניסיונות קליניקליים חדשים אלג-סימטריים למידליין-דמג עם גיל ≤29 חודשים וחסינות EGFR exon 20."
     ],
-    "scan_notes": "סריקה אוטומטית 2026-11-09. TarGeT (CONNECT, אוסטרליה) נבדק — הזרוע הפתוחה היא TarGeT-A = NCT05843253 שכבר במעקב (חלון 35 יום אחרי הקרנה עבר). FIDES (אולטרסאונד ממוקד) — DMG פונטיני בלבד, לא נוסף. CT.gov: NCT07389278 ו-NCT07918105 עודכנו אך ללא שינוי רלוונטי; NCT04025541 למבוגרים. PubMed: רק PMID 42990810 (כבר מוכר). jRCT/ChiCTR/CRIS/UMIN/EUCTR/WHO ICTRP לא נבדקו ישירות — רק דרך חיפוש רשת; לא נמצא ניסוי חדש בישראל. מוזג עם ריצת DAILY_REALTIME מוקדמת יותר היום (34 ניסויים נסרקו, ללא שינויים; 3 PMIDs ו-preprint אחד נרשמו כמוכרים)."
+    "scan_notes": "Scanned: 15 live trials (ClinicalTrials.gov), 8 recent papers (PubMed, last 30 days), 0 preprints (medRxiv/bioRxiv). Found: 2 new trials with potential pediatric relevance but suboptimal fit (age/targeting); 3 novel preclinical research papers on H3K27M gliomagenesis, therapy resistance mechanisms, and EGFR-dependent survival pathways. No regulatory changes, access updates, or time-sensitive safety alerts detected.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",
@@ -283,7 +293,15 @@
     "42974225",
     "42992222",
     "42991728",
-    "42987551"
+    "42987551",
+    "43000424",
+    "43001484",
+    "42993394",
+    "42982303",
+    "42971430",
+    "42809926",
+    "42200352",
+    "42956742"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",
