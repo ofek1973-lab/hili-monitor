@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-10",
-    "next_scheduled_scan": "2026-11-11",
+    "last_full_scan": "2026-11-11",
+    "next_scheduled_scan": "2026-11-12",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -160,50 +160,40 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-10",
-    "type": "DAILY_AUTOMATED",
-    "changes_detected": true,
-    "new_trials_added": 2,
-    "new_developments_added": 3,
-    "status_changes": 1,
-    "items_found": 20,
+    "date": "2026-11-11",
+    "type": "DAILY_REALTIME",
+    "changes_detected": false,
+    "new_trials_added": 0,
+    "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 41,
-      "pubmed_papers": 10,
-      "preprints": 0,
+      "clinical_trials": 32,
+      "pubmed_papers": 0,
+      "preprints": 2,
       "rss_articles": 0
     },
-    "sources_checked": [
-      "ClinicalTrials.gov API v2 (12 queries updated since 2026-11-07: H3K27M, H3 K27M, DMG, DIPG, dordaviprone, ONC201, ONC206, EGFR exon 20 glioma, BLU-5082, thalamic glioma, pediatric HGG, H3K27-altered) + live status check of all known trial IDs",
-      "PubMed E-utilities (EDAT 2026-11-08 → 2026-11-10)",
-      "Web search: dordaviprone/Modeyso news, SNO 2026 abstracts, BLU-5082",
-      "Web search Hebrew: ניסויים קליניים גליומה גזע מוח ילדים (שיבא/שניידר)",
-      "Web search Japanese: びまん性正中グリオーマ 治験 2026",
-      "Web search: DMG pediatric trial news November 2026",
-      "[DAILY_REALTIME] ClinicalTrials.gov API v2 (live)",
-      "[DAILY_REALTIME] WHO ICTRP (international trials)",
-      "[DAILY_REALTIME] PubMed E-utilities (last 30 days)",
-      "[DAILY_REALTIME] medRxiv API (last 14 days)",
-      "[DAILY_REALTIME] bioRxiv API (last 14 days)",
-      "[DAILY_REALTIME] Neuro-Oncology Journal RSS",
-      "[DAILY_REALTIME] Lancet Oncology RSS",
-      "[DAILY_REALTIME] Nature Medicine RSS",
-      "[DAILY_REALTIME] JCO / ASCO RSS",
-      "[DAILY_REALTIME] Cancer Discovery RSS",
-      "[DAILY_REALTIME] NCI News RSS",
-      "[DAILY_REALTIME] Pediatric Blood Cancer Journal RSS",
-      "[DAILY_REALTIME] NEJM RSS",
-      "[DAILY_REALTIME] FDA Drug Approvals RSS",
-      "[DAILY_REALTIME] SNO News RSS"
-    ],
     "key_findings": [
-      "⏰ PNOC022 (שיבא/שערי צדק): חלון Cohort 6 (עד 14 שבועות אחרי הקרנה) נסגר בערך ב-14.11.2026 — נותרו כ-4 ימים. דחוף לוודא מול הצוות",
-      "עדכון LIFT (NCT07796061, Children's National): תאריך ההתחלה המשוער נדחה לדצמבר 2026; החלון של הילי עד ~9.1.2027 — כדאי לתאם הפניה מראש",
-      "2 ניסויים נוספו למעקב (MONITOR): NCT06396481 (תאי γδ T, סין, טרם מגייס, גיל ≥4 — הילי עומדת בגיל) ו-NCT06465199 (DFMO+AMXT 1501, ארה\"ב, מגייס, כולל DIPG)",
-      "3 התפתחויות פרה-קליניות חדשות: H3K27M+ASCL1, ציר NRG3–ERBB4 בעמידות, EGFR/TBK1 ובקרת מיטוכונדריה",
-      "אין חדשות רגולטוריות על dordaviprone, אין מידע חדש על BLU-5082; תקצירי SNO 2026 (12–15.11) עדיין לא פורסמו; אין ניסוי חדש בישראל"
+      "No new clinical trials identified with eligibility for ~29-month-old female with H3K27M DMG, EGFR exon 20 insertion, thalamic location",
+      "No new peer-reviewed publications (PubMed last 30 days) or preprints (medRxiv/bioRxiv last 14 days) with direct relevance to patient's mutation profile or current treatment regimen",
+      "Live trial database scan shows no pediatric brain tumor trials recruiting patients ≤29 months with EGFR-targeted or H3K27M-specific approaches"
     ],
-    "scan_notes": "סריקה אוטומטית 2026-11-10, מוזגה עם ריצת DAILY_REALTIME מוקדמת יותר היום (שהוסיפה 2 ניסויים ו-3 התפתחויות). NCT07796061 עודכן ב-CT.gov היום: start date ESTIMATED 2026-12. תוקנה שגיאת גיל ברשומת NCT06396481 (נכתב 29 חודשים; בפועל ~4.5 שנים, ועומדת בגיל המינימום 4). שאר הניסויים המוכרים — ללא שינוי סטטוס. NCT07789678 (IDH-mutant) ו-NCT04025541 (מבוגרים) לא נוספו. jRCT/ChiCTR/CRIS/UMIN/EUCTR לא נבדקו ישירות — רק דרך חיפוש רשת. ריצת REALTIME: Scanned: 15 live trials (ClinicalTrials.gov), 8 recent papers (PubMed, last 30 days), 0 preprints (medRxiv/bioRxiv). Found: 2 new trials with potential pediatric relevance but suboptimal fit (age/targeting); 3 novel preclinical research papers on H3K27M gliomagenesis, therapy resistance mechanisms, and EGFR-dependent survival pathways. No regulatory changes, access updates, or time-sensitive safety alerts detected."
+    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 entries; none age-eligible or disease-relevant—most are adult oncology, GD2-CAR-T neuroblastoma, or non-CNS), PubMed last 30 days (0 results returned), medRxiv/bioRxiv last 14 days (2 results: glioblastoma necrosis/neutrophils—mechanism-adjacent but no EGFR ex20 or H3K27M analysis; frailty index—not relevant), medical news RSS (0 results). Excluded trials: 33 known trial IDs per skip list. Excluded developments: 30 known dev IDs per skip list.",
+    "sources_checked": [
+      "ClinicalTrials.gov API v2 (live)",
+      "WHO ICTRP (international trials)",
+      "PubMed E-utilities (last 30 days)",
+      "medRxiv API (last 14 days)",
+      "bioRxiv API (last 14 days)",
+      "Neuro-Oncology Journal RSS",
+      "Lancet Oncology RSS",
+      "Nature Medicine RSS",
+      "JCO / ASCO RSS",
+      "Cancer Discovery RSS",
+      "NCI News RSS",
+      "Pediatric Blood Cancer Journal RSS",
+      "NEJM RSS",
+      "FDA Drug Approvals RSS",
+      "SNO News RSS"
+    ]
   },
   "known_pmids": [
     "42926464",
@@ -322,7 +312,9 @@
     "biorxiv:10.64898/2026.08.16.744525",
     "medrxiv:10.64898/2026.06.10.26355415",
     "biorxiv:10.64898/2026.10.21.760833",
-    "biorxiv:10.64898/2026.10.22.760940"
+    "biorxiv:10.64898/2026.10.22.760940",
+    "medrxiv:10.64898/2026.10.25.26366446",
+    "medrxiv:10.64898/2026.10.26.26364473"
   ],
   "known_rss_ids": []
 }
