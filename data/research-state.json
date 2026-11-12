@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-11",
-    "next_scheduled_scan": "2026-11-12",
+    "last_full_scan": "2026-11-12",
+    "next_scheduled_scan": "2026-11-13",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -116,7 +116,9 @@
     "ELICIT-CART-EUROPE-20261109",
     "H3K27M-ASCL1-COOPERATION-20261010",
     "CTNNB1-NRG3-ERBB4-RESISTANCE-20261106",
-    "EGFR-TBK1-MITOCHONDRIA-RESISTANCE-20261102"
+    "EGFR-TBK1-MITOCHONDRIA-RESISTANCE-20261102",
+    "BBB-DRUG-DELIVERY-20261112",
+    "H3K27M-PROGNOSTIC-20261110"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -160,23 +162,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "type": "DAILY_REALTIME",
-    "changes_detected": false,
+    "changes_detected": true,
     "new_trials_added": 0,
-    "new_developments_added": 0,
+    "new_developments_added": 2,
     "fetched": {
       "clinical_trials": 32,
-      "pubmed_papers": 0,
-      "preprints": 2,
+      "pubmed_papers": 5,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified with eligibility for ~29-month-old female with H3K27M DMG, EGFR exon 20 insertion, thalamic location",
-      "No new peer-reviewed publications (PubMed last 30 days) or preprints (medRxiv/bioRxiv last 14 days) with direct relevance to patient's mutation profile or current treatment regimen",
-      "Live trial database scan shows no pediatric brain tumor trials recruiting patients ≤29 months with EGFR-targeted or H3K27M-specific approaches"
+      "שני מאמרים קליניים עדכניים (נובמבר 2026) עוסקים בחדירת BBB ובפרוגנוזה של DMG H3K27M — שניהם רלוונטיים לפרופיל הילי",
+      "אין משפט חדש בנוגע ל-Zegfrovy, ONC201, EGFR exon 20 inhibition, או גישה ישירה לישראל",
+      "אין משפט חדש הפוקס על צירוף בין EGFR inhibitor ל-DRD2/ClpP agonist בגידולי DMG"
     ],
-    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 entries; none age-eligible or disease-relevant—most are adult oncology, GD2-CAR-T neuroblastoma, or non-CNS), PubMed last 30 days (0 results returned), medRxiv/bioRxiv last 14 days (2 results: glioblastoma necrosis/neutrophils—mechanism-adjacent but no EGFR ex20 or H3K27M analysis; frailty index—not relevant), medical news RSS (0 results). Excluded trials: 33 known trial IDs per skip list. Excluded developments: 30 known dev IDs per skip list.",
+    "scan_notes": "Scanned: ClinicalTrials.gov (15 live trials — none age-eligible or DMG-specific for 29-month-old with EGFR ex20); PubMed (5 recent papers — 2 directly relevant to H3K27M DMG and BBB in brain tumors); medRxiv/bioRxiv (0 preprints); RSS news feeds (0 items). Result: 2 new research developments detected, no new trials eligible.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -305,7 +307,12 @@
     "42956742",
     "43005104",
     "43004576",
-    "43003479"
+    "43003479",
+    "42543672",
+    "43010471",
+    "43001485",
+    "42992587",
+    "42732006"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",

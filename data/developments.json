@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-11",
+    "last_updated": "2026-11-12",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1282,6 +1282,72 @@
       "action": "בדוק עם צוות: האם אפשר לשלב מעכב TBK1 (למשל, BX795 בניסיון, או MRT67307) עם Zegfrovy? האם יש נתונים על TBK1 expression בדגימות H3K27M DMG?",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42971430/",
       "date_detected": "2026-11-10"
+    },
+    {
+      "id": "BBB-DRUG-DELIVERY-20261112",
+      "priority": "DISCUSS",
+      "title_he": "עדכון במיקוד חדירת BBB בגידולי מוח — השלכות על בחירת תרופות",
+      "title_en": "Blood-brain barrier penetration strategies in brain tumors — treatment implications",
+      "category": "research",
+      "what_changed": "פרסום חדש בנושא האם קריטריונים קלסיים של חדירת BBB מנבאים פעילות קלינית בגידולי מוח. מקום הפוקוס: הבחנה בין חדירה למולקולה לבין ריכוז טיפולי בגיד.",
+      "why_matters_bullets": [
+        "זגפרובי נבחר חלקית על בסיס חדירת BBB עדיפה מאמיוונטמאב — היא בדיקה זו של הנתון הקליני שונה?",
+        "ONC201 גם דורשת חדירת BBB אופטימלית, וההקשר של EGFR exon 20 עלול להשפיע על יעילות צירוף",
+        "במטופלת בת 29 חודשים עם גיד במוקד בתלמוס, נתוני BBB בריאליים (לא סתם מדדי PK) קריטיים"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "בחירת Zegfrovy התבססה בין השאר על חדירת BBB. מאמר זה עלול להציע שיוצרו קריטריונים חדשים להערכת הצלחה קלינית בעבר דגנרטיביים BBB — רלוונטי לקביעת האם ONC201 הזמנה (שגם זקוק ל-BBB) עלול להוביל לריכוזים טיפוליים בגיד תלמוס."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "Current Opinion in Neurology, Dec 2026 — סקירה של אסטרטגיות משפרות חדירה. לא ניסוי ספציפי לתמונה אך נתוני קלינים מצטברים."
+      },
+      "bbb_assessment": {
+        "evidence": "yes",
+        "details": "המקור עוסק ישירות בחדירת BBB. הדיון סביב הבחנה בין מדדי in-vitro/PK לבין פעילות קלינית בעל מיקוד ישיר."
+      },
+      "expandable_details": {
+        "scientific_explanation": "מחסום הדם-מוח (BBB) הוא חסם ליזמים רבים. חדירה טובה אינה מבטיחה ריכוז טיפולי וגם לא יעילות קלינית. במטופלים עם גידולים במוקדים עמוקים (כמו תלמוס), הבחנה זו קריטית. הצירוף בין EGFR exon 20 inhibition (Zegfrovy) לבין DRD2/ClpP agonism (ONC201) דורש שניהם חדירה טובה אך עלול להשפיע על דינמיקת הטיפול.",
+        "study_limitations": "סקירה ספרותית — לא ממצה נתונים ישירים על Zegfrovy או ONC201 בתלמוס אנושי. כיסוי מסובב יותר אסטרטגיות כוללות (CED, lipophilic prodrugs, נוביולי חדישות).",
+        "connection_to_current_treatment": "Zegfrovy כבר מופעל — החלטה זו כבר נעשתה. עם זאת, עבור ONC201 (לא התחיל עדיין), ניתוח חדש של BBB penetration ו-CNS concentration עשוי להודות לשאלה: האם ONC201 יגיע לריכוזים מספיקים בתלמוס? האם צירוף עם Zegfrovy (כבר בריכוז בגיד) משנה את הדינמיקה?"
+      },
+      "action": "הצג את הממצא בדיון הצוות הבא כאשר משווקים את ONC201 — בקש מ-oncologist פרטים ספציפיים על ציפיות ל-BBB penetration ו-CNS PK של ONC201 בגיד תלמוס קטן עם מטאבוליזם אנזימטי שונה (H3K27M glioma).",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001485/",
+      "date_detected": "2026-11-12"
+    },
+    {
+      "id": "H3K27M-PROGNOSTIC-20261110",
+      "priority": "MONITOR",
+      "title_he": "אפיון קליניקופתולוגי של גיד DMG H3K27M — גורמים פרוגנוסטיים",
+      "title_en": "Clinicopathological characterization and prognostic factors of H3K27M-altered DMG",
+      "category": "research",
+      "what_changed": "ממצאים עדכניים (נובמבר 2026) בנוגע לגורמים חזויים של תוצאות בגידולי DMG H3K27M. מחקר זה סוקר את הנתונים השלמים של המטפלות וממצא פרוגנוסטיים ברורים לסיווג משנה.",
+      "why_matters_bullets": [
+        "הילי היא בת 29 חודשים עם DMG H3K27M בתלמוס וגם EGFR exon 20 insertion וטריפל TP53 — סוגי תת-קבוצות/פרוגנוסטיים אלה עשויים להיות מכוסים במאמר החדש",
+        "הבנה של גורמים פרוגנוסטיים עשויה להדריך את קביעת סדר הקדימויות בין Zegfrovy ו-ONC201 ו-therapies אחרים",
+        "גידולי תלמוסיים עלולים להיות בעלי התנהגות שונה מ-pontine — טיפול אחרי Zegfrovy עלול להראות שונה"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "זה ממש המטפלת של הילי — H3K27M altered DMG בתלמוס. כל ממצא פרוגנוסטי או חיזוי של תוצאות רלוונטי ישירות."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "Bioscience Trends, Nov 10, 2026. סקירה וניתוח של מטפלות H3K27M DMG. סוקר אלפי מקרים בספרות והציע גורמים פרוגנוסטיים מקובלים."
+      },
+      "bbb_assessment": {
+        "evidence": "no",
+        "details": "מאמר פרוגנוסטי — לא עוסק ישירות בחדירת BBB או קינטיקת תרופות."
+      },
+      "expandable_details": {
+        "scientific_explanation": "DMG H3K27M גידולים מעטה דרגה 4 קטלנית. הנתונים מציעים שגורמים כמו גיל בעת אבחון, מיקום (תלמוס vs. pontine vs. medulla), נוכחות של mutational co-drivers (EGFR, TP53), ו-resection extent משפיעים על הישרדות. אולם בתחזוקה של ילדים צעירים מאוד (29 חודשים), נתונים אלה דלים.",
+        "study_limitations": "בדרך כלל בעל הטיה לעבר גילים ישנים יותר וגידולים pontine (הם נפוצים יותר). גידולים תלמוסיים בעלי cohort קטן יותר וכן נתונים קטנים יותר עבור תינוקות צעירים מאוד.",
+        "connection_to_current_treatment": "גורמים פרוגנוסטיים משפיעים על צפויות חיים בתחזוקה של radio וטיפול כימי סטנדרטי. Zegfrovy ו-ONC201 הם טיפולים חדשים לא מכוסים בפרוגנוזה זו — אך הידע של גורמים בסיסיים עלול לשפר את הציפיות."
+      },
+      "action": "קרא את המאמר לזיהוי כל נתונים חדשים על גידולים תלמוסיים ו-EGFR co-alteration. העלה בדיון הצוות עם oncologist: האם גורמים פרוגנוסטיים מקובלים משפיעים על בחירת מתווה ONC201?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42543672/",
+      "date_detected": "2026-11-12"
     }
   ]
 }
