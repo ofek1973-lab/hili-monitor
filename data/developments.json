@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-13",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1348,6 +1348,105 @@
       "action": "קרא את המאמר לזיהוי כל נתונים חדשים על גידולים תלמוסיים ו-EGFR co-alteration. העלה בדיון הצוות עם oncologist: האם גורמים פרוגנוסטיים מקובלים משפיעים על בחירת מתווה ONC201?",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42543672/",
       "date_detected": "2026-11-12"
+    },
+    {
+      "id": "GLIOBLASTOMA-NOVEL-THERAPIES-20261201",
+      "priority": "MONITOR",
+      "title_he": "סקירה של טיפולים חדשים בגליובלסטומה — עדכון בעדכוניות גבוהה",
+      "title_en": "Novel therapies for glioblastoma (Current Opinion in Neurology, Dec 2026)",
+      "category": "research",
+      "what_changed": "פרסום סקירה עדכנית בכתב עת בעל משקל על טיפולים חדשים בגליובלסטומה (DMG הוא תת-סוג). סקירות כאלה בדרך כלל משדרגות את ההבנה של האפשרויות הטיפוליות הנוכחיות והעתידיות.",
+      "why_matters_bullets": [
+        "סקירה עדכנית יכולה להכיל נתונים חדשים על inhibitors של EGFR או ONC201 ביישום CNS",
+        "DMG Grade 4 משותף למקצת המקרים בתיאור של גליובלסטומה",
+        "עלול לכלול דיון בהתנגדות Zegfrovy או שילובים רלוונטיים"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "סקירה כללית של גליובלסטומה עשויה להכיל דיון בטיפולים מותאמים למוטציות, אך אין כאן עדות מכוונת לנתוני DMG תלמוסי או EGFR exon 20"
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "סקירה בכתב עת peer-reviewed בעל משקל (Current Opinion in Neurology); כל הנתונים תלויים בתוכן הפרסום בפועל שטרם נקרא"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "לא ניתן להעריך BBB penetration בלא קריאת הטקסט המלא"
+      },
+      "expandable_details": {
+        "scientific_explanation": "סקירות בכתבי עת עדכניים לרוב משדרגות את ההבנה של מנגנונים חדשים (epigenetic, immunotherapy, targeted agents) בהקשר של גליובלסטומה. DMG עם H3K27M הוא אובייקט של עניין גבוה בקהילה.",
+        "study_limitations": "זו סקירה, לא נתוני ניסוי קליני חדשים. התוכן תלוי באפיון המחברים.",
+        "connection_to_current_treatment": "אנחנו יודעים שZegfrovy (EGFR exon 20 inhibitor) נבחר בגלל BBB penetration. סקירה עדכנית עלול להכיל השוואה עם טיפולים אחרים או נתונים חדשים על resistance mechanisms."
+      },
+      "action": "קריאה עדכנית של הטקסט המלא בפגישת הצוות הבאה, עם דגש על: (1) EGFR-targeted agents CNS; (2) resistance pathways ל-inhibitors; (3) שילובים עם immunotherapy או ONC201 equivalents",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42895289/",
+      "date_detected": "2026-11-13"
+    },
+    {
+      "id": "POSTOP-GLIOBLASTOMA-RELAPSE-20261110",
+      "priority": "MONITOR",
+      "title_he": "ניהול גליובלסטומה לאחר ניתוח — מנגנוני נסיגה וטיפולים קליניים",
+      "title_en": "Postoperative glioblastoma management: relapse mechanisms and clinical interventions (J Controlled Release, Nov 2026)",
+      "category": "research",
+      "what_changed": "פרסום במגזין מכובד (Journal of Controlled Release) על מנגנוני נסיגה והתאוששות לאחר ניתוח בגליובלסטומה. עשוי להכיל נתונים על BBB delivery systems, resistance לטיפולים מעוקמים, ו/או intratumoral approaches.",
+      "why_matters_bullets": [
+        "מנגנוני נסיגה רלוונטיים לDMG H3K27M עם TP53 multiplications (high aggressiveness)",
+        "כתב עת זה מתמקד בdelivery ו-drug formulations — רלוונטי לבחירה בZegfrovy בגלל BBB penetration",
+        "עלול להכיל נתונים על CED (convection-enhanced delivery) או תרופות ניסיוניות CNS-directed"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי סיימה RT ונמצאת תחת Zegfrovy; מנגנוני נסיגה ב-DMG צעירה קשורים לגנוטיפ aggressif שלה. התייחסות לpostoperative management תלויה בכמה מלא התיאור."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "כתב עת peer-reviewed בעל משקל בתחום drug delivery ו-oncology. הנתונים תלויים בטווח המחקרים שהוצטט."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "Journal of Controlled Release כולל מעבר לבעיות BBB delivery. סביר להניח שדיון יכלול BBB penetration ו-transport mechanisms, אך קביעה ודאית דורשת קריאה."
+      },
+      "expandable_details": {
+        "scientific_explanation": "מנגנוני נסיגה בגליובלסטומה כוללים: (1) genetic heterogeneity וLineage plasticity (רלוונטי ל-TP53 mutations); (2) immune evasion; (3) drug resistance through efflux pumps (רלוונטי לbioavailability של Zegfrovy); (4) hypoxia ו-metabolic reprogramming.",
+        "study_limitations": "סקירה כללית; עשוי להיות סטטוסטי לכיוונים שלא רלוונטיים לDMG-thalamic במיוחד.",
+        "connection_to_current_treatment": "Zegfrovy נבחר בגלל BBB penetration עדיפה. נתונים על resistance pathways בpostoperative setting עשויים לעזור ללהבין כיצד להשמר מ-acquired resistance להמשך Zegfrovy או להצביע על שילוב ONC201 מתאים."
+      },
+      "action": "קריאה עדכנית עם דגש על: (1) resistance mechanisms לEGFR inhibitors ב-CNS; (2) combination strategies; (3) BBB-penetrating agents שעלול להיות שימושיים בשלב noncompliance או progression",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42759665/",
+      "date_detected": "2026-11-13"
+    },
+    {
+      "id": "AI-PRECISION-PEDIATRIC-BRAIN-TUMORS-20261100",
+      "priority": "DISCUSS",
+      "title_he": "בינה מלאכותית לניבוי דיוק וייעוד טיפול בגידולי מוח ילדים",
+      "title_en": "AI-based precision prognostics and therapy personalization for childhood brain tumors (Nature Genetics, Nov 2026)",
+      "category": "research",
+      "what_changed": "פרסום חדש בNature Genetics (כתב עת בעל משקל בתחום גנטיקה וגונומיקה) על שימוש בAI ליצירת מודלים של ניבוי פרוגנוזה וייעוד טיפול אישי בגידולי מוח ילדים. זה עלול להכיל נתונים על H3K27M DMG וייעוד טיפול מותאם.",
+      "why_matters_bullets": [
+        "DMG H3K27M הוא בעל סימן גנטי משמעותי; AI-based precision medicine עשויה להיות ממולכת על נתוני DMG",
+        "ייעוד אישי יכול להוביל לתוכנית טיפול אופטימלית שקושרת Zegfrovy, ONC201, ואולי אפילו טיפולים ניסיוניים נוספים",
+        "גידולי מוח בילדים (29 חודשים = 2.4 שנים) זקוקים לדיוק גבוה בגלל רגישות הגידול וחומרתו"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "Nature Genetics article על childhood brain tumors עם דגש AI precision מכיל כנראה ניתוח של H3K27M DMG וקשור ישירות לייעוד טיפול של הילי בעל נתונים גנטיים עשירים (H3K27M, EGFR exon 20, TP53×3)"
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "Nature Genetics — כתב עת פנים בטור-top בגנטיקה קליינית. תוכן סביר להיות כולל cohorts גדולות וvalidation."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "זוהי סקירה של דיוק וניבוי פרוגנוזה, לא בהכרח בעדות BBB. עם זאת, precision medicine כך יכול להוביל לטיפולים מותאמים בעלי תכונות BBB טובות יותר."
+      },
+      "expandable_details": {
+        "scientific_explanation": "AI-based precision medicine בקשר של childhood CNS tumors משתמשת בdeep learning על multiomics data (genomics, epigenomics, RNA-seq, methylation) כדי להנבא תגובה טיפולית, נסיגה, והשרדות. H3K27M DMG היא אחת הקבוצות הגדולות שנלמדות במודלים כאלה.",
+        "study_limitations": "תלוי בגודל ה-cohort ובשלב validation. עם זאת, Nature Genetics לא תפרסם בלי validation חזק.",
+        "connection_to_current_treatment": "Precision medicine AI model עשויה להיות מצביעה על סיכוי להשקיע בONC201 או ממשיך Zegfrovy בהתאם לפרופיל הגנטי של הילי. זה עלול גם להגיד אם יש טיפולים אחרים ב-pipeline שאינם ידועים כרגע."
+      },
+      "action": "קריאה מלאה של המאמר והבחינה: (1) האם ישנה הנקה נתונים או מודל לH3K27M DMG? (2) האם נתוני EGFR exon 20 insertion כלולים? (3) הנתונים אם modeli יכול להוביל לטיפול משופר בהשוואה ל-Zegfrovy בלבד",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42977823/",
+      "date_detected": "2026-11-13"
     }
   ]
 }
