@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-13",
-    "next_scheduled_scan": "2026-11-14",
+    "last_full_scan": "2026-11-14",
+    "next_scheduled_scan": "2026-11-15",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -165,22 +165,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "type": "DAILY_REALTIME",
-    "changes_detected": true,
+    "changes_detected": false,
     "new_trials_added": 0,
-    "new_developments_added": 3,
+    "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 33,
-      "pubmed_papers": 7,
+      "clinical_trials": 32,
+      "pubmed_papers": 1,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "שלוש סקירות חדשות בכתבי עת מכובדים (Current Opinion in Neurology, Journal of Controlled Release, Nature Genetics) בנושאי גליובלסטומה ו-childhood brain tumors, אך אף אחת אינה כוללת טרם-קריאה עדות של Zegfrovy-specific או ONC201-H3K27M data חדשים",
-      "אין trials חדשים המתאימים ישירות לגיל הילי (<30 חודשים) או לפרופיל מוטציה ספציפי (H3K27M + EGFR exon 20 + TP53 multiplex) על פי ClinicalTrials.gov"
+      "No new trials identified with genuine eligibility for 29-month-old with H3K27M DMG, EGFR exon 20 insertion, thalamic location",
+      "No new regulatory, access, or safety developments detected in past 14 days",
+      "One relevant paper on DMG clinicopathology published but does not introduce new treatment data"
     ],
-    "scan_notes": "Scanned: ClinicalTrials.gov (15 live trials, all adult or non-specific to H3K27M thalamic DMG), PubMed last 30 days (7 papers: 3 potentially relevant on glioblastoma/brain tumors, 4 preclinical/nanotechnology not relevant), medRxiv/bioRxiv last 14 days (0 preprints), RSS medical news (0 items). Summary: No new clinical trials eligible for age/phenotype. Three literature items warrant review but no immediate clinical actions. No regulatory, access, or safety alerts detected.",
+    "scan_notes": "Scanned: ClinicalTrials.gov (15 active trials, all ineligible — 7 adult-only, 4 non-CNS, 4 not matching DMG/EGFR profile); PubMed last 30 days (1 paper — descriptive, not interventional); bioRxiv/medRxiv last 14 days (0 preprints); RSS medical news (no items). Total items reviewed: 16. Result: No items meet relevance threshold for new clinical intelligence.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -321,7 +322,8 @@
     "42759665",
     "43004705",
     "42999601",
-    "42977823"
+    "42977823",
+    "43023794"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",
