@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-14",
-    "next_scheduled_scan": "2026-11-15",
+    "last_full_scan": "2026-11-15",
+    "next_scheduled_scan": "2026-11-16",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -165,23 +165,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
       "clinical_trials": 32,
-      "pubmed_papers": 1,
+      "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new trials identified with genuine eligibility for 29-month-old with H3K27M DMG, EGFR exon 20 insertion, thalamic location",
-      "No new regulatory, access, or safety developments detected in past 14 days",
-      "One relevant paper on DMG clinicopathology published but does not introduce new treatment data"
+      "No new clinical trials identified that meet eligibility criteria (age ≤29 months, EGFR exon 20 specificity, thalamic location focus, or pediatric DMG indication)",
+      "No new peer-reviewed publications, preprints, or regulatory developments detected in the last 30 days",
+      "Existing trial landscape remains unchanged from previous scans"
     ],
-    "scan_notes": "Scanned: ClinicalTrials.gov (15 active trials, all ineligible — 7 adult-only, 4 non-CNS, 4 not matching DMG/EGFR profile); PubMed last 30 days (1 paper — descriptive, not interventional); bioRxiv/medRxiv last 14 days (0 preprints); RSS medical news (no items). Total items reviewed: 16. Result: No items meet relevance threshold for new clinical intelligence.",
+    "scan_notes": "Scanned: ClinicalTrials.gov (15 active trials returned — none age-eligible or mutation-specific for pediatric thalamic DMG with EGFR exon 20); PubMed (0 results, last 30 days); medRxiv/bioRxiv (0 results, last 14 days); medical RSS (0 new items). All returned trials are either adult-only (≥18 years), non-CNS indications (ovarian cancer, colorectal prevention, endometrial), or CAR-T studies for neuroblastoma (different target antigen, different tumor biology). No new BBB penetration data, EGFR exon 20 mechanism papers, H3K27M-specific treatments, or ONC201 pediatric safety/efficacy reports identified.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
