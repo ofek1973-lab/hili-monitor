@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-16",
-    "next_scheduled_scan": "2026-11-17",
+    "last_full_scan": "2026-11-17",
+    "next_scheduled_scan": "2026-11-18",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -165,23 +165,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 32,
-      "pubmed_papers": 1,
+      "clinical_trials": 35,
+      "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified matching patient age (29 months), diagnosis (DMG H3K27M), or EGFR exon 20 mutation status",
-      "No new publications or preprints in last 30 days with direct relevance to H3K27M DMG, EGFR exon 20 inhibition in pediatric CNS disease, or ONC201 efficacy in this mutation context",
-      "No regulatory updates, access pathway changes, or safety signals detected for Zegfrovy (sunvozertinib) or ONC201 (dordaviprone) in this population"
+      "אין ניסויים קליניים חדשים רלוונטיים לגיל 29 חודשים עם DMG H3K27M בתלמוס וEGFR exon 20 insertion",
+      "אין פרסומים או התגליות חדשות בשנים האחרונים שמשנות את הבנת ONC201, Zegfrovy, או DMG",
+      "חומר עדכון מדעי עדיין חסר: היעדר מאמרים בחודש האחרון מייצג פער בנתונים פתוחים על EGFR ex20 insertion + H3K27M + ONC201"
     ],
-    "scan_notes": "Sources scanned: ClinicalTrials.gov (15 live trials, none age-eligible or diagnosis-matched for 29-month-old with thalamic DMG H3K27M); PubMed last 30 days (1 paper on MD2 — unrelated to patient); medRxiv/bioRxiv last 14 days (0 preprints); medical news RSS (0 items). All known trial IDs and development IDs excluded per instruction set. Result: No new, clinically actionable information identified.",
+    "scan_notes": "סריקה שלמה: 15 ניסויים קליניים פעילים ב-ClinicalTrials.gov — אף אחד לא עומד בקריטריונים (גיל > 18 או > 1 שנה, בדרך כלל למבוגרים; אף אחד לא ממוקד על DMG H3K27M בתלמוס או EGFR exon 20 insertion בעיצומו). אפס מאמרים חדשים ב-PubMed, אפס preprints, אפס חדשות רפואיות. רמת הראיות על ONC201 + EGFR ex20 conflict נשארת כפי שתועדה (SNO 2025, ICR London) — אין עדכון חדש.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
