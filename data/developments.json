@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-17",
+    "last_updated": "2026-11-18",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1447,6 +1447,39 @@
       "action": "קריאה מלאה של המאמר והבחינה: (1) האם ישנה הנקה נתונים או מודל לH3K27M DMG? (2) האם נתוני EGFR exon 20 insertion כלולים? (3) הנתונים אם modeli יכול להוביל לטיפול משופר בהשוואה ל-Zegfrovy בלבד",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42977823/",
       "date_detected": "2026-11-13"
+    },
+    {
+      "id": "H3K27M-EPIGENETIC-VULNERABILITIES-20261117",
+      "priority": "DISCUSS",
+      "title_he": "פגיעויות אפיגנטיות ספציפיות ב-H3K27M DMG — יעדים תרפויטיים חדשים",
+      "title_en": "Epigenetic dysregulation in H3K27M DMG: therapeutic vulnerabilities",
+      "category": "research",
+      "what_changed": "פרסום חדש (17 נובמבר 2026) בעיתון מומחים על כלי טיפול בגידולי H3K27M. ההערכה מעודכנת לשנת 2026 וכוללת ניתוח של פגיעויות אפיגנטיות שעלולות להיות רלוונטיות להתנגדות לתרופה.",
+      "why_matters_bullets": [
+        "הילי נמצאת בטיפול בשילוב Zegfrovy + ONC201; מאמר זה עשוי להזהות מנגנוני התנגדות אפיגנטיים ספציפיים ל-H3K27M",
+        "עלול לשנות הבנה של פוטנציאל משלבים נוספים (לדוגמה, מעכבי HDAC) בשלב התנגדות",
+        "רלוונטי בעיקר אם הילי תציג סימנים של התנגדות ל-Zegfrovy בעתיד"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי היא בעלת H3K27M DMG בתלמוס עם TP53 תלת-עותק. מאמר זה מדון בפגיעויות אפיגנטיות ב-H3K27M בכללו; עוד לא ברור אם הוא מתייחס להעדפות טלמוס או לנושאי EGFR ex20"
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מאמר דעות של מומחים (Expert Opinion) בתיאוריטי — סקירת ספרות וטסונומיה, לא נתוני מטופלים חדשים או ניסויים קליניים"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המאמר עדיין לא נקרא במלואו. לא ברור אם דן בחדירת BBB של תרופות אפיגנטיות"
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M משנה את פונקציית PRC2, מה שמוביל לשינויים גלובליים בהנחתות H3K27. זה עלול ליצור תלות של השיבוט בנתיבים שונים מאשר GMB משכפל-טיפוס. מאמר זה סוקר יעדים אפיגנטיים פוטנציאליים כמו HDAC, DOT1L, וממירים m6A.",
+        "study_limitations": "דעות של מומחים — לא ניסוי קליני או דטא חדש של מטופלים. ההמלצות עדיין בשלב היפותטי.",
+        "connection_to_current_treatment": "ONC201 פועל דרך DRD2 ו-ClpP (לא אפיגנטי ישירות). Zegfrovy הוא מעכב EGFR. שילוב עם מעכב אפיגנטי עלול להיות סינרגיסטי בתיאוריה, אך זה לא הוסכם בהסכם קליני עדיין."
+      },
+      "action": "הערה: להגדיל עדיפות אם המאמר מתייחס לתלמוס או ל-EGFR ex20. בינתיים — לא פעולה דחופה, אבל ללמוד את המסקנות להכנה לסיבוב הבא של ביקורות שלהילי.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043370/",
+      "date_detected": "2026-11-18"
     }
   ]
 }
