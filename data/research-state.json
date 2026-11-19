@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-18",
-    "next_scheduled_scan": "2026-11-19",
+    "last_full_scan": "2026-11-19",
+    "next_scheduled_scan": "2026-11-20",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -166,23 +166,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
-    "new_developments_added": 1,
+    "new_developments_added": 0,
     "fetched": {
       "clinical_trials": 36,
-      "pubmed_papers": 5,
+      "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "אין שינויים דחופים בגישה לניסויים קליניים או בהנגשה לטיפול בתאריך זה (18 נובמבר 2026)",
-      "דוסקום על פגיעויות אפיגנטיות H3K27M שפורסם כרגע — יעיין בעתיד אם ההתנגדות מתפתחת",
-      "ONC201 כל עוד בדרך לישראל; אין עדכונים רגולטוריים או של גישה"
+      "No new trials identified with explicit pediatric (<29mo) eligibility AND CNS involvement AND EGFR exon 20 targeting in current recruitment cycle",
+      "No new publications or preprints in past 30 days specifically addressing H3K27M + EGFR exon 20 insertion combination or BBB penetration comparative data",
+      "ONC201 en route to Israel remains the most significant pending intervention; EGFR exon 20 insertion-related efficacy reduction already documented in patient profile (SNO 2025, ICR London)"
     ],
-    "scan_notes": "סקן: 32 ניסויים קליניים פעילים (כולם כבר ידועים או לא רלוונטיים גיל/קריטריון), 5 מאמרים PubMed בחודשים אחרונים, 0 preprints. לא בוצעו ניסויים חדשים על דורדביפרון (ONC201) + Zegfrovy בתלמוס H3K27M. מאמר יחיד מעודכן ומעניין שונה (אפיגנטיקה) — רלוונטי לשלב הבא של טיפול, לא לשלב הנוכחי.",
+    "scan_notes": "Scanned: ClinicalTrials.gov live active trials (15 found — 0 eligible for Hili), PubMed publications (0 past 30 days), medRxiv/bioRxiv preprints (0 past 14 days), medical news RSS (0 items). All pre-screened against 32 known trial IDs and 30 known development IDs. No new clinical evidence, regulatory action, or trial openings detected that change the current treatment pathway or BBB penetration strategy.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
