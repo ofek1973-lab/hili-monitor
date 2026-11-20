@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Clinical trials with full eligibility analysis for this specific patient. One record per trial.",
-    "last_updated": "2026-11-19",
+    "last_updated": "2026-11-20",
     "schema_version": "1.0",
     "patient_rt_completed_approx": "2026-08-08",
     "weeks_post_rt_at_last_run": 13
@@ -1386,6 +1386,27 @@
       "bbb_note": "DFMO מכיל ראיות בספרות לחדירה למוח; AMXT 1501 — אין נתונים ברורים.",
       "action_he": "בדוק עם צוות אם יש עניין בשילוב פולימין בהתחשב בהיסטוגנזה של H3K27M.",
       "source_url": "https://clinicaltrials.gov/study/NCT06465199"
+    },
+    {
+      "nct_id": "NCT07949448",
+      "title_he": "תאי CAR-T המכוונים נגד B7-H3 לגידולי מוח",
+      "title_en": "Chimeric Antigen-Receptor-Modified T Cells Targeting B7-H3",
+      "phase": "Phase I/II (inferred)",
+      "match_category": "follow",
+      "priority": "MONITOR",
+      "score": 45,
+      "age_eligible": true,
+      "recruiting_status": "Not Yet Recruiting",
+      "location_he": "ארצות הברית",
+      "summary_he": "CAR-T המכוונים נגד B7-H3 לגידולי CNS. עדיין לא מגייסים. B7-H3 בא לידי ביטוי בגיידולי גלויה, אך נתונים ספציפיים ל-H3K27M-DMG תלמוס דלים. לא עדיפות על פני GD2-CAR-T או טיפולים שכבר נבדקו לפרופיל זה.",
+      "key_inclusion": [
+        "גיל ≥2 שנים (עמידה בעיקרון לגיל הילי)",
+        "גידול CNS (סוג לא מפורט)"
+      ],
+      "egfr_note": null,
+      "bbb_note": "CAR-T דורש בירורים נוספים בנוגע לחדירת BBB וריכוז ביעיל בתוך הגידול התלמוסי; לא מדווח בחומר ניסיון זה",
+      "action_he": "התחייב למידע נוסף כאשר הניסיון מתחיל; השווה לנתונים של GD2-CAR-T במיוחד בתלמוס. אין צורך בפעולה מיידית.",
+      "source_url": "https://clinicaltrials.gov/study/NCT07949448"
     }
   ]
 }
