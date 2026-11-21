@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-20",
-    "next_scheduled_scan": "2026-11-21",
+    "last_full_scan": "2026-11-21",
+    "next_scheduled_scan": "2026-11-22",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -167,23 +167,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
-    "new_trials_added": 1,
+    "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 36,
+      "clinical_trials": 35,
       "pubmed_papers": 0,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "אין נתונים חדשים במחקרים פורסומים (מחרוזת PubMed ריקה, preprints ריקים)",
-      "אין עדכוני רגולציה או גישה חדשה עבור Zegfrovy או ONC201 בשנות האחרונות",
-      "ניסיון B7-H3 CAR-T קיים אך לא עדיין מגייס ונתוני DMG תלמוסיים לא זמינים"
+      "No new clinical trials identified with pediatric eligibility (≤29 months) or specific relevance to H3K27M DMG with EGFR exon 20 insertion.",
+      "No new publications, preprints, or regulatory developments detected in past 30 days.",
+      "No new BBB penetration data, ONC201 efficacy updates, or Zegfrovy safety signals identified."
     ],
-    "scan_notes": "סריקה של ClinicalTrials.gov זיהתה 15 ניסיונות פעילים, אך רוב אינם עומדים בקריטריונים: גיל (רוב ≥18), או היעדר ספציפיות ל-H3K27M, EGFR exon 20, או DMG תלמוסי. NCT07949448 (B7-H3 CAR-T) הוא היחיד בעל קשר פוטנציאלי אך משום שהוא בשלב 'Not Yet Recruiting' וחסר נתונים ספציפיים ל-DMG, הוא מסווג ל-MONITOR בלבד. PubMed (30 יום אחרונים) ו-medRxiv/bioRxiv (14 יום אחרונים) ריקים. לא נמצאו עדכוני רגולציה או חדשות רפואיות רלוונטיות.",
+    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 items), PubMed last 30 days (0 items), bioRxiv/medRxiv last 14 days (0 items), medical RSS feeds (0 items). All live trials are either adult-only (≥18 years), oncology domains not matching DMG/thalamic pathology, or early phase with no pediatric specifications. No preprints or publications detected in rolling windows. Status: clean scan—no actionable new information.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
