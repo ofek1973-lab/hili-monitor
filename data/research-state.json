@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-21",
-    "next_scheduled_scan": "2026-11-22",
+    "last_full_scan": "2026-11-22",
+    "next_scheduled_scan": "2026-11-23",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -123,7 +123,8 @@
     "GLIOBLASTOMA-NOVEL-THERAPIES-20261201",
     "POSTOP-GLIOBLASTOMA-RELAPSE-20261110",
     "AI-PRECISION-PEDIATRIC-BRAIN-TUMORS-20261100",
-    "H3K27M-EPIGENETIC-VULNERABILITIES-20261117"
+    "H3K27M-EPIGENETIC-VULNERABILITIES-20261117",
+    "DMG-LIQUID-BIOPSY-20261120"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -167,23 +168,22 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "type": "DAILY_REALTIME",
-    "changes_detected": false,
+    "changes_detected": true,
     "new_trials_added": 0,
-    "new_developments_added": 0,
+    "new_developments_added": 1,
     "fetched": {
       "clinical_trials": 35,
-      "pubmed_papers": 0,
+      "pubmed_papers": 2,
       "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified with pediatric eligibility (≤29 months) or specific relevance to H3K27M DMG with EGFR exon 20 insertion.",
-      "No new publications, preprints, or regulatory developments detected in past 30 days.",
-      "No new BBB penetration data, ONC201 efficacy updates, or Zegfrovy safety signals identified."
+      "ביופסיה נוזלית בDMG עשויה לספק ניטור מולקולרי בזמן אמת ללא צורך בהדמיה חוזרת תכופה — רלוונטי לאחר RT ובמהלך טיפול Zegfrovy/ONC201",
+      "אין ניסויים חדשים העומדים בקריטריונים לגיל הילי (29 חודשים), ללא ניסויים מחקר DMG תלמוסי ופתוח לגיל זה בזמן סקירה זו"
     ],
-    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 items), PubMed last 30 days (0 items), bioRxiv/medRxiv last 14 days (0 items), medical RSS feeds (0 items). All live trials are either adult-only (≥18 years), oncology domains not matching DMG/thalamic pathology, or early phase with no pediatric specifications. No preprints or publications detected in rolling windows. Status: clean scan—no actionable new information.",
+    "scan_notes": "סקירה: ClinicalTrials.gov (15 ניסויים פעילים — אפס תואמים גיל ≤29 חודשים או DMG ספציפי), PubMed (2 פריטים בחודש אחרון — 1 משימותי לDMG ניטור; 1 מחוץ לכיוון), medRxiv/bioRxiv (ריק ב-14 ימים אחרונים), RSS חדשות רפואי (ריק). סה״כ: 17 פריטים נסרקו, 1 התפתח רלוונטי — לא שינוי קריטי חירום, אך משמעות לתכנון ניטור.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -331,7 +331,9 @@
     "43041372",
     "43034268",
     "43034028",
-    "43034623"
+    "43034623",
+    "43023413",
+    "43058379"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",
