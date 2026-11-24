@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-23",
-    "next_scheduled_scan": "2026-11-24",
+    "last_full_scan": "2026-11-24",
+    "next_scheduled_scan": "2026-11-25",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -168,23 +168,24 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
     "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 37,
-      "pubmed_papers": 4,
-      "preprints": 1,
+      "clinical_trials": 36,
+      "pubmed_papers": 0,
+      "preprints": 0,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new clinical trials identified with pediatric eligibility (≤29 months) and direct relevance to H3K27M DMG with EGFR exon 20 insertion in thalamic location.",
-      "Recent preprint on MGMT methylation in glioblastoma is not applicable — patient has DMG H3K27M, not GBM; MGMT status not part of H3K27M stratification.",
-      "Four recent papers in nanomaterials, EPHA2/EPHB4 vascular targeting, photothermal BBB modulation, and immune organoids — all preclinical or mechanistic. No direct CNS efficacy data for DMG, no EGFR ex20 context, no human clinical translation yet."
+      "No new trials identified with pediatric eligibility (≤29 months) or specific relevance to H3K27M DMG with EGFR exon 20 insertion in thalamic location",
+      "No recent publications (past 30 days) or preprints (past 14 days) in PubMed/medRxiv/bioRxiv detected",
+      "No medical news or regulatory updates detected",
+      "Current live trial landscape remains dominated by adult-only studies (min age ≥18 years) or non-CNS indications"
     ],
-    "scan_notes": "Scanned: 15 live clinical trials (NCT database), 1 recent preprint (MGMT methylation — not applicable to DMG), 4 recent PubMed papers (all preclinical or non-DMG focus), 0 medical news items. No items matched patient age eligibility, EGFR exon 20 insertion mutation context, thalamic DMG phenotype, or Zegfrovy/ONC201 treatment landscape. Skipped 33 known trial IDs and 30 known development IDs per protocol.",
+    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 items), PubMed last 30 days (0 items), bioRxiv/medRxiv last 14 days (0 items), medical RSS feeds (0 items). No new information not already known from established dev IDs and trial skip list. All live trials are either adult-restricted (NCT05542407, NCT05630794, NCT04055649, etc.), China-based with unclear pediatric status (NCT07455045, NCT06594211, etc.), or non-oncology (MCT ROBIN center). No EGFR exon 20-specific, H3K27M-specific, or thalamic DMG-specific developments detected.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
