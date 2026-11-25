@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-24",
-    "next_scheduled_scan": "2026-11-25",
+    "last_full_scan": "2026-11-25",
+    "next_scheduled_scan": "2026-11-26",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -168,7 +168,7 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
@@ -180,12 +180,11 @@
       "rss_articles": 0
     },
     "key_findings": [
-      "No new trials identified with pediatric eligibility (≤29 months) or specific relevance to H3K27M DMG with EGFR exon 20 insertion in thalamic location",
-      "No recent publications (past 30 days) or preprints (past 14 days) in PubMed/medRxiv/bioRxiv detected",
-      "No medical news or regulatory updates detected",
-      "Current live trial landscape remains dominated by adult-only studies (min age ≥18 years) or non-CNS indications"
+      "No new clinical trials identified that meet eligibility criteria for 29-month-old female with DMG H3K27M + EGFR exon 20 insertion",
+      "No new publications, preprints, or regulatory developments detected in past 30 days",
+      "All live trials reviewed do not accommodate pediatric age ≤29 months or contain EGFR exon 20-specific cohorts"
     ],
-    "scan_notes": "Scanned: ClinicalTrials.gov live trials (15 items), PubMed last 30 days (0 items), bioRxiv/medRxiv last 14 days (0 items), medical RSS feeds (0 items). No new information not already known from established dev IDs and trial skip list. All live trials are either adult-restricted (NCT05542407, NCT05630794, NCT04055649, etc.), China-based with unclear pediatric status (NCT07455045, NCT06594211, etc.), or non-oncology (MCT ROBIN center). No EGFR exon 20-specific, H3K27M-specific, or thalamic DMG-specific developments detected.",
+    "scan_notes": "Scanned: ClinicalTrials.gov (15 active trials), PubMed (last 30 days, 0 results), medRxiv/bioRxiv (last 14 days, 0 results), RSS medical news feeds (0 items). Trial eligibility filter: minimum age >18 years eliminates all current open registries. No new EGFR exon 20 insertion-specific trials, no new ONC201 pediatric CNS data, no new Sunvozertinib (Zegfrovy) human PK or CNS efficacy reports detected.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
