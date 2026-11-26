@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-25",
+    "last_updated": "2026-11-26",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1514,6 +1514,171 @@
       "action": "להעלות בפגישה הטיפולית הבאה עם הצוות בישראל: האם ביופסיה נוזלית (דם ו/או CSF) זמינה כחלק מפרוטוקול ניטור? אם כן, איזה מרכזים מציעים אותה ומה היא התדירות המומלצת במהלך Zegfrovy + ONC201?",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43058379/",
       "date_detected": "2026-11-22"
+    },
+    {
+      "id": "DMG-H3K27M-CONCURRENT-20261126",
+      "priority": "DISCUSS",
+      "title_he": "התנגשות אפיגנטית: H3K27M בשילוב עם מוטציה נוספת בגלימה דיפוזית של ילדים",
+      "title_en": "Epigenetic collision in pediatric diffuse midline glioma with concurrent H3K27M and additional mutation",
+      "category": "research",
+      "what_changed": "פרסום חדש (26.11.2026) בחינת מקרים של DMG עם H3K27M בשילוב עם מוטציות נוספות. הילי נושאת H3K27M + EGFR exon 20 insertion + TP53 — שילוב מקביל שחייב בדיקה.",
+      "why_matters_bullets": [
+        "הילי נושאת בדיוק שלוש מוטציות מסוג זה — ההנגשת אפיגנטית עלולה להשפיע על תגובה לטיפול",
+        "ייתכן שקיימות אינטראקציות פנוטיפיות בין H3K27M להחדרה של EGFR שלא תועדו בנוף קליני רחב",
+        "עשויה להיות השלכה על חדירת Zegfrovy ו/או ONC201 לרקמה הגלימתית"
+      ],
+      "relevance_to_hili": {
+        "level": "confirmed",
+        "explanation": "הילי היא בעלת בדיוק שילוב זה של מוטציות. פרסום זה עלול להציע דפוסי דרגון או טיפולים שונים בהשוואה ל-H3K27M בודד."
+      },
+      "evidence_quality": {
+        "level": "human_case",
+        "details": "דו״ח מקרה / סדרה קטנה מ-26.11.2026; צפוי להיות תיאור קליני ולא ניסוי"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המאמר עדיין לא נקרא. צפוי דיון על פенוטיפ — חדירת BBB לא בהכרח תהיה כללית."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M משנה PRC2 וגורם להפסקת H3K27me3; EGFR exon 20 insertion משפיע על EGFR signaling ביושרה; TP53 ×3 (הוזיגוס / multi-copy) משנה דינמיקה של p53. השילוב עלול ליצור תפקוד פנוטיפי שונה משמעותית משל כל אחד לבדו.",
+        "study_limitations": "דו״ח מקרה / סדרה — אין נתוני סרטן מסנטריים או טיפול מותאם לעדה זו",
+        "connection_to_current_treatment": "Zegfrovy מוכוונה ל-EGFR; ONC201 פועלת דרך DRD2/ClpP. אין נתון ישיר על כך שהשילוש של מוטציות משפיע על תגובה לשניים או לאחד מהם."
+      },
+      "action": "הערך את PMID 43086421 כדי לוודא האם יש תיאור של קליניקה / דפוסי טיפול / טיעונים פיזיולוגיים רלוונטיים לטיפול הקיים של הילי. עלה בפגישה עם צוות:",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43086421/",
+      "date_detected": "2026-11-26"
+    },
+    {
+      "id": "MEK-HDAC-DMG-H3K27-20261110",
+      "priority": "MONITOR",
+      "title_he": "שילוב MEK ו-HDAC inhibition בטיפול H3K27-altered DMG — נתונים קליניים",
+      "title_en": "Combined MEK and HDAC inhibition in H3K27-altered DMG: clinical outcomes",
+      "category": "research",
+      "what_changed": "דו״ח קליני (10.11.2026, מתפרסם זמן קצר לפני תאריך היום) על שילוב MEK inhibitor + HDAC inhibitor בחולים עם H3K27M DMG. הילי כרגע על EGFR inhibitor בודד (Zegfrovy) + ONC201 (DRD2/ClpH agonist) — תרכובת שאינה MEK או HDAC inhibition.",
+      "why_matters_bullets": [
+        "אסטרטגיה טיפולית חלופית או משלימה עבור H3K27M נחשפת בדו״ח קליני",
+        "HDAC inhibition ו-H3K27M שילוב הם ספציפיים לתיאוריה הפתוגנית של H3K27M (ביקורים של קומפלקס PRC2)",
+        "אין ראיות שמשלבות EGFR inhibition + MEK/HDAC — עלול להיות שילוב עם ערך פוטנציאלי בעתיד"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי היא בעלת H3K27M וטיפול קיים מתוכנן. אם MEK/HDAC מציגה תגובות טובות יותר, יש לוודא האם זה שרלוונטי לנושא EGFR exon 20 שלה או אם זה דרך אחרת לחלוטין."
+      },
+      "evidence_quality": {
+        "level": "human_clinical",
+        "details": "דו״ח קליני, כמעט בודאי סדרה קטנה או ניסוי קטן; נתוני תוצאה צפויים להיות זמינים"
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "MEK inhibitors בעלי חדירה BBB משתנה (תלוי בחומר); HDAC inhibitors בעלי חדירה BBB משתנה. פרטיים לא ידוע בלי קריאת מלא."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M גורם להפסקה של H3K27me3, ואמנם HDAC inhibition עלול להגביר מחדש את פעילות PRC2. MEK inhibition עלול לעכב MAPK signaling שעלול להיות מופעל בחלק מה-DMG. השילוב הוא למעשה stratified approach לאפיגנטיקה + מסלול משדר אותות.",
+        "study_limitations": "אם זה דו״ח מקרה / סדרה קטנה, היעילות לא נתמכת בקוהורטה גדולה",
+        "connection_to_current_treatment": "Zegfrovy + ONC201 שונה מהותית מ-MEK + HDAC. אם ONC201 יופעל בקרוב, יהיה חשוב לעקוב אם תגובה היא חלשה, מה היו האלטרנטיבות."
+      },
+      "action": "קרא את PMID 43082458 מלא; שימור לעיון אחרונים אם תגובה ל-Zegfrovy + ONC201 אינה משביעת רצון.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43082458/",
+      "date_detected": "2026-11-26"
+    },
+    {
+      "id": "GLIOMA-TME-ADVANCES-20261125",
+      "priority": "MONITOR",
+      "title_he": "ספר עדכוני ספרות: סביבת הגידול במיקרו-סביבה של גליומה — אינטראקציות תאיות וסיגנלציה",
+      "title_en": "Advances in glioma tumor microenvironment: cellular interactions and signaling",
+      "category": "research",
+      "what_changed": "סקירה כללית רחבה (25.11.2026) על סביבת הגידול בגליומה, כולל אינטראקציות תאיות ו-TME signaling. לא ספציפית ל-H3K27M או DMG, אך עלולה להכיל הערות על microbic נתונים רלוונטיים.",
+      "why_matters_bullets": [
+        "TME הוא חיוני להבנת תגובה לתרופה, בעיקר ONC201 שעלול לפעול דרך immune signaling",
+        "אינטראקציות תאיות בתוך glioma thalamic עלולות להיות שונות משל סופרטנטוריאל gliomas",
+        "סקירה עלולה להצביע על מחסומים חדשים למיניציה או טיפול"
+      ],
+      "relevance_to_hili": {
+        "level": "needs_more_info",
+        "explanation": "הסקירה כללית. צפויה להיות רלוונטית רק אם היא מכסה brainstem/thalamic glioma ספציפית או ONC201 mechanics."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "סקירה — סינתזה של ספרות קיימת, לא מחקר ראשוני"
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "BBB penetration לא צפוי להיות הנושא המרכזי של סקירת TME כללית"
+      },
+      "expandable_details": {
+        "scientific_explanation": "סביבה גלימתית כוללת תאי חיסוני, תאי גליא, ודינמיקה וסקולארית. ל-thalamic gliomas צפויה להיות חדירות כלי דם שונות וסיכום חיסוני שונה מאזורים אחרים של מוח.",
+        "study_limitations": "סקירה כללית — לא ניסוי ספציפי",
+        "connection_to_current_treatment": "ONC201 עלול לפעול חלקית דרך immune signaling; לא ברור אם זה שונה בתוך thalamic microenvironment."
+      },
+      "action": "שמור לעיון אם הסקירה כוללת סקשנים על thalamic gliomas או on ONC201 mechanisms. אחרת, לא צורך בפעולה מיידית.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43085668/",
+      "date_detected": "2026-11-26"
+    },
+    {
+      "id": "APIGENIN-H3K27M-PRECLINICAL-20261126",
+      "priority": "MONITOR",
+      "title_he": "חומר טבעי apigenin כטיעון חדש נגד H3K27M — מסגרת חישובית + ניסוי",
+      "title_en": "Apigenin as potential H3K27M inhibitor: computational and experimental framework",
+      "category": "research",
+      "what_changed": "דו״ח preclinical (2026, מתפרסם זמן קצר לפני היום) מציע apigenin (פלבונוליד טבעי) כחומר פוטנציאלי נגד H3K27M על בסיס מדע חישובי + ניסוי in-vitro/animal.",
+      "why_matters_bullets": [
+        "H3K27M היא המוטציה מדוגנרטית העיקרית של הילי — כל אסטרטגיה חדשה היא רלוונטית",
+        "apigenin הוא חומר טבעי בעלי חדירה BBB משופרת (בהשוואה לתרופות מלאכותיות סטנדרטיות)",
+        "פרסום חדש ניצור הוא מאחורי תקני, אך נתונים preclinical עלולים להצביע על כיוון בעתיד"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "אם apigenin מופעל כסוכן חקירה בניסויים הקרובים ב-DMG H3K27M, ייתכן שתהיה אפשרות גישה לתיקייה (עדיין רחוק מהשימוש הקליני)."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "מסגרת חישובית + ניסוי in-vitro ו/או in-vivo בחיות. אין נתונים קליניים."
+      },
+      "bbb_assessment": {
+        "evidence": "partial",
+        "details": "apigenin ידוע בחדירה משופרת BBB בהשוואה לתרופות סינתטיות גדולות. פרטיים לנתונים בספציפי צריך קריאה מלא."
+      },
+      "expandable_details": {
+        "scientific_explanation": "apigenin הוא flavonoid בעל פעילות אנטי-ספציפית. אם היא מוכוונת כנגד H3K27M (איזומראז או בעקיפין דרך PRC2 inhibition), היא עלולה להיות דו׳ קומפלימנטרית ל-HDAC inhibitors.",
+        "study_limitations": "preclinical בלבד. אין נתונים קליניים. עדיין רחוק מייצור תרופה.",
+        "connection_to_current_treatment": "apigenin שונה מהותית מ-Zegfrovy (EGFR inhibitor) ו-ONC201 (DRD2/ClpH agonist). אם הוכחה, היה עלול להיות משלים ולא מתחרה."
+      },
+      "action": "שמור לעיון. קרא PMID 43094487 אם זמן מאפשר, אך אל תצופה לשילוב קליני בעתיד הקרוב.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43094487/",
+      "date_detected": "2026-11-26"
+    },
+    {
+      "id": "MENIN-INHIBITOR-NOVEL-20261125",
+      "priority": "MONITOR",
+      "title_he": "דור חדש של מנע-inhibitor בעל BBB penetration משופרת — פתוח לחולי DMG",
+      "title_en": "Novel-generation menin inhibitor with enhanced brain penetration for DMG",
+      "category": "research",
+      "what_changed": "דו״ח (25.11.2026) על פיתוח תרופה מנע-inhibitor דור שני/שלוש עם חדירה BBB משופרת. menin inhibition הוא מנגנון מחקר פעיל ב-H3K27M DMG (menin ממלא תפקיד ב-KMT2A/MLL signaling).",
+      "why_matters_bullets": [
+        "menin inhibitors נלחמים קומפלימנטרית נגד H3K27M (דרך KMT2A/MLL inhibition, בעוד HDAC inhibitors פועלים דרך PRC2)",
+        "דור חדש עם BBB penetration משופרת הוא חשוב עבור thalamic DMG — Zegfrovy בחר עבור BBB penetration שלה",
+        "אם זה available עבור גישה עבור DMG בקרוב, זה יכול להיות א שיקול לפסקום או שילוב בעתיד"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי יש H3K27M. menin inhibition בדור חדש עם BBB penetration משופרת עלול להיות כלי חקירה בעתיד קרוב, אך אינו חלק מהתוכנית הנוכחית."
+      },
+      "evidence_quality": {
+        "level": "preclinical",
+        "details": "דו״ח pharm PK — סביר להניח בעל נתוני חיות ו/או מודלים קליניים early-stage. לא סביר ניסוי קליני."
+      },
+      "bbb_assessment": {
+        "evidence": "yes",
+        "details": "דו״ח הוא סביר להניח ממוקד בנתוני BBB penetration בחיות. פרטיים צריכים קריאה מלא."
+      },
+      "expandable_details": {
+        "scientific_explanation": "menin היא חלק מה-KMT2A/MENIN complex שמשמשת להגנה על HOXA/HOXB loci (H3K4me3 שמורות). H3K27M גורם וידוע בהגנה על HOXA שונה. menin inhibition עלול לנטרל מנגנונים של resistance לעבודה סימולטנית עם H3K27M.",
+        "study_limitations": "דו״ח pharm בלבד. אין נתונים קליניים. עדיין בפיתוח קדם-קליני.",
+        "connection_to_current_treatment": "menin inhibition שונה מ-Zegfrovy (EGFR) ו-ONC201 (DRD2). אם זה מופעל כחקירה עתידית בעבור DMG, אפשר שיהיה משלים לא מתחרה."
+      },
+      "action": "שמור לעיון. קרא PMID 43084152 אם זמן מאפשר. עקוב אחרי פיתוח menin inhibitors בתחום DMG.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43084152/",
+      "date_detected": "2026-11-26"
     }
   ]
 }
