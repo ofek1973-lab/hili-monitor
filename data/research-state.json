@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-26",
-    "next_scheduled_scan": "2026-11-27",
+    "last_full_scan": "2026-11-27",
+    "next_scheduled_scan": "2026-11-28",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -173,24 +173,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "type": "DAILY_REALTIME",
-    "changes_detected": true,
+    "changes_detected": false,
     "new_trials_added": 0,
-    "new_developments_added": 5,
+    "new_developments_added": 0,
     "fetched": {
-      "clinical_trials": 36,
-      "pubmed_papers": 5,
-      "preprints": 0,
+      "clinical_trials": 37,
+      "pubmed_papers": 2,
+      "preprints": 2,
       "rss_articles": 0
     },
     "key_findings": [
-      "חמש פרסומים חדשים בתחום DMG/H3K27M הפרסומים בתוך 16 ימים אחרונים; בעיקר preclinical ו-case-report (אין ניסויים קליניים חדשים אחרים)",
-      "הילי נושאת שילוש ייחודי של H3K27M + EGFR exon 20 insertion + TP53 ×3 — דו״ח epigenetic collision חדש (43086421) עלול להיות רלוונטי ישירות",
-      "אין ניסויים קליניים פעילים פתוחים לילדים בגיל 29 חודשים עם EGFR exon 20 insertion או thalamic DMG הספציפי",
-      "ריכוז בחוקרים: MEK/HDAC (מנגנון שונה מ-Zegfrovy/ONC201), apigenin (preclinical), menin inhibitors (דור חדש עם BBB penetration) — כל משימות בעתיד חקירה, לא נוכחי"
+      "No new trials identified with pediatric eligibility (≤29 months) or EGFR exon 20-specific CNS targeting",
+      "No recent publications (last 30 days) with direct relevance to H3K27M DMG + EGFR exon 20 + BBB penetration strategy",
+      "Two recent preprints identified but neither clinically relevant: one on advance care planning (generic), one on galectin-1 in GBM (not DMG-specific, no EGFR axis)"
     ],
-    "scan_notes": "סריקה: ClinicalTrials.gov (live 15 ניסויים, אף אחד לא רלוונטי לגיל 29 חודשים או EGFR ex20 המדורג DMG); PubMed (5 מאמרים בחודש אחרון, 4 רלוונטיים לחקירה, בעיקר preclinical ו-case-level); preprints (אף אחד). ממצאים: פרסומים חדשים מציגים כיוונים בחקירה ל-H3K27M (apigenin, menin inhibitors, MEK/HDAC), אך אין שינויים קליניים או trials על-ידי הרחקה מ-Zegfrovy/ONC201 תוכנית הקיימת.",
+    "scan_notes": "Scanned: 15 live ClinicalTrials.gov entries (all ineligible: age >18y or non-CNS or non-EGFR), 2 recent PubMed papers (brainstem incidentalomas [observational only] and nanorobot BBB transit [no oncology application]), 2 preprints (advance care planning, galectin-1 invasiveness [not actionable for this patient]). Zero medical news items. All known trial IDs and development IDs excluded per protocol.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -349,7 +348,9 @@
     "43084152",
     "43082458",
     "43085668",
-    "43094487"
+    "43094487",
+    "43049793",
+    "43084627"
   ],
   "known_preprint_ids": [
     "biorxiv:10.64898/2025.12.12.693809",
@@ -359,7 +360,9 @@
     "biorxiv:10.64898/2026.10.22.760940",
     "medrxiv:10.64898/2026.10.25.26366446",
     "medrxiv:10.64898/2026.10.26.26364473",
-    "medrxiv:10.64898/2026.11.09.26367351"
+    "medrxiv:10.64898/2026.11.09.26367351",
+    "medrxiv:10.64898/2026.11.12.26367794",
+    "biorxiv:10.64898/2026.06.15.732361"
   ],
   "known_rss_ids": []
 }
