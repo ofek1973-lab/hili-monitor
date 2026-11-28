@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "All developments — sorted most-relevant first.",
-    "last_updated": "2026-11-27",
+    "last_updated": "2026-11-28",
     "schema_version": "1.0",
     "baseline_run": false
   },
@@ -1679,6 +1679,39 @@
       "action": "שמור לעיון. קרא PMID 43084152 אם זמן מאפשר. עקוב אחרי פיתוח menin inhibitors בתחום DMG.",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43084152/",
       "date_detected": "2026-11-26"
+    },
+    {
+      "id": "EZHIP-DNMT-20261128",
+      "priority": "DISCUSS",
+      "title_he": "שילוב עכבת EZH1/2 ו-DNMT עלול להתגבר על התנגדות שנרכשה לתרופות ב-H3K27M",
+      "title_en": "Combined EZH1/2 and DNMT inhibition may overcome drug-induced transcriptional resistance in H3K27M gliomas",
+      "category": "research",
+      "what_changed": "פרסום חדש (bioRxiv) מציע כי שילוב עכבת של EZH1/2 (רכיב המודיע את פנוטיפ H3K27M) יחד עם עכבת DNMT עלול להתגבר על מנגנוני התנגדות שנרכשו במהלך טיפול בתרופות מטרה. זה עשוי להיות רלוונטי למצב שהילי עומדת בו כעת — לאחר השלמת קרינה וקבלת Zegfrovy.",
+      "why_matters_bullets": [
+        "H3K27M רגיל ל-EZH2 (PRC2) דיכאון — שילוב עם DNMT עלול לפתוח דרכים נוספות לשליטה בעמידות",
+        "שילוב זה עדיין בשלב קדם-קליני, אך מציע שיתרון פוטנציאלי על פני Zegfrovy בודד או ONC201 בודד",
+        "ההנחה היא כי עמידות אפיגנטית היא מנגנון קדום ב-DMG H3K27M, במיוחד עם TP53 ×3"
+      ],
+      "relevance_to_hili": {
+        "level": "possible",
+        "explanation": "הילי קיבלה Zegfrovy (מטרה EGFR ex20) על רקע מוטציה זו, אך ל-H3K27M-altered DMG יש נטייה לפתח עמידות אפיגנטית. קדם-קליני זה עלול להיות רלוונטי למשימה עתידית של שילוב או חזרה לתרופה, אך עדיין לא בשלב קליני ילדים."
+      },
+      "evidence_quality": {
+        "level": "preprint",
+        "details": "bioRxiv preprint — לא עבר בדיקת עמיתים, אין נתונים קליניים או אפילו in-vivo DMG, אך משקף מנגנון אפיגנטי קדום."
+      },
+      "bbb_assessment": {
+        "evidence": "unknown",
+        "details": "המחקר לא כולל נתונים על חדירת BBB; שתי קטגוריות התרופות (EZH2i, DNMTi) יש יכולת BBB מועדפת לחלק מהחברים (למשל, GSK2816126 לא BBB-penetrant; CPI-455 מוגבל), אך אחרים (למשל, valproate כ-HDAC/DNMT-i היברידי) חודרים."
+      },
+      "expandable_details": {
+        "scientific_explanation": "H3K27M משנה את PRC2, מה שהופך את הגנומה לעמיד להדכאה דיכאונית נורמלית. DNA methyltransferases (DNMT) שומרים על DNA methylation עמודים שעלולים להיות דרך ניידה נוספת לעמידות ללא PRC2-WT. שילוב העכבה עלול לנשוב למצב שבו גם ההיסטון וגם המתילציה DNA מוחקות בו-זמנית.",
+        "study_limitations": "קדם-קליני בלבד; אין בדיקות in-vivo DMG או נתונים קליניים; לא ברור אם ל-TP53 ×3 (כמו הילי) יש השפעה על רגישות שילוב זה.",
+        "connection_to_current_treatment": "Zegfrovy מטר EGFR; ONC201 מטר DRD2/ClpP. שתיהן עקיפות למוטציה H3K27M עצמה. עכבה אפיגנטית ישירה עלולה להיות אורטוגונלית יותר וראויה לחקר כמשלימה, אך עדיין קדם-קליני."
+      },
+      "action": "הוסף לרשימת השאלות החוקר עבור הפגישה הבאה עם צוות ONS: האם יש עניין בשילובי EZH2i + DNMT-i בשלב זה, או אם זה יהיה רלוונטי לשנים הקרובות כתרופה 'שלישית או רביעית'?",
+      "source_url": "https://doi.org/10.1101/2025.09.16.676613",
+      "date_detected": "2026-11-28"
     }
   ]
 }

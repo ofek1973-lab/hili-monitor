@@ -1,8 +1,8 @@
 {
   "_meta": {
     "description": "Tracks what has been seen before — used for change detection in daily runs",
-    "last_full_scan": "2026-11-27",
-    "next_scheduled_scan": "2026-11-28",
+    "last_full_scan": "2026-11-28",
+    "next_scheduled_scan": "2026-11-29",
     "scan_type": "DAILY_AUTOMATED"
   },
   "known_trial_ids": [
@@ -129,7 +129,8 @@
     "MEK-HDAC-DMG-H3K27-20261110",
     "GLIOMA-TME-ADVANCES-20261125",
     "APIGENIN-H3K27M-PRECLINICAL-20261126",
-    "MENIN-INHIBITOR-NOVEL-20261125"
+    "MENIN-INHIBITOR-NOVEL-20261125",
+    "EZHIP-DNMT-20261128"
   ],
   "trial_statuses": {
     "NCT05009992": "Recruiting",
@@ -173,23 +174,23 @@
     "NCT06465199": "Recruiting (verified 2026-11-10; US) — DFMO + AMXT 1501, age ≤26, includes DIPG"
   },
   "last_run_summary": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "type": "DAILY_REALTIME",
     "changes_detected": false,
     "new_trials_added": 0,
-    "new_developments_added": 0,
+    "new_developments_added": 1,
     "fetched": {
       "clinical_trials": 37,
-      "pubmed_papers": 2,
-      "preprints": 2,
+      "pubmed_papers": 0,
+      "preprints": 1,
       "rss_articles": 0
     },
     "key_findings": [
-      "No new trials identified with pediatric eligibility (≤29 months) or EGFR exon 20-specific CNS targeting",
-      "No recent publications (last 30 days) with direct relevance to H3K27M DMG + EGFR exon 20 + BBB penetration strategy",
-      "Two recent preprints identified but neither clinically relevant: one on advance care planning (generic), one on galectin-1 in GBM (not DMG-specific, no EGFR axis)"
+      "אין ניסויים קליניים חדשים פתוחים או גדולים לילדים בגיל ~29 חודשים עם DMG H3K27M או EGFR ex20.",
+      "אין עדכונים סדירים בחדשות רפואיות או נתונים תעודתיים עבור Zegfrovy או ONC201 בטווח של 14 ימים.",
+      "מחקר קדם-קליני אחד עלה (EZHIP-DNMT) שעלול להיות רלוונטי למנגנוני עמידות אפיגנטית בעתיד, אך זה היברידי קדם-קליני בלבד."
     ],
-    "scan_notes": "Scanned: 15 live ClinicalTrials.gov entries (all ineligible: age >18y or non-CNS or non-EGFR), 2 recent PubMed papers (brainstem incidentalomas [observational only] and nanorobot BBB transit [no oncology application]), 2 preprints (advance care planning, galectin-1 invasiveness [not actionable for this patient]). Zero medical news items. All known trial IDs and development IDs excluded per protocol.",
+    "scan_notes": "סריקה של ClinicalTrials.gov (15 משימות פעילות), PubMed (אפס), medRxiv/bioRxiv (מחקר אחד בחדשות: EZHIP-DNMT), חדשות רפואיות (ללא). אין ניסויים חדשים העומדים בתנאי להיכללות גיל, מיקום חיישן או מוטציות ל-Hili. מחקר קדם-קליני אחד בעל משמעות פוטנציאלית למנגנוני H3K27M בעתיד.",
     "sources_checked": [
       "ClinicalTrials.gov API v2 (live)",
       "WHO ICTRP (international trials)",
@@ -362,7 +363,8 @@
     "medrxiv:10.64898/2026.10.26.26364473",
     "medrxiv:10.64898/2026.11.09.26367351",
     "medrxiv:10.64898/2026.11.12.26367794",
-    "biorxiv:10.64898/2026.06.15.732361"
+    "biorxiv:10.64898/2026.06.15.732361",
+    "biorxiv:10.1101/2025.09.16.676613"
   ],
   "known_rss_ids": []
 }
